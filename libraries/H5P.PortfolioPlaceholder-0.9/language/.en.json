@@ -1,0 +1,93 @@
+{
+  "semantics": [
+    {
+      "label": "Placeholder",
+      "fields": [
+        {
+          "label": "Placeholder color",
+          "description": "Only used here in editor.",
+          "default": "#1768c4"
+        },
+        {
+          "label": "Background color",
+          "description": "Set an optional background color for the background.",
+          "default": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Image height limit",
+          "description": "Set an optional height limit for image contents using CSS lengths, e.g. 160px or 5rem."
+        },
+        {
+          "label": "Content arrangement",
+          "description": "Select how the contents should be arranged.",
+          "options": [
+            {
+              "label": "1 field"
+            },
+            {
+              "label": "2 fields: 1 left, 1 right"
+            },
+            {
+              "label": "2 fields: 1 top, 1 bottom"
+            },
+            {
+              "label": "3 fields: 1 top, 2 bottom"
+            },
+            {
+              "label": "3 fields: 2 top, 1 bottom"
+            },
+            {
+              "label": "3 fields: next to each other"
+            },
+            {
+              "label": "4 fields: 1 top, 3 bottom"
+            },
+            {
+              "label": "4 fields: 3 top, 1 bottom"
+            },
+            {
+              "label": "4 fields: next to each other"
+            },
+            {
+              "label": "5 fields: 1 top, 4 bottom"
+            }
+          ]
+        },
+        {
+          "label": "Fields",
+          "entity": "field",
+          "field": {
+            "label": "Field",
+            "fields": [
+              {
+                "label": "Hide content",
+                "description": "Check this option if you want to hide the content from the view without the need to delete it."
+              },
+              {
+                "label": "Vertical alignment",
+                "description": "Set the vertical alignment in relationship to content left or right of this one.",
+                "options": [
+                  {
+                    "label": "Top"
+                  },
+                  {
+                    "label": "Center"
+                  },
+                  {
+                    "label": "Bottom"
+                  }
+                ]
+              },
+              {
+                "label": "Content"
+              },
+              {
+                "label": "Horizontal proportion"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

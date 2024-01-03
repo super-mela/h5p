@@ -1,0 +1,23 @@
+{
+  "title": "H5PEditor.PortfolioChapter",
+  "majorVersion": 0,
+  "minorVersion": 9,
+  "patchVersion": 1,
+  "runnable": 0,
+  "machineName": "H5PEditor.PortfolioChapter",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 12
+  },
+  "author": "Oliver Tacke",
+  "preloadedJs": [
+    {
+      "path": "dist/h5peditor-portfolio-chapter.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5peditor-portfolio-chapter.css"
+    }
+  ]
+}

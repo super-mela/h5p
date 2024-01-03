@@ -1,0 +1,17 @@
+{
+  "libraryStrings": {
+    "done": "Burutua",
+    "delete": "Ezabatu",
+    "expandBreadcrumb": "Atzera",
+    "collapseBreadcrumb": "Itxi nabigazioa",
+    "confirmationDialogRemoveHeader": "Ezabatu edukia",
+    "confirmationDialogRemoveDialog": "Benetan nahi duzu eduki hau ezabatu?",
+    "confirmationDialogRemoveCancel": "Ez",
+    "confirmationDialogRemoveConfirm": "Bai, ezabatu!",
+    "noPreviewPossible": "Ez dago aurrebistarik",
+    "changeContentsWidth": "Change width of adjacent contents",
+    "placeholderTitle": "Placeholder title",
+    "footer": "Footer",
+    "header": "Header"
+  }
+}

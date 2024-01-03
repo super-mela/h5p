@@ -1,0 +1,223 @@
+{
+  "semantics": [
+    {
+      "label": "Activa a portada do portafolios",
+      "description": "Unha portada que amosa información sobre o portafolios antes do acceso."
+    },
+    {
+      "label": "Páxina de Cuberta",
+      "fields": [
+        {
+          "label": "Descrición da cuberta",
+          "description": "Este texto será a descrición da teu portafolios.",
+          "default": "<p style=\"text-align: center;\"></p>"
+        },
+        {
+          "label": "Medios da cuberta",
+          "description": "Medios opcionais para a introdución."
+        },
+        {
+          "label": "Amosar cabeceira"
+        },
+        {
+          "label": "Amosar pé de páxina"
+        }
+      ]
+    },
+    {
+      "label": "Usar a cabeceira",
+      "description": "Se activas/desactivas este interruptor, a cabeceira de todos os capítulos mostrarase/eliminarase en consecuencia."
+    },
+    {
+      "label": "Cabeceira",
+      "fields": [
+        {
+          "label": "Cabeceira"
+        },
+        {
+          "label": "Maniquí"
+        }
+      ]
+    },
+    {
+      "label": "Usar o pé de páxina",
+      "description": "Se activas/desactivas este interruptor, o pé de todos os capítulos mostrarase/eliminarase en consecuencia."
+    },
+    {
+      "label": "Pé de páxina",
+      "fields": [
+        {
+          "label": "Pé de páxina"
+        },
+        {
+          "label": "Maniquí"
+        }
+      ]
+    },
+    {
+      "label": "Navegación por puntos de acceso",
+      "description": "Establece valores globais para a navegación por puntos de acceso.",
+      "fields": [
+        {
+          "label": "Imaxe para a navegación por puntos de acceso",
+          "description": "Imaxe utilizada como fondo para a navegación por puntos de acceso."
+        },
+        {
+          "label": "Cor do punto de acceso",
+          "default": "rgba(255, 255, 255, .6)"
+        },
+        {
+          "label": "Mostrar permanentemente o título do punto de acceso na navegación"
+        }
+      ]
+    },
+    {
+      "label": "Portafolios",
+      "fields": [
+        {
+          "label": "Páxinas",
+          "entity": "Páxina",
+          "field": {
+            "label": "Capítulo",
+            "fields": [
+              {
+                "label": "Xerarquía de capítulos"
+              },
+              {
+                "label": "Amosar navegación por puntos de acceso"
+              },
+              {
+                "label": "Amosar cabeceira"
+              },
+              {
+                "label": "Amosar pé de páxina"
+              },
+              {
+                "label": "Proporciona un punto de acceso para este capítulo"
+              },
+              {
+                "label": "Navegación por puntos de acceso",
+                "fields": [
+                  {
+                    "label": "Posición do punto de acceso",
+                    "description": "Preme na imaxe en miniatura para colocar o punto de acceso."
+                  },
+                  {
+                    "label": "Usa cor de punto de acceso personalizado"
+                  },
+                  {
+                    "label": "Cor do punto de acceso",
+                    "default": "rgba(255, 255, 255, 0)"
+                  },
+                  {
+                    "label": "Título do punto de acceso"
+                  }
+                ]
+              },
+              {
+                "label": "Capítulo"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Maniquí"
+        }
+      ]
+    },
+    {
+      "label": "Configuración do comportamento",
+      "fields": [
+        {
+          "label": "Cor base",
+          "description": "Establece a cor base que definirá o esquema de cores global do libro. Asegúrate de establecer un contraste suficientemente alto.",
+          "default": "#1768c4"
+        },
+        {
+          "label": "Amosar a táboa de contidos por defecto",
+          "description": "Cando está activado, a táboa de contidos amósase ao abrir o portafolios."
+        }
+      ]
+    },
+    {
+      "label": "Interface de usuario",
+      "fields": [
+        {
+          "label": "Tradución para \"Ler\"",
+          "default": "Ler"
+        },
+        {
+          "label": "Tradución para \"Amosar 'Táboa de contidos'\"",
+          "default": "Amosar 'Táboa de contidos'"
+        },
+        {
+          "label": "Tradución para \"Agochar 'Táboa de contidos'\"",
+          "default": "Agochar 'Táboa de contidos'"
+        },
+        {
+          "label": "Tradución para \"Páxina seguinte\"",
+          "default": "Páxina seguinte"
+        },
+        {
+          "label": "Tradución para \"Páxina anterior\"",
+          "default": "Páxina anterior"
+        },
+        {
+          "label": "Tradución para \"Ir á parte superior\"",
+          "default": "Ir á parte superior"
+        },
+        {
+          "label": "Etiqueta do botón pantalla completa",
+          "default": "Pantalla Completa"
+        },
+        {
+          "label": "Etiqueta do botón saír de pantalla completa",
+          "default": "Saír de Pantalla Completa"
+        }
+      ]
+    },
+    {
+      "label": "Textos de accesibilidade",
+      "fields": [
+        {
+          "label": "Alternativa textual para o progreso de páxina",
+          "description": "Un texto alternativo para o progreso visual de páxina. Variables dispoñibles: @page e @total.",
+          "default": "Páxina @page de @total."
+        },
+        {
+          "label": "Etiqueta para ampliar o menú de navegación principal",
+          "default": "Abrir o menú de navegación principal"
+        },
+        {
+          "label": "Etiqueta para contraer o menú de navegación principal",
+          "default": "Pechar o menú de navegación principal"
+        },
+        {
+          "label": "Navegación superior",
+          "default": "Navegación superior"
+        },
+        {
+          "label": "Navegación inferior",
+          "default": "Navegación inferior"
+        },
+        {
+          "label": "Main navigation",
+          "default": "Main navigation"
+        },
+        {
+          "label": "Navegación por puntos de acceso",
+          "default": "Navegación por puntos de acceso"
+        },
+        {
+          "label": "Ir a",
+          "description": "@title é un marcador de posición que se substituirá polo valor respectivo.",
+          "default": "Ir a @title"
+        },
+        {
+          "label": "Main content",
+          "default": "Contido principal"
+        }
+      ]
+    }
+  ]
+}

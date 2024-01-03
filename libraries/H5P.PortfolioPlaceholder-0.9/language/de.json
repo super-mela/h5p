@@ -1,0 +1,93 @@
+{
+  "semantics": [
+    {
+      "label": "Platzhalter",
+      "fields": [
+        {
+          "label": "Platzhalterfarbe",
+          "description": "Wird nur hier im Editor benutzt.",
+          "default": "#1768c4"
+        },
+        {
+          "label": "Hintergrundfarbe",
+          "description": "Lege optional eine Hintergrundfarbe fest.",
+          "default": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Höhenbegrenzung für Bilder",
+          "description": "Lege optional eine Höhenbegrenzung für Bildinhalte fest. Nutze dafür CSS-Längen, z.B. 160px oder 5rem."
+        },
+        {
+          "label": "Anordnung der Inhalte",
+          "description": "Wähle, wie die Inhalte angeordnet sein sollen.",
+          "options": [
+            {
+              "label": "1 Feld"
+            },
+            {
+              "label": "2 Felder: 1 links, 1 rechts"
+            },
+            {
+              "label": "2 fields: 1 oben, 1 unten"
+            },
+            {
+              "label": "3 Felder: 1 oben, 2 unten"
+            },
+            {
+              "label": "3 Felder: 2 oben, 1 unten"
+            },
+            {
+              "label": "3 Felder: alle nebeneinander"
+            },
+            {
+              "label": "4 Felder: 1 oben, 3 unten"
+            },
+            {
+              "label": "4 Felder: 3 oben, 1 unten"
+            },
+            {
+              "label": "4 Felder: alle nebeneinander"
+            },
+            {
+              "label": "5 Felder: 1 oben, 4 unten"
+            }
+          ]
+        },
+        {
+          "label": "Felder",
+          "entity": "Feld",
+          "field": {
+            "label": "Feld",
+            "fields": [
+              {
+                "label": "Inhalt ausblenden",
+                "description": "Wähle diese Option an, wenn du den Inhalt für Nutzerinnen und Nutzer ausblenden willst, ohne ihn zu löschen."
+              },
+              {
+                "label": "Vertikale Ausrichtung des Inhalts",
+                "description": "Lege die vertikale Ausrichtung zu den Inhalten links und rechts fest.",
+                "options": [
+                  {
+                    "label": "Oben"
+                  },
+                  {
+                    "label": "Mitte"
+                  },
+                  {
+                    "label": "Unten"
+                  }
+                ]
+              },
+              {
+                "label": "Inhalt"
+              },
+              {
+                "label": "Horizontaler Anteil"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

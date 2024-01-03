@@ -1,0 +1,17 @@
+{
+  "libraryStrings": {
+    "done": "Fertig",
+    "delete": "Löschen",
+    "expandBreadcrumb": "Zurück",
+    "collapseBreadcrumb": "Navigation schließen",
+    "confirmationDialogRemoveHeader": "Inhalt löschen",
+    "confirmationDialogRemoveDialog": "Willst du diesen Inhalt wirklich löschen?",
+    "confirmationDialogRemoveCancel": "Nein",
+    "confirmationDialogRemoveConfirm": "Ja, löschen!",
+    "noPreviewPossible": "Keine Vorschau möglich",
+    "changeContentsWidth": "Ändere Breite der angrenzenden Inhalte",
+    "placeholderTitle": "Platzhaltertitel",
+    "footer": "Fußzeile",
+    "header": "Kopfzeile"
+  }
+}

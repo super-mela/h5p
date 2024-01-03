@@ -1,0 +1,60 @@
+{
+  "title": "H5PEditor.Portfolio",
+  "majorVersion": 0,
+  "minorVersion": 9,
+  "patchVersion": 7,
+  "runnable": 0,
+  "machineName": "H5PEditor.Portfolio",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 12
+  },
+  "author": "Oliver Tacke",
+  "preloadedJs": [
+    {
+      "path": "dist/runtime.js"
+    },
+    {
+      "path": "dist/html2canvas.js"
+    },
+    {
+      "path": "dist/jspdf.js"
+    },
+    {
+      "path": "dist/docx.js"
+    },
+    {
+      "path": "dist/vendor.js"
+    },
+    {
+      "path": "dist/h5peditor-portfolio.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5peditor-portfolio.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.JoubelUI",
+      "majorVersion": 1,
+      "minorVersion": 3
+    },
+    {
+      "machineName": "H5P.Portfolio",
+      "majorVersion": 0,
+      "minorVersion": 9
+    },
+    {
+      "machineName": "H5P.PortfolioChapter",
+      "majorVersion": 0,
+      "minorVersion": 9
+    },
+    {
+      "machineName": "H5P.PortfolioPlaceholder",
+      "majorVersion": 0,
+      "minorVersion": 9
+    }
+  ]
+}

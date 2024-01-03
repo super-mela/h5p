@@ -1,0 +1,596 @@
+{
+  "semantics": [
+    {
+      "label": "Zeige Titelbildschirm",
+      "description": "Wenn gewählt, wird zu Beginn ein Titelbildschirm eingeblendet."
+    },
+    {
+      "label": "Titelbildschirm",
+      "fields": [
+        {
+          "label": "Einleitung",
+          "placeholder": "Willkommen zu ..."
+        },
+        {
+          "label": "Titelbildschirm-Medium"
+        }
+      ]
+    },
+    {
+      "label": "Überschrift",
+      "description": "Optionale Überschrift für die Titelleiste."
+    },
+    {
+      "label": "Spiellandkarten-Editor",
+      "fields": [
+        {
+          "label": "Hintergrundbild",
+          "fields": [
+            {
+              "label": "Hintergrundbild",
+              "description": "Wähle ein Hintergrundbild für den Hintergrund der Spiellandkarte."
+            },
+            {
+              "label": "Dummy"
+            }
+          ]
+        },
+        {
+          "label": "Spiellandkarte",
+          "fields": [
+            {},
+            {
+              "label": "Elemente",
+              "entity": "Element",
+              "field": {
+                "label": "Elemente",
+                "fields": [
+                  {
+                    "label": "Id"
+                  },
+                  {
+                    "label": "Typ"
+                  },
+                  {
+                    "label": "Etappen-Beschriftung",
+                    "description": "Diese Beschriftung wird oberhalb deiner Aufgaben angezeigt und wird dir beim Verbinden der verschiedenen Etappen helfen."
+                  },
+                  {
+                    "label": "Nutzerinnen und Nutzer können hier starten",
+                    "description": "Wenn ängewählt, können Nutzerinnen und Nutzer bei dieser Etappe starten. Wenn bei keinre Etappe oder mehr als einer gestartet werden kann, wird die Startetappe zufällig bestimmt."
+                  },
+                  {
+                    "label": "Zeitlimit",
+                    "description": "Stelle ein Zeitlimit ein.",
+                    "fields": [
+                      {
+                        "label": "Zeitlimit",
+                        "description": "Du kannst optional ein Zeitlimit in Sekunden setzen. Wenn die Nutzerinnen und Nutzer dieses Limit überschreiten, wird die Aufgabe geschlossen und zurückgesetzt und die Nutzerinnen und Nutzer verlieren ein Leben, falls diese begrenzt sind."
+                      },
+                      {
+                        "label": "Zeitlimitwarnung",
+                        "description": "Du kannst optional einstellen, wann ein Tonsignal als Warnung ertönen soll (Anzahl der verbleibenden Sekunden). Eine Tondatei muss in den Audioeinstellungen dafür hinterlegt sein."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Zugangsbeschränkungen",
+                    "description": "Definiere Beschränkungen für das Freischalten.",
+                    "fields": [
+                      {
+                        "label": "Minimale Punktzahl zum Freischalten",
+                        "description": "Die Nutzerinnen und Nutzer können diese Etappe nicht freischalten, wenn sie nicht mindestens die eingestellte Minimalpunktzahl durch das Absolvieren anderer Etappen gesammelt haben."
+                      },
+                      {
+                        "label": "Öffne, sobald genügend Punkte",
+                        "description": "Wenn versucht wurde, diese Etappe mit zu wenig Punkten freizuschalten, soll diese Etappe automatisch freigeschaltet werden, sobald genügend Punkte gesammelt wurden."
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Etappeninhalt",
+                    "description": "Wähle die Art des Inhalts, die du der Etappe hinzufügen möchtest."
+                  },
+                  {
+                    "label": "Verbundene Etappen"
+                  },
+                  {
+                    "label": "Telemetrie"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Endbildschirm",
+      "fields": [
+        {
+          "label": "Nutzerinnen und Nutzer nicht erfolgreich",
+          "fields": [
+            {
+              "label": "Nachricht (nicht erfolgreich)",
+              "placeholder": "Diesmal hast du es nicht geschafft ..."
+            },
+            {
+              "label": "Endbildschirm-Medium (nicht erfolgreich)"
+            }
+          ]
+        },
+        {
+          "label": "Nutzerinnen und Nutzer erfolgreich",
+          "fields": [
+            {
+              "label": "Nachricht (erfolgreich)",
+              "placeholder": "Geschafft ..."
+            },
+            {
+              "label": "Endbildschirm-Medium (erfolgreich)"
+            }
+          ]
+        },
+        {
+          "label": "Gesamtrückmeldung",
+          "fields": [
+            {
+              "widgets": [
+                {
+                  "label": "Voreinstellung"
+                }
+              ],
+              "label": "Lege Rückmeldungen für einzelne Punktebereiche fest",
+              "description": "Klicke auf den \"Bereich hinzufügen\"-Button, um so viele Bereiche hinzuzufügen, wie du brauchst. Beispiel: 0-20% Schlechte Punktzahl, 21-91% Durchschnittliche Punktzahl, 91-100% Großartige Punktzahl!",
+              "entity": "Bereich",
+              "field": {
+                "fields": [
+                  {
+                    "label": "Punktebereich"
+                  },
+                  {},
+                  {
+                    "label": "Rückmeldung für jeweiligen Punktebereich",
+                    "placeholder": "Trage die Rückmeldung ein"
+                  }
+                ]
+              }
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Visuelles",
+      "fields": [
+        {
+          "label": "Etappen",
+          "fields": [
+            {
+              "label": "Farbe für unbesuchte Etappe",
+              "default": "rgba(250, 223, 10, 0.7)"
+            },
+            {
+              "label": "Farbe für verschlossene Etappe",
+              "default": "rgba(153, 0, 0, 0.7)"
+            },
+            {
+              "label": "Farbe für geschaffte Etappe",
+              "default": "rgba(0, 130, 0, 0.7)"
+            }
+          ]
+        },
+        {
+          "label": "Pfade",
+          "fields": [
+            {
+              "label": "Zeige Pfade",
+              "description": "Wähle, ob die Pfade auf der Karte angezeigt werden. Bitte beachte: Im Editor werden die Pfade immer angezeigt."
+            },
+            {
+              "label": "Style",
+              "fields": [
+                {
+                  "label": "Pfadfarbe",
+                  "default": "rgba(0, 0, 0, 0.7)"
+                },
+                {
+                  "label": "Pfadfarbe geschafft",
+                  "default": "rgba(0, 130, 0, 0.7)"
+                },
+                {
+                  "label": "Pfadbreite",
+                  "options": [
+                    {
+                      "label": "dünn"
+                    },
+                    {
+                      "label": "mittel"
+                    },
+                    {
+                      "label": "dick"
+                    }
+                  ]
+                },
+                {
+                  "label": "Pfadstil",
+                  "options": [
+                    {
+                      "label": "Durchgezogen"
+                    },
+                    {
+                      "label": "Gepunktet"
+                    },
+                    {
+                      "label": "Gestrichelt"
+                    },
+                    {
+                      "label": "Doppelt"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "label": "Verschiedenes",
+          "fields": [
+            {
+              "label": "Karte animieren",
+              "description": "Entscheide, ob die Karte animiert sein soll. Selbst dann wenn du diese Option setzt, respektiert der Inhaltstyp ggf. die Browsereinstellungen der Nutzerinnen und Nutzer, falls diese weniger Animationen wünschen."
+            },
+            {
+              "label": "Dummy"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Audio",
+      "fields": [
+        {
+          "label": "Hintergrundmusik",
+          "fields": [
+            {
+              "label": "Hintergrundmusik",
+              "description": "Die Hintergrundmusik wird automatisch abgespielt, aber bitte habe Verständnis dafür, dass die Autoplay-Regeln eines Browsers das automatische Abspielen verhindern können, solange die Nutzenden nicht mit der Seite interagiert haben."
+            },
+            {
+              "label": "Schalte innerhalb von Aufgaben stumm"
+            }
+          ]
+        },
+        {
+          "label": "Ereignisse",
+          "fields": [
+            {
+              "label": "Klick auf eine gesperrte Etappe",
+              "description": "Wird abgespielt, wenn auf der Karte auf eine gesperrte Etappe geklickt wird."
+            },
+            {
+              "label": "Überprüfe Aufgabe (nicht volle Punktzahl)",
+              "description": "Wird abgespielt, wenn eine Antwort überprüft wird und der Nutzer/die Nutzerin nicht die volle Punktzahl erreicht hat."
+            },
+            {
+              "label": "Überprüfe Aufgabe (volle Punktzahl)",
+              "description": "Wird abgespielt, wenn eine Antwort überprüft wird und der Nutzer/die Nutzerin die volle Punktzahl erreicht hat."
+            },
+            {
+              "label": "Etappe freigeschaltet",
+              "description": "Wird abgespielt, wenn eine Etappe freigeschaltet wurde."
+            },
+            {
+              "label": "Aufgabe geöffnet",
+              "description": "Wird abgespielt, wenn eine Aufgabe geöffnet wird."
+            },
+            {
+              "label": "Aufgabe geschlossen",
+              "description": "Wird abgespielt, wenn eine Aufgabe geschlossen wird."
+            },
+            {
+              "label": "Zeige Dialog",
+              "description": "Wird abgespielt, wenn ein Bestätigungsdialog geöffnet wird."
+            },
+            {
+              "label": "Volle Punktzahl",
+              "description": "Wird angezeigt, wenn der Nutzer/die Nutzerin die volle Punktzahl für die Karte erreicht."
+            },
+            {
+              "label": "Leben verloren",
+              "description": "Wird abgespielt, wenn der Nutzer/die Nutzerin ein Leben verliert."
+            },
+            {
+              "label": "Game over",
+              "description": "Wird abgespielt, wenn das Spiel vorüber ist und der Nutzer/die Nutzerin nicht mehr fortfahren kann."
+            },
+            {
+              "label": "Warnung vor Zeitüberschreitung",
+              "description": "Wird abgespielt, wenn der Nutzer/die Nutzerin droht das Zeitlimit zu überschreiten."
+            },
+            {
+              "label": "Endbildschirm (volle Punktzahl)",
+              "description": "Wird auf dem Endbildschirm abgespielt, wenn der Nutzer/die Nutzerin die volle Punktzahl erreicht hat."
+            },
+            {
+              "label": "Endbildschirm (nicht volle Punktzahl)",
+              "description": "Wird auf dem Endbildschirm abgespielt, wenn der Nutzer/die Nutzerin nicht die volle Punktzahl erreicht hat."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "fields": [
+        {
+          "label": "Leben",
+          "description": "Setze die Anzahl Leben fest, die Nutzerinnen und Nutzer erhalten sollen, oder lasse das Feld leer für unendlich viele Leben. Nutzerinnen und Nutzer verlieren ein Leben, wenn sie eine Aufgabe nicht mit voller Punktzahl abschließen oder das Zeitlimit abläuft."
+        },
+        {
+          "label": "\"Wiederholen\"-Button anzeigen"
+        },
+        {
+          "label": "\"Lösung zeigen\"-Button anzeigen"
+        },
+        {
+          "label": "Punktzahl zum Beenden",
+          "description": "Optionale Punktzahl, die kleiner sein kann als die eigentlich durch alle Aufgaben erreichbaren Punkte, so dass Nutzerinnen und Nutzer auch volle Punktzahl erreichen können, ohne alle Etappen zu absolvieren."
+        },
+        {
+          "label": "Karte",
+          "fields": [
+            {
+              "label": "Zeige Etappenbeschriftungen",
+              "description": "Wähle, ob die Beschriftung einer Etappe während des Schwebens mit der Maus angezeit wird. Die Beschriftung wir auf Geräten mit \"Touch\"-Bedienung nicht angezeit."
+            },
+            {
+              "label": "Umherwandern",
+              "description": "Wähle, on Nutzerinnen und Nutzer die Etappen frei besuchen können, ob sie sie absolvieren müssen um Zugang zu den benachbarten Etappen zu bekommen, oder ob sie eine Etappe erfolgreich absolvieren müssen, um bei den Nachbaretappen fortzufahren.",
+              "options": [
+                {
+                  "label": "Freies Umherwandern"
+                },
+                {
+                  "label": "Absolvieren zum Freigeben"
+                },
+                {
+                  "label": "Erfolgreich absolvieren zum Freigeben"
+                }
+              ]
+            },
+            {
+              "label": "Sichtreichweite",
+              "description": "Wähle, wie weit die Nutzerinnen und Nutzer sehen können",
+              "options": [
+                {
+                  "label": "Alle Etappen sichtbar"
+                },
+                {
+                  "label": "Alle freigeschalteten Etappen und deren Nachbarn sichtbar"
+                },
+                {
+                  "label": "Nur freigeschaltete Etappen sichtbar"
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Bedienoberfläche",
+      "fields": [
+        {
+          "label": "Start",
+          "default": "Start"
+        },
+        {
+          "label": "Fortfahren",
+          "default": "Fortfahren"
+        },
+        {
+          "label": "Neustart",
+          "default": "Neustart"
+        },
+        {
+          "label": "Zeige Lösungen",
+          "default": "Zeige Lösungen"
+        },
+        {
+          "label": "Karte abgeschlossen",
+          "default": "Du hast die Karte abgeschlossen!"
+        },
+        {
+          "label": "Volle Punktzahl, aber keine Leben mehr",
+          "default": "Du hast die volle Punktzahl erreicht, aber alle deine Leben verloren!"
+        },
+        {
+          "label": "Dialogüberschrift Karte abgeschlossen",
+          "default": "Karte beenden?"
+        },
+        {
+          "label": "Dialogtext Karte abgeschlossen: Allgemein",
+          "default": "Wenn du jetzt aufhörst, kannst du die Karte nicht weiter erkunden."
+        },
+        {
+          "label": "Dialogtext Karte abgeschlossen: Absenden",
+          "default": "Deine Punkte werden übertragen."
+        },
+        {
+          "label": "Dialogtext Karte abgeschlossen: Frage",
+          "default": "Willst du die Karte wirklich beenden?"
+        },
+        {
+          "label": "Dialogüberschrift Zugang verweigert",
+          "default": "Etappe gesperrt"
+        },
+        {
+          "label": "Dialogtext Zugang verweigert: Allgemein",
+          "default": "Um diese Etappe zu öffnen, musst du einige Voraussetzungen erfüllen."
+        },
+        {
+          "label": "Dialogtext Zugang verweigert: Mindestpunktzahl",
+          "description": "@minScore ist ein Platzhalter und wird durch den jeweiligen Wert ersetzt.",
+          "default": "Du brauchst mindestens @minScore Punkte."
+        },
+        {
+          "label": "Ja",
+          "default": "Ja"
+        },
+        {
+          "label": "Nein",
+          "default": "Nein"
+        },
+        {
+          "label": "Dialogüberschrift Game Over",
+          "default": "Game over!"
+        },
+        {
+          "label": "Dialogtext Game Over",
+          "default": "Du hast alle deine Leben verloren. Versuche es noch einmal!"
+        },
+        {
+          "label": "Dialogüberschrift Zeitüberschreitung",
+          "default": "Zeit abgelaufen!"
+        },
+        {
+          "label": "Dialogtext Zeitüberschreitung",
+          "default": "Die Zeit für die Aufgabe ist abgelaufen."
+        },
+        {
+          "label": "Dialogtext Zeitüberschreitung (Leben verloren)",
+          "default": "Die Zeit für die Aufgabe ist abgelaufen, und du hast ein Leben verloren."
+        },
+        {
+          "label": "Dialogüberschrift nicht volle Punktzahl",
+          "default": "Nicht volle Punktzahl!"
+        },
+        {
+          "label": "Dialogtext nicht volle Punktzahl (Leben verloren)",
+          "default": "Du hast nicht die volle Punktzahl erreicht, und du hast ein Leben verloren."
+        },
+        {
+          "label": "Dialogüberschrift Volle Punktzahl",
+          "default": "Du hast die volle Punktzahl erreicht!"
+        },
+        {
+          "label": "Dialogtext Volle Punktzahl",
+          "default": "Du hast genügend Punkte gesammelt, um die Karte mit voller Punktzahl abzuschließen, aber du darfst gerne den Rest der Karte erkunden, wenn du möchtest."
+        },
+        {
+          "label": "Dialogtext Volle Punktzahl (Erweiterung, falls Leben eingestellt sind)",
+          "default": "Aber Vorsicht! Du kannst immer noch Leben verlieren!"
+        },
+        {
+          "label": "OK",
+          "default": "OK"
+        },
+        {
+          "label": "Kein Hintergrundbild gesetzt",
+          "default": "Es wurde für die Karte kein Hintergrundbild gesetzt."
+        },
+        {
+          "label": "Keine Etappen gesetzt",
+          "default": "Es wurden keine gültigen Etappen für die Karte gesetzt."
+        }
+      ]
+    },
+    {
+      "label": "Texte für Barrierefreiheit",
+      "fields": [
+        {
+          "label": "Beenden",
+          "default": "Beenden"
+        },
+        {
+          "label": "Ton-Button (eingeschaltet)",
+          "default": "Ton ausschalten. Derzeit eingeschaltet."
+        },
+        {
+          "label": "Audio button (ausgeschaltet)",
+          "default": "Ton einschalten. Derzeit ausgeschaltet."
+        },
+        {
+          "label": "Schließen",
+          "default": "Schließen"
+        },
+        {
+          "label": "Dein Ergebnis",
+          "description": "@score wird durch die erreichten Punkte ersetzt. @total wird durch die maximal mögliche Punktzahl ersetzt.",
+          "default": "Du hast @score von @total Punkten erreicht"
+        },
+        {
+          "label": "Karte wurde geöffnet",
+          "default": "Die Karte wurde geöffnet."
+        },
+        {
+          "label": "Karte wurde geöffnet (Lösungsmodus)",
+          "default": "Die Karte wurde im Lösungsmodus geöffnet."
+        },
+        {
+          "label": "Titelbildschirm wurde geöffnet",
+          "default": "Der Titelbildschirm wurde geöffnet."
+        },
+        {
+          "label": "Endbildschirm wurde geöffnet",
+          "default": "Der Endbildschirm wurde geöffnet."
+        },
+        {
+          "label": "Beschriftung für die Übung",
+          "description": "@stagelabel ist ein Platzhalter und wird durch die entsprechende Beschriftung ersetzt.",
+          "default": ". Übung für @stagelabel"
+        },
+        {
+          "label": "Etappen-Button-Beschriftung",
+          "description": "@stagelabel ist ein Platzhalter und wird durch die entsprechende Beschriftung ersetzt.",
+          "default": "Etappe: @stagelabel"
+        },
+        {
+          "label": "Nachbar-Etappen-Beschriftung",
+          "description": "@stagelabelOrigin und @stagelabelNeighbor sind Platzhalter und werden durch die entsprechenden Beschriftungen ersetzt.",
+          "default": "Nachbaretappe von @stagelabelOrigin: @stagelabelNeighbor"
+        },
+        {
+          "label": "Verschlossen",
+          "default": "Verschlossen"
+        },
+        {
+          "label": "Absolviert",
+          "default": "Absolviert"
+        },
+        {
+          "label": "Beschreibung der Kartennavigation",
+          "default": "Benutze die Space-Taste oder die Eingabetaste, um die aktuelle Etappe zu aktivieren. Benutze die Pfeiltasten, um Nachbaretappen auszuwählen. Benutze die Space-Taste oder die Eingabetaste auf einer Nachbaretappe, um dorthin zu navigieren."
+        },
+        {
+          "label": "Beschreibung der Karte",
+          "default": "Karte"
+        },
+        {
+          "label": "Zu Etappe gegangen",
+          "description": "@stagelabel ist ein Platzhalter und wird durch die entsprechende Beschriftung ersetzt.",
+          "default": "Zu Etappe @stagelabel gegangen"
+        },
+        {
+          "label": "Etappe freigeschaltet",
+          "description": "@stagelabel ist ein Platzhalter und wird durch die entsprechende Beschriftung ersetzt.",
+          "default": "Etappe @stagelabel wurde freigeschaltet."
+        },
+        {
+          "label": "Rückzugs-Label für die Werkzeugleiste",
+          "default": "Game Map"
+        },
+        {
+          "label": "Vollbildmodus aktivieren",
+          "default": "Gehe in den Vollbildmodus"
+        },
+        {
+          "label": "Vollbildmodus deaktivieren",
+          "default": "Verlasse den Vollbildmodus"
+        }
+      ]
+    }
+  ]
+}

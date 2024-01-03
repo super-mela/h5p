@@ -1,0 +1,196 @@
+[
+  {
+    "name": "placeholder",
+    "label": "Placeholder",
+    "type": "group",
+    "importance": "high",
+    "widget": "portfolioplaceholder",
+    "fields": [
+      {
+        "name": "colorEditorField",
+        "type": "text",
+        "label": "Placeholder color",
+        "description": "Only used here in editor.",
+        "importance": "medium",
+        "default": "#1768c4",
+        "optional": true,
+        "widget": "colorSelector",
+        "spectrum": {
+          "showInput": true,
+          "showInitial": true
+        }
+      },
+      {
+        "name": "colorBackground",
+        "type": "text",
+        "label": "Background color",
+        "description": "Set an optional background color for the background.",
+        "importance": "low",
+        "optional": true,
+        "default": "rgba(0, 0, 0, 0)",
+        "widget": "colorSelector",
+        "spectrum": {
+          "showInput": true,
+          "showInitial": true,
+          "showAlpha": true,
+          "preferredFormat": "rgb"
+        }
+      },
+      {
+        "name": "imageHeightLimit",
+        "type": "text",
+        "label": "Image height limit",
+        "description": "Set an optional height limit for image contents using CSS lengths, e.g. 160px or 5rem.",
+        "optional": true
+      },
+      {
+        "name": "arrangement",
+        "type": "select",
+        "label": "Content arrangement",
+        "description": "Select how the contents should be arranged.",
+        "options": [
+          {
+            "value": "1",
+            "label": "1 field"
+          },
+          {
+            "value": "2",
+            "label": "2 fields: 1 left, 1 right"
+          },
+          {
+            "value": "1-1",
+            "label": "2 fields: 1 top, 1 bottom"
+          },
+          {
+            "value": "1-2",
+            "label": "3 fields: 1 top, 2 bottom"
+          },
+          {
+            "value": "2-1",
+            "label": "3 fields: 2 top, 1 bottom"
+          },
+          {
+            "value": "3",
+            "label": "3 fields: next to each other"
+          },
+          {
+            "value": "1-3",
+            "label": "4 fields: 1 top, 3 bottom"
+          },
+          {
+            "value": "3-1",
+            "label": "4 fields: 3 top, 1 bottom"
+          },
+          {
+            "value": "4",
+            "label": "4 fields: next to each other"
+          },
+          {
+            "value": "1-4",
+            "label": "5 fields: 1 top, 4 bottom"
+          }
+        ],
+        "default": "1"
+      },
+      {
+        "name": "fields",
+        "type": "list",
+        "label": "Fields",
+        "entity": "field",
+        "min": 1,
+        "field": {
+          "name": "field",
+          "type": "group",
+          "label": "Field",
+          "fields": [
+            {
+              "name": "isHidden",
+              "type": "boolean",
+              "label": "Hide content",
+              "description": "Check this option if you want to hide the content from the view without the need to delete it.",
+              "default": false,
+              "optional": true
+            },
+            {
+              "name": "verticalAlignment",
+              "type": "select",
+              "label": "Vertical alignment",
+              "description": "Set the vertical alignment in relationship to content left or right of this one.",
+              "options": [
+                {
+                  "value": "top",
+                  "label": "Top"
+                },
+                {
+                  "value": "center",
+                  "label": "Center"
+                },
+                {
+                  "value": "bottom",
+                  "label": "Bottom"
+                }
+              ],
+              "default": "top"
+            },
+            {
+              "name": "content",
+              "type": "library",
+              "label": "Content",
+              "options": [
+                "H5P.Accordion 1.0",
+                "H5P.Agamotto 1.6",
+                "H5P.Audio 1.5",
+                "H5P.AudioRecorder 1.0",
+                "H5P.Chart 1.2",
+                "H5P.Collage 0.3",
+                "H5P.CoursePresentation 1.25",
+                "H5P.Dialogcards 1.9",
+                "H5P.DocumentationTool 1.8",
+                "H5P.DragQuestion 1.14",
+                "H5P.DragText 1.10",
+                "H5P.Essay 1.5",
+                "H5P.FileForDownload 1.0",
+                "H5P.Blanks 1.14",
+                "H5P.ImageHotspotQuestion 1.8",
+                "H5P.IFrameEmbed 1.0",
+                "H5P.Image 1.1",
+                "H5P.ImageHotspots 1.10",
+                "H5P.ImageSlider 1.1",
+                "H5P.InteractiveVideo 1.26",
+                "H5P.Link 1.3",
+                "H5P.MarkTheWords 1.11",
+                "H5P.MemoryGame 1.3",
+                "H5P.MultiChoice 1.16",
+                "H5P.Questionnaire 1.3",
+                "H5P.QuestionSet 1.20",
+                "H5P.SingleChoiceSet 1.11",
+                "H5P.Summary 1.10",
+                "H5P.Table 1.1",
+                "H5P.AdvancedText 1.1",
+                "H5P.Timeline 1.1",
+                "H5P.TrueFalse 1.8",
+                "H5P.Video 1.6"
+              ],
+              "widget": "showWhen",
+              "showWhen": {
+                "rules": [
+                  {
+                    "field": "isHidden",
+                    "equals": false
+                  }
+                ]
+              }
+            },
+            {
+              "name": "width",
+              "type": "number",
+              "label": "Horizontal proportion",
+              "widget": "none",
+              "default": 100
+            }
+          ]
+        }
+      }
+    ]
+  }
+]

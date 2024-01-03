@@ -1,0 +1,27 @@
+{
+  "semantics": [
+    {
+      "label": "Capítulo",
+      "fields": [
+        {
+          "label": "Remplazables",
+          "entity": "remplazable",
+          "field": {
+            "label": "Contenido",
+            "fields": [
+              {
+                "label": "Contenido"
+              },
+              {
+                "label": "Maniquí"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Maniquí"
+        }
+      ]
+    }
+  ]
+}

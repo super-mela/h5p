@@ -1,0 +1,93 @@
+{
+  "semantics": [
+    {
+      "label": "Vietos rezervavimas",
+      "fields": [
+        {
+          "label": "Vietos rezervavimo spalva",
+          "description": "Naudojamas tik čia, redaktoriuje.",
+          "default": "#1768c4"
+        },
+        {
+          "label": "Fono spalva",
+          "description": "Nustatykite pasirinktinę fono spalvą.",
+          "default": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Paveikslėlio aukščio riba",
+          "description": "Set an optional height limit for image contents using CSS lengths, e.g. 160px or 5rem."
+        },
+        {
+          "label": "Turinio išdėstymas",
+          "description": "Pasirinkite, kaip turėtų būti išdėstytas turinys.",
+          "options": [
+            {
+              "label": "1 laukas"
+            },
+            {
+              "label": "2 laukai: 1 kairėje, 1 dešinėje"
+            },
+            {
+              "label": "2 laukai: 1 viršuje, 1 apačioje"
+            },
+            {
+              "label": "3 laukai: 1 viršuje, 2 apačioje"
+            },
+            {
+              "label": "3 laukai: 2 viršuje, 1 apačioje"
+            },
+            {
+              "label": "3 laukai: vienas šalia kito"
+            },
+            {
+              "label": "4 laukai: 1 viršuje, 3 apačioje"
+            },
+            {
+              "label": "4 fields: 3 top, 1 bottom"
+            },
+            {
+              "label": "4 fields: next to each other"
+            },
+            {
+              "label": "5 fields: 1 top, 4 bottom"
+            }
+          ]
+        },
+        {
+          "label": "Laukai",
+          "entity": "laukas",
+          "field": {
+            "label": "Laukas",
+            "fields": [
+              {
+                "label": "Slėpti turinį",
+                "description": "Check this option if you want to hide the content from the view without the need to delete it."
+              },
+              {
+                "label": "Vertical alignment",
+                "description": "Set the vertical alignment in relationship to content left or right of this one.",
+                "options": [
+                  {
+                    "label": "Top"
+                  },
+                  {
+                    "label": "Center"
+                  },
+                  {
+                    "label": "Bottom"
+                  }
+                ]
+              },
+              {
+                "label": "Turinys"
+              },
+              {
+                "label": "Horizontali proporcija"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "semantics": [
+    {
+      "label": "Remplazable",
+      "fields": [
+        {
+          "label": "Color del reemplazable",
+          "description": "Usado solamente aquí en el editor..",
+          "default": "#1768c4"
+        },
+        {
+          "label": "Color del fondo",
+          "description": "Configurar un color opcional del fondo para el fondo.",
+          "default": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Límite de altura de imagen",
+          "description": "Configurar un límite opcional de altura para contenidos de imagen usando longitudes de CSS, por ejemplo 160px o 5rem."
+        },
+        {
+          "label": "Distribución del contenido",
+          "description": "Selecciona cómo deben organizarse los contenidos.",
+          "options": [
+            {
+              "label": "1 campo"
+            },
+            {
+              "label": "2 campos: 1 izquierdo, 1 derecho"
+            },
+            {
+              "label": "2 campos: 1 arriba, 1 abajo"
+            },
+            {
+              "label": "3 campos: 1 arriba, 2 abajo"
+            },
+            {
+              "label": "3 campos: 2 arriba, 1 abajo"
+            },
+            {
+              "label": "3 campos: uno al lado del otro"
+            },
+            {
+              "label": "4 campos: 1 arriba, 3 abajo"
+            },
+            {
+              "label": "4 campos: 3 arriba, 1 abajo"
+            },
+            {
+              "label": "4 campos: uno al lado del otro"
+            },
+            {
+              "label": "5 campos: 1 arriba, 4 abajo"
+            }
+          ]
+        },
+        {
+          "label": "Campos",
+          "entity": "campo",
+          "field": {
+            "label": "Campo",
+            "fields": [
+              {
+                "label": "Ocultar contenido",
+                "description": "Marca esta opción si deseas ocultar el contenido sin necesidad de eliminarlo."
+              },
+              {
+                "label": "Alineación vertical",
+                "description": "Configurar la alineación vertical en relación al contenido a la izquierda o a la derecha de éste.",
+                "options": [
+                  {
+                    "label": "Superior"
+                  },
+                  {
+                    "label": "Centro"
+                  },
+                  {
+                    "label": "Inferior"
+                  }
+                ]
+              },
+              {
+                "label": "Contenido"
+              },
+              {
+                "label": "Proporción horizontal"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,93 @@
+{
+  "semantics": [
+    {
+      "label": "Texto por defecto",
+      "fields": [
+        {
+          "label": "Cor do marcador de posición",
+          "description": "Só se usa aquí no editor.",
+          "default": "#1768c4"
+        },
+        {
+          "label": "Cor de fondo",
+          "description": "Establece unha cor de fondo opcional para o fondo.",
+          "default": "rgba(0, 0, 0, 0)"
+        },
+        {
+          "label": "Límite de altura da imaxe",
+          "description": "Establece un límite de altura opcional para contidos de imaxe usando lonxitudes CSS, p. ex. 160px ou 5rem."
+        },
+        {
+          "label": "Disposición do contido",
+          "description": "Selecciona como debe organizarse o contido.",
+          "options": [
+            {
+              "label": "1 campo"
+            },
+            {
+              "label": "2 campos: 1 left, 1 right"
+            },
+            {
+              "label": "2 campos: 1 superior, 1 inferior"
+            },
+            {
+              "label": "3 campos: 1 superior, 2 inferior"
+            },
+            {
+              "label": "3 campos: 2 superior, 1 inferior"
+            },
+            {
+              "label": "3 campos: xuntos"
+            },
+            {
+              "label": "4 campos: 1 superior, 3 inferiores"
+            },
+            {
+              "label": "4 campos: 3 superiores, 1 inferior"
+            },
+            {
+              "label": "4 campos: xuntos"
+            },
+            {
+              "label": "5 campos: 1 superior, 4 inferiores"
+            }
+          ]
+        },
+        {
+          "label": "Campos",
+          "entity": "campo",
+          "field": {
+            "label": "Campo",
+            "fields": [
+              {
+                "label": "Ocultar contido",
+                "description": "Marca esta opción se queres ocultar o contido sen necesidade de eliminalo."
+              },
+              {
+                "label": "Aliñación vertical",
+                "description": "Establece o aliñamento vertical en relación co contido á esquerda ou á dereita deste.",
+                "options": [
+                  {
+                    "label": "Arriba"
+                  },
+                  {
+                    "label": "Centro"
+                  },
+                  {
+                    "label": "Abaixo"
+                  }
+                ]
+              },
+              {
+                "label": "Contido"
+              },
+              {
+                "label": "Proporción horizontal"
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

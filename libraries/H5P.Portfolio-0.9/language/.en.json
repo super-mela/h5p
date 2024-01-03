@@ -1,0 +1,223 @@
+{
+  "semantics": [
+    {
+      "label": "Enable portfolio cover",
+      "description": "A cover that shows info regarding the portfolio before access."
+    },
+    {
+      "label": "Cover page",
+      "fields": [
+        {
+          "label": "Cover description",
+          "description": "This text will be the description of your portfolio.",
+          "default": "<p style=\"text-align: center;\"></p>"
+        },
+        {
+          "label": "Cover medium",
+          "description": "Optional medium for the introduction."
+        },
+        {
+          "label": "Show header"
+        },
+        {
+          "label": "Show footer"
+        }
+      ]
+    },
+    {
+      "label": "Use header",
+      "description": "If you toggle this switch on/off, the header of all chapters will be displayed/removed accordingly."
+    },
+    {
+      "label": "Header",
+      "fields": [
+        {
+          "label": "Header"
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Use footer",
+      "description": "If you toggle this switch on/off, the footer of all chapters will be displayed/removed accordingly."
+    },
+    {
+      "label": "Footer",
+      "fields": [
+        {
+          "label": "Footer"
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Hotspot navigation",
+      "description": "Set global values for hotspot navigation.",
+      "fields": [
+        {
+          "label": "Hotspot navigation image",
+          "description": "Image used as background for the hotspot navigation."
+        },
+        {
+          "label": "Hotspot color",
+          "default": "rgba(255, 255, 255, .6)"
+        },
+        {
+          "label": "Permanentty show hotspot title in navigation"
+        }
+      ]
+    },
+    {
+      "label": "Portfolio",
+      "fields": [
+        {
+          "label": "Pages",
+          "entity": "Page",
+          "field": {
+            "label": "Chapter",
+            "fields": [
+              {
+                "label": "Chapter hierarchy"
+              },
+              {
+                "label": "Display hotspot navigation"
+              },
+              {
+                "label": "Display header"
+              },
+              {
+                "label": "Display footer"
+              },
+              {
+                "label": "Provide a hotspot for this chapter"
+              },
+              {
+                "label": "Hotspot navigation",
+                "fields": [
+                  {
+                    "label": "Hotspot position",
+                    "description": "Click on the thumbnail image to place the hotspot."
+                  },
+                  {
+                    "label": "Use custom hotspot color"
+                  },
+                  {
+                    "label": "Hotspot color",
+                    "default": "rgba(255, 255, 255, 0)"
+                  },
+                  {
+                    "label": "Hotspot title"
+                  }
+                ]
+              },
+              {
+                "label": "Chapter"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Behavioural settings",
+      "fields": [
+        {
+          "label": "Base color",
+          "description": "Set the base color that will define the overall color scheme of the portfolio. Please ensure a high enough contrast.",
+          "default": "#1768c4"
+        },
+        {
+          "label": "Display table of contents as default",
+          "description": "When enabled the table of contents is showed when opening the portfolio."
+        }
+      ]
+    },
+    {
+      "label": "User interface",
+      "fields": [
+        {
+          "label": "Translation for \"Read\"",
+          "default": "Read"
+        },
+        {
+          "label": "Translation for \"Display 'Table of contents'\"",
+          "default": "Display 'Table of contents'"
+        },
+        {
+          "label": "Translation for \"Hide 'Table of contents'\"",
+          "default": "Hide 'Table of contents'"
+        },
+        {
+          "label": "Translation for \"Next page\"",
+          "default": "Next page"
+        },
+        {
+          "label": "Translation for \"Previous page\"",
+          "default": "Previous page"
+        },
+        {
+          "label": "Translation for \"Navigate to the top\"",
+          "default": "Navigate to the top"
+        },
+        {
+          "label": "Fullscreen button label",
+          "default": "Fullscreen"
+        },
+        {
+          "label": "Exit fullscreen button label",
+          "default": "Exit fullscreen"
+        }
+      ]
+    },
+    {
+      "label": "Accessibility texts",
+      "fields": [
+        {
+          "label": "Page progress textual alternative",
+          "description": "An alternative text for the visual page progress. @page and @total variables available.",
+          "default": "Page @page of @total."
+        },
+        {
+          "label": "Label for expanding main navigation menu",
+          "default": "Open main navigation menu"
+        },
+        {
+          "label": "Label for collapsing main navigation menu",
+          "default": "Close main navigation menu"
+        },
+        {
+          "label": "Top naviation",
+          "default": "Top navigation"
+        },
+        {
+          "label": "Bottom naviation",
+          "default": "Bottom navigation"
+        },
+        {
+          "label": "Top naviation",
+          "default": "Top navigation"
+        },
+        {
+          "label": "Hotspot navigation",
+          "default": "Hotspot navigation"
+        },
+        {
+          "label": "Go to",
+          "description": "@title is placeholder that will be replaced with the respective value.",
+          "default": "Go to @title"
+        },
+        {
+          "label": "mainContent",
+          "default": "Main content"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,559 @@
+[
+  {
+    "name": "showCoverPage",
+    "type": "boolean",
+    "label": "Enable portfolio cover",
+    "description": "A cover that shows info regarding the portfolio before access.",
+    "importance": "low",
+    "default": false
+  },
+  {
+    "name": "bookCover",
+    "type": "group",
+    "label": "Cover page",
+    "importance": "medium",
+    "widget": "showWhen",
+    "showWhen": {
+      "rules": [
+        {
+          "field": "showCoverPage",
+          "equals": true
+        }
+      ]
+    },
+    "fields": [
+      {
+        "name": "coverDescription",
+        "type": "text",
+        "widget": "html",
+        "label": "Cover description",
+        "importance": "medium",
+        "optional": true,
+        "description": "This text will be the description of your portfolio.",
+        "default": "<p style=\"text-align: center;\"></p>",
+        "enterMode": "p",
+        "tags": [
+          "sub",
+          "sup",
+          "strong",
+          "em",
+          "p",
+          "code",
+          "u",
+          "del",
+          "a",
+          "ul",
+          "ol",
+          "h1",
+          "h2",
+          "h3",
+          "h4",
+          "h5",
+          "h6",
+          "pre",
+          "hr",
+          "table"
+        ],
+        "font": {
+          "size": true,
+          "color": true,
+          "background": true
+        }
+      },
+      {
+        "name": "coverMedium",
+        "type": "library",
+        "label": "Cover medium",
+        "description": "Optional medium for the introduction.",
+        "optional": true,
+        "options": [
+          "H5P.Image 1.1",
+          "H5P.Video 1.6"
+        ]
+      },
+      {
+        "name": "showHeader",
+        "type": "boolean",
+        "label": "Show header",
+        "importance": "low",
+        "default": false
+      },
+      {
+        "name": "showFooter",
+        "type": "boolean",
+        "label": "Show footer",
+        "importance": "low",
+        "default": false
+      }
+    ]
+  },
+  {
+    "name": "showHeader",
+    "type": "boolean",
+    "label": "Use header",
+    "description": "If you toggle this switch on/off, the header of all chapters will be displayed/removed accordingly.",
+    "importance": "low",
+    "default": false
+  },
+  {
+    "name": "headerPlaceholderGroup",
+    "type": "group",
+    "label": "Header",
+    "importance": "medium",
+    "widget": "showWhen",
+    "showWhen": {
+      "rules": [
+        {
+          "field": "showHeader",
+          "equals": true
+        }
+      ]
+    },
+    "fields": [
+      {
+        "name": "headerPlaceholder",
+        "type": "library",
+        "label": "Header",
+        "optional": true,
+        "options": [
+          "H5P.PortfolioPlaceholder 0.9"
+        ],
+        "paramOverrides": {
+          "customTitleL10NId": "header",
+          "disableExtraTitleField": true,
+          "options": [
+            "1",
+            "2",
+            "1-2",
+            "3",
+            "1-3",
+            "4",
+            "1-4"
+          ]
+        },
+        "portfolioPlaceholder": {
+          "colorSelectorBackground": true,
+          "imageHeightLimit": true
+        }
+      },
+      {
+        "name": "dummy",
+        "type": "boolean",
+        "label": "Dummy",
+        "widget": "none"
+      }
+    ]
+  },
+  {
+    "name": "showFooter",
+    "type": "boolean",
+    "label": "Use footer",
+    "description": "If you toggle this switch on/off, the footer of all chapters will be displayed/removed accordingly.",
+    "importance": "low",
+    "default": false
+  },
+  {
+    "name": "footerPlaceholderGroup",
+    "type": "group",
+    "label": "Footer",
+    "importance": "medium",
+    "widget": "showWhen",
+    "showWhen": {
+      "rules": [
+        {
+          "field": "showFooter",
+          "equals": true
+        }
+      ]
+    },
+    "fields": [
+      {
+        "name": "footerPlaceholder",
+        "type": "library",
+        "label": "Footer",
+        "optional": true,
+        "options": [
+          "H5P.PortfolioPlaceholder 0.9"
+        ],
+        "paramOverrides": {
+          "customTitleL10NId": "footer",
+          "disableExtraTitleField": true,
+          "options": [
+            "1",
+            "2",
+            "1-2",
+            "3",
+            "1-3",
+            "4",
+            "1-4"
+          ]
+        },
+        "portfolioPlaceholder": {
+          "colorSelectorBackground": true,
+          "imageHeightLimit": true
+        }
+      },
+      {
+        "name": "dummy",
+        "type": "boolean",
+        "label": "Dummy",
+        "widget": "none"
+      }
+    ]
+  },
+  {
+    "name": "hotspotNavigationGlobals",
+    "type": "group",
+    "label": "Hotspot navigation",
+    "description": "Set global values for hotspot navigation.",
+    "optional": true,
+    "expanded": false,
+    "fields": [
+      {
+        "name": "hotspotNavigationImage",
+        "type": "image",
+        "label": "Hotspot navigation image",
+        "description": "Image used as background for the hotspot navigation.",
+        "optional": true
+      },
+      {
+        "name": "hotspotNavigationColor",
+        "type": "text",
+        "label": "Hotspot color",
+        "optional": true,
+        "widget": "colorSelector",
+        "default": "rgba(255, 255, 255, .6)",
+        "spectrum": {
+          "showInput": true,
+          "showAlpha": true,
+          "preferredFormat": "rgb"
+        }
+      },
+      {
+        "name": "showHotspotTitles",
+        "type": "boolean",
+        "label": "Permanently show hotspot titles in navigation",
+        "optional": true,
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "portfolio",
+    "label": "Portfolio",
+    "type": "group",
+    "expanded": true,
+    "importance": "high",
+    "widget": "portfolio",
+    "fields": [
+      {
+        "name": "chapters",
+        "type": "list",
+        "label": "Pages",
+        "entity": "Page",
+        "importance": "high",
+        "min": 1,
+        "field": {
+          "name": "chapter",
+          "type": "group",
+          "label": "Chapter",
+          "importance": "low",
+          "expanded": true,
+          "fields": [
+            {
+              "name": "chapterHierarchy",
+              "label": "Chapter hierarchy",
+              "type": "text",
+              "optional": true,
+              "widget": "none"
+            },
+            {
+              "name": "displayHotspotNavigation",
+              "type": "boolean",
+              "label": "Display hotspot navigation",
+              "default": true
+            },
+            {
+              "name": "displayHeader",
+              "type": "boolean",
+              "label": "Display header",
+              "importance": "low",
+              "default": true
+            },
+            {
+              "name": "displayFooter",
+              "type": "boolean",
+              "label": "Display footer",
+              "importance": "low",
+              "default": true
+            },
+            {
+              "name": "providesHotspot",
+              "type": "boolean",
+              "label": "Provide a hotspot for this chapter",
+              "default": false
+            },
+            {
+              "name": "hotspotNavigation",
+              "type": "group",
+              "label": "Hotspot navigation",
+              "fields": [
+                {
+                  "name": "position",
+                  "type": "group",
+                  "widget": "imageCoordinateSelector",
+                  "imageFieldPath": "../../../../hotspotNavigationGlobals/hotspotNavigationImage",
+                  "label": "Hotspot position",
+                  "description": "Click on the thumbnail image to place the hotspot.",
+                  "fields": [
+                    {
+                      "name": "x",
+                      "type": "number"
+                    },
+                    {
+                      "name": "y",
+                      "type": "number"
+                    }
+                  ]
+                },
+                {
+                  "name": "useCustomHotspotColor",
+                  "type": "boolean",
+                  "label": "Use custom hotspot color",
+                  "optional": true,
+                  "default": false
+                },
+                {
+                  "name": "customHotspotColor",
+                  "type": "text",
+                  "label": "Hotspot color",
+                  "optional": true,
+                  "widget": "colorSelector",
+                  "default": "rgba(255, 255, 255, 0)",
+                  "spectrum": {
+                    "showInput": true,
+                    "showAlpha": true,
+                    "preferredFormat": "rgb"
+                  }
+                },
+                {
+                  "name": "title",
+                  "type": "text",
+                  "label": "Hotspot title",
+                  "optional": "true"
+                }
+              ],
+              "widget": "showWhen",
+              "showWhen": {
+                "rules": [
+                  {
+                    "field": "providesHotspot",
+                    "equals": true
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Chapter",
+              "name": "content",
+              "type": "library",
+              "options": [
+                "H5P.PortfolioChapter 0.9"
+              ],
+              "optional": false
+            }
+          ]
+        }
+      },
+      {
+        "name": "dummy",
+        "type": "boolean",
+        "label": "Dummy",
+        "widget": "none"
+      }
+    ]
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "importance": "low",
+    "label": "Behavioural settings",
+    "fields": [
+      {
+        "name": "baseColor",
+        "type": "text",
+        "label": "Base color",
+        "description": "Set the base color that will define the overall color scheme of the portfolio. Please ensure a high enough contrast.",
+        "optional": true,
+        "widget": "colorSelector",
+        "default": "#1768c4",
+        "spectrum": {
+          "showInput": true,
+          "showInitial": true,
+          "showPalette": true,
+          "palette": [
+            [
+              "#1768C4"
+            ],
+            [
+              "#D9B323"
+            ],
+            [
+              "#D32F2F"
+            ],
+            [
+              "#1EB224"
+            ],
+            [
+              "#7E57C2"
+            ]
+          ]
+        }
+      },
+      {
+        "name": "defaultTableOfContents",
+        "type": "boolean",
+        "label": "Display table of contents as default",
+        "description": "When enabled the table of contents is showed when opening the portfolio.",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "common": true,
+    "label": "User interface",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "read",
+        "type": "text",
+        "label": "Translation for \"Read\"",
+        "importance": "low",
+        "default": "Read",
+        "optional": true
+      },
+      {
+        "name": "displayTOC",
+        "type": "text",
+        "label": "Translation for \"Display 'Table of contents'\"",
+        "importance": "low",
+        "default": "Display 'Table of contents'",
+        "optional": true
+      },
+      {
+        "name": "hideTOC",
+        "type": "text",
+        "label": "Translation for \"Hide 'Table of contents'\"",
+        "importance": "low",
+        "default": "Hide 'Table of contents'",
+        "optional": true
+      },
+      {
+        "name": "nextPage",
+        "type": "text",
+        "label": "Translation for \"Next page\"",
+        "importance": "low",
+        "default": "Next page",
+        "optional": true
+      },
+      {
+        "name": "previousPage",
+        "type": "text",
+        "label": "Translation for \"Previous page\"",
+        "importance": "low",
+        "default": "Previous page",
+        "optional": true
+      },
+      {
+        "name": "navigateToTop",
+        "type": "text",
+        "label": "Translation for \"Navigate to the top\"",
+        "importance": "low",
+        "default": "Navigate to the top",
+        "optional": true
+      },
+      {
+        "name": "fullscreen",
+        "type": "text",
+        "importance": "low",
+        "label": "Fullscreen button label",
+        "default": "Fullscreen",
+        "optional": true
+      },
+      {
+        "name": "exitFullscreen",
+        "type": "text",
+        "importance": "low",
+        "label": "Exit fullscreen button label",
+        "default": "Exit fullscreen",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "a11y",
+    "type": "group",
+    "label": "Accessibility texts",
+    "common": true,
+    "fields": [
+      {
+        "name": "progress",
+        "type": "text",
+        "label": "Page progress textual alternative",
+        "description": "An alternative text for the visual page progress. @page and @total variables available.",
+        "default": "Page @page of @total."
+      },
+      {
+        "name": "openMainNavigation",
+        "type": "text",
+        "label": "Label for expanding main navigation menu",
+        "default": "Open main navigation menu"
+      },
+      {
+        "name": "closeMainNavigation",
+        "type": "text",
+        "label": "Label for collapsing main navigation menu",
+        "default": "Close main navigation menu"
+      },
+      {
+        "name": "topNavigation",
+        "type": "text",
+        "label": "Top naviation",
+        "default": "Top navigation"
+      },
+      {
+        "name": "bottomNavigation",
+        "type": "text",
+        "label": "Bottom naviation",
+        "default": "Bottom navigation"
+      },
+      {
+        "name": "topNavigation",
+        "type": "text",
+        "label": "Main navigation",
+        "default": "Main navigation"
+      },
+      {
+        "name": "hotspotNavigation",
+        "type": "text",
+        "label": "Hotspot navigation",
+        "default": "Hotspot navigation"
+      },
+      {
+        "name": "goTo",
+        "type": "text",
+        "label": "Go to",
+        "description": "@title is placeholder that will be replaced with the respective value.",
+        "default": "Go to @title"
+      },
+      {
+        "name": "mainContent",
+        "type": "text",
+        "label": "Main content",
+        "default": "Main content"
+      }
+    ]
+  }
+]

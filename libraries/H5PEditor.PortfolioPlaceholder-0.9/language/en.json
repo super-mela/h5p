@@ -1,0 +1,17 @@
+{
+  "libraryStrings": {
+    "done": "Done",
+    "delete": "Delete",
+    "expandBreadcrumb": "Go back",
+    "collapseBreadcrumb": "Close navigation",
+    "confirmationDialogRemoveHeader": "Delete content",
+    "confirmationDialogRemoveDialog": "Do you really want to delete this content?",
+    "confirmationDialogRemoveCancel": "No",
+    "confirmationDialogRemoveConfirm": "Yes, delete!",
+    "noPreviewPossible": "No preview possible",
+    "changeContentsWidth": "Change width of adjacent contents",
+    "placeholderTitle": "Placeholder title",
+    "footer": "Footer",
+    "header": "Header"
+  }
+}

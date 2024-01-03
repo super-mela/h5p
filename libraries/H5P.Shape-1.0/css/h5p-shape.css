@@ -1,0 +1,80 @@
+.h5p-shape-element {
+  width: 100%;
+  height: 100%;
+  box-sizing: border-box;
+}
+
+/* Shapes */
+.h5p-shape-element.h5p-shape-rectangle {}
+
+.h5p-shape-element.h5p-shape-triangle {
+  clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+}
+
+.h5p-shape-element.h5p-shape-diamond {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.h5p-shape-element.h5p-shape-star {
+  clip-path: polygon(50% 0%,
+      61% 35%,
+      98% 35%,
+      68% 57%,
+      79% 91%,
+      50% 70%,
+      21% 91%,
+      32% 57%,
+      2% 35%,
+      39% 35%);
+}
+
+.h5p-shape-element.h5p-shape-pentagon {
+  clip-path: polygon(50% 0%, 100% 38%, 82% 100%, 18% 100%, 0% 38%);
+}
+
+.h5p-shape-element.h5p-shape-hexagon {
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%);
+}
+
+.h5p-shape-element.h5p-shape-octagon {
+  clip-path: polygon(30% 0%, 70% 0%, 100% 30%, 100% 70%, 70% 100%, 30% 100%, 0% 70%, 0% 30%);
+}
+
+.h5p-shape-element.h5p-shape-heart {
+  /* clip-path: path('M60 0 C90 70,100 10,50 30 C0 10,0 60,50 90 Z'); */
+  clip-path: path("M12 4.419c-2.826-5.695-11.999-4.064-11.999 3.27 0 7.27 9.903 10.938 11.999 15.311 2.096-4.373 12-8.041 12-15.311 0-7.327-9.17-8.972-12-3.27z");
+  transform: scale(2);
+}
+
+
+
+.h5p-shape-element.h5p-shape-cross {
+  clip-path: polygon(0% 40%, 40% 40%, 40% 0%, 60% 0%, 60% 40%, 100% 40%, 100% 60%, 60% 60%, 60% 100%, 40% 100%, 40% 60%, 0% 60%);
+}
+
+.h5p-shape-element.h5p-shape-moon {
+  border-radius: 50%;
+  -webkit-mask: radial-gradient(circle at 75% 30%, #0000 50%, #000 0);
+  /* clip-path: path('M50 0 A50 50, 0, 1, 1, 50 100 L0 100 L0 0 Z'); */
+}
+
+.h5p-shape-element.h5p-shape-circle {
+  border-radius: 50%;
+}
+
+/* Border styles */
+.h5p-shape-element.h5p-border-solid {
+  border-style: solid;
+}
+
+.h5p-shape-element.h5p-border-dotted {
+  border-style: dotted;
+}
+
+.h5p-shape-element.h5p-border-dashed {
+  border-style: dashed;
+}
+
+.h5p-shape-element.h5p-border-double {
+  border-style: double;
+}

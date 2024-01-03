@@ -1,0 +1,55 @@
+[
+  {
+    "name": "content",
+    "type": "group",
+    "importance": "low",
+    "label": "Content",
+    "expanded": true,
+    "fields": [
+      {
+        "name": "downloadName",
+        "type": "text",
+        "label": "Name that the file should have when saving"
+      },
+      {
+        "name": "displayName",
+        "type": "text",
+        "label": "Name or text to display",
+        "description": "If not set, the desired file name will be displayed.",
+        "optional": true
+      },
+      {
+        "name": "file",
+        "type": "file",
+        "label": "File",
+        "description": "File to be provided for download. Please note that you can only upload file types that are allowed by H5P and that settings can be different on different platforms."
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "label": "User interface",
+    "common": true,
+    "fields": [
+      {
+        "name": "download",
+        "type": "text",
+        "label": "Download",
+        "default": "Download"
+      },
+      {
+        "name": "unnamedFile",
+        "type": "text",
+        "label": "Unnamed file",
+        "default": "Unnamed file"
+      },
+      {
+        "name": "noFile",
+        "type": "text",
+        "label": "No file provided",
+        "default": "Seems no file was provided for download."
+      }
+    ]
+  }
+]

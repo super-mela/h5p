@@ -1,0 +1,27 @@
+{
+  "semantics": [
+    {
+      "label": "Skyrius",
+      "fields": [
+        {
+          "label": "Vietos žymos",
+          "entity": "vietos žyma",
+          "field": {
+            "label": "Turinys",
+            "fields": [
+              {
+                "label": "Turinys"
+              },
+              {
+                "label": "Maketas"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Maketas"
+        }
+      ]
+    }
+  ]
+}

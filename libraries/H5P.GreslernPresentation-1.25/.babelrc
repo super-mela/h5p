@@ -1,0 +1,12 @@
+{
+  "presets": ["@babel/preset-env"],
+  "plugins": [
+    [
+      "@babel/plugin-transform-classes", {
+        "loose": true
+      }
+    ],
+    ["@babel/plugin-transform-object-assign"],
+    ["@babel/plugin-proposal-object-rest-spread"]
+  ]
+}

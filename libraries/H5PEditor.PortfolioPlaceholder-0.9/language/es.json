@@ -1,0 +1,17 @@
+{
+  "libraryStrings": {
+    "expandBreadcrumb": "Atrás",
+    "noPreviewPossible": "No es posible la vista previa",
+    "done": "Hecho",
+    "delete": "Eliminar",
+    "collapseBreadcrumb": "Cerrar navegación",
+    "confirmationDialogRemoveHeader": "Eliminar contenido",
+    "confirmationDialogRemoveDialog": "¿Realmente quieres eliminar este contenido?",
+    "confirmationDialogRemoveCancel": "No",
+    "confirmationDialogRemoveConfirm": "¡Sí, eliminar!",
+    "changeContentsWidth": "Cambiar anchura de los contenidos adyacentes",
+    "placeholderTitle": "Título del reemplazable",
+    "footer": "Pie de página",
+    "header": "Encabezado"
+  }
+}

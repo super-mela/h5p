@@ -1,0 +1,37 @@
+{
+  "semantics": [
+    {
+      "label": "Content",
+      "fields": [
+        {
+          "label": "Name that the file should have when saving"
+        },
+        {
+          "label": "Name to display",
+          "description": "If not set, the desired file name will be displayed."
+        },
+        {
+          "label": "File",
+          "description": "File to be provided for download. Please note that you can only upload file types that are allowed by H5P and that settings can be different on different platforms."
+        }
+      ]
+    },
+    {
+      "label": "User interface",
+      "fields": [
+        {
+          "label": "Download",
+          "default": "Download"
+        },
+        {
+          "label": "Unnamed file",
+          "default": "Unnamed file"
+        },
+        {
+          "label": "No file provided",
+          "default": "Seems no file was provided for download."
+        }
+      ]
+    }
+  ]
+}

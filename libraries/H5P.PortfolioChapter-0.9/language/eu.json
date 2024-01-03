@@ -1,0 +1,27 @@
+{
+  "semantics": [
+    {
+      "label": "Chapter",
+      "fields": [
+        {
+          "label": "Placeholders",
+          "entity": "placeholder",
+          "field": {
+            "label": "Content",
+            "fields": [
+              {
+                "label": "Content"
+              },
+              {
+                "label": "Dummy"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    }
+  ]
+}

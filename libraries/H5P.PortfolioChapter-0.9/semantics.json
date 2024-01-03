@@ -1,0 +1,48 @@
+[
+  {
+    "name": "chapter",
+    "label": "Chapter",
+    "type": "group",
+    "expanded": true,
+    "importance": "high",
+    "widget": "portfoliochapter",
+    "fields": [
+      {
+        "name": "contents",
+        "type": "list",
+        "label": "Placeholders",
+        "entity": "placeholder",
+        "field": {
+          "name": "content",
+          "type": "group",
+          "label": "Content",
+          "fields": [
+            {
+              "name": "content",
+              "type": "library",
+              "label": "Content",
+              "options": [
+                "H5P.PortfolioPlaceholder 0.9"
+              ],
+              "portfolioPlaceholder": {
+                "colorSelector": true
+              }
+            },
+            {
+              "name": "dummy",
+              "type": "boolean",
+              "label": "Dummy",
+              "widget": "none"
+            }
+          ]
+        }
+      },
+      {
+        "name": "dummy",
+        "type": "boolean",
+        "label": "Dummy",
+        "widget": "none"
+      }
+    ]
+  }
+]

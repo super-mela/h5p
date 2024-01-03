@@ -1,0 +1,27 @@
+{
+  "semantics": [
+    {
+      "label": "Kapitel",
+      "fields": [
+        {
+          "label": "Platzhalter",
+          "entity": "Platzhalter",
+          "field": {
+            "label": "Inhalt",
+            "fields": [
+              {
+                "label": "Inhalt"
+              },
+              {
+                "label": "Dummy"
+              }
+            ]
+          }
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,37 @@
+{
+  "semantics": [
+    {
+      "label": "Inhalt",
+      "fields": [
+        {
+          "label": "Dateiname"
+        },
+        {
+          "label": "Anzuzeigender Name",
+          "description": "Falls leer, wird der Dateiname angezeigt."
+        },
+        {
+          "label": "Datei",
+          "description": "Die Datei, die zum Herunterladen bereitgestellt werden soll. Bitte habe Verständnis dafür, dass du nur solche Dateitypen hochladen kannst, die von H5P in dessen Einstellungen erlaubt wurden, und dass diese Einstellungen auf jeder Plattform anders sein können."
+        }
+      ]
+    },
+    {
+      "label": "Bedienoberfläche",
+      "fields": [
+        {
+          "label": "Download",
+          "default": "Download"
+        },
+        {
+          "label": "Unnamed file",
+          "default": "Unnamed file"
+        },
+        {
+          "label": "Keine Datei bereitgestellt",
+          "default": "Es scheint als wäre keine Datei zum Download bereitgestellt worden."
+        }
+      ]
+    }
+  ]
+}
