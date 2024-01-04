@@ -141,6 +141,11 @@
   content: "\e997";
   font-size: 1.6em;
 }
+.h5p-dragnbar-openendedquestion-button:before {
+  font-family: 'H5PFontAwesome4';
+  content: "\f128";
+  font-size: 1.6em;
+}
 
 /* FontAwesome4 icons */
 .h5p-dragnbar-table-button:before,
