@@ -972,6 +972,11 @@ ns.createLabel = function (field, content, inputId) {
     field.label = 0;
   }
 
+  // Temporary fix for the old version of GreslernPresentation's custom editor
+  if (field.widget === 'greslernpresentation' && field.name === 'presentation') {
+    field.label = 0;
+  }
+
   if (field.label !== 0) {
     html += '<span class="h5peditor-label' + (field.optional ? '' : ' h5peditor-required') + '">' + (field.label === undefined ? field.name : field.label) + '</span>';
   }
@@ -1300,6 +1305,7 @@ ns.enableMetadata = function (library) {
 
     // Custom editor changed
     'H5P.CoursePresentation 1.19',
+    'H5P.GreslernPresentation 1.19',
     'H5P.InteractiveVideo 1.19'
   ];
 

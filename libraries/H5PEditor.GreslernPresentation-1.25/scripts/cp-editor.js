@@ -15,6 +15,7 @@ H5PEditor.GreslernPresentation = function (parent, field, params, setValue) {
   H5P.DragNBar.FormManager.call(this, parent, {
     doneButtonLabel: H5PEditor.t('H5PEditor.GreslernPresentation', 'done'),
     deleteButtonLabel: H5PEditor.t('H5PEditor.GreslernPresentation', 'remove'),
+    backButtonLabel: H5PEditor.t('H5PEditor.GreslernPresentation', 'back'),
     expandBreadcrumbButtonLabel: H5PEditor.t('H5PEditor.GreslernPresentation', 'expandBreadcrumbButtonLabel'),
     collapseBreadcrumbButtonLabel: H5PEditor.t('H5PEditor.GreslernPresentation', 'collapseBreadcrumbButtonLabel')
   }, 'greslernpresentation');
@@ -654,6 +655,7 @@ H5PEditor.GreslernPresentation.prototype.initializeDNB = function () {
       // Trigger element resize
       var elementInstance = that.cp.elementInstances[that.cp.$current.index()][that.dnb.$element.index()];
       H5P.trigger(elementInstance, 'resize');
+
     });
 
     // Update params when the element is dropped.
@@ -692,7 +694,7 @@ H5PEditor.GreslernPresentation.prototype.initializeDNB = function () {
           }
         }
         else {
-          that.showElementForm(element, that.dnb.$element, params);
+          // that.showElementForm(element, that.dnb.$element, params);
         }
       }
     };
@@ -1082,6 +1084,8 @@ H5PEditor.GreslernPresentation.prototype.addSlide = function (slideParams) {
   this.elements.splice(index, 0, []);
   this.cp.elementInstances.splice(index, 0, []);
   this.cp.elementsAttached.splice(index, 0, []);
+  // this.cp.elementSideInstances.splice(index, 0, []);
+  // this.cp.elementsSideAttached.splice(index, 0, []);
   const slide = this.cp.addChild(slideParams, index);
 
   // Add slide with elements
@@ -1987,25 +1991,25 @@ H5PEditor.GreslernPresentation.prototype.showElementForm = function (element, $w
    * @private
    */
   const handleFormremove = function (e) {
-    const confirmationDialog = this.showConfirmationDialog({
-      headerText: H5PEditor.t('H5PEditor.GreslernPresentation', 'confirmRemoveElement'),
-      cancelText: H5PEditor.t('H5PEditor.GreslernPresentation', 'cancel'),
-      confirmText: H5PEditor.t('H5PEditor.GreslernPresentation', 'ok'),
-    });
+    // const confirmationDialog = this.showConfirmationDialog({
+    //   headerText: H5PEditor.t('H5PEditor.GreslernPresentation', 'confirmRemoveElement'),
+    //   cancelText: H5PEditor.t('H5PEditor.GreslernPresentation', 'cancel'),
+    //   confirmText: H5PEditor.t('H5PEditor.GreslernPresentation', 'ok'),
+    // });
     e.preventRemove = true;
 
-    confirmationDialog.on('canceled', () => {
-      return;
-    });
+    // confirmationDialog.on('canceled', () => {
+    //   return;
+    // });
 
-    confirmationDialog.on('confirmed', () => {
-      that.currentlyDeletingElement = true;
-      that.getFormManager().closeFormUntil(0);
-      that.removeElement(element, $wrapper, isContinuousText);
-      that.dnb.blurAll();
-      that.dnb.preventPaste = false;
-      that.currentlyDeletingElement = false;
-    });
+    // confirmationDialog.on('confirmed', () => {
+    that.currentlyDeletingElement = true;
+    that.getFormManager().closeFormUntil(0);
+    that.removeElement(element, $wrapper, isContinuousText);
+    that.dnb.blurAll();
+    that.dnb.preventPaste = false;
+    that.currentlyDeletingElement = false;
+    // });
   };
 
   that.on('formremove', handleFormremove);
@@ -2038,7 +2042,21 @@ H5PEditor.GreslernPresentation.prototype.showElementForm = function (element, $w
 
     that.dnb.preventPaste = false;
   }
+
   that.on('formdone', handleFormdone);
+
+  const handleFormback = function (e) {
+    e.preventRemove = true;
+
+    that.currentlyDeletingElement = true;
+    that.getFormManager().closeFormUntil(0);
+    that.dnb.blurAll();
+    that.dnb.preventPaste = false;
+    that.currentlyDeletingElement = false;
+
+  };
+
+  that.on('formback', handleFormback);
 
   /**
    * The form pane is fully displayed.
@@ -2059,6 +2077,7 @@ H5PEditor.GreslernPresentation.prototype.showElementForm = function (element, $w
     that.dnb.toggleDrag(true);
     that.off('formremove', handleFormremove);
     that.off('formdone', handleFormdone);
+    that.off('formback', handleFormback);
     that.off('formclose', handleFormclose);
     that.off('formopened', handleFormopened);
   };

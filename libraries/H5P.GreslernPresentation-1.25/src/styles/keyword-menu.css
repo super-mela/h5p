@@ -62,6 +62,12 @@
   font-size: 0.875em;
 }
 
+.h5p-greslern-presentation .keyword-slide {
+  position: relative;
+  width: auto;
+  height: 150px;
+}
+
 .h5p-greslern-presentation .h5p-keywords-wrapper>[role="menu"] {
   overflow: auto;
   overflow-x: hidden;

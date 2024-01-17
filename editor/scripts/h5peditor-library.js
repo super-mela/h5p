@@ -138,6 +138,10 @@ ns.Library.prototype.appendTo = function ($wrapper) {
           major: 1,
           minor: 20
         },
+        'H5P.GreslernPresentation': {
+          major: 1,
+          minor: 20
+        },
         'H5P.InteractiveVideo': {
           major: 1,
           minor: 20

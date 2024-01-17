@@ -50,9 +50,11 @@ function Element(parameters) {
 
   if (self.parent.parent.elementInstances[self.parent.index] === undefined) {
     self.parent.parent.elementInstances[self.parent.index] = [self.instance];
+    // self.parent.parent.elementSideInstances[self.parent.index] = [self.instance];
   }
   else {
     self.parent.parent.elementInstances[self.parent.index].push(self.instance);
+    // self.parent.parent.elementSideInstances[self.parent.index].push(self.instance);
   }
 
   if (self.instance.showCPComments !== undefined || self.instance.isTask || (self.instance.isTask === undefined && self.instance.showSolutions !== undefined)) {

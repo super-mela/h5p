@@ -83,8 +83,8 @@
       head.appendChild(self.formButtons);
 
       // Create 'Delete' button
-      self.formButtons.appendChild(createButton('delete', l10n.deleteButtonLabel, function () {
-        const e = new H5P.Event('formremove');
+      self.formButtons.appendChild(createButton('back', l10n.backButtonLabel, function () {
+        const e = new H5P.Event('formback');
         e.data = formTargets.length;
         formTargets[formTargets.length - 1].trigger(e);
         if (!e.preventRemove && formTargets.length > 1) {
@@ -264,9 +264,9 @@
           return customTitle;
         }
         else if (libraryField.params && libraryField.params.metadata && libraryField.params.metadata.title &&
-            libraryField.params.metadata.title.substr(0, 8) !== 'Untitled' ||
-            libraryField.metadata && libraryField.metadata.title &&
-            libraryField.metadata.title.substr(0, 8) !== 'Untitled') {
+          libraryField.params.metadata.title.substr(0, 8) !== 'Untitled' ||
+          libraryField.metadata && libraryField.metadata.title &&
+          libraryField.metadata.title.substr(0, 8) !== 'Untitled') {
           return getText(libraryField.metadata ? libraryField.metadata.title : libraryField.params.metadata.title);
         }
         else {
@@ -397,7 +397,7 @@
      */
     const closeForm = function () {
       const activeManager = formTargets.pop();
-      
+
       // Close any open CKEditors
       if (H5PEditor.Html) {
         H5PEditor.Html.removeWysiwyg();

@@ -29,6 +29,8 @@ let GreslernPresentation = function (params, id, extras) {
   this.contentId = id;
   this.elementInstances = []; // elementInstances holds the instances for elements in an array.
   this.elementsAttached = []; // Map to keep track of which slide has attached elements
+  this.elementSideInstances = [];
+  this.elementsSideAttached = [];
   this.slidesWithSolutions = [];
   this.showCommentsAfterSolution = [];
   this.hasAnswerElements = false;
@@ -389,6 +391,7 @@ GreslernPresentation.prototype.attach = function ($container) {
     this.keywordMenu.on('select', () => {
       this.$currentKeyword = this.$keywords.children('.h5p-current');
     });
+    this.elementsSideAttached[this.currentSlideIndex] = true
     this.$keywords = $(this.keywordMenu.getElement()).appendTo(this.$keywordsWrapper);
     this.$currentKeyword = this.$keywords.children('.h5p-current');
 
@@ -576,7 +579,6 @@ GreslernPresentation.prototype.createSlides = function () {
     // Create and append DOM Elements
 
     self.children[i].getElement().appendTo(self.$slidesWrapper);
-
     if (isCurrentSlide) {
       self.children[i].setCurrent();
     }
@@ -923,6 +925,27 @@ GreslernPresentation.prototype.attachElements = function ($slide, index) {
   this.elementsAttached[index] = true;
 };
 
+GreslernPresentation.prototype.attachSideElements = function ($slide, index) {
+  if (this.elementsSideAttached[index] !== undefined) {
+    return; // Already attached
+  }
+
+  var slide = this.slides[index];
+  var instances = this.elementSideInstances[index];
+  if (slide.elements !== undefined) {
+    for (var i = 0; i < slide.elements.length; i++) {
+      this.attachSideElement(slide.elements[i], instances[i], $slide, index);
+    }
+  }
+  this.trigger('domChanged', {
+    '$target': $slide,
+    'library': 'GreslernPresentation',
+    'key': 'newSlide'
+  }, { 'bubbles': true, 'external': true });
+
+  this.elementsSideAttached[index] = true;
+};
+
 /**
  * Attach element to slide container.
  *
@@ -933,6 +956,93 @@ GreslernPresentation.prototype.attachElements = function ($slide, index) {
  * @returns {jQuery}
  */
 GreslernPresentation.prototype.attachElement = function (element, instance, $slide, index) {
+  const displayAsButton = (element.displayAsButton !== undefined && element.displayAsButton);
+  var buttonSizeClass = (element.buttonSize !== undefined ? "h5p-element-button-" + element.buttonSize : "");
+  var classes = 'h5p-element' +
+    (displayAsButton ? ' h5p-element-button-wrapper' : '') +
+    (buttonSizeClass.length ? ' ' + buttonSizeClass : '');
+  var $elementContainer = H5P.jQuery('<div>', {
+    'class': classes,
+  }).css({
+    left: element.x + '%',
+    top: element.y + '%',
+    width: element.width + '%',
+    height: element.height + '%'
+  }).appendTo($slide.children('[role="document"]').first());
+
+  const isTransparent = element.backgroundOpacity === undefined || element.backgroundOpacity === 0;
+  $elementContainer.toggleClass('h5p-transparent', isTransparent);
+
+  if (displayAsButton) {
+    const $button = this.createInteractionButton(element, instance);
+    $button.appendTo($elementContainer);
+  }
+  else {
+    const hasLibrary = element.action && element.action.library;
+    const libTypePmz = hasLibrary ? this.getLibraryTypePmz(element.action.library) : 'other';
+
+    var $outerElementContainer = H5P.jQuery('<div>', {
+      'class': `h5p-element-outer ${libTypePmz}-outer-element`
+    }).css({
+      background: 'rgba(255,255,255,' + (element.backgroundOpacity === undefined ? 0 : element.backgroundOpacity / 100) + ')'
+    }).appendTo($elementContainer);
+
+    var $innerElementContainer = H5P.jQuery('<div>', {
+      'class': 'h5p-element-inner'
+    }).appendTo($outerElementContainer);
+
+    // H5P.Shape sets it's own size when line in selected
+    instance.on('set-size', function (event) {
+      for (let property in event.data) {
+        $elementContainer.get(0).style[property] = event.data[property];
+      }
+    });
+
+    instance.attach($innerElementContainer);
+    if (element.action !== undefined && element.action.library.substr(0, 20) === 'H5P.InteractiveVideo') {
+      var handleIV = function () {
+        instance.$container.addClass('h5p-fullscreen');
+        if (instance.controls.$fullscreen) {
+          instance.controls.$fullscreen.remove();
+        }
+        instance.hasFullScreen = true;
+        if (instance.controls.$play.hasClass('h5p-pause')) {
+          instance.$controls.addClass('h5p-autohide');
+        }
+        else {
+          instance.enableAutoHide();
+        }
+      };
+      if (instance.controls !== undefined) {
+        handleIV();
+      }
+      else {
+        instance.on('controls', handleIV);
+      }
+    }
+
+    // For first slide
+    this.setOverflowTabIndex();
+  }
+
+  if (this.editor !== undefined) {
+    // If we're in the H5P editor, allow it to manipulate the elementInstances
+    this.editor.processElement(element, $elementContainer, index, instance);
+  }
+  else {
+    if (element.solution) {
+      this.addElementSolutionButton(element, instance, $elementContainer);
+    }
+
+    /* When in view mode, we need to know if there are any answer elements,
+     * so that we can display the export answers button on the last slide */
+    this.hasAnswerElements = this.hasAnswerElements || instance.exportAnswers !== undefined;
+  }
+  this.updateKeywordMenuFromSlides()
+  return $elementContainer;
+};
+
+GreslernPresentation.prototype.attachSideElement = function (element, instance, $slide, index) {
   const displayAsButton = (element.displayAsButton !== undefined && element.displayAsButton);
   var buttonSizeClass = (element.buttonSize !== undefined ? "h5p-element-button-" + element.buttonSize : "");
   var classes = 'h5p-element' +
@@ -1094,7 +1204,7 @@ GreslernPresentation.prototype.createInteractionButton = function (element, inst
    * Returns a function that will set [aria-expanded="false"] on the $btn element
    *
    * @param {jQuery} $btn
-   * @return {Function}
+   * @return {Function}$elementContainer 
    */
   const setAriaExpandedFalse = $btn => () => $btn.attr('aria-expanded', 'false');
 
@@ -1827,9 +1937,11 @@ GreslernPresentation.prototype.getCurrentSlideIndex = function () {
  */
 GreslernPresentation.prototype.attachAllElements = function () {
   var $slides = this.$slidesWrapper.children();
+  var $sideSlides = this.$keywordsWrapper.find('ol.list-unstyled > li > .keyword-slide');
 
   for (var i = 0; i < this.slides.length; i++) {
     this.attachElements($slides.eq(i), i);
+    // this.attachSideElements($sideSlides.eq(i), i)
   }
 
   // Need to force updating summary slide! This is normally done

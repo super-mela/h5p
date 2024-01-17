@@ -36,6 +36,7 @@ ns.Form = function (library, startLanguages, defaultLanguage) {
   if (ns.FullscreenBar !== undefined) {
     // Exception from rules
     if (library.indexOf('H5P.CoursePresentation') === -1 &&
+      library.indexOf('H5P.GreslernPresentation') === -1 &&
       library.indexOf('H5P.BranchingScenario') === -1 &&
       library.indexOf('H5P.InteractiveVideo') === -1) {
       ns.FullscreenBar(this.$form, library);
@@ -433,6 +434,9 @@ ns.Form.prototype.processSemantics = function (semantics, defaultParams, metadat
         break;
 
       case 'H5P.CoursePresentation':
+        this.metadataForm.getExtraTitleField().$item.css('padding-bottom', '1em');
+        break;
+      case 'H5P.GreslernPresentation':
         this.metadataForm.getExtraTitleField().$item.css('padding-bottom', '1em');
         break;
     }

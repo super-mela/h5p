@@ -46,7 +46,23 @@ function Slide(parameters) {
       'key': 'newSlide'
     }, { 'bubbles': true, 'external': true });
   };
+
+  self.appendSideElements = function () {
+
+    for (let i = 0; i < self.children.length; i++) {
+      self.parent.attachSideElement(parameters.elements[i], self.children[i].instance, $wrapper, self.index);
+    }
+
+    self.parent.elementsSideAttached[self.index] = true;
+    self.parent.trigger('domChanged', {
+      '$target': $wrapper,
+      'library': 'GreslernPresentation',
+      'key': 'newSlide'
+    }, { 'bubbles': true, 'external': true });
+  };
 }
+
+
 
 /**
  * Creates the HTML for a single slide.

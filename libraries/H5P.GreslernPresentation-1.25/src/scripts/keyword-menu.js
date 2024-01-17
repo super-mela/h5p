@@ -143,14 +143,20 @@ export default class KeywordMenu {
    * @param {KeywordMenuItemConfig} config
    */
   applyConfigToMenuItemElement(element, config, i) {
-    element.innerHTML = `<div class="keyword-slide">
-    <div class="h5p-keyword-subtitle">${config.subtitle}</div><span class="h5p-keyword-title">${config.title}</span></div>`;
+    var that = this
+
+    element.innerHTML = `
+    <div class="h5p-keyword-subtitle">${config.subtitle}</div><span class="h5p-keyword-title">${config.title}</span><div class="keyword-slide"></div>`;
     element.dataset.index = config.index;
-    const childElement = this.children[i].getElement();
+    const childElement = that.children[i].getElement().clone();
 
     if (childElement) {
       // Assuming childElement is a jQuery object, append it to the ".keyword-slide" within the current element
-      // childElement.appendTo(element.querySelector(".keyword-slide"));
+      // if (childElement.hasClass('h5p-previous')) {
+      // }
+      childElement.removeClass('h5p-previous')
+      childElement.addClass('h5p-current').appendTo(element.querySelector(".keyword-slide"));
+      // that.children[i].appendSideElements()
     }
   }
 
