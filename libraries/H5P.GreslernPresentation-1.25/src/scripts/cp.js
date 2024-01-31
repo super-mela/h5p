@@ -230,7 +230,7 @@ GreslernPresentation.prototype.attach = function ($container) {
     '  <div tabindex="-1"></div>' +
     '  <div class="h5p-box-wrapper">' +
     '    <div class="h5p-presentation-wrapper">' +
-    '      <div class="h5p-keywords-wrapper"></div>' +
+    '      <div class="h5p-keywords-wrapper h5p-open"></div>' +
     '     <div class="h5p-slides-wrapper"></div>' +
     '    </div>' +
     '  </div>' +
@@ -925,26 +925,26 @@ GreslernPresentation.prototype.attachElements = function ($slide, index) {
   this.elementsAttached[index] = true;
 };
 
-GreslernPresentation.prototype.attachSideElements = function ($slide, index) {
-  if (this.elementsSideAttached[index] !== undefined) {
-    return; // Already attached
-  }
+// GreslernPresentation.prototype.attachSideElements = function ($slide, index) {
+//   if (this.elementsSideAttached[index] !== undefined) {
+//     return; // Already attached
+//   }
 
-  var slide = this.slides[index];
-  var instances = this.elementSideInstances[index];
-  if (slide.elements !== undefined) {
-    for (var i = 0; i < slide.elements.length; i++) {
-      this.attachSideElement(slide.elements[i], instances[i], $slide, index);
-    }
-  }
-  this.trigger('domChanged', {
-    '$target': $slide,
-    'library': 'GreslernPresentation',
-    'key': 'newSlide'
-  }, { 'bubbles': true, 'external': true });
+//   var slide = this.slides[index];
+//   var instances = this.elementSideInstances[index];
+//   if (slide.elements !== undefined) {
+//     for (var i = 0; i < slide.elements.length; i++) {
+//       this.attachSideElement(slide.elements[i], instances[i], $slide, index);
+//     }
+//   }
+//   this.trigger('domChanged', {
+//     '$target': $slide,
+//     'library': 'GreslernPresentation',
+//     'key': 'newSlide'
+//   }, { 'bubbles': true, 'external': true });
 
-  this.elementsSideAttached[index] = true;
-};
+//   this.elementsSideAttached[index] = true;
+// };
 
 /**
  * Attach element to slide container.
@@ -1042,92 +1042,92 @@ GreslernPresentation.prototype.attachElement = function (element, instance, $sli
   return $elementContainer;
 };
 
-GreslernPresentation.prototype.attachSideElement = function (element, instance, $slide, index) {
-  const displayAsButton = (element.displayAsButton !== undefined && element.displayAsButton);
-  var buttonSizeClass = (element.buttonSize !== undefined ? "h5p-element-button-" + element.buttonSize : "");
-  var classes = 'h5p-element' +
-    (displayAsButton ? ' h5p-element-button-wrapper' : '') +
-    (buttonSizeClass.length ? ' ' + buttonSizeClass : '');
-  var $elementContainer = H5P.jQuery('<div>', {
-    'class': classes,
-  }).css({
-    left: element.x + '%',
-    top: element.y + '%',
-    width: element.width + '%',
-    height: element.height + '%'
-  }).appendTo($slide.children('[role="document"]').first());
+// GreslernPresentation.prototype.attachSideElement = function (element, instance, $slide, index) {
+//   const displayAsButton = (element.displayAsButton !== undefined && element.displayAsButton);
+//   var buttonSizeClass = (element.buttonSize !== undefined ? "h5p-element-button-" + element.buttonSize : "");
+//   var classes = 'h5p-element' +
+//     (displayAsButton ? ' h5p-element-button-wrapper' : '') +
+//     (buttonSizeClass.length ? ' ' + buttonSizeClass : '');
+//   var $elementContainer = H5P.jQuery('<div>', {
+//     'class': classes,
+//   }).css({
+//     left: element.x + '%',
+//     top: element.y + '%',
+//     width: element.width + '%',
+//     height: element.height + '%'
+//   }).appendTo($slide.children('[role="document"]').first());
 
-  const isTransparent = element.backgroundOpacity === undefined || element.backgroundOpacity === 0;
-  $elementContainer.toggleClass('h5p-transparent', isTransparent);
+//   const isTransparent = element.backgroundOpacity === undefined || element.backgroundOpacity === 0;
+//   $elementContainer.toggleClass('h5p-transparent', isTransparent);
 
-  if (displayAsButton) {
-    const $button = this.createInteractionButton(element, instance);
-    $button.appendTo($elementContainer);
-  }
-  else {
-    const hasLibrary = element.action && element.action.library;
-    const libTypePmz = hasLibrary ? this.getLibraryTypePmz(element.action.library) : 'other';
+//   if (displayAsButton) {
+//     const $button = this.createInteractionButton(element, instance);
+//     $button.appendTo($elementContainer);
+//   }
+//   else {
+//     const hasLibrary = element.action && element.action.library;
+//     const libTypePmz = hasLibrary ? this.getLibraryTypePmz(element.action.library) : 'other';
 
-    var $outerElementContainer = H5P.jQuery('<div>', {
-      'class': `h5p-element-outer ${libTypePmz}-outer-element`
-    }).css({
-      background: 'rgba(255,255,255,' + (element.backgroundOpacity === undefined ? 0 : element.backgroundOpacity / 100) + ')'
-    }).appendTo($elementContainer);
+//     var $outerElementContainer = H5P.jQuery('<div>', {
+//       'class': `h5p-element-outer ${libTypePmz}-outer-element`
+//     }).css({
+//       background: 'rgba(255,255,255,' + (element.backgroundOpacity === undefined ? 0 : element.backgroundOpacity / 100) + ')'
+//     }).appendTo($elementContainer);
 
-    var $innerElementContainer = H5P.jQuery('<div>', {
-      'class': 'h5p-element-inner'
-    }).appendTo($outerElementContainer);
+//     var $innerElementContainer = H5P.jQuery('<div>', {
+//       'class': 'h5p-element-inner'
+//     }).appendTo($outerElementContainer);
 
-    // H5P.Shape sets it's own size when line in selected
-    instance.on('set-size', function (event) {
-      for (let property in event.data) {
-        $elementContainer.get(0).style[property] = event.data[property];
-      }
-    });
+//     // H5P.Shape sets it's own size when line in selected
+//     instance.on('set-size', function (event) {
+//       for (let property in event.data) {
+//         $elementContainer.get(0).style[property] = event.data[property];
+//       }
+//     });
 
-    instance.attach($innerElementContainer);
-    if (element.action !== undefined && element.action.library.substr(0, 20) === 'H5P.InteractiveVideo') {
-      var handleIV = function () {
-        instance.$container.addClass('h5p-fullscreen');
-        if (instance.controls.$fullscreen) {
-          instance.controls.$fullscreen.remove();
-        }
-        instance.hasFullScreen = true;
-        if (instance.controls.$play.hasClass('h5p-pause')) {
-          instance.$controls.addClass('h5p-autohide');
-        }
-        else {
-          instance.enableAutoHide();
-        }
-      };
-      if (instance.controls !== undefined) {
-        handleIV();
-      }
-      else {
-        instance.on('controls', handleIV);
-      }
-    }
+//     instance.attach($innerElementContainer);
+//     if (element.action !== undefined && element.action.library.substr(0, 20) === 'H5P.InteractiveVideo') {
+//       var handleIV = function () {
+//         instance.$container.addClass('h5p-fullscreen');
+//         if (instance.controls.$fullscreen) {
+//           instance.controls.$fullscreen.remove();
+//         }
+//         instance.hasFullScreen = true;
+//         if (instance.controls.$play.hasClass('h5p-pause')) {
+//           instance.$controls.addClass('h5p-autohide');
+//         }
+//         else {
+//           instance.enableAutoHide();
+//         }
+//       };
+//       if (instance.controls !== undefined) {
+//         handleIV();
+//       }
+//       else {
+//         instance.on('controls', handleIV);
+//       }
+//     }
 
-    // For first slide
-    this.setOverflowTabIndex();
-  }
+//     // For first slide
+//     this.setOverflowTabIndex();
+//   }
 
-  if (this.editor !== undefined) {
-    // If we're in the H5P editor, allow it to manipulate the elementInstances
-    this.editor.processElement(element, $elementContainer, index, instance);
-  }
-  else {
-    if (element.solution) {
-      this.addElementSolutionButton(element, instance, $elementContainer);
-    }
+//   if (this.editor !== undefined) {
+//     // If we're in the H5P editor, allow it to manipulate the elementInstances
+//     this.editor.processElement(element, $elementContainer, index, instance);
+//   }
+//   else {
+//     if (element.solution) {
+//       this.addElementSolutionButton(element, instance, $elementContainer);
+//     }
 
-    /* When in view mode, we need to know if there are any answer elements,
-     * so that we can display the export answers button on the last slide */
-    this.hasAnswerElements = this.hasAnswerElements || instance.exportAnswers !== undefined;
-  }
+//     /* When in view mode, we need to know if there are any answer elements,
+//      * so that we can display the export answers button on the last slide */
+//     this.hasAnswerElements = this.hasAnswerElements || instance.exportAnswers !== undefined;
+//   }
 
-  return $elementContainer;
-};
+//   return $elementContainer;
+// };
 
 /**
  * Disables tab indexes behind a popup container

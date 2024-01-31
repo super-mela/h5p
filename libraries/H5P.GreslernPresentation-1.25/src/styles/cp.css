@@ -156,11 +156,11 @@
 
 
 .h5p-greslern-presentation .h5p-slide {
-  width: 100%;
+  width: 75%;
   height: 100%;
   position: absolute;
   top: 0;
-  left: 0;
+  left: 25%;
   z-index: 0;
   display: none;
   opacity: 1;
