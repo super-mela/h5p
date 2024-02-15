@@ -98,13 +98,15 @@ export default class KeywordMenu {
    * Removes all menu items
    */
   removeAllMenuItemElements() {
-    this.menuItemElements
-      .forEach(element => {
-        this.controls.removeElement(element);
-        this.menuElement.removeChild(element);
-      });
+    if (this.menuItemElements) {
+      this.menuItemElements
+        .forEach(element => {
+          this.controls.removeElement(element);
+          this.menuElement.removeChild(element);
+        });
 
-    this.menuItemElements = [];
+      this.menuItemElements = [];
+    }
   }
 
   /**
