@@ -577,8 +577,13 @@ GreslernPresentation.prototype.createSlides = function () {
   for (let i = 0; i < self.children.length; i++) {
     const isCurrentSlide = (i === self.currentSlideIndex);
     // Create and append DOM Elements
-
-    self.children[i].getElement().appendTo(self.$slidesWrapper);
+    if (this.editor === undefined) {
+      $(self.children[i].getElement()).css({
+        'width': '100%',
+        'left': '0'
+      });
+    }
+    $(self.children[i].getElement()).appendTo(self.$slidesWrapper);
     if (isCurrentSlide) {
       self.children[i].setCurrent();
     }
