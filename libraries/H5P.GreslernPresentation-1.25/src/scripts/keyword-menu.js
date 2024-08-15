@@ -157,6 +157,10 @@ export default class KeywordMenu {
       // if (childElement.hasClass('h5p-previous')) {
       // }
       childElement.removeClass('h5p-previous')
+      childElement.css({
+        'width': '100%',
+        'left': '0%'
+      })
       childElement.addClass('h5p-current').appendTo(element.querySelector(".keyword-slide"));
       // that.children[i].appendSideElements()
     }

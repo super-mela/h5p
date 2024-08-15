@@ -5,8 +5,11 @@
   right: 75%;
   width: 25%;
   height: 100%;
-  background: #fbfbfb;
-  background: rgba(251, 251, 251, 0.9);
+  background: #acacace6;
+  background: rgba(172, 172, 172, 0.902);
+  border: 2px solid rgb(181 94 46);
+  border-radius: 5px;
+  margin-right: 5px;
   box-shadow: 0 0 0.15em 0 #d1d1d1;
   overflow: auto;
   visibility: hidden;

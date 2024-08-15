@@ -1032,7 +1032,7 @@ H5PEditor.GreslernPresentation.prototype.initKeywordInteractions = function () {
 
   // Set defaults if undefined
   checkDefault('keywordListEnabled', true);
-  checkDefault('keywordListAlwaysShow', false);
+  checkDefault('keywordListAlwaysShow', true);
   checkDefault('keywordListAutoHide', false);
   checkDefault('keywordListOpacity', 90);
 
