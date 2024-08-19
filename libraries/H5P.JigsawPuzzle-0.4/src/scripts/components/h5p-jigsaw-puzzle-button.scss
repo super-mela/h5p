@@ -1,0 +1,96 @@
+@import '@styles/h5p-jigsaw-puzzle-main';
+
+.h5p-jigsaw-puzzle-button {
+  align-items: center;
+  background-color: transparent;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: $size-icon-default $size-icon-default;
+  border: $border-width-normal solid #fff;
+  border-radius: $border-radius-small;
+  display: flex;
+  flex-shrink: 0;
+  height: $size-icon-default * 3;
+  padding: 0;
+  width: $size-icon-default * 3;
+
+  &.h5p-jigsaw-puzzle-display-none {
+    display: none;
+  }
+
+  &:not(.h5p-jigsaw-puzzle-button-disabled) {
+    &:hover {
+      background-color: $color-base-05;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: $color-base-10;
+    }
+
+    &.h5p-jigsaw-puzzle-button-active {
+      background-color: $color-base;
+      opacity: 20;
+
+      &:hover {
+        background-color: $color-base-90;
+      }
+
+      &:active {
+        background-color: $color-base-95;
+      }
+    }
+  }
+
+  &.h5p-jigsaw-puzzle-button-fullscreen {
+    background-color: $color-base-05;
+    background-image: url("./../../images/button-enter-fullscreen-icon-blue.svg");
+
+    &:not(.h5p-jigsaw-puzzle-disabled):hover {
+      background-color: $color-base-10;
+    }
+
+    &:not(.h5p-jigsaw-puzzle-button-disabled):active {
+      background-color: $color-base-20;
+    }
+
+    &.h5p-jigsaw-puzzle-button-active {
+      background-color: $color-base-05;
+      background-image: url("./../../images/button-exit-fullscreen-icon-blue.svg");
+
+      &:not(.h5p-jigsaw-puzzle-button-disabled):hover {
+        background-color: $color-base-10;
+      }
+
+      &:not(.h5p-jigsaw-puzzle-button-disabled):active {
+        background-color: $color-base-20;
+      }
+    }
+  }
+
+  &.h5p-jigsaw-puzzle-button-audio {
+    background-color: $color-base-05;
+    background-image: url("./../../images/button-audio-muted-icon-blue.svg");
+
+    &:not(.h5p-jigsaw-puzzle-disabled):hover {
+      background-color: $color-base-10;
+    }
+
+    &:not(.h5p-jigsaw-puzzle-button-disabled):active {
+      background-color: $color-base-20;
+    }
+
+    &.h5p-jigsaw-puzzle-button-active {
+      background-color: $color-base-05;
+      background-image: url("./../../images/button-audio-unmuted-icon-blue.svg");
+
+      &:not(.h5p-jigsaw-puzzle-button-disabled):hover {
+        background-color: $color-base-10;
+      }
+
+      &:not(.h5p-jigsaw-puzzle-button-disabled):active {
+        background-color: $color-base-20;
+      }
+    }
+  }
+}

@@ -1,0 +1,235 @@
+{
+  "semantics": [
+    {
+      "label": "Titelzeile",
+      "description": "Optionale Titelzeile, die in der oberen Leiste angezeigt wird."
+    },
+    {
+      "label": "Einleitung",
+      "description": "Füge optional eine Einleitung ein, in der die Lernenden erfahren, worum es geht.",
+      "default": "<p style=\"text-align: center;\"></p>"
+    },
+    {
+      "label": "Segmente",
+      "entity": "Segment",
+      "widgets": [
+        {
+          "label": "Eingabemaske"
+        },
+        {
+          "label": "Als Text eingeben"
+        }
+      ],
+      "field": {
+        "label": "Segmente",
+        "fields": [
+          {
+            "label": "Segmentbeschriftung"
+          },
+          {
+            "label": "Optionen",
+            "entity": "Option",
+            "field": {
+              "label": "Text der Option"
+            }
+          },
+          {
+            "label": "Hintergrundfarbe"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Modus",
+      "options": [
+        {
+          "label": "Frei"
+        },
+        {
+          "label": "Quiz"
+        }
+      ]
+    },
+    {
+      "label": "Lösungen",
+      "fields": [
+        {
+          "label": "Lösungen",
+          "entity": "Lösung",
+          "field": {
+            "label": "Lösung"
+          }
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Audio",
+      "fields": [
+        {
+          "label": "Benutze den eingebauten Ton für Klicks auf den \"Vorheriger Text\"-Button oder den \"Nächster Text\"-Button"
+        },
+        {
+          "label": "Klicks auf den \"Vorheriger Text\"-Button oder den \"Nächster Text\"-Button",
+          "description": "Wird abgespielt, wen die Lernenden auf den \"Vorheriger Text\"-Button oder den \"Nächster Text\"-Button klicken."
+        }
+      ]
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "fields": [
+        {
+          "label": "Leben",
+          "description": "Setze die Anzahl Leben fest, die Lernende zu Beginn erhalten (jede falsche Antwort kostet ein Leben bis herunter auf 0) oder lasse das Feld leer für unendlich viele Leben."
+        },
+        {
+          "label": "\"Wiederholen\"-Button anzeigen"
+        },
+        {
+          "label": "\"Lösung zeigen\"-Button anzeigen"
+        }
+      ]
+    },
+    {
+      "label": "Bedienoberfläche",
+      "fields": [
+        {
+          "label": "Überprüfen",
+          "default": "Überprüfen"
+        },
+        {
+          "label": "Absenden",
+          "default": "Absenden"
+        },
+        {
+          "label": "Zeige Lösungen",
+          "default": "Zeige Lösungen"
+        },
+        {
+          "label": "Wiederholen",
+          "default": "Wiederholen"
+        },
+        {
+          "label": "Du hast keine Leben mehr",
+          "default": "Du hast keine Leben mehr."
+        },
+        {
+          "label": "Lösungen",
+          "default": "Hier sind die Lösungen."
+        },
+        {
+          "label": "Das ist keine Lösung",
+          "default": "Das ist keine Lösung."
+        },
+        {
+          "label": "Keine Nachricht",
+          "default": "..."
+        },
+        {
+          "label": "Du hast eine Lösung gefunden!",
+          "default": "YDu hast eine Lösung gefunden!"
+        },
+        {
+          "label": "Du hast alle Lösungen gefunden!",
+          "default": "Du hast alle Lösungen gefunden!"
+        },
+        {
+          "label": "Gefundene Lösungen",
+          "default": "Gefundene Lösungen"
+        },
+        {
+          "label": "Noch zu finden",
+          "default": "Noch zu finden"
+        }
+      ]
+    },
+    {
+      "label": "Texte für Barrierefreiheit",
+      "fields": [
+        {
+          "label": "Drehe alle Segmente",
+          "default": "Drehe alle Segmente"
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für den \"Überprüfen\"-Button",
+          "default": "Die Antworten überprüfen. Die Antwort wird als richtig oder falsch markiert."
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für den \"Lösung anzeigen\"-Button",
+          "default": "Zeige die Lösung. Die korrekte Lösung wird dann angezeigt."
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für den \"Wiederholen\"-Button",
+          "default": "Wiederhole die Aufgabe. Setzt alle Eingaben zurück und fängt von vorne an."
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für den aktuellen Text eines Segments",
+          "description": "@text ist ein Platzhalter und wird durch den entsprechenden Text ersetzt.",
+          "default": "Aktueller Text: @text"
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für den aktuellen Text aller Segmente",
+          "description": "@text ist ein Platzhalter und wird durch den entsprechenden Text ersetzt.",
+          "default": "Aktueller Text insgesamt: @text"
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für den \"Vorheriger Text\"-Button",
+          "default": "Vorheriger Text"
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für den \"Nächster Text\"-Button",
+          "default": "Nächster Text"
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für den \"Drehen\"-Button",
+          "description": "@number ist ein Platzhalter und wird durch den entsprechenden Text ersetzt.",
+          "default": "Drehe Segment @number, um einen zufälligen Text zu erhalten."
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für das Finden einer Lösung",
+          "description": "@number und @combination sind Platzhalter und werden durch die entsprechenden Texte ersetzt.",
+          "default": "Dies sind die Lösungen (@number insgesamt): @combination."
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für \"deaktiviert\"",
+          "default": "deaktiviert"
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für \"Randomizer\"",
+          "default": "Randomizer"
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für \"Werkzeugleiste\"",
+          "default": "Werkzeugleiste"
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für das aktuelle Segment",
+          "description": "@number und @total sind Platzhalter und werden durch die entsprechenden Texte ersetzt.",
+          "default": "Segment @number von @total"
+        },
+        {
+          "label": "Lösung",
+          "default": "Lösung"
+        },
+        {
+          "label": "Gefunden",
+          "default": "Gefunden"
+        },
+        {
+          "label": "Nicht gefunden",
+          "default": "Nicht gefunden"
+        },
+        {
+          "label": "Ton-Button (eingeschaltet)",
+          "default": "Ton ausschalten. Derzeit eingeschaltet."
+        },
+        {
+          "label": "Ton-Button (ausgeschaltet)",
+          "default": "Ton einschalten. Derzeit ausgeschaltet."
+        }
+      ]
+    }
+  ]
+}

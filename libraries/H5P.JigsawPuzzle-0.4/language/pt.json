@@ -1,0 +1,143 @@
+{
+  "semantics": [
+    {
+      "label": "Puzzle de Imagem",
+      "description": "Imagem a partir da qual as peças deverão ser geradas."
+    },
+    {
+      "label": "Número de peças, na horizontal",
+      "description": "Definição do número de peças que o puzzle deverá ter, horizontalmente."
+    },
+    {
+      "label": "Número de peças, na vertical",
+      "description": "Definição do número de peças que o puzzle deverá ter, verticalmente."
+    },
+    {
+      "label": "Definições de som",
+      "description": "Estas opções permitem definir os sons a usar no puzzle.",
+      "fields": [
+        {
+          "label": "Início do Puzzle",
+          "description": "Som que será ouvido quando o puzzle é iniciado."
+        },
+        {
+          "label": "Peça Selecionada",
+          "description": "Som que será ouvido quando a peça do puzzle é selecionada."
+        },
+        {
+          "label": "Colocação incorreta da peça do puzzle",
+          "description": "Som que será ouvido quando a peça do puzzle for colocada de forma incorreta."
+        },
+        {
+          "label": "Colocação correta da peça do puzzle",
+          "description": "Som que será ouvido quando a peça do puzzle for colocada de forma correta."
+        },
+        {
+          "label": "Puzzle completado",
+          "description": "Som que será ouvido quando o puzzle é completado."
+        }
+      ]
+    },
+    {
+      "label": "Configurações de comportamento",
+      "description": "Estas opções permitem configurar o comportamento do Puzzle.",
+      "fields": [
+        {
+          "label": "Mostrar fundo ténue",
+          "description": "Mostra como fundo uma versão ténue da imagem, de forma a facilitar a colocação das peças do puzzle."
+        },
+        {
+          "label": "Mostrar contornos",
+          "description": "Mostra os contornos das peças, de forma a facilitar a colocação das mesmas."
+        },
+        {
+          "label": "Sorting space position",
+          "description": "Set where the sorting space should be positioned at.",
+          "options": [
+            {
+              "label": "Puzzle next to sorting space"
+            },
+            {
+              "label": "Puzzle above sorting space"
+            }
+          ]
+        },
+        {
+          "label": "Utilizar a totalidade da área disponível",
+          "description": "Define se as peças devem ocupar, inicialmente, toda a área, inclusive aquela onde devem ser colocadas."
+        },
+        {
+          "label": "Possibilita o botão de \"Completar\" o puzzle",
+          "description": "Set how much space in percent relative to the puzzle should be attached below to the jigsaw puzzle for sorting the tiles."
+        },
+        {
+          "label": "Utilizar a totalidade da àrea",
+          "description": "Define se as peças devem ocupar, inicialmente, toda a àrea, inclusivê a àrea onde devem ser colocadas."
+        },
+        {
+          "label": "Possibilita o botão para mostrar a \"Solução\""
+        },
+        {
+          "label": "Possibilita o botão de \"Tentar novamente\""
+        },
+        {
+          "label": "Possibilita o botão para mostrar \"Solução\""
+        }
+      ]
+    },
+    {
+      "label": "Interface do utilizador",
+      "fields": [
+        {
+          "label": "Texto para o botão \"Completar\" o puzzle",
+          "default": "Completar"
+        },
+        {
+          "label": "Texto para o botão \"Tentar novamente\"",
+          "default": "Tentar novamente"
+        },
+        {
+          "label": "Texto para a mensagem \"Sem imagem\"",
+          "default": "Não foi ainda selecionada uma imagem para o puzzle."
+        }
+      ]
+    },
+    {
+      "label": "Leitor por voz",
+      "fields": [
+        {
+          "label": "Descrição para a tecnologia de acessibilidade, para o botão \"Completar\"",
+          "default": "Completar o puzzle. Todas as peças serão colocadas na posição correta."
+        },
+        {
+          "label": "Descrição para a tecnologia de acessibilidade, para o botão \"Tentar novamente\"",
+          "default": "Tentar de novo a resolução do puzzle: as peças serão de novo baralhadas."
+        },
+        {
+          "label": "Descrição para a tecnologia de acessibilidade, para o botão \"Maximizar\"",
+          "default": "Maximizar"
+        },
+        {
+          "label": "Descrição para a tecnologia de acessibilidade, para o botão \"Sair do Modo ecrã maximizado\"",
+          "default": "Restaurar a dimensão do ecrã"
+        },
+        {
+          "label": "Descrição para a tecnologia de acessibilidade, para o botão \"Desligar Áudio\"",
+          "default": "Desligar áudio"
+        },
+        {
+          "label": "Descrição para a tecnologia de acessibilidade, para o botão \"Ligar Áudio\"",
+          "default": "Ligar áudio"
+        },
+        {
+          "label": "Descrição para a tecnologia de acessibilidade \"Desativar\"",
+          "default": "Desativar"
+        },
+        {
+          "label": "Descrição para a tecnologia de acessibilidade \"Fechar\"",
+          "default": "Fechar"
+        }
+      ]
+    }
+  ]
+}

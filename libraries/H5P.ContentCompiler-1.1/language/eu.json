@@ -1,0 +1,296 @@
+{
+  "semantics": [
+    {
+      "label": "Erakutsi izenburua duen pantaila",
+      "description": "Hautatuta badago, izenburua duen pantaila agertuko da abiaraztean."
+    },
+    {
+      "label": "Izenburuko pantaila",
+      "fields": [
+        {
+          "label": "Sarrera",
+          "placeholder": "Ongi etorri ...",
+          "default": "<p style=\"text-align: center;\"></p>"
+        },
+        {
+          "label": "Izenburuko pantaila ertaina"
+        }
+      ]
+    },
+    {
+      "label": "Sarrerako testuak",
+      "fields": [
+        {
+          "label": "Iragazteko eta aukeratzeko sarrera",
+          "description": "Azaldu zer egin behar duten erabiltzaileek edukia iragazten eta hautatzen dutenean."
+        },
+        {
+          "label": "Berrantolatzeko sarrera",
+          "description": "Azaldu zer espero den erabiltzaileek egitea edukia berrantolatzeko."
+        },
+        {
+          "label": "Ikusteko sarrera",
+          "description": "Azaldu erabiltzaileek zer egin behar duten edukia ikustean."
+        }
+      ]
+    },
+    {
+      "label": "Edukia",
+      "entity": "edukia",
+      "widgets": [
+        {
+          "label": "Lehenetsia"
+        }
+      ],
+      "field": {
+        "label": "Edukia",
+        "fields": [
+          {
+            "label": "Etiketa",
+            "description": "Edukien etiketa. Etiketa metadatuen izenburuarekin ezarriko da etiketa, irudi edo arrerapenik ezartzen ez bada."
+          },
+          {
+            "label": "Irudia",
+            "description": "Aukerako irudi ilustratzailea."
+          },
+          {
+            "label": "Aurrerapena",
+            "description": "Edukiaren aukerako aurrerapena."
+          },
+          {
+            "label": "Gako-hitzak",
+            "description": "Idatzi edukiaren gako-hitzak komaz (,) bereizita."
+          },
+          {
+            "label": "Edukia",
+            "description": "Aukeratu gehitu nahi duzun eduki mota."
+          }
+        ]
+      }
+    },
+    {
+      "label": "Ikuste-ezarpenak",
+      "fields": [
+        {
+          "label": "Txartelaren zabalera",
+          "description": "Ezarri txartelaren zabalera lehenetsia CSS balio gisa (adibidez, 100px edo 14rem edo 15em). Unitaterik zehazten ez baduzu, px hartuko da.",
+          "default": "14rem"
+        },
+        {
+          "label": "Irudiaren tamaina",
+          "description": "Choose how content images should be sized.",
+          "options": [
+            {
+              "label": "Use image size ratio"
+            },
+            {
+              "label": "Use custom ratio"
+            }
+          ]
+        },
+        {
+          "label": "Custom ratio width",
+          "description": "Set the horizontal ratio component for content images."
+        },
+        {
+          "label": "Custom ratio height",
+          "description": "Set the vertical ratio component for content images."
+        },
+        {
+          "label": "Maximum teaser lines",
+          "description": "Set the maximum number of lines to display for the content teaser."
+        }
+      ]
+    },
+    {
+      "label": "Behavioural settings",
+      "fields": [
+        {
+          "label": "Start with everything",
+          "description": "Choose whether all contents should be selected by default ready to be used."
+        },
+        {
+          "label": "Preselect all keywords",
+          "description": "Choose whether all or no keywords should be selected when starting the content."
+        },
+        {
+          "label": "Bind selection to tags",
+          "description": "Choose whether the cards should be automatically selected/deselected when a tag is selected/deselected."
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "label": "Start",
+          "description": "Label of start button.",
+          "default": "Start"
+        },
+        {
+          "label": "Selected",
+          "description": "Status label of selected content.",
+          "default": "selected"
+        },
+        {
+          "label": "Status: unstarted",
+          "description": "Status label for unstarted content.",
+          "default": "unstarted"
+        },
+        {
+          "label": "Status: viewed",
+          "description": "Status label for viewed content.",
+          "default": "viewed"
+        },
+        {
+          "label": "Status: completed",
+          "description": "Status label for completed content.",
+          "default": "completed"
+        },
+        {
+          "label": "Status: cleared",
+          "description": "Status label for cleared content.",
+          "default": "cleared"
+        },
+        {
+          "label": "No cards to show",
+          "description": "Message when no content matches any of the chosen keywords.",
+          "default": "You need to select keywords in order to see contents to select from."
+        },
+        {
+          "label": "No cards were selected",
+          "description": "Message when no contents were selected.",
+          "default": "You have not selected any contents."
+        },
+        {
+          "label": "Untitled Content",
+          "description": "Fallback label.",
+          "default": "Untitled Content"
+        },
+        {
+          "label": "Reset confirmation dialog: header",
+          "description": "Header for dialog to confirm resetting all contents.",
+          "default": "Reset all contents?"
+        },
+        {
+          "label": "Reset confirmation dialog: text",
+          "description": "Text for dialog to confirm resetting all contents.",
+          "default": "All your contents and their status will be reset, but your selection will remain as is. Do you want to proceed?"
+        },
+        {
+          "label": "Reset confirmation dialog: header",
+          "description": "Header for dialog to confirm resetting all contents and selections.",
+          "default": "Reset all contents and selections?"
+        },
+        {
+          "label": "Reset confirmation dialog: text",
+          "description": "Text for dialog to confirm resetting all contents and selections.",
+          "default": "All your contents and their status and your selections will be reset. Do you want to proceed?"
+        },
+        {
+          "label": "Yes",
+          "default": "Yes"
+        },
+        {
+          "label": "No",
+          "default": "No"
+        },
+        {
+          "label": "No contents",
+          "default": "No valid contents were set."
+        }
+      ],
+      "label": "User interface"
+    },
+    {
+      "fields": [
+        {
+          "default": "Exercise: @label",
+          "label": "Exercise description",
+          "description": "@label is a placeholder that will be replaced with the respective value."
+        },
+        {
+          "label": "Toolbar description",
+          "default": "Toolbar. Use the key combination Alt plus T to focus the toolbar later on."
+        },
+        {
+          "label": "Button: Select mode",
+          "default": "Switch to select mode"
+        },
+        {
+          "label": "Button: Reorder mode",
+          "default": "Switch to reorder mode"
+        },
+        {
+          "label": "Button: View mode",
+          "default": "Switch to view mode"
+        },
+        {
+          "label": "Button: Reset",
+          "default": "Reset exercises"
+        },
+        {
+          "label": "Button: Reset everything",
+          "default": "Reset exercises and selections"
+        },
+        {
+          "label": "Tag selector",
+          "default": "Tag selector. Use to filter exercises."
+        },
+        {
+          "label": "Tag selector opened",
+          "default": "Tag selector was opened."
+        },
+        {
+          "label": "Tag selector closed",
+          "default": "Tag selector was closed."
+        },
+        {
+          "label": "Selected",
+          "default": "Selected"
+        },
+        {
+          "label": "Not selected",
+          "default": "Not selected"
+        },
+        {
+          "label": "Selected for reordering",
+          "default": "Selected for reordering"
+        },
+        {
+          "label": "Description for content list: Select mode",
+          "default": "Select all exercises that you want to work on"
+        },
+        {
+          "label": "Description for content list: Reorder mode",
+          "default": "Change the order of exercises"
+        },
+        {
+          "label": "Description for content list: View mode",
+          "default": "Do selected exercises"
+        },
+        {
+          "label": "Close",
+          "default": "Close"
+        },
+        {
+          "label": "Switched to select mode",
+          "default": "Switched to select mode."
+        },
+        {
+          "label": "Switched to reorder mode",
+          "default": "Switched to reorder mode."
+        },
+        {
+          "label": "Switched to view mode",
+          "default": "Switched to view mode."
+        },
+        {
+          "label": "Swapped contents",
+          "description": "@position1 and ¹position2 are placeholders and will be replaced with the respective values.",
+          "default": "Swapped content at position @position1 with content at position @position2."
+        }
+      ],
+      "label": "Accessibility texts"
+    }
+  ]
+}

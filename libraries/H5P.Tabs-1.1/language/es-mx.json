@@ -1,0 +1,76 @@
+{
+  "semantics": [
+    {
+      "label": "Pestañas",
+      "entity": "pestaña",
+      "widgets": [
+        {
+          "label": "Predeterminado"
+        }
+      ],
+      "field": {
+        "label": "Contenido",
+        "entity": "contenido"
+      }
+    },
+    {
+      "fields": [
+        {
+          "label": "Ubicación de la pestaña",
+          "description": "Elegir dónde se colocarán las pestañas.",
+          "options": [
+            {
+              "label": "Basado en el tamaño de la pantalla"
+            },
+            {
+              "label": "Por encima del contenido"
+            },
+            {
+              "label": "A la izquierda del contenido"
+            }
+          ]
+        },
+        {
+          "label": "Distribución de las pestañas",
+          "description": "Define qué porcentaje del espacio horizontal del panel de pestañas se utilizará para las pestañas."
+        },
+        {
+          "label": "Color de pestaña",
+          "description": "Permite ajustar el color de las pestañas.",
+          "default": "#1a73d9"
+        },
+        {
+          "label": "Color del fondo",
+          "description": "Permite ajustar el color de fondo para que las pestañas se mezclen con su entorno.",
+          "default": "rgba(255, 255, 255, 0)"
+        }
+      ],
+      "label": "Configuraciones del comportamiento",
+      "description": "Estas opciones te permitirán controlar cómo se comporta la tarea."
+    },
+    {
+      "label": "Interfaz del usuario",
+      "fields": [
+        {
+          "label": "Pestaña",
+          "default": "pestaña"
+        },
+        {
+          "label": "Sin contenido",
+          "default": "No hay contenido que mostrar."
+        }
+      ]
+    },
+    {
+      "label": "Textos de accesibilidad",
+      "fields": [
+        {
+          "label": "Elegir una pestaña",
+          "description": "Texto para lectores de pantalla.",
+          "default": "Elegir una pestaña."
+        },
+        {}
+      ]
+    }
+  ]
+}

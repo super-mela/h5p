@@ -1,0 +1,30 @@
+.h5p-discrete-option-multi-choice-feedback {
+  background-color: var(--color-feedback-background);
+  border-bottom: 1px solid var(--color-panel-background);
+  border-left: 1px solid var(--color-panel-background);
+  border-right: 1px solid var(--color-panel-background);
+  padding: 0.5em 1.25em;
+  position: relative;
+  text-align: left;
+  width: calc(100% - 0.5rem);
+
+  &::before {
+    content: "";
+    position: absolute;
+    left: 0.625em;
+    top: -0.3em;
+    width: 0.5em;
+    height: 0.5em;
+    background: var(--color-feedback-background);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+    box-shadow: inset 1px 1px 0px 0px #dcdcdc;
+  }
+
+  &.display-none {
+    display: none;
+  }
+}

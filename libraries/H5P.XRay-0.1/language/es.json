@@ -1,0 +1,117 @@
+{
+  "semantics": [
+    {
+      "label": "Imagen",
+      "description": "Imagen que se utilizará como fondo."
+    },
+    {
+      "label": "Imagen",
+      "description": "Imagen que se utilizará en primer plano."
+    },
+    {
+      "label": "Ajustes visuales",
+      "description": "Estas opciones te permitirán controlar los aspectos visuales.",
+      "fields": [
+        {
+          "label": "Anchura de la imagen",
+          "description": "Seleccionar la anchura del espacio dado que la imagen debería cubrir. La altura de la imagen será escalada apropiadamente y nunca excederá el 100% de la anchura.",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100 %"
+            },
+            {
+              "label": "Anchura natural de la imagen"
+            }
+          ]
+        },
+        {
+          "label": "Alineación de la imagen",
+          "description": "Seleccionar donde debería ser posicionada la imagen en relación al resto del contenido.",
+          "options": [
+            {
+              "label": "izquierda"
+            },
+            {
+              "label": "centro"
+            },
+            {
+              "label": "derecha"
+            }
+          ]
+        },
+        {
+          "label": "Anchura de la lente de rayos X",
+          "description": "Configurar la anchura de la lente de rayos X como porcentaje de la anchura de la imagen (por ejemplo 20%) o como un valor fijo en píxeles (por ejemplo 160px).",
+          "default": "20%"
+        },
+        {
+          "label": "Altura del lente de rayos X",
+          "description": "Configurar la altura del lente de rayos X como porcentaje de la altura de la imagen (por ejemplo 25%) o como un valor fijo en píxeles (por ejemplo 90px).",
+          "default": "25%"
+        },
+        {
+          "label": "Oscurecer imagen de primer plano al hacer rayos X",
+          "description": "Si se activa, la imagen de primer plano se oscurecerá para reforzar el efecto de enfoque de los rayos X."
+        }
+      ]
+    },
+    {
+      "label": "Configuración del comportamiento",
+      "description": "Estas opciones le permitirán controlar cómo se comporta la tarea.",
+      "fields": [
+        {
+          "label": "Rayos X automáticos",
+          "description": "Si está marcada, la imagen se radiografiará automáticamente mientras el usuario se desplaza sobre ella. De lo contrario, el usuario debe activar y desactivar los rayos X."
+        },
+        {
+          "label": "Ocultar indicador de rayos X",
+          "description": "El indicador de rayos X se usa como el botón para uso del teclado. El ocultarlo no evitará que funcione, pero los usuarios tendrán menos información de navegación."
+        }
+      ]
+    },
+    {
+      "label": "Lector de pantalla",
+      "fields": [
+        {
+          "label": "Rayos X",
+          "description": "Etiqueta para el botón de Rayos X (visible solamente al lector de pantalla).",
+          "default": "Rayos X"
+        },
+        {
+          "label": "Rayos X activados.",
+          "description": "Leer cuando se activaron los Rayos X .",
+          "default": "Rayos X activados."
+        },
+        {
+          "label": "Rayos X desactivados.",
+          "description": "Leer cuando se desactivaron los Rayos X.",
+          "default": "Rayos X desactivados."
+        },
+        {
+          "label": "Instrucciones",
+          "description": "Instrucciones sobre como utilizar el teclado. Leer cuando los se activan los Rayos X",
+          "default": "Usa las teclas de dirección para mover la lente de Rayos X."
+        },
+        {
+          "label": "Se movió la lente a",
+          "description": "Leer cuando se mueve la lente. @positionHorizontal y @positionVertical son variables que serán reemplazadas por los valores respectivos.",
+          "default": "Lente movida a @positionHorizontal horizontalmente y a @positionVertical verticalmente."
+        },
+        {
+          "label": "Desconocido",
+          "description": "Texto de retroalimentación cuando la posición de la lente no se puede determinar.",
+          "default": "desconocida"
+        }
+      ]
+    }
+  ]
+}

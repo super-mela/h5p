@@ -1,0 +1,139 @@
+@use "./../../../abstracts/mixins" as *;
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.textArea,
+.textareaMirror {
+  border: none;
+  font-family: inherit;
+  font-size: inherit;
+  font-weight: inherit;
+  letter-spacing: normal;
+  line-height: 1.4;
+  outline: none;
+  padding: 0.5rem;
+  text-decoration: none;
+  text-indent: 0px;
+  text-transform: none;
+  white-space: pre-wrap;
+  width: 100%;
+  word-spacing: 0px;
+  word-wrap: break-word;
+}
+
+.textArea {
+  resize: none;
+  flex-grow: 1;
+  overflow-y: scroll;
+  background: transparent;
+  caret-color: rgb(0, 0, 0);
+  color: transparent;
+  position: relative;
+}
+
+.dynamicSavingText,
+.counter {
+  color: #555555;
+}
+
+.textAreaWrapper {
+  border: 2px solid #eeeeee;
+  border-radius: 0.25rem;
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  min-height: 12rem;
+  position: relative;
+
+  &:focus-within {
+    border: 2px solid #2360c5;
+  }
+
+  &.lengthExceeded {
+    &:focus-within {
+      border: 2px solid #cd2026;
+    }
+  }
+}
+
+.dynamicSavingText {
+  line-height: 1.2;
+  margin-block-start: 0;
+  margin-block-end: 0.2rem;
+  min-height: 1.2rem; // Should be equal to line-height
+  order: 1;
+}
+
+.markAsDoneCheckbox {
+  color: #555555;
+
+  input[type="checkbox"] {
+    height: 20px;
+    width: 20px;
+    margin-right: 0.5rem;
+    position: relative;
+    top: 0.25rem;
+  }
+}
+
+.topGroup {
+  align-items: flex-end;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.bottomGroup {
+  align-items: flex-end;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem;
+}
+
+.counter {
+  vertical-align: middle;
+  white-space: nowrap;
+
+  &.redText {
+    color: #cd2026;
+  }
+}
+
+.noteLabel {
+  line-height: 1.2;
+  margin-block-start: 0.8rem;
+  margin-block-end: 0.2rem;
+  font-size: 1rem;
+  font-weight: 700;
+  order: 2;
+}
+
+.textareaMirrorWrapper {
+  border-color: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  user-select: none;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.textareaMirror {
+  a {
+    color: rgba(31, 103, 199, 1);
+    pointer-events: auto;
+  }
+}
+
+.visuallyHidden {
+  @include visually-hidden;
+}

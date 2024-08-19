@@ -1,0 +1,16 @@
+@import '@styles/icons.scss';
+
+.h5p-editing-dialog-header {
+  .title.playlist:before {
+    content: $playlist;
+  }
+}
+.choose-playlist-editor {
+  margin: 1em 0;
+}
+
+.field-name-audioPlaylistsGroup {
+  .h5p-editing-dialog {
+    top: 2em;
+  }
+}

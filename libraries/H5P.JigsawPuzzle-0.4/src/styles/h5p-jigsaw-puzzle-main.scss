@@ -1,0 +1,42 @@
+@use "sass:math";
+
+$color-base: #1a73d9;
+$color-base-05: rgba($color-base, .05);
+$color-base-10: rgba($color-base, .10);
+$color-base-20: rgba($color-base, .20);
+$color-base-90: rgba($color-base, .90);
+$color-base-95: rgba($color-base, .95);
+
+$color-grey-14: #eee;
+$color-grey-8: #888;
+$color-grey-4: #444;
+$color-grey-3: #333;
+$color-grey-3-50: rgba($color-grey-3, .5);
+$color-grey-0: #000;
+$color-grey-0-50: rgba($color-grey-0, .5);
+$color-grey-0-30: rgba($color-grey-0, .3);
+$color-grey-0-10: rgba($color-grey-0, .1);
+
+$color-shadow: rgba(166, 166, 166, .2);
+
+$color-scrollbar: #6C7992;
+$color-scrollbar-35: rgba($color-scrollbar, .35);
+$color-scrollbar-75: rgba($color-scrollbar, .75);
+
+$color-joubel-ui-button: #1a73d9;
+$color-joubel-ui-button-hover: #1356a3;
+$color-joubel-ui-button-focus: #1356a3;
+$color-joubel-ui-button-active: #104888;
+
+$size-icon-default: 1.2em;
+
+$margin-base: 1em;
+$margin-50: math.div($margin-base, 2);
+$margin-small: 0.3em;
+
+$border-radius-small: .25em;
+$border-width-normal: 2px;
+
+$box-shadow-normal: 10px 10px 30px $color-shadow;
+
+$default-duration: 0.5s;

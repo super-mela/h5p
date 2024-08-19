@@ -1,0 +1,28 @@
+{
+  "libraryStrings": {
+    "context-menu_edit": "Editar",
+    "context-menu_delete": "Eliminar",
+    "context-menu_arrow-directional": "Flecha simple",
+    "context-menu_arrow-bi-directional": "Flecha doble",
+    "context-menu_arrow-non-directional": "Línea sencilla",
+    "dialog_close": "Diálogo para Cerrar",
+    "draggable_delete-confirmation": "¿Seguro que quieres eliminar este elemento?",
+    "draggable_delete-positive": "Eliminar elemento",
+    "draggable_delete-negative": "Cancelar",
+    "draggable_selected": "Usa las teclas de dirección para mover y Escape para deshacer la selección.",
+    "draggable_not-selected": "Pulsa Entrar para seleccionar",
+    "grid-indicator_label": "Haz clic y arrastra para crear un nuevo elemento",
+    "map-editor-view_item-dialog-title": "Elemento",
+    "semantics-form_save": "Guardar",
+    "toolbar-button-type_map-appearance": "Apariencia del mapa",
+    "toolbar-button-type_create-box": "Crear caja",
+    "toolbar-button-type_create-arrow": "Crear flecha",
+    "appearance-dialog_title": "Cambiar la apariencia del mapa del tópico",
+    "global_theme-1": "Azul",
+    "global_theme-2": "Verde",
+    "global_theme-3": "rojo",
+    "global_theme-4": "Gris",
+    "theme-picker_label": "Color del tema",
+    "toolbar-button-type_cannot-create-arrow": "Debe haber al menos dos cajas antes de que se pueda añadir una flecha"
+  }
+}

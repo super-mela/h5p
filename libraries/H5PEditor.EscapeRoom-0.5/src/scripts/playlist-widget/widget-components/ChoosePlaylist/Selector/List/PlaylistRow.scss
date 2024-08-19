@@ -1,0 +1,95 @@
+@import '@styles/icons.scss';
+
+.h5p-playlist-listitem {
+  display: block;
+
+  .h5p-playlist-row {
+    align-items: center;
+    background-color: inherit;
+    border: 1px solid #e0dede;
+    border-bottom-width: 0;
+    display: flex;
+    font-family: inherit;
+    font-size: inherit;
+    text-align: left;
+    padding: 0.625em;
+    width: 100%;
+
+    .playlist-selector-submenu {
+      display: none;
+    }
+
+    &.marked-playlist {
+      background-color: #ddf0dd;
+      border-color: #72c967;
+      border-bottom-width: 1px;
+
+      &:hover {
+        background-color: #bacdba;
+        border-color: #5baa55;
+      }
+    }
+
+    &.marked-playlist.checked:after {
+      font-family: "H5PFontAwesome4";
+      content: "\f00c";
+      font-size: 1.5em;
+      align-self: center;
+      margin-right: 0.5em;
+      color: #2c611a;
+    }
+
+    &.no-top-border {
+      border-top: none;
+    }
+
+    &:hover {
+      background-color: #f5f5f5;
+      border-color: #e0dede;
+      cursor: pointer;
+
+      .playlist-selector-submenu {
+        display: block;
+      }
+      .h5p-playlist-name {
+        text-decoration: underline;
+      }
+    }
+
+    &:active {
+      background-color: #e8e8e8;
+      border-color: #e0dede;
+    }
+
+    &:before {
+      font-family: "H5PFontAwesome4", sans-serif;
+      content: $playlist;
+      margin: 0 0.6em 0 0.25em;
+      font-size: 1.5em;
+      vertical-align: sub;
+    }
+
+    .playlist-wrapper {
+      flex: 1;
+      display: inline-block;
+      margin: 0 0.75em;
+      vertical-align: top;
+      box-sizing: border-box;
+      overflow: hidden;
+
+      .h5p-playlist-name {
+        font-size: 0.9em;
+        font-weight: bold;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        cursor: pointer;
+      }
+
+      .starting-playlist {
+        font-size: 0.7em;
+        font-style: italic;
+      }
+    }
+  }
+}

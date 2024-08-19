@@ -1,0 +1,80 @@
+[
+  {
+    "name": "resourceList",
+    "type": "list",
+    "label": "Resources",
+    "entity": "resource",
+    "importance": "medium",
+    "optional": true,
+    "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Default"
+      }
+    ],
+    "min": 1,
+    "defaultNum": 1,
+    "field":   {
+      "name": "type",
+      "type": "group",
+      "label": "Resources",
+      "importance": "medium",
+      "description": "Optional links to resources.",
+      "fields": [
+        {
+          "type": "text",
+          "name": "title",
+          "label": "Resource title"
+        },
+        {
+          "type": "text",
+          "widget": "textarea",
+          "name": "introduction",
+          "label": "Introduction",
+          "maxLength": 500,
+          "optional": true
+        },
+        {
+          "type": "text",
+          "widget": "text",
+          "name": "url",
+          "label": "URL",
+          "optional": true
+        },
+        {
+          "type": "image",
+          "name": "introductionImage",
+          "label": "Introduction image",
+          "optional": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "l10n",
+    "importance": "low",
+    "type": "group",
+    "label": "Localize",
+    "common": true,
+    "fields": [
+      {
+        "name": "hide",
+        "type": "text",
+        "label": "Translation for \"Hide\"",
+        "default": "Hide"
+      },
+      {
+        "name": "resources",
+        "type": "text",
+        "label": "Translation for \"Resources\"",
+        "default": "Resources"
+      },
+      {
+        "name": "resourcesLabel",
+        "type": "text",
+        "label": "Accessibility for the \"Resources\" button",
+        "default": "See additional resources to get more information"
+      }
+    ]
+  }
+]

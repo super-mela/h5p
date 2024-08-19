@@ -1,0 +1,50 @@
+.contextMenuButton {
+  vertical-align: top;
+  position: relative;
+  font-size: 1.2em;
+
+  width: 2em;
+  height: 1.5em;
+  padding: 0.05em 0.2em;
+  margin: 0.15em;
+
+  cursor: pointer;
+  border: 1px solid #c4e3f7;
+  border-radius: 0.25em;
+  color: #09f;
+  background: #c4e3f7;
+  z-index: 1;
+  pointer-events: all;
+  &:hover,
+  &:focus {
+    border-color: #0061a2;
+
+    .tooltip {
+      display: block;
+      z-index: 2;
+    }
+  }
+
+  &:focus {
+    z-index: 2;
+  }
+
+  .icon {
+    fill: #0061a2;
+  }
+}
+
+.tooltip {
+  display: none;
+  background: black;
+  color: white;
+  white-space: nowrap;
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  transform: translateY(-29px);
+  z-index: 1;
+  padding: 0.2em 0.5em;
+  font-size: 0.8em;
+  border-radius: 4px;
+}

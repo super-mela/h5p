@@ -1,0 +1,28 @@
+{
+  "libraryStrings": {
+    "dialog_close": "Uždaryti dialogo langą",
+    "draggable_delete-confirmation": "Ar tikrai norite ištrinti šį elementą?",
+    "appearance-dialog_title": "Pakeisti temos žemėlapio išvaizdą",
+    "context-menu_arrow-bi-directional": "Dvipusė rodyklė",
+    "context-menu_arrow-directional": "Vienpusė rodyklė",
+    "context-menu_arrow-non-directional": "Viena linija",
+    "context-menu_delete": "Ištrinti",
+    "context-menu_edit": "Redaguoti",
+    "draggable_delete-negative": "Atšaukti",
+    "draggable_delete-positive": "Ištrinti elementą",
+    "draggable_not-selected": "Paspauskite Enter, kad pasirinktumėte",
+    "draggable_selected": "Norėdami judėti, spauskite rodyklių klavišus. Norėdami panaikinti pasirinkimą, spauskite ESC klavišą.",
+    "global_theme-1": "Mėlyna",
+    "global_theme-2": "Mėlyna",
+    "global_theme-3": "Raudona",
+    "global_theme-4": "Pilka",
+    "grid-indicator_label": "Spustelėkite ir vilkite, kad sukurtumėte naują elementą",
+    "map-editor-view_item-dialog-title": "Elementas",
+    "semantics-form_save": "Išsaugoti",
+    "theme-picker_label": "Spalvota tema",
+    "toolbar-button-type_cannot-create-arrow": "Kad būtų galima pridėti rodyklę, turi būti bent du langeliai",
+    "toolbar-button-type_create-arrow": "Sukurti rodyklę",
+    "toolbar-button-type_create-box": "Sukurti langelį",
+    "toolbar-button-type_map-appearance": "Žemėlapio išvaizda"
+  }
+}

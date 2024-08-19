@@ -1,0 +1,66 @@
+.contextMenu {
+  $border-width: 0.6em;
+
+  display: none;
+  position: absolute;
+  top: -0.5em;
+  transform: translateY(-100%);
+  white-space: nowrap;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  background-color: #c4e3f7;
+  border: 1px solid #09f;
+  border-radius: 2px;
+  filter: drop-shadow(0 0 0.25em rgba(44, 44, 44, 0.5));
+  pointer-events: visible;
+  z-index: 2;
+  &::before {
+    position: absolute;
+    display: block;
+    content: "";
+    border-style: solid;
+    border-color: #09f transparent transparent transparent;
+    bottom: -$border-width;
+  }
+
+  &::after {
+    position: absolute;
+    display: block;
+    content: "";
+    border-style: solid;
+    border-color: #c4e3f7 transparent transparent transparent;
+    bottom: calc(-#{$border-width} + 2px);
+    z-index: 1;
+  }
+
+  &.show {
+    display: block !important;
+  }
+
+  &.right {
+    &::before {
+      border-width: $border-width $border-width 0 0;
+      left: -1px;
+    }
+
+    &::after {
+      border-width: $border-width $border-width 0 0;
+      left: 0;
+    }
+  }
+
+  &.left {
+    right: 0;
+
+    &::before {
+      border-width: $border-width 0 0 $border-width;
+      right: -1px;
+    }
+
+    &::after {
+      border-width: $border-width 0 0 $border-width;
+      right: 0;
+    }
+  }
+}

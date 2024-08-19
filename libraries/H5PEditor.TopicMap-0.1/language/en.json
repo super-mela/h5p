@@ -1,0 +1,28 @@
+{
+  "libraryStrings": {
+    "appearance-dialog_title": "Change the topic map's appearance",
+    "context-menu_arrow-bi-directional": "Double sided arrow",
+    "context-menu_arrow-directional": "One sided arrow",
+    "context-menu_arrow-non-directional": "Single line",
+    "context-menu_delete": "Delete",
+    "context-menu_edit": "Edit",
+    "dialog_close": "Close dialog",
+    "draggable_delete-confirmation": "Are you sure you want to delete this item?",
+    "draggable_delete-negative": "Cancel",
+    "draggable_delete-positive": "Delete item",
+    "draggable_not-selected": "Press enter to select",
+    "draggable_selected": "Press arrow keys to move. Press escape to unselect.",
+    "global_theme-1": "Blue",
+    "global_theme-2": "Green",
+    "global_theme-3": "Red",
+    "global_theme-4": "Gray",
+    "grid-indicator_label": "Click and drag to create a new element",
+    "map-editor-view_item-dialog-title": "Item",
+    "semantics-form_save": "Save",
+    "theme-picker_label": "Color theme",
+    "toolbar-button-type_cannot-create-arrow": "There must be at least two boxes before an arrow can be added",
+    "toolbar-button-type_create-arrow": "Create arrow",
+    "toolbar-button-type_create-box": "Create box",
+    "toolbar-button-type_map-appearance": "Map appearance"
+  }
+}

@@ -1,0 +1,118 @@
+{
+  "semantics": [
+    {
+      "label": "Attēls",
+      "description": "Izmantojamais attēls."
+    },
+    {
+      "label": "Vizuālie iestatījumi",
+      "description": "Šīs opcijas ļaus jums kontrolēt vizuālos aspektus.",
+      "fields": [
+        {
+          "label": "Attēla platums",
+          "description": "Norādiet lauka platumu, kas attēlam jānosedz. Attēla augstums tiks attiecīgi mērogots, un tas nekad nepārsniedz 100% platuma.",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100 %"
+            },
+            {
+              "label": "Attēla dabiskais platums"
+            }
+          ]
+        },
+        {
+          "label": "Attēla līdzināšana",
+          "description": "Norādiet, kur attēls jānovieto attiecībā pret pārējo saturu.",
+          "options": [
+            {
+              "label": "pa kreisi"
+            },
+            {
+              "label": "centrā"
+            },
+            {
+              "label": "pa labi"
+            }
+          ]
+        },
+        {
+          "label": "Tālummaiņas objektīva platums",
+          "description": "Iestatiet tālummaiņas objektīva platumu procentos no attēla platuma (piemēram, 20%) vai fiksētu vērtību pikseļos (piemēram, 160px).",
+          "default": "20%"
+        },
+        {
+          "label": "Tālummaiņas objektīva augstums",
+          "description": "Iestatiet tālummaiņas objektīva augstumu procentos no attēla platuma (piemēram, 25%) vai fiksētu vērtību pikseļos (piemēram, 90px).",
+          "default": "25%"
+        },
+        {
+          "label": "Tumšot attēlu, kad tas tiek tuvināts",
+          "description": "Ja aktivizēts, attēls kļūst tumšāks, lai pastiprinātu tālummaiņas fokusēšanas efektu."
+        }
+      ]
+    },
+    {
+      "label": "Uzvedības iestatījumi",
+      "description": "Šie parametri ļaus jums kontrolēt uzdevuma uzvedību.",
+      "fields": [
+        {
+          "label": "Automātiska tālummaiņa",
+          "description": "Ja atzīmēts, attēls tiek automātiski palielināts, virs tā turot kursoru. Pretējā gadījumā lietotājam ir jāieslēdz un jāizslēdz palielinājums."
+        },
+        {
+          "label": "Paslēpt palielinājuma indikatoru",
+          "description": "Palielinājuma indikators tiek izmantots kā poga tastatūras lietošanai. Tās paslēpšana neliegs tai darboties, taču lietotājiem būs mazāk navigācijas informācijas."
+        }
+      ]
+    },
+    {
+      "label": "Ekrāna lasītājs",
+      "fields": [
+        {
+          "label": "Palielināt",
+          "description": "Palielinājuma pogas etiķete (redzama tikai ekrāna lasītājam).",
+          "default": "Palielināt"
+        },
+        {
+          "label": "Palielinājums aktivizēts.",
+          "description": "Tiks nolasīts, kad palielinājums tiek aktivizēts.",
+          "default": "Palielinājums aktivizēts."
+        },
+        {
+          "label": "Palielinājums deaktivizēts.",
+          "description": "Tiks nolasīts, kad palielinājums tiek atslēgts.",
+          "default": "Palielinājums deaktivizēts."
+        },
+        {
+          "label": "Instrukcijas",
+          "description": "Norādījumi par tastatūras lietošanu. Tiks nolasīts, kad aktivizēts palielinājums",
+          "default": "Izmantojiet bulttaustiņus, lai pārvietotu palielinājuma objektīvu. Izmantojiet plus taustiņu, lai tuvinātu. Izmantojiet mīnusa taustiņu, lai tālinātu."
+        },
+        {
+          "label": "Pietuvināts mērogā",
+          "description": "Tiks nolasīts, kad tiek mainīta tālummaiņas skala. @magnification ir vietturis, kas tiks aizstāts ar attiecīgo vērtību.",
+          "default": "Pietuvināts @magnification mērogā līdz 1."
+        },
+        {
+          "label": "Objektīvs pārvietots uz",
+          "description": "Tiks nolasīts, kad tiek pārvietots palielinājuma objektīvs. @positionHorizontal un @positionVertical ir vietturi, kas tiks aizstāti ar attiecīgajām vērtībām.",
+          "default": "Objektīvs ir horizontāli pārvietots uz @positionHorizontal un vertikāli uz @positionVertical."
+        },
+        {
+          "label": "Nezināms",
+          "description": "Regresa teksts, ja nevar noteikt objektīva pozīciju.",
+          "default": "nezināms"
+        }
+      ]
+    }
+  ]
+}

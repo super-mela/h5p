@@ -1,0 +1,36 @@
+{
+  "title": "Image Zoom",
+  "description": "Zoom image sections by hovering over them",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 1,
+  "author": "Oliver Tacke, University of Saskatchewan",
+  "license": "MIT",
+  "machineName": "H5P.ImageZoom",
+  "embedTypes": [
+    "iframe"
+  ],
+  "preloadedJs": [
+    {
+      "path": "dist/h5p-image-zoom.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5p-image-zoom.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.Question",
+      "majorVersion": 1,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.Image",
+      "majorVersion": 1,
+      "minorVersion": 1
+    }
+  ]
+}

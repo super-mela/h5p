@@ -1,0 +1,124 @@
+{
+  "semantics": [
+    {
+      "label": "Multivide",
+      "fields": [
+        {
+          "label": "Tips",
+          "description": "Papildu multivide, kuru atspoguļot virs jautājuma."
+        },
+        {
+          "label": "Atspējot attēla tālummaiņu"
+        }
+      ]
+    },
+    {
+      "label": "Uzdevuma apraksts",
+      "description": "Ja vēlaties sniedziet šeit aprakstu."
+    },
+    {
+      "label": "Režīms",
+      "description": "Izvēlieties spēles režīmu. Cipari tiks aizpildīti automātiski, vārdi jānorāda.",
+      "options": [
+        {
+          "label": "Spēlēt ar skaitļiem"
+        },
+        {
+          "label": "Spēlēt ar vārdiem"
+        }
+      ]
+    },
+    {
+      "label": "Vārdi vai frāzes",
+      "fields": [
+        {
+          "label": "Vārdi vai frāzes",
+          "description": "Katram vārdam un frāzei izmantojiet vienu rindiņu."
+        }
+      ]
+    },
+    {
+      "label": "Dēļa izmērs"
+    },
+    {
+      "label": "Noformējums",
+      "description": "Šeit varat pielāgot vizuālo izskatu.",
+      "fields": [
+        {
+          "label": "Attēls",
+          "description": "Džokera attēls pogām."
+        },
+        {
+          "label": "Fona krāsa",
+          "description": "Dēļa fona krāsa."
+        }
+      ]
+    },
+    {
+      "label": "Audio",
+      "description": "Šeit varat pielāgot audio.",
+      "fields": [
+        {
+          "label": "Atlasīt/atcelt lauka atlasi",
+          "description": "Skaņa, kas jāatskaņo, kad lauks tiek atlasīts vai atlase tiek noņemta."
+        },
+        {
+          "label": "Pabeigta rinda vai kolonna",
+          "description": "Skaņa, kas jāatskaņo, kad lietotājs ir atlasījis visu rindu vai kolonnu."
+        }
+      ]
+    },
+    {
+      "label": "Uzvedības iestatījumi",
+      "description": "Šie iestatījumi ļaus jums kontrolēt uzdevuma uzvedību.",
+      "fields": [
+        {
+          "label": "Atļaut \"Mēģināt vēlreiz\""
+        },
+        {
+          "label": "Atkārtotam mēģinājumam jaukt secību",
+          "description": "Ja atzīmēts, atkārtojot mēģinājumu, vārdi/frāzes/skaitļi tiks sakārtoti nejaušā secībā."
+        },
+        {
+          "label": "Iestatīt džokeru",
+          "description": "Novietos neapgriežamu džokeru dēļa centrā, ja tā izmērs ir nepāra."
+        },
+        {
+          "label": "Augstuma ierobežojuma režīms",
+          "description": "Izlemiet, vai vēlaties ierobežot dēļa augstumu, lai tas atbilstu redzamajā laukumā. Automātiskā noteikšana var nebūt ideāla atkarībā no jūsu vietnes iestatījumiem, piemēram, ja tai ir lipīgas augšējās navigācijas joslas. Labas pielāgotās vērtības ir grūti iestatīt manuāli.",
+          "options": [
+            {
+              "label": "Nav ierobežojumu"
+            },
+            {
+              "label": "Automātiski"
+            },
+            {
+              "label": "Pielāgoti"
+            }
+          ]
+        },
+        {
+          "label": "Augstuma ierobežojums",
+          "description": "Maksimālais dēļa augstums pikseļos."
+        }
+      ]
+    },
+    {
+      "label": "Pogas \"Mēģināt vēlreiz\" teksts",
+      "default": "Mēģināt vēlreiz"
+    },
+    {
+      "label": "Pogas \"Mēģināt vēlreiz\" apraksts priekš asistējošām tehnoloģijām",
+      "default": "Mēģināt uzdevumu vēlreiz. Dzēst visas sniegtās atbildes un sākt uzdevumu vēlreiz."
+    },
+    {
+      "label": "Pogas \"Izslēgt skaņu\" apraksts priekš asistīvajām tehnoloģijām",
+      "default": "Izslēgt skaņu, pašlaik skaņa ieslēgta"
+    },
+    {
+      "label": "Pogas \"Ieslēgt skaņu\" apraksts priekš asistējošās tehnoloģijas",
+      "default": "Ieslēgt skaņu, pašlaik skaņa izslēgta"
+    }
+  ]
+}

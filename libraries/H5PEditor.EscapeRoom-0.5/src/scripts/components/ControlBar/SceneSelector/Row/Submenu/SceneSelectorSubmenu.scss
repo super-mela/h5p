@@ -1,0 +1,87 @@
+@import '@styles/icons.scss';
+
+.scene-selector-submenu {
+  display: inline-block;
+
+  button {
+    position: relative;
+    padding: 0.5em;
+    margin-left: 0.5em;
+    width: 2.5em;
+    height: 2.5em;
+
+    border: 1px solid #f0f0f0;
+    background: white;
+    cursor: pointer;
+
+    .tooltip {
+      display: none;
+      position: absolute;
+      top: -1px;
+      left: 50%;
+      transform: translate(-50%, -100%);
+      padding: 0.4em 0.6em;
+      white-space: nowrap;
+      background: #000;
+      color: #fff;
+      pointer-events: none;
+    }
+
+    &:disabled {
+      cursor: default;
+    }
+
+    &:not(:disabled):hover {
+      background-color: #e0dede;
+      border-color: #e0dede;
+
+      .tooltip {
+        display: block;
+      }
+    }
+
+    &:not(:disabled):active {
+      background-color: #e8e8e8;
+      border-color: #e0e0e0;
+    }
+  }
+
+  button:before {
+    font-family: "360-image";
+  }
+
+  .set-start-scene:before {
+    content: $setStartScene
+  }
+
+  .jump:before {
+    content: $goToScene;
+  }
+
+  .edit:before {
+    content: $edit;
+  }
+
+  .clone:before {
+    content: $clone;
+  }
+
+  .delete:before {
+    content: $delete;
+    color: #d63129;
+  }
+
+  .delete {
+    border-color: #fcdbd4;
+
+    &:hover {
+      background-color: #fcdbd4;
+      border-color: #f2c1b1;
+    }
+
+    &:active {
+      background-color: #f2c1b1;
+      border-color: #e39e98;
+    }
+  }
+}

@@ -1,0 +1,187 @@
+{
+  "semantics": [
+    {
+      "label": "媒介",
+      "fields": [
+        {
+          "label": "媒介"
+        },
+        {
+          "label": "预设"
+        }
+      ]
+    },
+    {
+      "entity": "记录文件",
+      "widgets": [
+        {
+          "label": "默认"
+        }
+      ],
+      "field": {
+        "label": "文件数据",
+        "fields": [
+          {
+            "label": "文字记录(WebVTT文件)"
+          },
+          {
+            "label": "标签",
+            "description": "用于识别成绩单的标签。如果你只有一份成绩单，那就无关紧要了。"
+          },
+          {
+            "label": "语言代码",
+            "description": "转录库将尝试自动确定转录文本的语言，作为屏幕阅读器的信息。如果失败，您可以手动设置“BCP 47语言标签”-例如:英语中的“en”，挪威语中的“nb”，等等。"
+          }
+        ]
+      },
+      "label": "记录文件"
+    },
+    {
+      "label": "行为设置",
+      "fields": [
+        {
+          "label": "最大行数",
+          "description": "一次应显示的最大转录行数。如果省略或为0，将显示完整的成绩单。"
+        },
+        {
+          "label": "载入时显示文字记录",
+          "description": "您可以选择在加载内容时是否显示成绩单。"
+        }
+      ]
+    },
+    {
+      "label": "章节",
+      "fields": [
+        {
+          "label": "使用互动视频的书签"
+        },
+        {
+          "label": "章节标签",
+          "description": "您可以选择添加章节标记在常见的mp4chaps格式。语法为“hh:mm:ss章节标题”或“hh:mm:ss”。章节标题”"
+        }
+      ]
+    },
+    {
+      "label": "用户界面",
+      "fields": [
+        {
+          "label": "未提供媒介",
+          "default": "没有为该记录指定媒介。"
+        },
+        {
+          "label": "未提供成绩单",
+          "default": "没有提供成绩单。"
+        },
+        {
+          "label": "WebVTT文件有问题",
+          "default": "WebVTT文件似乎有问题。有关更多信息，请咨询浏览器的开发控制台。"
+        },
+        {
+          "label": "章节标签",
+          "default": "章节标签"
+        },
+        {
+          "label": "未命名的选项",
+          "default": "未命名的选项"
+        }
+      ]
+    },
+    {
+      "label": "阅读器",
+      "fields": [
+        {
+          "label": "记录可见",
+          "default": "隐藏文本。目前可见的。"
+        },
+        {
+          "label": "文本不可见",
+          "default": "显示文本。目前不可见。"
+        },
+        {
+          "label": "自动滚动活跃",
+          "default": "关闭自动滚动。目前活跃。"
+        },
+        {
+          "label": "自动滚动不活跃",
+          "default": "Turn on autoscroll. Currently not active."
+        },
+        {
+          "label": "Autoscroll disabled",
+          "default": "Autoscroll option disabled."
+        },
+        {
+          "label": "Interactive transcript view",
+          "default": "Switch to plaintext view"
+        },
+        {
+          "label": "Plain text view",
+          "default": "Switch to interactive transcript view."
+        },
+        {
+          "label": "Mode switching disabled",
+          "default": "Mode switching disabled."
+        },
+        {
+          "label": "Start time active",
+          "default": "Hide start time. Currently shown."
+        },
+        {
+          "label": "Start time inactive",
+          "default": "Show start time. Currently not shown."
+        },
+        {
+          "label": "Start time disabled",
+          "default": "Start time option disabled."
+        },
+        {
+          "label": "Line breaks active",
+          "default": "Hide line breaks. Currently shown."
+        },
+        {
+          "label": "Line breaks inactive",
+          "default": "Show line breaks. Currently not shown."
+        },
+        {
+          "label": "Line breaks disabled",
+          "default": "Line break option disabled."
+        },
+        {
+          "label": "Open chapter marks",
+          "default": "Open chapter marks"
+        },
+        {
+          "label": "Close chapter marks",
+          "default": "Close chapter marks"
+        },
+        {
+          "label": "Chapter marks disabled",
+          "default": "Chapter marks disabled."
+        },
+        {
+          "label": "Interactive transcript",
+          "default": "Interactive transcript"
+        },
+        {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
+          "label": "Select field disabled",
+          "default": "Select field disabled."
+        },
+        {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
+          "label": "Search box disabled",
+          "default": "Search box disabled."
+        },
+        {
+          "label": "Close",
+          "default": "Close"
+        }
+      ]
+    }
+  ]
+}

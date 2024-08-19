@@ -1,0 +1,28 @@
+.dialogText {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.6;
+}
+
+.copyright {
+  margin-top: 0.5em;
+  margin-bottom: 1em;
+}
+
+.bodyText {
+  margin-bottom: 1em;
+}
+
+.introduction {
+  font-weight: 600;
+}
+
+.description {
+  font-weight: 700;
+  padding-bottom: 1rem;
+}
+
+.topicImage {
+  width: 100%;
+  height: auto;
+}

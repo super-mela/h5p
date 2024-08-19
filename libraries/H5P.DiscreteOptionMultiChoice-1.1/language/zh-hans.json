@@ -1,0 +1,245 @@
+{
+  "semantics": [
+    {
+      "label": "媒体",
+      "fields": [
+        {
+          "label": "类型",
+          "description": "可选的媒体，显示在问题上方。"
+        },
+        {
+          "label": "禁用图像缩放"
+        }
+      ]
+    },
+    {
+      "label": "问题"
+    },
+    {
+      "label": "可用选项",
+      "entity": "选项",
+      "widgets": [
+        {
+          "label": "默认"
+        },
+        {
+          "label": "Textual"
+        }
+      ],
+      "field": {
+        "label": "选项",
+        "fields": [
+          {
+            "label": "文本"
+          },
+          {
+            "label": "正确"
+          },
+          {
+            "label": "反馈",
+            "fields": [
+              {
+                "label": "当用户选择了该答案时显示的消息",
+                "description": "消息将显示在答案下方。"
+              },
+              {
+                "label": "当用户未选择该答案时显示的消息",
+                "description": "消息将显示在答案下方。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "整体反馈",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "默认"
+            }
+          ],
+          "label": "为任何分数范围定义自定义反馈",
+          "description": "点击\"添加范围\"按钮添加所需数量的范围。示例：0-20％ 低分数，21-91％ 平均分数，91-100％ 优秀分数！",
+          "entity": "分数范围",
+          "field": {
+            "fields": [
+              {
+                "label": "分数范围"
+              },
+              {},
+              {
+                "label": "定义分数范围的反馈",
+                "placeholder": "填写反馈"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "行为设置",
+      "fields": [
+        {
+          "label": "模式",
+          "description": "选择答案应呈现的模式。",
+          "options": [
+            {
+              "label": "标准离散选项"
+            },
+            {
+              "label": "呈现所有选项"
+            },
+            {
+              "label": "呈现所有选项，同时让用户表明信心"
+            }
+          ]
+        },
+        {
+          "label": "启用\"显示解答\"按钮"
+        },
+        {
+          "label": "启用\"重试\"按钮"
+        },
+        {
+          "label": "一次只显示一个选项",
+          "description": "启用后，已回答的项目将被隐藏。"
+        },
+        {
+          "label": "显示结果",
+          "description": "启用后，用户勾选所有呈现的选项后将显示结果。"
+        },
+        {
+          "label": "为整个任务给予一分",
+          "description": "启用后，对于多个正确答案，总共只给予一分。"
+        },
+        {
+          "label": "随机排列答案",
+          "description": "启用后，答案的显示顺序将随机排列。"
+        },
+        {
+          "label": "信心水平",
+          "description": "用户可为每个答案选择的信心水平。",
+          "options": [
+            {
+              "label": "100％ 和 0％"
+            },
+            {
+              "label": "100％，50％ 和 0％"
+            },
+            {
+              "label": "100％，75％，50％，25％ 和 0％"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "用户界面",
+      "fields": [
+        {
+          "label": "\"检查\"按钮标签",
+          "default": "检查"
+        },
+        {
+          "label": "\"提交\"按钮标签",
+          "default": "提交"
+        },
+        {
+          "label": "\"显示解答\"按钮标签",
+          "default": "显示解答"
+        },
+        {
+          "label": "\"重试\"按钮标签",
+          "default": "重试"
+        },
+        {
+          "label": "信心",
+          "description": "@percent 是一个占位符，将被相应的值替换。",
+          "default": "我有 @percent 的把握。"
+        },
+        {
+          "label": "您的结果",
+          "default": "您的结果"
+        }
+      ]
+    },
+    {
+      "label": "辅助功能文本",
+      "fields": [
+        {
+          "label": "\"检查\"按钮的辅助技术描述",
+          "default": "检查答案。响应将被标记为正确、错误或未答。"
+        },
+        {
+          "label": "\"显示解答\"按钮的辅助技术描述",
+          "default": "显示解答。任务将以其正确的解答标记。"
+        },
+        {
+          "label": "\"重试\"按钮的辅助技术描述",
+          "default": "重试任务。重置所有答案并重新开始任务。"
+        },
+        {
+          "label": "您的结果",
+          "description": "@score 将被替换为得分数量。@total 将被替换为最大可能得分。",
+          "default": "您获得了 @score 分（满分 @total 分）"
+        },
+        {
+          "label": "选择信心并标记答案",
+          "default": "选择信心并标记为正确或错误"
+        },
+        {
+          "label": "标记为正确或错误",
+          "default": "标记为正确或错误"
+        },
+        {
+          "label": "将答案标记为正确/错误",
+          "description": "@status 是一个占位符，将被相应的值替换。",
+          "default": "将答案标记为 @status"
+        },
+        {
+          "label": "正确",
+          "default": "正确"
+        },
+        {
+          "label": "错误",
+          "default": "错误"
+        },
+        {
+          "label": "项目无法展开",
+          "default": "当前无法展开此项目。"
+        },
+        {
+          "label": "显示下一个答案选项",
+          "description": "@option 是一个占位符，将被相应的值替换。",
+          "default": "显示下一个答案选项：@option"
+        },
+        {
+          "label": "没有更多答案选项",
+          "default": "没有更多答案选项可标记。"
+        },
+        {
+          "label": "您将此标记为正确/错误",
+          "description": "@correctness 是一个占位符，将被相应的值替换。",
+          "default": "您将此标记为 @correctness"
+        },
+        {
+          "label": "信心",
+          "description": "@value 是一个占位符，将被相应的值替换。",
+          "default": "信心：@value"
+        },
+        {
+          "label": "您的答案是正确/错误",
+          "description": "@correctness 是一个占位符，将被相应的值替换。",
+          "default": "您的答案是 @correctness"
+        },
+        {
+          "label": "正确答案是：正确/错误",
+          "description": "@correctness 是一个占位符，将被相应的值替换。",
+          "default": "正确答案是将此标记为 @correctness"
+        }
+      ]
+    }
+  ]
+}

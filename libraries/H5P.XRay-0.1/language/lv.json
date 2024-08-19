@@ -1,0 +1,117 @@
+{
+  "semantics": [
+    {
+      "label": "Attēls",
+      "description": "Attēls, kas tiks izmantots fonam."
+    },
+    {
+      "label": "Attēls",
+      "description": "Attēls, kas tiks izmantots priekšplānā."
+    },
+    {
+      "label": "Vizuālie iestatījumi",
+      "description": "Šīs opcijas ļaus jums kontrolēt vizuālos aspektus.",
+      "fields": [
+        {
+          "label": "Attēla platums",
+          "description": "Norādiet lauka platumu, kas attēlam jānosedz. Attēla augstums tiks attiecīgi mērogots, un tas nekad nepārsniedz 100% platuma.",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100 %"
+            },
+            {
+              "label": "Attēla dabiskais platums"
+            }
+          ]
+        },
+        {
+          "label": "Attēla līdzināšana",
+          "description": "Norādiet, kur attēls jānovieto attiecībā pret pārējo saturu.",
+          "options": [
+            {
+              "label": "pa kreisi"
+            },
+            {
+              "label": "centrā"
+            },
+            {
+              "label": "pa labi"
+            }
+          ]
+        },
+        {
+          "label": "Rentgena lēcas platums",
+          "description": "Iestatiet rentgena objektīva platumu procentos no attēla platuma (piemēram, 20%) vai kā fiksētu vērtību pikseļos (piemēram, 160 pikseļi).",
+          "default": "20%"
+        },
+        {
+          "label": "Rentgena lēczx augstums",
+          "description": "Iestatiet rentgena objektīva augstumu procentos no attēla augstuma (piemēram, 25%) vai kā fiksētu vērtību pikseļos (piemēram, 90px).",
+          "default": "25%"
+        },
+        {
+          "label": "Ieslēdzot rentgenu, aptumšot priekšplāna attēlu",
+          "description": "Ja iestatīts, priekšplāna attēls kļūst tumšāks, lai pastiprinātu rentgena fokusēšanas efektu."
+        }
+      ]
+    },
+    {
+      "label": "Uzvedības iestatītjumi",
+      "description": "Šie parametri ļaus jums kontrolēt uzdevuma uzvedību.",
+      "fields": [
+        {
+          "label": "Automātisks rentgens",
+          "description": "Ja atzīmēts, attēla rentgens tiek aktivizēts, kad virs tā novietots kursors. Pretējā gadījumā lietotājam rentgens ir jāieslēdz un jāizslēdz."
+        },
+        {
+          "label": "Paslēpt rentgena indikatoru",
+          "description": "Rentgena indikators tiek izmantots kā poga tastatūras lietošanai. Ja tas tiks paslēpts, tas netraucēs darboties, taču lietotājiem būs mazāk navigācijas informācijas."
+        }
+      ]
+    },
+    {
+      "label": "Ekrāna lasītājs",
+      "fields": [
+        {
+          "label": "Rentgens",
+          "description": "Rentgena pogas etiķete (redzama tikai ekrāna lasītājam).",
+          "default": "Rentgens"
+        },
+        {
+          "label": "Rentgens ir aktivizēts.",
+          "description": "Tiek nolasīts, kad tika aktivizēts rentgens.",
+          "default": "Rentgens ir aktivizēts."
+        },
+        {
+          "label": "Rentgens ir deaktivizēts.",
+          "description": "Tiek nolasīts, kad rentgens tiek deaktivizēts .",
+          "default": "Rentgens ir deaktivizēts."
+        },
+        {
+          "label": "Instrukcijas",
+          "description": "Norādījumi par tastatūras lietošanu. Tiek nolasīts, kad aktivizēts rentgens",
+          "default": "Izmantojiet bulttaustiņus, lai pārvietotu rentgena objektīvu."
+        },
+        {
+          "label": "Objektīvs pārvietots uz",
+          "description": "Tiek nolasīts, kad tiek pārvietots palielinājuma objektīvs. @positionHorizontal un @positionVertical ir vietturi, kas tiks aizstāti ar attiecīgajām vērtībām.",
+          "default": "Objektīvs ir horizontāli pārvietots uz @positionHorizontal un vertikāli uz @positionVertical."
+        },
+        {
+          "label": "Nezināms",
+          "description": "Regresa teksts, ja nevar noteikt objektīva pozīciju.",
+          "default": "nezināms"
+        }
+      ]
+    }
+  ]
+}

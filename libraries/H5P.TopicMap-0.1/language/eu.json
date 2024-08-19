@@ -1,0 +1,497 @@
+{
+  "semantics": [
+    {
+      "label": "Topic map editor",
+      "fields": [
+        {
+          "label": "Topic map items",
+          "entity": "Topic map item",
+          "field": {
+            "label": "Elementua",
+            "fields": [
+              {
+                "label": "Id"
+              },
+              {
+                "label": "X-position as a percentage of the container width"
+              },
+              {
+                "label": "Y-position as a percentage of the container height"
+              },
+              {
+                "label": "Width as a percentage of the container width"
+              },
+              {
+                "label": "Height as a percentage of the container height"
+              },
+              {
+                "label": "Label"
+              },
+              {
+                "label": "Description"
+              },
+              {
+                "label": "Topic image",
+                "description": "Background image for card and image above text in dialog"
+              },
+              {
+                "label": "Topic image alt text",
+                "description": "Alternative text for the image that is used by screen readers"
+              },
+              {
+                "label": "Dialog",
+                "fields": [
+                  {
+                    "label": "Show notes textarea"
+                  },
+                  {
+                    "label": "Maximum number of characters",
+                    "description": "Specifies the maximum number of characters for the note."
+                  },
+                  {
+                    "label": "Text"
+                  },
+                  {
+                    "label": "Video"
+                  },
+                  {
+                    "label": "Audio",
+                    "fields": [
+                      {
+                        "label": "Audio"
+                      },
+                      {
+                        "label": "Subtext"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Links",
+                    "description": "These links are as auxiliary links for the user in the element's modal window",
+                    "entity": "linkItem",
+                    "field": {
+                      "label": "Link",
+                      "fields": [
+                        {
+                          "label": "Id"
+                        },
+                        {
+                          "label": "Label"
+                        },
+                        {
+                          "label": "Url"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Show add links option"
+                  }
+                ]
+              },
+              {
+                "label": "Index",
+                "description": "⚠️ Advanced feature: Used for manually setting tab order."
+              }
+            ]
+          }
+        },
+        {
+          "label": "Arrows",
+          "entity": "arrowItem",
+          "field": {
+            "label": "Arrow",
+            "fields": [
+              {
+                "label": "Id"
+              },
+              {
+                "label": "Percentage position of start element",
+                "fields": [
+                  {
+                    "label": "X-position as a percentage of the container width"
+                  },
+                  {
+                    "label": "Y-position as a percentage of the container height"
+                  }
+                ]
+              },
+              {
+                "label": "Percentage position of start element",
+                "fields": [
+                  {
+                    "label": "X-position as a percentage of the container width"
+                  },
+                  {
+                    "label": "Y-position as a percentage of the container height"
+                  }
+                ]
+              },
+              {
+                "label": "Grid position of start element",
+                "fields": [
+                  {
+                    "label": "X-position as a grid coordinate"
+                  },
+                  {
+                    "label": "Y-position as a grid coordinate"
+                  }
+                ]
+              },
+              {
+                "label": "Grid position of start element",
+                "fields": [
+                  {
+                    "label": "X-position as a grid coordinate"
+                  },
+                  {
+                    "label": "Y-position as a grid coordinate"
+                  }
+                ]
+              },
+              {
+                "label": "Id of start element"
+              },
+              {
+                "label": "Id of end element"
+              },
+              {
+                "label": "Label",
+                "description": "The label is used by screen readers and on the summary page"
+              },
+              {
+                "label": "Description",
+                "description": "The description is shown on top of the background image, below the label"
+              },
+              {
+                "label": "Topic image",
+                "description": "Image above text in dialog"
+              },
+              {
+                "label": "Topic image alt text",
+                "description": "Alternative text for the image that is used by screen readers"
+              },
+              {
+                "label": "Arrow type",
+                "options": [
+                  {
+                    "label": "Directional"
+                  },
+                  {
+                    "label": "Bi-directional"
+                  },
+                  {
+                    "label": "Non-directional"
+                  }
+                ]
+              },
+              {
+                "label": "Show end arrow-head"
+              },
+              {
+                "label": "Dialog",
+                "fields": [
+                  {
+                    "label": "Show notes textarea"
+                  },
+                  {
+                    "label": "Maximum number of characters",
+                    "description": "Specifies the maximum number of characters for the note"
+                  },
+                  {
+                    "label": "Text"
+                  },
+                  {
+                    "label": "Video"
+                  },
+                  {
+                    "label": "Audio",
+                    "fields": [
+                      {
+                        "label": "Audio"
+                      },
+                      {
+                        "label": "Subtext"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Links",
+                    "description": "These links are as auxiliary links for the user in the element's modal window",
+                    "entity": "linkItem",
+                    "field": {
+                      "label": "Link",
+                      "fields": [
+                        {
+                          "label": "Id"
+                        },
+                        {
+                          "label": "Label"
+                        },
+                        {
+                          "label": "Url"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Show add links option"
+                  }
+                ]
+              },
+              {
+                "label": "Index"
+              },
+              {
+                "label": "Arrow breakpoints",
+                "entity": "breakpoint",
+                "field": {
+                  "label": "Breakpoint",
+                  "fields": [
+                    {
+                      "label": "X-position as grid index"
+                    },
+                    {
+                      "label": "Y-position as grid index"
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Arrow Relative breakpoints",
+                "entity": "breakpoint",
+                "field": {
+                  "label": "Breakpoint",
+                  "fields": [
+                    {
+                      "label": "X-position as a percentage of the container width"
+                    },
+                    {
+                      "label": "Y-position as a percentage of the container height"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "Background image"
+        },
+        {
+          "label": "Color theme",
+          "options": [
+            {
+              "label": "Blue"
+            },
+            {
+              "label": "Green"
+            },
+            {
+              "label": "Red"
+            },
+            {
+              "label": "Gray"
+            }
+          ]
+        },
+        {
+          "label": "Grid",
+          "fields": [
+            {
+              "label": "Number of columns"
+            },
+            {
+              "label": "Number of rows"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Behavioral settings"
+    },
+    {
+      "label": "Localize",
+      "fields": [
+        {
+          "label": "Close dialog",
+          "description": "Used by screen readers",
+          "default": "Close dialog"
+        },
+        {
+          "label": "Audio",
+          "description": "Shown in front of copyright statements",
+          "default": "Audio"
+        },
+        {
+          "label": "Photo",
+          "description": "Shown in front of copyright statements",
+          "default": "Photo"
+        },
+        {
+          "label": "Video",
+          "description": "Shown in front of copyright statements",
+          "default": "Video"
+        },
+        {
+          "label": "Saving note label",
+          "default": "Saving…"
+        },
+        {
+          "label": "Saved note label",
+          "default": "Saved"
+        },
+        {
+          "label": "Character limit exceeded label",
+          "default": "Character limit exceeded"
+        },
+        {
+          "label": "Note placeholder",
+          "default": "Write your notes here…"
+        },
+        {
+          "label": "Mark note as done",
+          "default": "Mark as done"
+        },
+        {
+          "label": "Dialog resources labels: Relevant links",
+          "default": "Relevant links"
+        },
+        {
+          "label": "Dialog resources labels: Custom links",
+          "default": "Your links"
+        },
+        {
+          "label": "Dialog resources labels: Add",
+          "default": "Add"
+        },
+        {
+          "label": "Fullscreen button label - enter",
+          "default": "Enter fullscreen mode"
+        },
+        {
+          "label": "Fullscreen button label - exit",
+          "default": "Exit fullscreen mode"
+        },
+        {
+          "label": "Navbar tabs list label",
+          "description": "Used by screen readers",
+          "default": "Navigation bar"
+        },
+        {
+          "label": "Navbar topic map section label",
+          "default": "Topic map"
+        },
+        {
+          "label": "Navbar notes section label",
+          "default": "My notes"
+        },
+        {
+          "label": "Dialog resources labels",
+          "default": "Resources"
+        },
+        {
+          "label": "Text",
+          "default": "Text"
+        },
+        {
+          "label": "Note",
+          "default": "Note"
+        },
+        {
+          "label": "Tabs list",
+          "default": "Tabs list"
+        },
+        {
+          "label": "Navbar notes section title",
+          "default": "My notes"
+        },
+        {
+          "label": "Navbar notes section body",
+          "default": "This is an overview of your notes. They are saved locally in this browser. You can either print or copy the notes into a document."
+        },
+        {
+          "label": "Navbar notes print button label",
+          "default": "Print"
+        },
+        {
+          "label": "Navbar notes copy button label",
+          "default": "Copy"
+        },
+        {
+          "label": "Navbar notes delete all notes button label",
+          "default": "Delete all notes"
+        },
+        {
+          "label": "Navbar notes empty list label",
+          "default": "No dialogue notes available in this topic map."
+        },
+        {
+          "label": "Navbar notes missing note label",
+          "default": "━ No notes have been added yet"
+        },
+        {
+          "label": "Delete all notes confirmation window label",
+          "default": "Are you sure you want to delete all your notes?"
+        },
+        {
+          "label": "Delete all notes confirm deletion label",
+          "default": "Delete"
+        },
+        {
+          "label": "Delete all notes deny deletion label",
+          "default": "Cancel"
+        },
+        {
+          "label": "Descriptive text for the progress bar",
+          "default": "Note progress: @markedNotes of @totalNotes notes marked as done"
+        },
+        {
+          "label": "Navbar notes submit all data button label",
+          "default": "Submit all data"
+        },
+        {
+          "label": "Submit all notes confirmation window label",
+          "default": "Are you sure you want to submit all your data?"
+        },
+        {
+          "label": "Submit all data confirm label",
+          "default": "Submit"
+        },
+        {
+          "label": "Submit all data deny label",
+          "default": "Cancel"
+        },
+        {
+          "label": "Descriptive text for directional arrow",
+          "default": "Arrow from @startItem to @endItem"
+        },
+        {
+          "label": "Descriptive text for bi-directional arrow",
+          "default": "Arrow between @startItem and @endItem"
+        },
+        {
+          "label": "Descriptive text for note status done",
+          "default": "Note marked as done"
+        },
+        {
+          "label": "Descriptive text for note status started",
+          "default": "Note started"
+        },
+        {
+          "label": "Descriptive text for note status default",
+          "default": "Note empty"
+        },
+        {
+          "label": "Descriptive text for note textarea",
+          "default": "Textarea with @max character limit."
+        },
+        {
+          "label": "Descriptive text for note character count",
+          "default": "@count of @max characters"
+        }
+      ]
+    }
+  ]
+}

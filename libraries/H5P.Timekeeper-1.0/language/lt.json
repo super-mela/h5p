@@ -1,0 +1,269 @@
+{
+  "semantics": [
+    {
+      "label": "Įvadas",
+      "description": "Pasirinktinai nustatykite įvadą."
+    },
+    {
+      "label": "Pateikimas",
+      "description": "Pasirinkite, kokiu režimu norite, kad laikmatis veiktų.",
+      "options": [
+        {
+          "label": "Skaičiuokite iki datos ir laiko"
+        },
+        {
+          "label": "Skaičiuokite atgal nuo tam tikro laiko"
+        },
+        {
+          "label": "Chronometras"
+        }
+      ]
+    },
+    {
+      "label": "Pasirinkti datą ir laiką",
+      "fields": [
+        {
+          "label": "Tikslinė data ir laikas"
+        },
+        {
+          "label": "Baigta žinutė",
+          "description": "Optional message to display when the date and time that were set have been reached.",
+          "default": "The target time has been reached."
+        },
+        {
+          "label": "Too late message",
+          "description": "Optional message to display when the timer is opened after the target date and time.",
+          "default": "Laikmatis jau pasibaigęs."
+        }
+      ]
+    },
+    {
+      "label": "Select number to count down from",
+      "fields": [
+        {
+          "label": "Start time",
+          "description": "Set start time in the format H:MM:SS."
+        },
+        {
+          "label": "Finished message",
+          "description": "Optional message to display when the timer has finished."
+        },
+        {
+          "label": "Pradėti automatiškai",
+          "description": "If checked, the timer will start automatically. If not checked, the user will have to start the timer."
+        },
+        {
+          "label": "Pauseable",
+          "description": "If checked, the user will be able to pause the timer."
+        },
+        {
+          "label": "Resettable",
+          "description": "If checked, the user will be able to reset the timer."
+        }
+      ]
+    },
+    {
+      "label": "Time format",
+      "description": "Pasirinkite, kokį laiko formatą turi turėti laikmatis.",
+      "options": [
+        {
+          "label": "Verbose"
+        },
+        {
+          "label": "Time code"
+        }
+      ]
+    },
+    {
+      "label": "Granuliuotumas",
+      "description": "Pasirinkite mažiausią vienetą, kuris bus rodomas išsamiu režimu. Jei per likusį laiką to vieneto vertė yra 0, automatiškai bus pasirinktas kitas mažesnis vienetas.",
+      "options": [
+        {
+          "label": "Sekundės"
+        },
+        {
+          "label": "Minutės"
+        },
+        {
+          "label": "Valandos"
+        },
+        {
+          "label": "Days"
+        }
+      ]
+    },
+    {
+      "label": "Laikmačio signalas",
+      "description": "Optionally set an audio file that should be played when the timer has expired. Please note that when starting the timer automatically, the browser may prevent playing the signal unless the user has interacted with the page first."
+    },
+    {
+      "label": "Background music"
+    },
+    {
+      "label": "Naudotojo sąsaja",
+      "fields": [
+        {
+          "label": "Dienų vienetas",
+          "description": "Dienų vieneto tekstas išsamiu laiko formatu.",
+          "default": "d"
+        },
+        {
+          "label": "Valandų vienetas",
+          "description": "Vieneto tekstas valandoms išsamiu laiko formatu.",
+          "default": "val"
+        },
+        {
+          "label": "Minučių vienetas",
+          "description": "Vieneto tekstas minutėms išsamiu laiko formatu.",
+          "default": "m"
+        },
+        {
+          "label": "Vienetas sekundėms",
+          "description": "Vieneto tekstas sekundėms išsamiu laiko formatu.",
+          "default": "s"
+        },
+        {
+          "label": "Header: Lap",
+          "description": "Header for lap column in lap tracking table.",
+          "default": "Lap"
+        },
+        {
+          "label": "Header: Lap time",
+          "description": "Header for lap time column in lap tracking table.",
+          "default": "Lap time"
+        },
+        {
+          "label": "Antraštė: Bendras laikas",
+          "description": "Header for total time column in lap tracking table.",
+          "default": "Bendras laikas"
+        }
+      ]
+    },
+    {
+      "label": "Accessibility texts",
+      "fields": [
+        {
+          "label": "Start button label",
+          "description": "Text for screenreaders.",
+          "default": "Start timer"
+        },
+        {
+          "label": "Start button label (disabled)",
+          "description": "Text for screenreaders.",
+          "default": "Start timer. Currently disabled"
+        },
+        {
+          "label": "Pause button label",
+          "description": "Text for screenreaders.",
+          "default": "Pause timer"
+        },
+        {
+          "label": "Track lap button label",
+          "description": "Text for screenreaders.",
+          "default": "Track a lap"
+        },
+        {
+          "label": "Track lap button label",
+          "description": "Text for screenreaders.",
+          "default": "Track a lap. Currently disabled"
+        },
+        {
+          "label": "Reset button label",
+          "description": "Text for screenreaders.",
+          "default": "Reset timer"
+        },
+        {
+          "label": "Start button label (stopwatch)",
+          "description": "Text for screenreaders.",
+          "default": "Start stopwatch"
+        },
+        {
+          "label": "Pause button label (stopwatch)",
+          "description": "Text for screenreaders.",
+          "default": "Pause stopwatch"
+        },
+        {
+          "label": "Reset button label (stopwatch)",
+          "description": "Text for screenreaders.",
+          "default": "Reset stopwatch"
+        },
+        {
+          "label": "Lap table caption",
+          "description": "Text for screenreaders.",
+          "default": "Lap times"
+        },
+        {
+          "label": "Current time",
+          "description": "Text for screenreaders.",
+          "default": "Current time:"
+        },
+        {
+          "label": "Day",
+          "description": "Text for screenreaders. Used to annouce time.",
+          "default": "day"
+        },
+        {
+          "label": "Days",
+          "description": "Text for screenreaders. Used to annouce time.",
+          "default": "days"
+        },
+        {
+          "label": "Hour",
+          "description": "Text for screenreaders. Used to annouce time.",
+          "default": "hour"
+        },
+        {
+          "label": "Hours",
+          "description": "Text for screenreaders. Used to annouce time.",
+          "default": "hours"
+        },
+        {
+          "label": "Minute",
+          "description": "Text for screenreaders. Used to annouce time.",
+          "default": "minute"
+        },
+        {
+          "label": "Minutes",
+          "description": "Text for screenreaders. Used to annouce time.",
+          "default": "minutes"
+        },
+        {
+          "label": "Second",
+          "description": "Text for screenreaders. Used to annouce time.",
+          "default": "second"
+        },
+        {
+          "label": "Seconds",
+          "description": "Text for screenreaders. Used to annouce time.",
+          "default": "seconds"
+        },
+        {
+          "label": "Tenth of a second",
+          "description": "Text for screenreaders. Used to annouce time.",
+          "default": "tenth of a second"
+        },
+        {
+          "label": "Tenths of a secons",
+          "description": "Text for screenreaders. Used to annouce time.",
+          "default": "tenths of a second"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (enter)",
+          "default": "Enter fullscreen mode"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (exit)",
+          "default": "Exit fullscreen mode"
+        },
+        {
+          "label": "Audio button (unmuted)",
+          "default": "Mute audio. Currently unmuted."
+        },
+        {
+          "label": "Audio button (muted)",
+          "default": "Unmute audio. Currently muted."
+        }
+      ]
+    }
+  ]
+}

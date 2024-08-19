@@ -1,0 +1,118 @@
+{
+  "semantics": [
+    {
+      "label": "Imaxe",
+      "description": "Imaxe a utilizar."
+    },
+    {
+      "label": "Configuración visual",
+      "description": "Estas opcións permítenche controlar os aspectos visuais.",
+      "fields": [
+        {
+          "label": "Anchura da imaxe",
+          "description": "Seleccione o ancho do espazo dado que debe cubrir a imaxe. A altura da imaxe escalarase en consecuencia e nunca excederá o 100% do ancho.",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100 %"
+            },
+            {
+              "label": "Anchura natural da imaxe"
+            }
+          ]
+        },
+        {
+          "label": "Aliñación da imaxe",
+          "description": "Seleccione onde se debe colocar a imaxe en relación co resto do contido.",
+          "options": [
+            {
+              "label": "esquerda"
+            },
+            {
+              "label": "centro"
+            },
+            {
+              "label": "dereita"
+            }
+          ]
+        },
+        {
+          "label": "Anchura da lente de zoom",
+          "description": "Establece a anchura da lente do zoom como porcentaxe da anchura da imaxe (por exemplo, 20%) ou como un valor fixo en píxeles (por exemplo, 160px).",
+          "default": "20%"
+        },
+        {
+          "label": "Altura da lente do zoom",
+          "description": "Establece a altura da lente do zoom como porcentaxe da altura da imaxe (por exemplo, 25%) ou como un valor fixo en píxeles (por exemplo, 90px).",
+          "default": "25%"
+        },
+        {
+          "label": "Escurece a imaxe co zoom",
+          "description": "Se se define, a imaxe escurecerase para reforzar o efecto de enfoque do zoom."
+        }
+      ]
+    },
+    {
+      "label": "Configuración do comportamento",
+      "description": "Estas opcións permitiranche controlar o comportamento da tarefa.",
+      "fields": [
+        {
+          "label": "Zoom automático",
+          "description": "Se se selecciona, a imaxe amplíase automaticamente cando se pasa o rato por riba dela. En caso contrario, o usuario debe activar e desactivar a ampliación."
+        },
+        {
+          "label": "Ocultar o indicador de aumento",
+          "description": "O indicador de ampliación úsase como botón para usar o teclado. Ocultalo non impedirá que funcione, pero os usuarios terán menos información de navegación."
+        }
+      ]
+    },
+    {
+      "label": "Lector de pantalla",
+      "fields": [
+        {
+          "label": "Aumentar",
+          "description": "Etiqueta para o botón de ampliación (só visible para o lector de pantalla).",
+          "default": "Aumentar"
+        },
+        {
+          "label": "Ampliación activada.",
+          "description": "Le cando se activou a ampliación.",
+          "default": "Ampliación activada."
+        },
+        {
+          "label": "Ampliación desactivada.",
+          "description": "Le cando se desactivou a ampliación.",
+          "default": "Ampliación desactivada."
+        },
+        {
+          "label": "Instrucións",
+          "description": "Instrucións sobre o uso do teclado. Le cando se activa a ampliación",
+          "default": "Usa as frechas de dirección para mover a lente de aumento. Usa a tecla máis para aumentar o zoom e a tecla menos para reducilo."
+        },
+        {
+          "label": "Zoom a escala",
+          "description": "Le cando se cambia a escala do zoom. @magnification é un texto por defecto que se substituirá polo valor respectivo.",
+          "default": "Zoom a escala de @magnification a 1."
+        },
+        {
+          "label": "Moveuse a lente a",
+          "description": "Le cando se move a lente de aumento. @positionHorizontal e @positionVertical son textos por defecto que se substituirán polos valores respectivos.",
+          "default": "Moveuse a lente a @positionHorizontal horizontalmente e a @positionVertical verticalmente."
+        },
+        {
+          "label": "Descoñecido",
+          "description": "Texto alternativo para cando non se pode determinar a posición da lente.",
+          "default": "descoñecido"
+        }
+      ]
+    }
+  ]
+}

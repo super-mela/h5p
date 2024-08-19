@@ -1,0 +1,143 @@
+{
+    "semantics": [
+        {
+            "label": "Puzzelafbeelding",
+            "description": "De afbeelding waar de puzzelstukken uit gesneden moeten worden."
+        },
+        {
+            "label": "Puzzelstukken horizontaal",
+            "description": "Stel in hoeveel puzzelstukken de puzzel horizontaal moet hebben."
+        },
+        {
+            "label": "Puzzelstukken verticaal",
+            "description": "Stel in hoeveel puzzelstukken de puzzel verticaal moet hebben."
+        },
+        {
+            "label": "Geluidsinstellingen",
+            "description": "Met deze opties kun je de geluidsgerelateerde opties instellen.",
+            "fields": [
+                {
+                    "label": "Start de puzzel",
+                    "description": "Het geluid dat wordt afgespeeld wanneer de puzzel wordt gestart."
+                },
+                {
+                    "label": "Pak het puzzelstuk op",
+                    "description": "Het geluid dat wordt afgespeeld wanneer een puzzelstuk wordt opgepakt."
+                },
+                {
+                    "label": "Het puzzelstuk verkeerd plaatsen",
+                    "description": "Het geluid dat wordt afgespeeld wanneer een puzzeltegel op een verkeerde plek wordt neergelegd."
+                },
+                {
+                    "label": "Het puzzelstuk juist plaatsen",
+                    "description": "Het geluid dat wordt afgespeeld wanneer een puzzelstuk op de juiste plek wordt neergelegd."
+                },
+                {
+                    "label": "Voltooi de puzzel",
+                    "description": "Het geluid dat wordt afgespeeld wanneer de puzzel is voltooid."
+                }
+            ]
+        },
+        {
+            "label": "Gedragsinstelllingen",
+            "description": "Met deze opties kun je bepalen hoe de taak zich gedraagt.",
+            "fields": [
+                {
+                    "label": "Toon een vage achtergrond",
+                    "description": "Toon een vage versie van de afbeelding op de achtergrond om aan te geven waar een puzzelstuk moet komen."
+                },
+                {
+                    "label": "Toon de omtrekken van de puzzelstukken",
+                    "description": "Toon de omtrekken van de puzzelstukken om aan te geven waar een puzzelstuk moet komen."
+                },
+                {
+                    "label": "Positie van de sorteerruimte",
+                    "description": "Stel in waar de sorteerruimte gepositioneerd wordt.",
+                    "options": [
+                        {
+                            "label": "Puzzle next to sorting space"
+                        },
+                        {
+                            "label": "Puzzle above sorting space"
+                        }
+                    ]
+                },
+                {
+                    "label": "De sorteerruimte",
+                    "description": "Stel in hoeveel ruimte in procenten er naast de legpuzzel moet komen voor het sorteren van de puzzelstukken."
+                },
+                {
+                    "label": "Sorteerruimte",
+                    "description": "Set how much space in percent relative to the puzzle should be attached below to the jigsaw puzzle for sorting the tiles."
+                },
+                {
+                    "label": "Gebruik de volledige ruimte",
+                    "description": "Stel in eerste instantie in dat de puzzelstukken het volledige gebied moeten bedekken, inclusief het gebied waar ze moeten worden neergelegd."
+                },
+                {
+                    "label": "Toon \"Voltooi\" knop"
+                },
+                {
+                    "label": "Toon \"Opnieuw\" button"
+                },
+                {
+                    "label": "Toon \"Oplossing\" knop"
+                }
+            ]
+        },
+        {
+            "label": "Gebruikersinterface",
+            "fields": [
+                {
+                    "label": "Tekst voor \"Voltooi\" knop",
+                    "default": "Voltooi"
+                },
+                {
+                    "label": "Tekst voor \"Opnieuw\" knop",
+                    "default": "Opnieuw"
+                },
+                {
+                    "label": "Tekst voor \"Geen afbeelding\" bericht",
+                    "default": "Er is geen afbeelding beschikbaar voor deze puzzel."
+                }
+            ]
+        },
+        {
+            "label": "Voorlezer",
+            "fields": [
+                {
+                    "label": "De beschrijving van de ondersteunende technologie voor de \"Voltooi\" knop",
+                    "default": "Voltooi de puzzel. Alle puzzelstukken worden op de juiste plaats neergelegd."
+                },
+                {
+                    "label": "Beschrijving van de ondersteunende technologie voor de \"Opnieuw\" knop",
+                    "default": "Probeer de puzzel opnieuw. Alle puzzelstukjes worden op het bord geschud."
+                },
+                {
+                    "label": "Beschrijving van de ondersteunende technologie voor \"Ga naar volledig scherm knop\"",
+                    "default": "Ga naar de modus volledig scherm"
+                },
+                {
+                    "label": "Beschrijving van de ondersteunende technologie voor \"Verlaat volledig scherm knop\"",
+                    "default": "Verlaat de modus volledig scherm"
+                },
+                {
+                    "label": "Beschrijving van de ondersteunende technologie voor \"Dempen\" knop",
+                    "default": "Geluid uitschakelen"
+                },
+                {
+                    "label": "Beschrijving van de ondersteunende technologie voor \"Aanzetten\" knop",
+                    "default": "Geluid inschakelen"
+                },
+                {
+                    "label": "Beschrijving van de ondersteunende technologie voor \"Uitgeschakeld\"",
+                    "default": "Uitgeschakeld"
+                },
+                {
+                    "label": "Beschrijving van de ondersteunende technologie voor \"Sluiten\"",
+                    "default": "Sluiten"
+                }
+            ]
+        }
+    ]
+}

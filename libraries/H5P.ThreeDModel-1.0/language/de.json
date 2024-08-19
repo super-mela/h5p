@@ -1,0 +1,171 @@
+{
+  "semantics": [
+    {
+      "label": "Modell",
+      "fields": [
+        {
+          "label": "3D-Modelldatei",
+          "description": "Lade hier eine glTF-Datei (.glb / .gltf) hoch. Das bevorzugte Format ist \"glTF 2.0 binary\" in einer einzigen Datei."
+        },
+        {
+          "label": "Alternativer Text",
+          "description": "Alternativer Text für Bildschirmleser."
+        }
+      ]
+    },
+    {
+      "label": "Anmerkungen",
+      "fields": [
+        {
+          "label": "Anmerkungen",
+          "description": "Füge dem 3D-Modell Beschriftungen hinzu, indem du den entsprechenden Text eingibst und den nebenstehendeb Button verwendest.",
+          "field": {
+            "label": "Beschriftung",
+            "fields": [
+              {
+                "label": "Id"
+              },
+              {
+                "label": "Text"
+              },
+              {
+                "label": "Oberfläche"
+              }
+            ]
+          }
+        },
+        {
+          "label": "dummy"
+        }
+      ]
+    },
+    {
+      "label": "Visuelle Einstellungen",
+      "fields": [
+        {
+          "label": "Hintergrundbild",
+          "description": "Optionales Bild, das für den Hintergrund verwendet werden soll."
+        },
+        {
+          "label": "Hintergrundfarbe"
+        },
+        {
+          "label": "Posterbild",
+          "description": "Optionales Bild, das angezeigt wird, bevor das 3D-Modell geladen wird. Dies kann verwendet werden, um eine Vorschau des 3D-Modells zu zeigen, das groß ist und möglicherweise einige Zeit zum Laden benötigt. Es macht nur dann Sinn, ein Posterbild hinzuzufügen, wenn die Datei selbst nicht zu groß ist."
+        }
+      ]
+    },
+    {
+      "label": "Größeneinstellungen",
+      "felder": [
+        {
+          "label": "Maximale Breite",
+          "description": "H5P skaliert den Inhalt normalerweise auf die volle Breite. Legen hier eine maximale Breite in CSS-Einheiten (px, rem, etc.) fest. Bitte beachte, dass dies keinen Einfluss auf die maximale Breite des H5P-Inhalts als Ganzes hat."
+        },
+        {
+          "label": "Maximale Höhe",
+          "description": "H5P bestimmt die Höhe normalerweise anhand der Breite. Setze hier eine maximale Höhe in CSS-Einheiten (px, rem, etc.). Bitte beachte, dass dies keinen Einfluss auf die maximale Höhe des H5P-Inhalts als Ganzes hat."
+        }
+      ]
+    },
+    {
+      "label": "Benutzeroberfläche",
+      "fields": [
+        {
+          "label": "Kein Modell gefunden",
+          "default": "Es konnte kein 3D-Modell geladen werden. Hat jemand vergessen, eines hochzuladen?"
+        },
+        {
+          "label": "dummy",
+          "default": "dummy"
+        }
+      ]
+    },
+    {
+      "label": "Texte zur Barrierefreiheit",
+      "felder": [
+        {
+          "label": "Vorderseite des 3D-Modells",
+          "description": "Alternativer Text für die Vorderseite des 3D-Modells.",
+          "default": "Vorderseite des 3D-Modells"
+        },
+        {
+          "label": "Rückseite des 3D-Modells",
+          "description": "Alternativer Text für die Rückseite des 3D-Modells.",
+          "default": "Rückseite des 3D-Modells"
+        },
+        {
+          "label": "Linke Seite des 3D-Modells",
+          "description": "Alternativer Text für die linke Seite des 3D-Modells.",
+          "default": "Linke Seite des 3D-Modells"
+        },
+        {
+          "label": "Rechts vom 3D-Modell",
+          "description": "Alternativer Text für die rechte Seite des 3D-Modells.",
+          "default": "Rechte Seite des 3D-Modells"
+        },
+        {
+          "label": "Obere Vorderseite des 3D-Modells",
+          "description": "Alternativer Text für die obere Vorderseite des 3D-Modells.",
+          "default": "Obere Vorderseite des 3D-Modells"
+        },
+        {
+          "label": "Obere Rückseite des 3D-Modells",
+          "description": "Alternativer Text für die obere Rückseite des 3D-Modells.",
+          "default": "Obere Rückseite des 3D-Modells"
+        },
+        {
+          "label": "Obere linke Seite des 3D-Modells",
+          "description": "Alternativer Text für die obere linke Seite des 3D-Modells",
+          "default": "Obere linke Seite des 3D-Modells"
+        },
+        {
+          "label": "Obere rechte Seite des 3D-Modells",
+          "description": "Alternativer Text für die obere rechte Seite des 3D-Modells",
+          "default": "Obere rechte Seite des 3D-Modells"
+        },
+        {
+          "label": "Untere Vorderseite des 3D-Modells",
+          "description": "Alternativer Text für die untere Vorderseite des 3D-Modells.",
+          "default": "Untere Vorderseite des 3D-Modells"
+        },
+        {
+          "label": "Untere Rückseite des 3D-Modells",
+          "description": "Alternativer Text für die untere Rückseite des 3D-Modells.",
+          "default": "Untere Rückseite des 3D-Modells"
+        },
+        {
+          "label": "Untere linke Seite des 3D-Modells",
+          "description": "Alternativer Text für die untere linke Seite des 3D-Modells",
+          "default": "Untere linke Seite des 3D-Modells"
+        },
+        {
+          "label": "Untere rechte Seite des 3D-Modells",
+          "description": "Alternativer Text für die untere rechte Seite des 3D-Modells",
+          "default": "Untere rechte Seite des 3D-Modells"
+        },
+        {
+          "label": "Interaktionsaufforderung",
+          " description": "Text, der den Benutzenden vorgelesen wird, wenn das 3D-Modell fokussiert ist und die Benutzenden damit interagieren können.",
+          "default": "Bewege mit der Maus, durch Berührung oder mit den Pfeiltasten, um mit dem 3D-Modell zu interagieren."
+        },
+        {
+          "label": "Text für Bildschirmleser. Titel für Vollbild-Button (aufrufen)",
+          "default": "Vollbildmodus aufrufen"
+        },
+        {
+          "label": "Text für Bildschirmleser. Titel für Vollbild-Button (beenden)",
+          "default": "Vollbildmodus beenden"
+        },
+        {
+          "label": "Text für Bildschirmleser. Titel für die Wiedergabetaste",
+          " default": "Animation abspielen"
+        },
+        {
+          "label": "Text für Bildschirmleser. Titel für Pausentaste",
+          "default": "Animation anhalten"
+        }
+      ]
+    }
+  ]
+}

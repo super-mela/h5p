@@ -1,0 +1,48 @@
+{
+  "semantics": [
+    {
+      "label": "Ressurs",
+      "entity": "resource",
+      "widgets": [
+        {
+          "label": "Standard"
+        }
+      ],
+      "field": {
+        "label": "Ressurser",
+        "description": "Valgfrie lenker til ressurser.",
+        "fields": [
+          {
+            "label": "Tittel på ressurs"
+          },
+          {
+            "label": "Ingress"
+          },
+          {
+            "label": "Lenke"
+          },
+          {
+            "label": "Ingressbilde"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Localize",
+      "fields": [
+        {
+          "label": "Oversettelse for \"Skjul\"",
+          "default": "Skjul"
+        },
+        {
+          "label": "Oversettelse for  \"Ressurser\"",
+          "default": "Ressurser"
+        },
+        {
+          "label": "Tilgjengelighet for \"Resources\" knappen",
+          "default": "Se tilleggsressurser for å få mer informasjon"
+        }
+      ]
+    }
+  ]
+}

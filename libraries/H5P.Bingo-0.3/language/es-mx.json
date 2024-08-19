@@ -1,0 +1,124 @@
+{
+  "semantics": [
+    {
+      "label": "Medios",
+      "fields": [
+        {
+          "label": "Tipo",
+          "description": "Medios opcionales mostrados encima de la pregunta."
+        },
+        {
+          "label": "Deshabilitar acercamiento de imagen"
+        }
+      ]
+    },
+    {
+      "label": "Descripción del trabajo",
+      "description": "Opcionalmente dar aquí una descripción."
+    },
+    {
+      "label": "Modo",
+      "description": "Elegir el modo para jugar. Los números pueden ser llenados automáticamente, las palabras necesitan ser dadas.",
+      "options": [
+        {
+          "label": "Jugar con números"
+        },
+        {
+          "label": "Jugar con palabras"
+        }
+      ]
+    },
+    {
+      "label": "Palabras o frases",
+      "fields": [
+        {
+          "label": "Palabras o frases",
+          "description": "Usar una línea para cada palabra y frase."
+        }
+      ]
+    },
+    {
+      "label": "Tamaño del tablero"
+    },
+    {
+      "label": "Visuales",
+      "description": "Usted puede personalizar aquí la apariencia visual.",
+      "fields": [
+        {
+          "label": "Imagen",
+          "description": "Imagen de guasón (comodín) para los botones."
+        },
+        {
+          "label": "Color del Fondo",
+          "description": "Color del fondo para el tablero."
+        }
+      ]
+    },
+    {
+      "label": "Audio",
+      "description": "Usted puede personalizar aquí el audio.",
+      "fields": [
+        {
+          "label": "Seleccionó/des-seleccionó un campo",
+          "description": "Sonido a reproducir cuando un campo es seleccionado o des-seleccionado."
+        },
+        {
+          "label": "Fila o columna completada",
+          "description": "Sonido a reproducir cuando el usuario ha seleccionado una fila o columna completa."
+        }
+      ]
+    },
+    {
+      "label": "Configuraciones del comportamiento",
+      "description": "Estas opciones le permitirán controlar como se comporta el trabajo.",
+      "fields": [
+        {
+          "label": "Habilitar \"Reintentar\""
+        },
+        {
+          "label": "Barajear en reintento",
+          "description": "Si se activa, las palabras/frases/números serán barajeados al reintentar."
+        },
+        {
+          "label": "Configurar guasón (comodín)",
+          "description": "Colocará un guasón (comodín) no-volteable en el centro del tablero si su tamaño es impar."
+        },
+        {
+          "label": "Modo de límite de altura",
+          "description": "Decida si quiere limitar la altura del tablero para que quepa en el área visible. La detección automática puede no ser perfecta dependiendo de la configuración de su sitio web; por ejemplo, si tiene barras pegajosas superiores de navegación. Buenos valores personalizados son difíciles de configurar manualmente.",
+          "options": [
+            {
+              "label": "Sin límite"
+            },
+            {
+              "label": "Automático"
+            },
+            {
+              "label": "Personalizado"
+            }
+          ]
+        },
+        {
+          "label": "Límite de altura",
+          "description": "Altura máxima del tablero en pixeles."
+        }
+      ]
+    },
+    {
+      "label": "Texto para botón \"Reintentar\"",
+      "default": "Reintentar"
+    },
+    {
+      "label": "Descripción de tecnología asistiva para botón \"Reintentar\"",
+      "default": "Reintentar el trabajo. Reiniciar todas las respuestas e iniciar el trabajo de nuevo."
+    },
+    {
+      "label": "Descripción de tecnología asistiva para botón \"Enmudecer\"",
+      "default": "Enmudecer audio, actualmente sonando"
+    },
+    {
+      "label": "Descripción de tecnología asistiva para botón \"Enmudecer\"",
+      "default": "Habilitar audio, actualmente enmudecido"
+    }
+  ]
+}

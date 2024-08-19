@@ -1,0 +1,42 @@
+{
+  "title": "Resource library",
+  "description": "Add links to resources for 'Further reading'",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 16,
+  "runnable": 0,
+  "author": "NDLA",
+  "license": "MIT",
+  "metadataSettings": {
+    "disable": 1,
+    "disableExtraTitleField": 1
+  },
+  "machineName": "H5P.ResourceList",
+  "embedTypes": [
+    "iframe"
+  ],
+  "preloadedJs": [
+    {
+      "path": "dist/h5p-resource-list.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5p-resource-list.css"
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.VerticalTabs",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    }
+  ]
+}

@@ -1,0 +1,124 @@
+{
+  "semantics": [
+    {
+      "label": "Medium",
+      "fields": [
+        {
+          "label": "Typ",
+          "description": "Medium, das wahlweise oberhalb der Aufgabe angezeigt wird."
+        },
+        {
+          "label": "Bild-Zoom deaktivieren"
+        }
+      ]
+    },
+    {
+      "label": "Aufgabenbeschreibung",
+      "description": "Du kannst hier wahlweise eine Aufgabenbeschreibung angeben."
+    },
+    {
+      "label": "Modus",
+      "description": "Wähle den Spielmodus. Zahlen werden automatisch generiert, Wörter müssen eingegeben werden.",
+      "options": [
+        {
+          "label": "Spiele mit Zahlen"
+        },
+        {
+          "label": "Spiele mit Wörtern"
+        }
+      ]
+    },
+    {
+      "label": "Wörter oder Phrasen",
+      "fields": [
+        {
+          "label": "Wörter und Phrasen",
+          "description": "Benutze eine Zeile für jedes Wort und jede Phrase."
+        }
+      ]
+    },
+    {
+      "label": "Spielfeldgröße"
+    },
+    {
+      "label": "Visuelles",
+      "description": "Du kannst hier das optische Erscheinungsbild anpassen.",
+      "fields": [
+        {
+          "label": "Bild",
+          "description": "Hintergrundbild für die Felder."
+        },
+        {
+          "label": "Hintergrundfarbe",
+          "description": "Hintergrundfarbe für das Spielfeld."
+        }
+      ]
+    },
+    {
+      "label": "Audio",
+      "description": "Du kannst hier Toneinstellungen ändern.",
+      "fields": [
+        {
+          "label": "Feld ausgewählt/abgewählt",
+          "description": "Ton, der abgespielt werden soll, wenn ein Feld ausgewählt oder abgewählt wird."
+        },
+        {
+          "label": "Zeile oder Spalte vervollständigt",
+          "description": "Ton, der abgespielt werden soll, wenn eine Zeile oder Spalte vervollständigt wurde."
+        }
+      ]
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "description": "Hier kannst Du einstellen, wie sich die Aufgabe verhält.",
+      "fields": [
+        {
+          "label": "\"Wiederholen\" zulassen"
+        },
+        {
+          "label": "Beim Wiederholen neu mischen",
+          "description": "Wenn gewählt, werden die Wörter/Phrasen/Zahlen beim Wiederholen neu gemischt."
+        },
+        {
+          "label": "Joker setzen",
+          "description": "Wenn gewählt, wird ein nicht anwählbarer Joker in die Mitte des Spielfelds gesetzt, wenn es eine ungerade Größe hat."
+        },
+        {
+          "label": "Höhenbegrenzungsmodus",
+          "description": "Du kannst hier die Höhe des Bingobretts begrenzen, um in den sichtbaren Teil des Bildschirms zu passen. Die Automatische Begrenzung wird unter Umständen nicht perfekt funktionieren. Das kann von der Website abhängen, zum Beispiel bei solchen mit festen Navigationsleisten. Gute eigene Werte sind manuell nur schwer zu setzen.",
+          "options": [
+            {
+              "label": "Keine Begrenzung"
+            },
+            {
+              "label": "Automatisch"
+            },
+            {
+              "label": "Eigener Wert"
+            }
+          ]
+        },
+        {
+          "label": "Höhenbegrenzung",
+          "description": "Maximale Höhe des Bingobretts in Pixeln."
+        }
+      ]
+    },
+    {
+      "label": "Beschriftung des \"Wiederholen\"-Buttons",
+      "default": "Wiederholen"
+    },
+    {
+      "label": "Beschreibung des \"Wiederholen\"-Buttons (für Hilfsmittel zur Barrierefreiheit)",
+      "default": "Die Aufgabe wiederholen. Alle Eingaben werden zurückgesetzt und die Aufgabe wird erneut gestartet."
+    },
+    {
+      "label": "Beschreibung des \"Stummschalten\"-Buttons (für Vorlesewerkzeuge)",
+      "default": "Stummschalten, derzeit nicht laut geschaltet"
+    },
+    {
+      "label": "Beschreibung des \"Lautschalten\"-Buttons (für Vorlesewerkzeuge)",
+      "default": "Laut schalten, derzeit stumm geschaltet"
+    }
+  ]
+}

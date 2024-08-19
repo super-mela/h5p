@@ -1,0 +1,365 @@
+[
+  {
+    "name": "mediumGroup",
+    "label": "Medium",
+    "type": "group",
+    "importance": "high",
+    "expanded": true,
+    "fields": [
+      {
+        "name": "medium",
+        "type": "library",
+        "label": "Medium",
+        "options": [
+          "H5P.Audio 1.5",
+          "H5P.InteractiveVideo 1.26",
+          "H5P.Video 1.6"
+        ]
+      },
+      {
+        "name": "dummy",
+        "type": "boolean",
+        "widget": "none",
+        "label": "Dummy"
+      }
+    ]
+  },
+  {
+    "name": "transcriptFiles",
+    "type": "list",
+    "label": "Transcript files",
+    "entity": "transcript file",
+    "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Default"
+      }
+    ],
+    "min": 1,
+    "field": {
+      "name": "transcriptFileData",
+      "type": "group",
+      "label": "Transcript file data",
+      "importance": "high",
+      "fields": [
+        {
+          "name": "transcriptFile",
+          "type": "file",
+          "label": "Transcript (WebVTT file)"
+        },
+        {
+          "name": "label",
+          "type": "text",
+          "label": "Label",
+          "description": "Label to identify the transcript with. Not relevant if you only have one transcript file."
+        },
+        {
+          "name": "languageCode",
+          "type": "text",
+          "label": "Language code",
+          "description": "The transcript library will try to automatically determine the language of the transcription text as information for screen readers. If that fails, you can manually set the \"BCP 47 language tag\" - e.g. \"en\" for English, \"nb\" for Norwegian bokmål, etc.",
+          "maxLength": 2,
+          "optional": true
+        }
+      ]
+    }
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Behavioural settings",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "maxLines",
+        "type": "number",
+        "label": "Maximum number of lines",
+        "description": "Maximum number of transcript lines that should be displayed at once. If left out or 0, will display complete transcript.",
+        "min": 0,
+        "default": 10,
+        "optional": true
+      },
+      {
+        "name": "showOnLoad",
+        "type": "boolean",
+        "label": "Show transcript on load",
+        "description": "You can select whether the transcript should be shown when the content is loaded or not.",
+        "default": true,
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "chapters",
+    "type": "group",
+    "label": "Chapters",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "useIVBookmarks",
+        "type": "boolean",
+        "label": "Use bookmarks of Interactive Video",
+        "default": false,
+        "optional": true,
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "../mediumGroup/medium",
+              "equals": [
+                "H5P.InteractiveVideo"
+              ]
+            }
+          ]
+        }
+      },
+      {
+        "name": "chapterMarks",
+        "type": "text",
+        "label": "Chapter marks",
+        "description": "You can optionally add chapter marks in common mp4chaps format. The syntax is \"hh:mm:ss Chapter title\" or \"hh:mm:ss.MMM Chapter title\"",
+        "widget": "textarea",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "common": true,
+    "label": "User interface",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "noMedium",
+        "type": "text",
+        "label": "No medium provided",
+        "importance": "low",
+        "default": "No medium was assigned to the transcript.",
+        "optional": true
+      },
+      {
+        "name": "noTranscript",
+        "type": "text",
+        "label": "No transcript provided",
+        "importance": "low",
+        "default": "No transcript was provided.",
+        "optional": true
+      },
+      {
+        "name": "troubleWebVTT",
+        "type": "text",
+        "label": "Problem with WebVTT file",
+        "importance": "low",
+        "default": "There seems to be something wrong with the WebVTT file. Please consult the browser's development console for more information.",
+        "optional": true
+      },
+      {
+        "name": "chapterMarks",
+        "type": "text",
+        "label": "Chapter marks",
+        "importance": "low",
+        "default": "Chapter marks",
+        "optional": true
+      },
+      {
+        "name": "unnamedOption",
+        "type": "text",
+        "label": "Unnamed option",
+        "importance": "low",
+        "default": "Unnamed option",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "a11y",
+    "type": "group",
+    "common": true,
+    "label": "Readspeaker",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "buttonVisible",
+        "type": "text",
+        "label": "Transcript visible",
+        "importance": "low",
+        "default": "Hide transcript. Currently visible.",
+        "optional": true
+      },
+      {
+        "name": "buttonInvisible",
+        "type": "text",
+        "label": "Transcript invisible",
+        "importance": "low",
+        "default": "Show transcript. Currently not visible.",
+        "optional": true
+      },
+      {
+        "name": "buttonAutoscrollActive",
+        "type": "text",
+        "label": "Autoscroll active",
+        "importance": "low",
+        "default": "Turn off autoscroll. Currently active.",
+        "optional": true
+      },
+      {
+        "name": "buttonAutoscrollInactive",
+        "type": "text",
+        "label": "Autoscroll inactive",
+        "importance": "low",
+        "default": "Turn on autoscroll. Currently not active.",
+        "optional": true
+      },
+      {
+        "name": "buttonAutoscrollDisabled",
+        "type": "text",
+        "label": "Autoscroll disabled",
+        "importance": "low",
+        "default": "Autoscroll option disabled.",
+        "optional": true
+      },
+      {
+        "name": "buttonInteractive",
+        "type": "text",
+        "label": "Interactive transcript view",
+        "importance": "low",
+        "default": "Switch to plaintext view",
+        "optional": true
+      },
+      {
+        "name": "buttonPlaintext",
+        "type": "text",
+        "label": "Plain text view",
+        "importance": "low",
+        "default": "Switch to interactive transcript view.",
+        "optional": true
+      },
+      {
+        "name": "buttonModeDisabled",
+        "type": "text",
+        "label": "Mode switching disabled",
+        "importance": "low",
+        "default": "Mode switching disabled.",
+        "optional": true
+      },
+      {
+        "name": "buttonTimeActive",
+        "type": "text",
+        "label": "Start time active",
+        "importance": "low",
+        "default": "Hide start time. Currently shown.",
+        "optional": true
+      },
+      {
+        "name": "buttonTimeInactive",
+        "type": "text",
+        "label": "Start time inactive",
+        "importance": "low",
+        "default": "Show start time. Currently not shown.",
+        "optional": true
+      },
+      {
+        "name": "buttonTimeDisabled",
+        "type": "text",
+        "label": "Start time disabled",
+        "importance": "low",
+        "default": "Start time option disabled.",
+        "optional": true
+      },
+      {
+        "name": "buttonLineBreakActive",
+        "type": "text",
+        "label": "Line breaks active",
+        "importance": "low",
+        "default": "Hide line breaks. Currently shown.",
+        "optional": true
+      },
+      {
+        "name": "buttonLineBreakInactive",
+        "type": "text",
+        "label": "Line breaks inactive",
+        "importance": "low",
+        "default": "Show line breaks. Currently not shown.",
+        "optional": true
+      },
+      {
+        "name": "buttonLineBreakDisabled",
+        "type": "text",
+        "label": "Line breaks disabled",
+        "importance": "low",
+        "default": "Line break option disabled.",
+        "optional": true
+      },
+      {
+        "name": "buttonChapterMarksOpen",
+        "type": "text",
+        "label": "Open chapter marks",
+        "importance": "low",
+        "default": "Open chapter marks"
+      },
+      {
+        "name": "buttonChapterMarksClose",
+        "type": "text",
+        "label": "Close chapter marks",
+        "importance": "low",
+        "default": "Close chapter marks"
+      },
+      {
+        "name": "buttonChapterMarksDisabled",
+        "type": "text",
+        "label": "Chapter marks disabled",
+        "importance": "low",
+        "default": "Chapter marks disabled."
+      },
+      {
+        "name": "interactiveTranscript",
+        "type": "text",
+        "label": "Interactive transcript",
+        "importance": "low",
+        "default": "Interactive transcript",
+        "optional": true
+      },
+      {
+        "name": "selectField",
+        "type": "text",
+        "label": "Select transcript",
+        "importance": "low",
+        "default": "Select what transcript to display.",
+        "optional": true
+      },
+      {
+        "name": "selectFieldDisabled",
+        "type": "text",
+        "label": "Select field disabled",
+        "importance": "low",
+        "default": "Select field disabled.",
+        "optional": true
+      },
+      {
+        "name": "enterToHighlight",
+        "type": "text",
+        "label": "Enter to highlight",
+        "importance": "low",
+        "default": "Enter a query to highlight relevant text.",
+        "optional": true
+      },
+      {
+        "name": "searchboxDisabled",
+        "type": "text",
+        "label": "Search box disabled",
+        "importance": "low",
+        "default": "Search box disabled.",
+        "optional": true
+      },
+      {
+        "name": "close",
+        "type": "text",
+        "label": "Close",
+        "importance": "low",
+        "default": "Close",
+        "optional": true
+      }
+    ]
+  }
+]

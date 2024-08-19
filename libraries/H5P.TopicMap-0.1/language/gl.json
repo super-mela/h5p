@@ -1,0 +1,497 @@
+{
+  "semantics": [
+    {
+      "label": "Editor de mapas temáticos",
+      "fields": [
+        {
+          "label": "Elementos do mapa temático",
+          "entity": "Elemento do mapa temático",
+          "field": {
+            "label": "Elemento",
+            "fields": [
+              {
+                "label": "Id"
+              },
+              {
+                "label": "Posición X como porcentaxe do ancho do contedor"
+              },
+              {
+                "label": "Posición Y como porcentaxe do ancho do contedor"
+              },
+              {
+                "label": "Ancho como porcentaxe do ancho do contedor"
+              },
+              {
+                "label": "Altura como porcentaxe da altura do contedor"
+              },
+              {
+                "label": "Etiqueta"
+              },
+              {
+                "label": "Descrición"
+              },
+              {
+                "label": "Imaxe do tema",
+                "description": "Imaxe de fondo para a tarxeta e imaxe enriba do texto do diálogo"
+              },
+              {
+                "label": "Texto alternativo da imaxe do tema",
+                "description": "Texto alternativo para a imaxe que usan os lectores de pantalla"
+              },
+              {
+                "label": "Diálogo",
+                "fields": [
+                  {
+                    "label": "Mostra a zona de texto das notas"
+                  },
+                  {
+                    "label": "Número máximo de caracteres",
+                    "description": "Especifica o número máximo de caracteres para a nota."
+                  },
+                  {
+                    "label": "Texto"
+                  },
+                  {
+                    "label": "Vídeo"
+                  },
+                  {
+                    "label": "Son",
+                    "fields": [
+                      {
+                        "label": "Son"
+                      },
+                      {
+                        "label": "Subtexto"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Ligazóns",
+                    "description": "Estas ligazóns son como ligazóns auxiliares para o usuario na xanela modal do elemento",
+                    "entity": "linkItem",
+                    "field": {
+                      "label": "Ligazón",
+                      "fields": [
+                        {
+                          "label": "Id"
+                        },
+                        {
+                          "label": "Etiqueta"
+                        },
+                        {
+                          "label": "URL"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Mostrar a opción de engadir ligazóns"
+                  }
+                ]
+              },
+              {
+                "label": "Índice",
+                "description": "⚠️ Función avanzada: úsase para configurar manualmente a orde de pestanas."
+              }
+            ]
+          }
+        },
+        {
+          "label": "Frechas",
+          "entity": "arrowItem",
+          "field": {
+            "label": "Frecha",
+            "fields": [
+              {
+                "label": "Id"
+              },
+              {
+                "label": "Posición porcentual do elemento de inicio",
+                "fields": [
+                  {
+                    "label": "Posición X como porcentaxe do ancho do contedor"
+                  },
+                  {
+                    "label": "Posición Y como porcentaxe do altura do contedor"
+                  }
+                ]
+              },
+              {
+                "label": "Posición porcentual do elemento de inicio",
+                "fields": [
+                  {
+                    "label": "Posición X como porcentaxe do ancho do contedor"
+                  },
+                  {
+                    "label": "Posición Y como porcentaxe do altura do contedor"
+                  }
+                ]
+              },
+              {
+                "label": "Posición na grella do elemento de inicio",
+                "fields": [
+                  {
+                    "label": "Posición X como coordenada da cuadrícula"
+                  },
+                  {
+                    "label": "Posición Y como coordenada da grella"
+                  }
+                ]
+              },
+              {
+                "label": "Posición na grella do elemento de inicio",
+                "fields": [
+                  {
+                    "label": "Posición X como coordenada da cuadrícula"
+                  },
+                  {
+                    "label": "Posición Y como coordenada da grella"
+                  }
+                ]
+              },
+              {
+                "label": "Id do elemento de inicio"
+              },
+              {
+                "label": "Id do elemento final"
+              },
+              {
+                "label": "Etiqueta",
+                "description": "A etiqueta úsana os lectores de pantalla e a páxina de resumo"
+              },
+              {
+                "label": "Descrición",
+                "description": "A descrición amósase enriba da imaxe de fondo, debaixo da etiqueta"
+              },
+              {
+                "label": "Imaxe do tema",
+                "description": "Imaxe enriba do texto no diálogo"
+              },
+              {
+                "label": "Texto alternativo da imaxe do tema",
+                "description": "Texto alternativo para a imaxe que usan os lectores de pantalla"
+              },
+              {
+                "label": "Tipo de frecha",
+                "options": [
+                  {
+                    "label": "Direccional"
+                  },
+                  {
+                    "label": "Bidireccional"
+                  },
+                  {
+                    "label": "Non direccional"
+                  }
+                ]
+              },
+              {
+                "label": "Mostrar a punta de frecha final"
+              },
+              {
+                "label": "Diálogo",
+                "fields": [
+                  {
+                    "label": "Mostra a zona de texto das notas"
+                  },
+                  {
+                    "label": "Número máximo de caracteres",
+                    "description": "Especifica o número máximo de caracteres para a nota."
+                  },
+                  {
+                    "label": "Texto"
+                  },
+                  {
+                    "label": "Vídeo"
+                  },
+                  {
+                    "label": "Son",
+                    "fields": [
+                      {
+                        "label": "Son"
+                      },
+                      {
+                        "label": "Subtexto"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Ligazóns",
+                    "description": "Estas ligazóns son como ligazóns auxiliares para o usuario na xanela modal do elemento",
+                    "entity": "linkItem",
+                    "field": {
+                      "label": "Ligazón",
+                      "fields": [
+                        {
+                          "label": "Id"
+                        },
+                        {
+                          "label": "Etiqueta"
+                        },
+                        {
+                          "label": "URL"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Mostrar a opción de engadir ligazóns"
+                  }
+                ]
+              },
+              {
+                "label": "Índice"
+              },
+              {
+                "label": "Puntos de ruptura das frechas",
+                "entity": "Punto de ruptura",
+                "field": {
+                  "label": "Punto de ruptura",
+                  "fields": [
+                    {
+                      "label": "Posición X como índice de cuadrícula"
+                    },
+                    {
+                      "label": "Posición Y como índice de cuadrícula"
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Puntos de ruptura relativos das frechas",
+                "entity": "Punto de ruptura",
+                "field": {
+                  "label": "Punto de ruptura",
+                  "fields": [
+                    {
+                      "label": "Posición X como porcentaxe do ancho do contedor"
+                    },
+                    {
+                      "label": "Posición Y como porcentaxe do altura do contedor"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "Imaxe de fondo"
+        },
+        {
+          "label": "Tema de cor",
+          "options": [
+            {
+              "label": "Azul"
+            },
+            {
+              "label": "Verde"
+            },
+            {
+              "label": "Vermello"
+            },
+            {
+              "label": "Gris"
+            }
+          ]
+        },
+        {
+          "label": "Grella",
+          "fields": [
+            {
+              "label": "Número de columnas"
+            },
+            {
+              "label": "Número de filas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Configuración do comportamento"
+    },
+    {
+      "label": "Adaptación local",
+      "fields": [
+        {
+          "label": "Diálogo de Peche",
+          "description": "Usado polos lectores de pantalla",
+          "default": "Diálogo de Peche"
+        },
+        {
+          "label": "Son",
+          "description": "Amosado diante das declaracións de copyright",
+          "default": "Son"
+        },
+        {
+          "label": "Foto",
+          "description": "Amosado diante das declaracións de copyright",
+          "default": "Foto"
+        },
+        {
+          "label": "Vídeo",
+          "description": "Amosado diante das declaracións de copyright",
+          "default": "Vídeo"
+        },
+        {
+          "label": "Gardando a etiqueta da nota",
+          "default": "Gardando…"
+        },
+        {
+          "label": "Etiqueta de nota gardada",
+          "default": "Gardado"
+        },
+        {
+          "label": "Etiqueta de límite de caracteres excedido",
+          "default": "Límite de caracteres excedido"
+        },
+        {
+          "label": "Marcador de posición de nota",
+          "default": "Escribe aquí as túas notas…"
+        },
+        {
+          "label": "Marcar a nota como feita",
+          "default": "Marcar como feito"
+        },
+        {
+          "label": "Etiquetas de recursos de diálogo: ligazóns relevantes",
+          "default": "Ligazóns relevantes"
+        },
+        {
+          "label": "Etiquetas de recursos de diálogo: ligazóns personalizadas",
+          "default": "As túas ligazóns"
+        },
+        {
+          "label": "Etiquetas de recursos de diálogo: Engadir",
+          "default": "Engadir"
+        },
+        {
+          "label": "Etiqueta do botón de paso a pantalla completa",
+          "default": "Pasar a pantalla completa"
+        },
+        {
+          "label": "Etiqueta do botón de saída de pantalla completa",
+          "default": "Saír de pantalla completa"
+        },
+        {
+          "label": "Etiqueta da lista de pestanas da barra de navegación",
+          "description": "Usado polos lectores de pantalla",
+          "default": "Barra de navegación"
+        },
+        {
+          "label": "Etiqueta da sección do mapa temático da barra de navegación",
+          "default": "Mapa temático"
+        },
+        {
+          "label": "Etiqueta da sección de notas da barra de navegación",
+          "default": "As miñas notas"
+        },
+        {
+          "label": "Etiquetas de recursos de diálogo",
+          "default": "Recursos"
+        },
+        {
+          "label": "Texto",
+          "default": "Texto"
+        },
+        {
+          "label": "Nota",
+          "default": "Nota"
+        },
+        {
+          "label": "Lista de pestanas",
+          "default": "Lista de pestanas"
+        },
+        {
+          "label": "Título da sección de notas da barra de navegación",
+          "default": "As miñas notas"
+        },
+        {
+          "label": "Corpo da sección de notas da barra de navegación",
+          "default": "Esta é unha visión xeral das túas notas. Gárdanse localmente neste navegador. Podes imprimir ou copiar as notas nun documento."
+        },
+        {
+          "label": "Etiqueta do botón de impresión de notas da barra de navegación",
+          "default": "Imprimir"
+        },
+        {
+          "label": "Navbar notes copy button label",
+          "default": "Copy"
+        },
+        {
+          "label": "Etiqueta para borrar todas as notas na barra de navegación",
+          "default": "Elimina todas as notas"
+        },
+        {
+          "label": "Etiqueta para lista de notas baleira na barra de navegación",
+          "default": "Non hai notas de diálogo dispoñibles neste mapa de temas."
+        },
+        {
+          "label": "Etiqueta de nota non presente para a barra de navegación",
+          "default": "━ Aínda non se engadiron notas"
+        },
+        {
+          "label": "Etiqueta para a ventá de confirmación de borrado de todas as notas",
+          "default": "Seguro de que queres eliminar todas as túas notas?"
+        },
+        {
+          "label": "Etiqueta para a confirmación de borrado de todas as notas",
+          "default": "Borrar"
+        },
+        {
+          "label": "Texto descritivo para a barra de progreso",
+          "default": "Progreso da nota: @markedNotes das notas de @totalNotes marcadas como feitas"
+        },
+        {
+          "label": "Descriptive text for the progress bar",
+          "default": "Note progress: @markedNotes of @totalNotes notes marked as done"
+        },
+        {
+          "label": "Etiqueta para o botón de envío de todos os datos das notas na barra de navegación",
+          "default": "Enviar todos os datos"
+        },
+        {
+          "label": "Etiqueta para a ventá de confirmación de envío de todas as notas",
+          "default": "Seguro de que queres enviar todos os teus datos?"
+        },
+        {
+          "label": "Etiqueta de confirmación para o envío de todos os datos",
+          "default": "Enviar"
+        },
+        {
+          "label": "Volver á etiqueta do mapa de temas",
+          "default": "Atrás"
+        },
+        {
+          "label": "Texto descritivo para a frecha direccional",
+          "default": "Frecha de @startItem a @endItem"
+        },
+        {
+          "label": "Texto descritivo para a frecha bidireccional",
+          "default": "Frecha entre @startItem e @endItem"
+        },
+        {
+          "label": "Texto descritivo do estado de nota feita",
+          "default": "Nota marcada como feita"
+        },
+        {
+          "label": "Texto descritivo do estado de nota empezada",
+          "default": "Nota empezada"
+        },
+        {
+          "label": "Texto descritivo para o estado da nota predeterminado",
+          "default": "Nota baleira"
+        },
+        {
+          "label": "Texto descritivo para a área de texto da nota",
+          "default": "Área de texto con límite de caracteres @max."
+        },
+        {
+          "label": "Texto descritivo para o reconto de caracteres da nota",
+          "default": "@count de @max caracteres"
+        }
+      ]
+    }
+  ]
+}

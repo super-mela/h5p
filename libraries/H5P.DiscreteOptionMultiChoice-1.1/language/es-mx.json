@@ -1,0 +1,245 @@
+{
+  "semantics": [
+    {
+      "label": "Medios",
+      "fields": [
+        {
+          "label": "Tipo",
+          "description": "Medios opcionales a mostrar arriba de la pregunta."
+        },
+        {
+          "label": "Deshabilitar zoom de imagen"
+        }
+      ]
+    },
+    {
+      "label": "Pregunta"
+    },
+    {
+      "label": "Opciones disponibles",
+      "entity": "opción",
+      "widgets": [
+        {
+          "label": "Predeterminado"
+        },
+        {
+          "label": "Textual"
+        }
+      ],
+      "field": {
+        "label": "Opción",
+        "fields": [
+          {
+            "label": "Texto"
+          },
+          {
+            "label": "Correcto"
+          },
+          {
+            "label": "Retroalimentación",
+            "fields": [
+              {
+                "label": "Mensaje mostrado si una respuesta es seleccionada",
+                "description": "El mensaje aparecerá debajo de la respuesta."
+              },
+              {
+                "label": "Mensaje mostrado si una respuesta No es seleccionada",
+                "description": "El mensaje aparecerá debajo de la respuesta."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Retroalimentación Global",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Predeterminado"
+            }
+          ],
+          "label": "Definir retroalimentación personalizada para cualquier rango de puntaje",
+          "description": "Haga clic en el botón \"Añadir rango\" para añadir cuantos rangos necesite. Ejemplo: 0-20% Mal puntaje, 21-91% Puntaje Promedio, 91-100% ¡Magnífico Puntaje!",
+          "entity": "rango",
+          "field": {
+            "fields": [
+              {
+                "label": "Rango del Puntaje"
+              },
+              {},
+              {
+                "label": "Retroalimentación para rango de puntaje definido",
+                "placeholder": "Complete la retroalimentación"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Configuraciones del comportamiento",
+      "fields": [
+        {
+          "label": "Modo",
+          "description": "Elegir el modo en el que deberían ser presentadas las respuestas..",
+          "options": [
+            {
+              "label": "Opción discreta estándar"
+            },
+            {
+              "label": "Presentar todas las opciones"
+            },
+            {
+              "label": "Presentar todas las opciones, dejar que el usuario ponga la confianza"
+            }
+          ]
+        },
+        {
+          "label": "Habilitar botón \"Mostrar solución\""
+        },
+        {
+          "label": "Habilitar botón \"Reintentar\""
+        },
+        {
+          "label": "Solamente un elemento es visible a la vez",
+          "description": "Habilitar el ocultar elementos que ya han sido contestados."
+        },
+        {
+          "label": "Mostrar resultados",
+          "description": "Habilitar el mostrar resultados una vez que el usuario haya comprobado todas las opciones que fueron presentadas."
+        },
+        {
+          "label": "Dar un punto por todo el trabajo",
+          "description": "Habilitar el dar un total de un punto para múltiples opciones correctas."
+        },
+        {
+          "label": "Aleatorizar respuestas",
+          "description": "Habilitar para aleatorizar el orden de las respuestas en pantalla."
+        },
+        {
+          "label": "Niveles de confianza",
+          "description": "Elegir entre cuales niveles de confianza puede elegir el usuario para cada pregunta.",
+          "options": [
+            {
+              "label": "100 % y 0 %"
+            },
+            {
+              "label": "100 %, 50 % y 0 %"
+            },
+            {
+              "label": "100 %, 75 %, 50 %, 25 % y 0 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Interfaz del usuario",
+      "fields": [
+        {
+          "label": "Etiqueta del botón \"Comprobar\"",
+          "default": "Comprobar"
+        },
+        {
+          "label": "Etiqueta del botón \"Enviar\"",
+          "default": "Enviar"
+        },
+        {
+          "label": "Etiqueta del botón \"Mostrar solución\"",
+          "default": "Mostrar solución"
+        },
+        {
+          "label": "Etiqueta del botón \"Reintentar\"",
+          "default": "Reintentar"
+        },
+        {
+          "label": "Confianza",
+          "description": "@percent es un remplazable y será reemplazado por el valor respectivo.",
+          "default": "Yo estoy @percent seguro."
+        },
+        {
+          "label": "Sus resultados",
+          "default": "Sus resultados"
+        }
+      ]
+    },
+    {
+      "label": "Textos de accesibilidad",
+      "fields": [
+        {
+          "label": "Descripción de tecnología asistiva para botón \"Comprobar\"",
+          "default": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta, o sin contestar."
+        },
+        {
+          "label": "Descripción de tecnología asistiva para botón \"Mostrar solución\"",
+          "default": "Mostrar la solución. El trabajo será calificado con su solución correcta."
+        },
+        {
+          "label": "Descripción de tecnología asistiva para botón \"Reintentar\"",
+          "default": "Reintentar el trabajo. Reiniciar todas las respuestas e iniciar el trabajo de nuevo."
+        },
+        {
+          "label": "Su resultado",
+          "description": "@score será remplazado por el número de puntos. @total será remplazado por el número máximo posible de puntos.",
+          "default": "Usted obtuvo @score de un total de @total puntos"
+        },
+        {
+          "label": "Elegir confianza y calificar respuesta",
+          "default": "Elija su confianza y marque como correcta o incorrecta"
+        },
+        {
+          "label": "Marcar como correcta o incorrecta",
+          "default": "Marcar como correcta o incorrecta"
+        },
+        {
+          "label": "Marcar respuesta como correcta/incorrecta",
+          "description": "@status es un reemplazable y será remplazado con el valor respectivo.",
+          "default": "Marcar respuesta como @status"
+        },
+        {
+          "label": "Correcta",
+          "default": "correcta"
+        },
+        {
+          "label": "Incorrecta",
+          "default": "incorrecta"
+        },
+        {
+          "label": "El elemento no puede ser expandido",
+          "default": "Este elemento actualmente no puede ser expandido."
+        },
+        {
+          "label": "Mostrando siguiente opción de respuesta",
+          "description": "@option es un reemplazable y será remplazado con el valor respectivo.",
+          "default": "Mostrando opción de respuesta siguiente: @option"
+        },
+        {
+          "label": "No más opciones de respuesta",
+          "default": "YA no hay más opciones de respuesta para marcar.."
+        },
+        {
+          "label": "Usted marcó esto como correcto/incorrecto",
+          "description": "@correctness es un reemplazable y será remplazado con el valor respectivo.",
+          "default": "Usted marcó esto como @correctness"
+        },
+        {
+          "label": "Confianza",
+          "description": "@value es un reemplazable y será remplazado con el valor respectivo.",
+          "default": "Confianza: @value"
+        },
+        {
+          "label": "Su respuesta fue correcta/incorrecta",
+          "description": "@correctness es un reemplazable y será remplazado con el valor respectivo.",
+          "default": "Su respuesta fue @correctness"
+        },
+        {
+          "label": "La respuesta correcta era: correcta/incorrecta",
+          "description": "@correctness es un reemplazable y será remplazado con el valor respectivo.",
+          "default": "La respuesta correcta era marcar esto como @correctness"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "semantics": [
+    {
+      "label": "Lapelas",
+      "entity": "lapela",
+      "widgets": [
+        {
+          "label": "Por defecto"
+        }
+      ],
+      "field": {
+        "label": "Contido",
+        "entity": "contido"
+      }
+    },
+    {
+      "label": "Configuración do comportamento",
+      "description": "Estas opcións permitiranche controlar o comportamento da tarefa.",
+      "fields": [
+        {
+          "label": "Colocación de lapelas",
+          "description": "Escolle onde se colocarán as lapelas.",
+          "options": [
+            {
+              "label": "Segundo o tamaño da pantalla"
+            },
+            {
+              "label": "Por riba do contido"
+            },
+            {
+              "label": "A esquerda do contido"
+            }
+          ]
+        },
+        {
+          "label": "Distribución de lapelas",
+          "description": "Define que porcentaxe do espazo horizontal do panel de lapelas se utilizará para as lapelas."
+        },
+        {
+          "label": "Cor da lapela",
+          "description": "Permítelle axustar a cor das lapelas.",
+          "default": "#1a73d9"
+        },
+        {
+          "label": "Color do fondo",
+          "description": "Permíteche axustar a cor de fondo para que as lapelas poidan combinarse co teu ambiente.",
+          "default": "rgba(255, 255, 255, 0)"
+        }
+      ]
+    },
+    {
+      "label": "Interface de usuario",
+      "fields": [
+        {
+          "label": "Lapela",
+          "default": "lapela"
+        },
+        {
+          "label": "Non hai contido",
+          "default": "Non hai contido para amosar."
+        }
+      ]
+    },
+    {
+      "label": "Textos de accesibilidade",
+      "fields": [
+        {
+          "label": "Escolle unha lapela",
+          "description": "Texto para lectores de pantalla.",
+          "default": "Escolle unha lapela."
+        },
+        {}
+      ]
+    }
+  ]
+}

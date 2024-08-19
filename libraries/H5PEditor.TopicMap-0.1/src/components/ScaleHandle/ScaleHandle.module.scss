@@ -1,0 +1,66 @@
+@use "sass:math";
+
+$handle-size: 1rem;
+.scaleHandle {
+  position: absolute;
+  pointer-events: all;
+}
+
+.scaleHandleLeft,
+.scaleHandleTopLeft,
+.scaleHandleBottomLeft {
+  left: math.div($handle-size, -2);
+}
+
+.scaleHandleRight,
+.scaleHandleTopRight,
+.scaleHandleBottomRight {
+  right: math.div($handle-size, -2);
+}
+
+.scaleHandleTop,
+.scaleHandleTopRight,
+.scaleHandleTopLeft {
+  top: math.div($handle-size, -2);
+}
+
+.scaleHandleBottom,
+.scaleHandleBottomRight,
+.scaleHandleBottomLeft {
+  bottom: math.div($handle-size, -2);
+}
+
+.scaleHandleLeft,
+.scaleHandleRight {
+  cursor: col-resize;
+  height: 100%;
+  top: 0;
+  width: $handle-size;
+}
+
+.scaleHandleTop,
+.scaleHandleBottom {
+  cursor: row-resize;
+  left: 0;
+  height: $handle-size;
+  width: 100%;
+}
+
+.scaleHandleTopRight,
+.scaleHandleBottomRight,
+.scaleHandleBottomLeft,
+.scaleHandleTopLeft {
+  height: $handle-size;
+  width: $handle-size;
+  z-index: 1;
+}
+
+.scaleHandleTopRight,
+.scaleHandleBottomLeft {
+  cursor: nesw-resize;
+}
+
+.scaleHandleBottomRight,
+.scaleHandleTopLeft {
+  cursor: nwse-resize;
+}

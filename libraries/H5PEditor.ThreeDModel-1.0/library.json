@@ -1,0 +1,30 @@
+{
+  "title": "H5PEditor.ThreeDModel",
+  "majorVersion": 1,
+  "minorVersion": 0,
+  "patchVersion": 0,
+  "runnable": 0,
+  "machineName": "H5PEditor.ThreeDModel",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 12
+  },
+  "author": "NDLA, Oliver Tacke",
+  "preloadedJs": [
+    {
+      "path": "dist/h5p-editor-3d-model.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5p-editor-3d-model.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    }
+  ]
+}

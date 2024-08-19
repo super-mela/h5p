@@ -1,0 +1,196 @@
+{
+  "semantics": [
+    {
+      "label": "Header"
+    },
+    {
+      "label": "Task description"
+    },
+    {
+      "label": "Arguments",
+      "fields": [
+        {
+          "label": "Arguments",
+          "entity": "argument",
+          "field": {
+            "label": "Argument"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Summary",
+      "default": "Summary"
+    },
+    {
+      "label": "Summary instruction"
+    },
+    {
+      "label": "Resources",
+      "fields": [
+        {
+          "label": "Resources",
+          "description": "Optional links to resources."
+        }
+      ]
+    },
+    {
+      "label": "Behavioural settings",
+      "description": "These options will let you control the behaviour.",
+      "fields": [
+        {
+          "label": "Enable retry?",
+          "description": "Tick off this if you want the user to be able to retry"
+        },
+        {
+          "label": "Randomize the arguments",
+          "description": "Will randomize the arguments"
+        },
+        {
+          "label": "Allow users to add their own arguments",
+          "description": "Lets the user add their own arguments"
+        },
+        {
+          "label": "Show summary",
+          "description": "Do you want the user to provide a summary explaining the reasons for his/her answers"
+        }
+      ]
+    },
+    {
+      "label": "Localize",
+      "fields": [
+        {
+          "label": "Header for the 'For' column",
+          "default": "Arguments FOR"
+        },
+        {
+          "label": "Header for the 'Against' column",
+          "default": "Arguments AGAINST"
+        },
+        {
+          "label": "Placeholder for the text boxes",
+          "default": "Give a brief summary in your own words"
+        },
+        {
+          "label": "Placeholder when no arguments are connected",
+          "default": "No arguments"
+        },
+        {
+          "label": "Label for the \"Resources\"-button",
+          "default": "Resources"
+        },
+        {
+          "label": "Label for the \"Restart\"-button",
+          "default": "Restart"
+        },
+        {
+          "label": "Label for the \"Add argument\"-button",
+          "default": "Add argument"
+        },
+        {
+          "label": "Label for the \"Yes\"-button",
+          "default": "Yes"
+        },
+        {
+          "label": "Label for the \"No\"-button",
+          "default": "No"
+        },
+        {
+          "label": "Inform the user that data will be lost if he/she continues",
+          "default": "If you continue all your changes will be lost"
+        },
+        {
+          "label": "Label for the \"Continue\"-button",
+          "default": "Continue"
+        },
+        {
+          "label": "Short text in front of the options to where you can move the arguments",
+          "default": "Move to"
+        },
+        {
+          "label": "Label used to show the delete action",
+          "default": "Delete argument"
+        },
+        {
+          "label": "Label used to show the edit action",
+          "default": "Edit argument"
+        },
+        {
+          "label": "Label for the argument",
+          "default": "Argument"
+        },
+        {
+          "label": "Text inside the arguments drop zone",
+          "default": "Drop arguments here"
+        }
+      ]
+    },
+    {
+      "label": "Resource report",
+      "fields": [
+        {
+          "label": "Label for \"Create document\"-button",
+          "default": "Create document"
+        },
+        {
+          "label": "Label on \"Export\" button",
+          "default": "Export"
+        },
+        {
+          "label": "Label on \"Select all\" button",
+          "default": "Select all"
+        },
+        {
+          "label": "Header above the \"Resource\" table",
+          "default": "Resources"
+        },
+        {
+          "label": "Title header in resource table",
+          "default": "Title"
+        },
+        {
+          "label": "Intro header in resource table",
+          "default": "Intro"
+        },
+        {
+          "label": "Url header in resource table",
+          "default": "Url"
+        },
+        {
+          "label": "Label when no resources are found",
+          "default": "No resources"
+        },
+        {
+          "label": "Label when no summary is provided",
+          "default": "No comment"
+        }
+      ]
+    },
+    {
+      "label": "Accessibility",
+      "fields": [
+        {
+          "label": "Used instead of 'Close'-icon",
+          "default": "Close"
+        },
+        {
+          "label": "Used instead of 'Drag'-icon",
+          "default": "Drag"
+        },
+        {
+          "label": "'Draggable item' label for screenreaders",
+          "description": "Available variables are :argument",
+          "default": "Draggable item: :argument"
+        },
+        {
+          "label": "Title for the actions menu dialog",
+          "default": "Actions menu"
+        },
+        {
+          "label": "Description for the actions menu dialog",
+          "default": "Select the action you want to perform on this argument"
+        }
+      ]
+    }
+  ]
+}

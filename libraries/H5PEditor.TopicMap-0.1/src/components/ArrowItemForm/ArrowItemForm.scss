@@ -1,0 +1,20 @@
+.arrow-item-form {
+  > div > .field {
+    > .h5peditor-label {
+      // Topic map items heading
+      display: none;
+    }
+
+    > .h5peditor-widget-wrapper {
+      > .h5p-ul {
+        list-style-type: none;
+        padding: 0;
+
+        + .h5peditor-button {
+          // Add Topic map item button
+          display: none;
+        }
+      }
+    }
+  }
+}

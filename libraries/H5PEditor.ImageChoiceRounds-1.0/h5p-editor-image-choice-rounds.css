@@ -1,0 +1,31 @@
+.h5peditor .libwrap.h5p-multimediachoice-editor .field-name-behaviour .field-name-enableRetry {
+  display: none;
+}
+
+.h5peditor .libwrap.h5p-multimediachoice-editor .field-name-behaviour .field-name-enableSolutionsButton {
+  display: none;
+}
+
+.h5peditor .libwrap.h5p-multimediachoice-editor .field-name-behaviour .field-name-confirmCheckDialog {
+  display: none;
+}
+
+.h5peditor .libwrap.h5p-multimediachoice-editor .field-name-behaviour .field-name-confirmRetryDialog {
+  display: none;
+}
+
+.h5peditor .libwrap.h5p-multimediachoice-editor .field-name-behaviour .field-name-singlePoint {
+  display: none;
+}
+
+.h5peditor .libwrap.h5p-multimediachoice-editor .field-name-behaviour .field-name-showSolutionsRequiresInput {
+  display: none;
+}
+
+.h5peditor .libwrap.h5p-multimediachoice-editor .field-name-behaviour .field-name-passPercentage {
+  display: none;
+}
+
+.h5peditor .libwrap.h5p-multimediachoice-editor .field-name-behaviour .field-name-questionType {
+  margin-top: 0;
+}

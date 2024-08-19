@@ -1,0 +1,48 @@
+{
+  "semantics": [
+    {
+      "label": "Resources",
+      "entity": "resource",
+      "widgets": [
+        {
+          "label": "Default"
+        }
+      ],
+      "field": {
+        "label": "Resources",
+        "description": "Optional links to resources.",
+        "fields": [
+          {
+            "label": "Resource title"
+          },
+          {
+            "label": "Introduction"
+          },
+          {
+            "label": "URL"
+          },
+          {
+            "label": "Introduction image"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Localize",
+      "fields": [
+        {
+          "label": "Translation for \"Hide\"",
+          "default": "Hide"
+        },
+        {
+          "label": "Translation for \"Resources\"",
+          "default": "Resources"
+        },
+        {
+          "label": "Accessibility for the \"Resources\" button",
+          "default": "See additional resources to get more information"
+        }
+      ]
+    }
+  ]
+}

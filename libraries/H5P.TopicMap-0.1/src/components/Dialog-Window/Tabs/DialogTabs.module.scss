@@ -1,0 +1,59 @@
+.trigger {
+  font-family: inherit;
+  background-color: white;
+  color: #555555;
+  padding: 0 20px;
+  height: 45px;
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1rem;
+  line-height: 1;
+  user-select: none;
+  cursor: pointer;
+  max-width: min-content;
+  border-bottom: 2px solid #eee;
+  border-left: none;
+  border-right: none;
+  border-top: none;
+  outline-offset: -2px;
+
+  &[data-state="active"] {
+    font-weight: 700;
+    border-bottom: 2px solid #2360c5;
+    cursor: default;
+    color: black;
+  }
+
+  &:hover {
+    border-bottom: 2px solid #2360c5;
+    color: black;
+  }
+}
+
+.list {
+  flex-shrink: 0;
+  display: flex;
+  box-shadow: inset 0 -2px 0 #eee;
+  margin-bottom: 1rem;
+  overflow-x: auto;
+}
+
+.tabs {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+}
+
+.tabItemWrapper {
+  height: 100%;
+
+  &.marginTop {
+    margin-top: 1.75rem;
+  }
+}
+
+.noteWrapper {
+  height: 100%;
+}

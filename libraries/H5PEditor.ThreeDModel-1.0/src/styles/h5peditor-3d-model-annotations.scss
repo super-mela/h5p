@@ -1,0 +1,33 @@
+.h5peditor-3d-model-annotations-editor {
+  &.display-none {
+    display: none;
+  }
+
+  .h5p-annotation-input-wrapper {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+
+    .h5p-3d-model-add-annotation-button {
+      aspect-ratio: 1;
+      background-color: #228380;
+      background-image: url('@assets/images/3d-axes.svg');
+      background-position: center;
+      background-size: contain;
+      border: 3px solid #228380;
+      border-radius: .4rem;
+      box-sizing: border-box;
+      color: #fff;
+      cursor: pointer;
+      min-width: 40px;
+
+      &.active {
+        border-color: #4dc2bf;
+      }
+
+      &:hover {
+        border-color: #4dc2bf;
+      }
+    }
+  }
+}

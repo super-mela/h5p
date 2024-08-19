@@ -1,0 +1,124 @@
+{
+  "semantics": [
+    {
+      "label": "Media",
+      "fields": [
+        {
+          "label": "Type",
+          "description": "Optionele media, die boven de vraag wordt getoond."
+        },
+        {
+          "label": "Beeld zoomen uitschakelen"
+        }
+      ]
+    },
+    {
+      "label": "Taakomschrijving",
+      "description": "Geef hier eventueel een beschrijving."
+    },
+    {
+      "label": "Modus",
+      "description": "Kies de modus voor het afspelen. Cijfers worden automatisch ingevuld, woorden moeten worden opgegeven.",
+      "options": [
+        {
+          "label": "Spelen met getallen"
+        },
+        {
+          "label": "Spelen met woorden"
+        }
+      ]
+    },
+    {
+      "label": "Woorden of zinnen",
+      "fields": [
+        {
+          "label": "Woorden of zinnen",
+          "description": "Gebruik één regel voor elk woord en elke zin."
+        }
+      ]
+    },
+    {
+      "label": "Speelbordgrootte"
+    },
+    {
+      "label": "Beeldmateriaal",
+      "description": "Je kunt het visuele uiterlijk hier aanpassen.",
+      "fields": [
+        {
+          "label": "Afbeelding",
+          "description": "Jokerafbeelding voor de knoppen."
+        },
+        {
+          "label": "Achtergrondkleur",
+          "description": "Achtergrondkleur van het speelbord."
+        }
+      ]
+    },
+    {
+      "label": "Audio",
+      "description": "Je kunt de audio hier aanpassen.",
+      "fields": [
+        {
+          "label": "Veld geselecteerd/niet-geselecteerd",
+          "description": "Geluid om af te spelen wanneer een veld is geselecteerd/gedeselecteerd."
+        },
+        {
+          "label": "Rij of kolom voltooid",
+          "description": "Geluid om af te spelen wanneer gebruiker een rij of kolom heeft gecompleteerd."
+        }
+      ]
+    },
+    {
+      "label": "Gedragsinstellingen",
+      "description": "Met deze opties kun je bepalen hoe de taak zich gedraagt.",
+      "fields": [
+        {
+          "label": "Schakel \"Opnieuw\" in"
+        },
+        {
+          "label": "Schudden voor een nieuw spel",
+          "description": "Indien aangevinkt, worden de woorden/zinnen/cijfers bij het opnieuw proberen geschud."
+        },
+        {
+          "label": "Zet de joker in",
+          "description": "Plaatst een niet-omkeerbare joker in het midden van het speelbord als je een afwijkende grootte gebruikt."
+        },
+        {
+          "label": "Hoogtebeperkingsmodus",
+          "description": "Bepaal of je de hoogte van het bord wil begrenzen zodat het binnen het zichtbare schermgedeelte valt. Automatische beperking is mogelijk niet perfect afhankelijk van de instellingen van je website, b.v. als het vaste navigatiebalken heeft aan de bovenzijde. Goede aangepaste waardes zijn lastig handmatig in te stellen.",
+          "options": [
+            {
+              "label": "Geen beperking"
+            },
+            {
+              "label": "Automatisch"
+            },
+            {
+              "label": "Aangepast"
+            }
+          ]
+        },
+        {
+          "label": "Hoogtebeperking",
+          "description": "Maximumhoogte van het bord in pixels."
+        }
+      ]
+    },
+    {
+      "label": "Tekst voor \"Opnieuw\"-knop",
+      "default": "Opnieuw"
+    },
+    {
+      "label": "Ondersteunende technologie beschrijving voor \"Opnieuw\"-knop",
+      "default": "Probeer de taak opnieuw. Reset alle antwoorden en start de taak opnieuw."
+    },
+    {
+      "label": "Assistive technology description for \"Mute\" button",
+      "default": "Mute audio, currently unmuted"
+    },
+    {
+      "label": "Assistive technology description for \"Unmute\" button",
+      "default": "Unmute audio, currently muted"
+    }
+  ]
+}

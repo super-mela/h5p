@@ -1,0 +1,143 @@
+{
+    "semantics": [
+        {
+            "label": "Imagem do quebra-cabeça",
+            "description": "Imagem a partir da qual as peças devem ser recortadas."
+        },
+        {
+            "label": "Peças na horizontal",
+            "description": "Defina quantas peças o quebra-cabeça deve ter na horizontal."
+        },
+        {
+            "label": "Peças na vertical",
+            "description": "Defina quantas peças o quebra-cabeça deve ter na vertical."
+        },
+        {
+            "label": "Ajustes de som",
+            "description": "Estas opções permitirão que você defina opções relacionadas ao som.",
+            "fields": [
+                {
+                    "label": "Comece o quebra-cabeça",
+                    "description": "Som para ser reproduzido quando o quebra-cabeça é iniciado."
+                },
+                {
+                    "label": "Escolha a peça do quebra-cabeça",
+                    "description": "Som para ser reproduzido quando uma peça do quebra-cabeça é colocada."
+                },
+                {
+                    "label": "Soltar a peça (na posição incorreta)",
+                    "description": "Som para ser reproduzido quando uma peça do quebra-cabeça é colocada (na posição incorreta)."
+                },
+                {
+                    "label": "Soltar a peça (na posição correta)",
+                    "description": "Som para ser reproduzido quando uma peça do quebra-cabeça é colocada (na posição correta)."
+                },
+                {
+                    "label": "Quebra-cabeça completo",
+                    "description": "Som para ser reproduzido quando um quebra-cabeça for completado."
+                }
+            ]
+        },
+        {
+            "label": "Configurações comportamentais",
+            "description": "Estas opções lhe permitirão controlar como a tarefa se comporta.",
+            "fields": [
+                {
+                    "label": "Mostrar um fundo opaco",
+                    "description": "Mostrar uma versão opaca da imagem ao fundo para indicar para onde uma peça de quebra-cabeça precisa ser colocada."
+                },
+                {
+                    "label": "Mostrar os contornos das peças do quebra-cabeça",
+                    "description": "Mostrar os contornos para indicar onde uma peça precisa ser colocada."
+                },
+                {
+                    "label": "Ordenando a posição do espaço",
+                    "description": "Defina onde o espaço de classificação deve ser posicionado.",
+                    "options": [
+                        {
+                            "label": "Puzzle next to sorting space"
+                        },
+                        {
+                            "label": "Puzzle above sorting space"
+                        }
+                    ]
+                },
+                {
+                    "label": "Espaço de ordenação das peças",
+                    "description": "Defina quanto espaço (em porcentagem) deve ser utilizado ao lado da imagem do quebra-cabeça para separar as peças."
+                },
+                {
+                    "label": "Espaço de ordenação das peças",
+                    "description": "Set how much space in percent relative to the puzzle should be attached below to the jigsaw puzzle for sorting the tiles."
+                },
+                {
+                    "label": "Usar a área total",
+                    "description": "Ajustar se inicialmente as peças que devem cobrir a área completa, incluindo a área onde elas precisam ser descartadas."
+                },
+                {
+                    "label": "Ativar o botão \"Completar\""
+                },
+                {
+                    "label": "Ativar o botão \"Tentar Novamente\""
+                },
+                {
+                    "label": "Ativar o botão \"Solução\""
+                }
+            ]
+        },
+        {
+            "label": "Interface de usuário",
+            "fields": [
+                {
+                    "label": "Texto para o botão \"Completar\"",
+                    "default": "Completar"
+                },
+                {
+                    "label": "Texto para o botão \"Tentar Novamente\"",
+                    "default": "Tentar Novamente"
+                },
+                {
+                    "label": "Texto para mensagem \"Sem imagem\"",
+                    "default": "Nenhuma imagem selecionada para este quebra-cabeça."
+                }
+            ]
+        },
+        {
+            "label": "Leitor de Tela",
+            "fields": [
+                {
+                    "label": "Descrição da assistência para o botão \"Completar\"",
+                    "default": "Completar o quebra-cabeça. Todas as peças serão colocadas em sua posição correta."
+                },
+                {
+                    "label": "Descrição da assitência para o botão \"Tentar Novamente\"",
+                    "default": "Tentar novamente o quebra-cabeça. Todas as peças serão embaralhadas mais uma vez."
+                },
+                {
+                    "label": "Descrição da assistência para o botão \"Entrar em Tela Cheia\"",
+                    "default": "Entrar em modo de Tela Cheia"
+                },
+                {
+                    "label": "Descrição da assistência para o botão \"Sair da Tela Cheia\"",
+                    "default": "Sair do modo Tela Cheia"
+                },
+                {
+                    "label": "Descrição da assistência para o botão \"Mudo\"",
+                    "default": "Áudio mudo"
+                },
+                {
+                    "label": "Descrição da assistência para o botão \"Ativar o áudio\"",
+                    "default": "Ativar o áudio"
+                },
+                {
+                    "label": "Descrição da assistência para \"Desabilitado\"",
+                    "default": "Desativado"
+                },
+                {
+                    "label": "Descrição da assistência para \"Fechar\"",
+                    "default": "Fechar"
+                }
+            ]
+        }
+    ]
+}

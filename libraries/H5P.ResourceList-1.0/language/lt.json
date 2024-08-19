@@ -1,0 +1,48 @@
+{
+  "semantics": [
+    {
+      "label": "Ištekliai",
+      "entity": "išteklius",
+      "widgets": [
+        {
+          "label": "Numatytasis"
+        }
+      ],
+      "field": {
+        "label": "Ištekliai",
+        "description": "Pasirenkamos nuorodos į išteklius.",
+        "fields": [
+          {
+            "label": "Ištekliaus pavadinimas"
+          },
+          {
+            "label": "Įvadas"
+          },
+          {
+            "label": "URL"
+          },
+          {
+            "label": "Įvado paveiksliukas"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Lokalizuoti",
+      "fields": [
+        {
+          "label": "\"Slėpti\" vertimas",
+          "default": "Slėpti"
+        },
+        {
+          "label": "\"Ištekliai\" vertimas",
+          "default": "Ištekliai"
+        },
+        {
+          "label": "Mygtuko „Ištekliai“ pritaikomumas",
+          "default": "Norėdami gauti daugiau informacijos, žr. papildomus išteklius"
+        }
+      ]
+    }
+  ]
+}

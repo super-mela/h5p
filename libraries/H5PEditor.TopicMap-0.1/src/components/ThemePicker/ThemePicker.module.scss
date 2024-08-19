@@ -1,0 +1,52 @@
+@use "sass:math";
+
+.buttons {
+  $margin: 0.5rem;
+
+  display: flex;
+  flex-wrap: wrap;
+  margin: -$margin;
+
+  > * {
+    margin: $margin;
+  }
+}
+
+.button {
+  background-color: #f2f2f2;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.3);
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 1.25rem;
+  padding: 1rem;
+  transition: background-color 0.15s ease-in-out;
+
+  &:hover,
+  &:focus {
+    background-color: #dedede;
+  }
+}
+
+.buttonActive {
+  background-color: #dcdcdc;
+  border-color: #bbb;
+}
+
+$color-circle-size: 1rem;
+
+.colorCircles {
+  display: flex;
+  margin-top: 1rem;
+}
+
+.colorCircle {
+  border-radius: 50%;
+  height: $color-circle-size;
+  width: $color-circle-size;
+
+  + .colorCircle {
+    margin-left: math.div(-$color-circle-size, 4);
+  }
+}

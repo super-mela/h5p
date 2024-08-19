@@ -1,0 +1,42 @@
+@import "@styles/h5p-jigsaw-puzzle-main";
+
+.h5p-jigsaw-puzzle {
+
+  .h5p-jigsaw-puzzle-puzzle-area {
+    touch-action: manipulation;
+
+    .h5p-jigsaw-puzzle-tile {
+      position: absolute;
+      z-index: 1;
+
+      &:not([disabled]) {
+        cursor: move;
+      }
+
+      &[disabled] {
+        z-index: 0;
+      }
+
+      &.onTop {
+        z-index: 2;
+      }
+
+      &.ghosted {
+        opacity: 0;
+      }
+
+      &.animate-move {
+        transition: left $default-duration, top $default-duration;
+      }
+
+      &.hidden {
+        visibility: hidden;
+        opacity: 0;
+      }
+
+      svg {
+        filter: drop-shadow( 1px 1px 1px $color-grey-0-50);
+      }
+    }
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "semantics": [
+    {
+      "label": "Imaxe do crebacabezas",
+      "description": "Imaxe da que se deben cortar as pezas."
+    },
+    {
+      "label": "Pezas horizontalmente",
+      "description": "Establece cantas pezas debe ter o crebacabezas horizontalmente."
+    },
+    {
+      "label": "Pezas verticalmente",
+      "description": "Establece cantas pezas debe ter o crebacabezas verticalmente."
+    },
+    {
+      "label": "Configuración do son",
+      "description": "Estas opcións permítenche configurar opcións relacionadas co son.",
+      "fields": [
+        {
+          "label": "Comezar crebacabezas",
+          "description": "Son a reproducir cando se inicie o crebacabezas."
+        },
+        {
+          "label": "Escolle unha peza do crebacabezas",
+          "description": "Son a reproducir cando se colle unha peza de crebacabezas."
+        },
+        {
+          "label": "Soltar peza do crebacabezas (incorrectamente)",
+          "description": "Son a reproducir cando se solta unha peza do crebacabezas (nun lugar incorrecto)."
+        },
+        {
+          "label": "Soltar peza do crebacabezas correctamente",
+          "description": "Son a reproducir cando se solta unha peza do crebacabezas no lugar correcto."
+        },
+        {
+          "label": "Crebacabezas completo",
+          "description": "Son a reproducir cando se completa o crebacabezas."
+        }
+      ]
+    },
+    {
+      "label": "Configuración de comportamento",
+      "description": "Estas opcións permitiranche controlar o comportamento da tarefa.",
+      "fields": [
+        {
+          "label": "Amosar un fondo tenue",
+          "description": "Amosar unha versión tenue da imaxe de fondo para indicar onde ten que ir unha peza do crebacabezas."
+        },
+        {
+          "label": "Amosar deseño do crebacabezas",
+          "description": "Amosar un esquema do crebacabezas para indicar onde ten que ir unha peza."
+        },
+        {
+          "label": "Posición no espazo de clasificación",
+          "description": "Establece onde debe situarse o espazo de clasificación.",
+          "options": [
+            {
+              "label": "Puzzle next to sorting space"
+            },
+            {
+              "label": "Puzzle above sorting space"
+            }
+          ]
+        },
+        {
+          "label": "Espazo de clasificación",
+          "description": "Establecer canto espazo en porcentaxe se debe engadir xunto ao crebacabezas para clasificar as pezas."
+        },
+        {
+          "label": "Espazo de clasificación",
+          "description": "Set how much space in percent relative to the puzzle should be attached below to the jigsaw puzzle for sorting the tiles."
+        },
+        {
+          "label": "Usar área completa",
+          "description": "Establece se inicialmente as pezas deben cubrir toda a área, incluída a zona onde hai que soltalas."
+        },
+        {
+          "label": "Activar o botón \"Completar\""
+        },
+        {
+          "label": "Activar o botón \"Tentar de novo\""
+        },
+        {
+          "label": "Activar o botón \"Amosar Solución\""
+        }
+      ]
+    },
+    {
+      "label": "Interface de usuario",
+      "fields": [
+        {
+          "label": "Texto para o botón \"Completar\"",
+          "default": "Completar"
+        },
+        {
+          "label": "Texto para o botón \"Tentar de novo\"",
+          "default": "Tentar de novo"
+        },
+        {
+          "label": "Texto para a mensaxe \"Sen imaxe\"",
+          "default": "Non se forneceu ningunha imaxe para este crebacabezas."
+        }
+      ]
+    },
+    {
+      "label": "Lector de pantalla",
+      "fields": [
+        {
+          "label": "Descrición para as tecnoloxías de asistencia do botón \"Completar\"",
+          "default": "Completa o crebacabezas. Todas as pezas colocaranse na súa posición correcta."
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia do botón \"Tentar de novo\"",
+          "default": "Volve tentar o crebacabezas. Todas as fichas do crebacabezas barallaranse no lenzo."
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia do botón \"Ir a pantalla completa\"",
+          "default": "Pasar a pantalla completa"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia do botón \"Saír de pantalla completa\"",
+          "default": "Saír de pantalla completa"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia do botón \"Silenciar\"",
+          "default": "Silenciar o son"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia do botón \"Activar son\"",
+          "default": "Activar o son"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia de \"Desactivado\"",
+          "default": "Desactivado"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia de \"Pechar\"",
+          "default": "Pechar"
+        }
+      ]
+    }
+  ]
+}

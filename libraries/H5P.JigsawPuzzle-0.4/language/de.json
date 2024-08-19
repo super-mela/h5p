@@ -1,0 +1,143 @@
+{
+  "semantics": [
+    {
+      "label": "Puzzle-Bild",
+      "description": "Bild, aus dem die Teile geschnitten werden sollen."
+    },
+    {
+      "label": "horizontale Teile",
+      "description": "Stelle ein, wie viele Puzzleteile das Puzzle horizontal haben soll."
+    },
+    {
+      "label": "vertikale Stücke",
+      "description": "Stelle ein, wie viele Puzzleteile das Puzzle vertikal haben soll."
+    },
+    {
+      "label": "Toneinstellungen",
+      "description": "Mit diesen Optionen kannst du tonbezogene Optionen setzen.",
+      "fields": [
+        {
+          "label": "Puzzle gestartet",
+          "description": "Sound, der abgespielt wird, wenn das Puzzle gestartet wird."
+        },
+        {
+          "label": "Puzzleteil aufgehoben",
+          "description": "Sound, der abgespielt wird, wenn ein Puzzleteil augehoben wird."
+        },
+        {
+          "label": "Puzzleteil falsch abgelegt",
+          "description": "Sound, der abgespielt wird, wenn ein Puzzleteil an der falschen Stelle abgelegt wird."
+        },
+        {
+          "label": "Puzzleteil richtig abgelegt",
+          "description": "Sound, der abgespielt wird, wenn ein Puzzleteil an der richtigen Stelle abgelegt wird."
+        },
+        {
+          "label": "Puzzle komplett",
+          "description": "Sound, der abgespielt wird, wenn ein Puzzle abgeschlossen ist."
+        }
+      ]
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "description": "Diese Optionen kontrollieren, wie sich die Aufgabe verhält.",
+      "fields": [
+        {
+          "label": "Blassen Hintergrund anzeigen",
+          "description": "Zeitgt eine blasse Version des Bildes im Hintergrund, um anzuzeigen, wo ein Puzzleteil platziert werden muss."
+        },
+        {
+          "label": "Puzzleumrisse anzeigen",
+          "description": "Zeigt Puzzleumrisse an, um darauf hinzuweisen, wo ein Teil hingehört."
+        },
+        {
+          "label": "Position des Sortierplatzes",
+          "description": "Legt fest, wo der Sortierplatz positioniert sein soll.",
+          "options": [
+            {
+              "label": "Puzzle neben dem Sortierplatz"
+            },
+            {
+              "label": "Puzzle über dem Sortierplatz"
+            }
+          ]
+        },
+        {
+          "label": "Sortierplatz",
+          "description": "Stellt ein, wie viel Platz in Prozent neben dem Puzzle zum Sortieren der Kacheln hinzugefügt werden soll."
+        },
+        {
+          "label": "Platz zum Sortieren",
+          "description": "Stellt ein, wie viel Platz in Prozent relativ zum Puzzle darunter zum Sortieren der Kacheln hinzugefügt werden soll."
+        },
+        {
+          "label": "Volle Fläche nutzen",
+          "description": "Legt fest, ob die Teile anfänglich den gesamten Bereich abdecken sollen, einschließlich des Bereichs, in dem sie abgelegt werden müssen."
+        },
+        {
+          "label": "\"Fertigstellen\"-Button aktivieren"
+        },
+        {
+          "label": "\"Wiederholen\"-Button anzeigen"
+        },
+        {
+          "label": "\"Lösung anzeigen\"-Button aktivieren"
+        }
+      ]
+    },
+    {
+      "label": "Bedienoberfläche",
+      "fields": [
+        {
+          "label": "Beschriftung des \"Fertigstellen\"-Buttons",
+          "default": "Fertigstellen"
+        },
+        {
+          "label": "Beschriftung des \"Wiederholen\"-Buttons",
+          "default": "Wiederholen"
+        },
+        {
+          "label": "Text der Meldung \"Kein Bild\"",
+          "default": "Für dieses Puzzle wurde kein Bild angegeben."
+        }
+      ]
+    },
+    {
+      "label": "Vorlesewerkzeug",
+      "fields": [
+        {
+          "label": "Beschreibung des \"Fertig stellen\"-Buttons für Vorlesewerkzeuge",
+          "default": "Vervollständigt das Puzzle. Alle Kacheln werden an ihre richtige Position gebracht."
+        },
+        {
+          "label": "Beschreibung des \"Wiederholen\"-Buttons für Vorlesewerkzeuge",
+          "default": "Startet das Puzzle neu. Alle Puzzleteile werden auf der Fläche neu gemischt."
+        },
+        {
+          "label": "Beschreibung des \"Vollbild aktivieren\"-Buttons für Vorlesewerkzeuge",
+          "default": "Gehe in den Vollbildmodus"
+        },
+        {
+          "label": "Beschreibung des \"Vollbild verlassen\"-Buttons für Vorlesewerkzeuge",
+          "default": "Vollbildmodus verlassen"
+        },
+        {
+          "label": "Beschreibung des \"Stumm\"-Buttons für Vorlesewerkzeuge",
+          "default": "Ton stummschalten"
+        },
+        {
+          "label": "Beschreibung des \"Lautschalten\"-Buttons für Vorlesewerkzeuge",
+          "default": "Ton anschalten"
+        },
+        {
+          "label": "Beschreibung von \"Deaktiviert\" für Vorlesewerkzeuge",
+          "default": "Deaktiviert"
+        },
+        {
+          "label": "Beschreibung von \"Schließen\" für Vorlesewerkzeuge",
+          "default": "Schließen"
+        }
+      ]
+    }
+  ]
+}

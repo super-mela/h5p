@@ -1,0 +1,76 @@
+{
+  "semantics": [
+    {
+      "label": "标签页",
+      "entity": "标签页",
+      "widgets": [
+        {
+          "label": "默认"
+        }
+      ],
+      "field": {
+        "label": "内容",
+        "entity": "内容"
+      }
+    },
+    {
+      "label": "行为设置",
+      "description": "这些选项将让您控制任务的行为。",
+      "fields": [
+        {
+          "label": "标签页放置",
+          "description": "选择标签页的放置位置。",
+          "options": [
+            {
+              "label": "基于屏幕尺寸"
+            },
+            {
+              "label": "在内容上方"
+            },
+            {
+              "label": "在内容左侧"
+            }
+          ]
+        },
+        {
+          "label": "标签页扩展",
+          "description": "定义标签页面板的水平空间使用百分比。"
+        },
+        {
+          "label": "标签页颜色",
+          "description": "允许您调整标签页的颜色。",
+          "default": "#1a73d9"
+        },
+        {
+          "label": "背景颜色",
+          "description": "允许您调整背景颜色，使标签页能够融入您的使用环境中。",
+          "default": "rgba(255, 255, 255, 0)"
+        }
+      ]
+    },
+    {
+      "label": "用户界面",
+      "fields": [
+        {
+          "label": "标签页",
+          "default": "标签页"
+        },
+        {
+          "label": "无内容",
+          "default": "没有内容可显示。"
+        }
+      ]
+    },
+    {
+      "label": "辅助功能文本",
+      "fields": [
+        {
+          "label": "选择一个标签页",
+          "description": "屏幕阅读器的文本。",
+          "default": "选择一个标签页。"
+        },
+        {}
+      ]
+    }
+  ]
+}

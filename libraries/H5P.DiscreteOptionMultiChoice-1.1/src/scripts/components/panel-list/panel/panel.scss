@@ -1,0 +1,97 @@
+.h5p-discrete-option-multi-choice-panel {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  transition: opacity 0.15s ease-in;
+
+  &.animate {
+    opacity: 0;
+  }
+
+  &.display-none {
+    display: none;
+  }
+
+  .h5p-discrete-option-multi-choice-question {
+    background-color: var(--color-panel-background);
+    box-shadow: 0 0.1em 0 rgba(0,0,0,.3);
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    gap: var(--gap-default);
+    padding: 0.5rem 1rem;
+    width: 100%;
+  }
+}
+
+// Using container queries with media queries as fallback. Looking at you,
+// Safari on iOS before V16.
+// 13.5rem is total horizontal size of all buttons + gaps
+// 27rem is twice the horizontal size of all buttons + gaps
+// 4rem is total horizontal outer margin of .h5p-discrete-option-multi-choice-question
+
+// Media query as fallback
+@supports not (contain: inline-size) {
+  @media (max-width: calc(27rem + 4rem)) {
+    .h5p-discrete-option-multi-choice-option.has-confidence-selector {
+      flex-wrap: wrap;
+
+      .h5p-discrete-option-multi-choice-option-text,
+      .h5p-discrete-option-multi-choice-option-actions {
+        flex-basis: 100%;
+      }
+    }
+  }
+
+  @media (max-width: calc(13.5rem + 4rem)) {
+    .h5p-discrete-option-multi-choice-option {
+      flex-wrap: wrap;
+
+      .h5p-discrete-option-multi-choice-option-text,
+      .h5p-discrete-option-multi-choice-option-actions {
+        flex-basis: 100%;
+      }
+
+      .h5p-discrete-option-multi-choice-option-actions {
+        flex-wrap: wrap;
+        justify-content: center;
+      }
+    }
+  }
+}
+
+// Container query
+@supports (contain: inline-size) {
+  .h5p-discrete-option-multi-choice-question {
+    container-type: inline-size;
+    container-name: h5p-discrete-option-multi-choice-question;
+  }
+}
+
+@container h5p-discrete-option-multi-choice-question (max-width: 27rem) {
+  .h5p-discrete-option-multi-choice-option.has-confidence-selector {
+    flex-wrap: wrap;
+
+    .h5p-discrete-option-multi-choice-option-text,
+    .h5p-discrete-option-multi-choice-option-actions {
+      flex-basis: 100%;
+    }
+  }
+}
+
+@container h5p-discrete-option-multi-choice-question (max-width: 13.5rem) {
+  .h5p-discrete-option-multi-choice-option {
+    flex-wrap: wrap;
+
+    .h5p-discrete-option-multi-choice-option-text,
+    .h5p-discrete-option-multi-choice-option-actions {
+      flex-basis: 100%;
+    }
+
+    .h5p-discrete-option-multi-choice-option-actions {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+  }
+}

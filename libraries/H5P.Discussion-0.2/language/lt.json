@@ -1,0 +1,196 @@
+{
+  "semantics": [
+    {
+      "label": "Antraštė"
+    },
+    {
+      "label": "Užduoties aprašymas"
+    },
+    {
+      "label": "Argumentai",
+      "fields": [
+        {
+          "label": "Argumentai",
+          "entity": "argumentas",
+          "field": {
+            "label": "Argumentas"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Santrauka",
+      "default": "Santrauka"
+    },
+    {
+      "label": "Santraukos instrukcija"
+    },
+    {
+      "label": "Ištekliai",
+      "fields": [
+        {
+          "label": "Ištekliai",
+          "description": "Pasirenkamos nuorodos į išteklius."
+        }
+      ]
+    },
+    {
+      "label": "Veikimo nustatymai",
+      "description": "Šie parametrai padės jums kontroliuoti veikimą.",
+      "fields": [
+        {
+          "label": "Įgalinti bandymą iš naujo?",
+          "description": "Pažymėkite tai, jei norite, kad naudotojas galėtų bandyti dar kartą"
+        },
+        {
+          "label": "Atsitiktinai surūšiuoti argumentus",
+          "description": "Atsitiktinai surūšiuos argumentus"
+        },
+        {
+          "label": "Leisti naudotojams pridėti savo argumentus",
+          "description": "Leidžia naudotojui pridėti savo argumentus"
+        },
+        {
+          "label": "Rodyti santrauką",
+          "description": "Ar norite, kad naudotojas pateiktų santrauką, paaiškindamas jo atsakymų priežastis"
+        }
+      ]
+    },
+    {
+      "label": "Lokalizuoti",
+      "fields": [
+        {
+          "label": "Pavadinimas 'For' stulpeliui",
+          "default": "Argumentai FOR"
+        },
+        {
+          "label": "Pavadinimas 'Against' stulpeliui",
+          "default": "Argumentai AGAINST"
+        },
+        {
+          "label": "Vieta teksto rašymui",
+          "default": "Pateikite trumpą santrauką savo žodžiais"
+        },
+        {
+          "label": "Kursoriaus vieta, kai argumentai neprijungti",
+          "default": "Argumentų nėra"
+        },
+        {
+          "label": "Mygtuko „Ištekliai“ pavadinimas",
+          "default": "Ištekliai"
+        },
+        {
+          "label": "Mygtuko „Paleisti iš naujo“ pavadinimas",
+          "default": "Perkrauti"
+        },
+        {
+          "label": "\"Pridėti argumentą\" mygtuko pavadinimas",
+          "default": "Pridėti argumentą"
+        },
+        {
+          "label": "\"Taip\" mygtuko pavadinimas",
+          "default": "Taip"
+        },
+        {
+          "label": "\"Ne\" mygtuko pavadinimas",
+          "default": "Ne"
+        },
+        {
+          "label": "Informuoti naudotoj1, kad jei jis tęs, duomenys bus prarasti",
+          "default": "Jei tęsite, visi pakeitimai bus prarasti"
+        },
+        {
+          "label": "\"Tęsti\" mygtuko pavadinimas",
+          "default": "Tęsti"
+        },
+        {
+          "label": "Trumpas tekstas prieš parinktis, kur galite perkelti argumentus",
+          "default": "Perkelti į"
+        },
+        {
+          "label": "Naikinimo veiksmo rodymo pavadinimas",
+          "default": "Ištrinti argumentą"
+        },
+        {
+          "label": "Label used to show the edit action",
+          "default": "Edit argument"
+        },
+        {
+          "label": "Label for the argument",
+          "default": "Argument"
+        },
+        {
+          "label": "Text inside the arguments drop zone",
+          "default": "Mesti argumentus čia"
+        }
+      ]
+    },
+    {
+      "label": "Resurso ataskaita",
+      "fields": [
+        {
+          "label": "\"Kurti dokumentą\" mygtuko pavadinmas",
+          "default": "Sukurti dokumentą"
+        },
+        {
+          "label": "\"Eksportuoti\" mygtuko pavadinimas",
+          "default": "Eksportuoti"
+        },
+        {
+          "label": "Mygtuko „Pasirinkti viską“ pavadinimas",
+          "default": "Pasirinkti viską"
+        },
+        {
+          "label": "Antraštė virš lentelės „Išteklius“",
+          "default": "Ištekliai"
+        },
+        {
+          "label": "Pavadinimo antraštė ištekliaus lentelėje",
+          "default": "Pavadinimas"
+        },
+        {
+          "label": "Įvado antraštė ištekliaus lentelėje",
+          "default": "Įvadas"
+        },
+        {
+          "label": "URL antraštė ištekliaus lentelėje",
+          "default": "URL"
+        },
+        {
+          "label": "Pavadinimas, kai nerandama išteklių",
+          "default": "Nėra išteklių"
+        },
+        {
+          "label": "Pavadinimas, kai nepateikiama santrauka",
+          "default": "Nėra komentaro"
+        }
+      ]
+    },
+    {
+      "label": "Pritaikymas",
+      "fields": [
+        {
+          "label": "Naudojama vietoje 'Uždaryti' mygtuko",
+          "default": "Uždaryti"
+        },
+        {
+          "label": "Naudojama vietoje 'Mesti' mygtuko",
+          "default": "Mesti"
+        },
+        {
+          "label": "„Metami elementai“ pavadinimas ekrano skaitytuvams",
+          "description": "Galimi kintamieji yra :argument",
+          "default": "Metamas elementas: :argument"
+        },
+        {
+          "label": "Pavadinimas veiksmų meniu dialogo langui",
+          "default": "Veiksmų meniu"
+        },
+        {
+          "label": "Veiksmų meniu dialogo lango aprašymas",
+          "default": "Pasirinkite veiksmą, kurį norite atlikti su šiuo argumentu"
+        }
+      ]
+    }
+  ]
+}

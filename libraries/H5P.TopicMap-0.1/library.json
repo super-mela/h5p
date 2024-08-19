@@ -1,0 +1,37 @@
+{
+  "title": "NDLA Topic Map",
+  "machineName": "H5P.TopicMap",
+  "majorVersion": 0,
+  "minorVersion": 1,
+  "patchVersion": 125,
+  "runnable": 1,
+  "embedTypes": ["iframe"],
+  "license": "MIT",
+  "preloadedJs": [
+    {
+      "path": "dist/h5p-topic-map.js"
+    },
+    {
+      "path": "dist/vendor.js"
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.TopicMap",
+      "majorVersion": 0,
+      "minorVersion": 1
+    },
+    {
+      "machineName": "H5PEditor.UUIDWidget",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.Video",
+      "majorVersion": 1,
+      "minorVersion": 6
+    }
+  ]
+}

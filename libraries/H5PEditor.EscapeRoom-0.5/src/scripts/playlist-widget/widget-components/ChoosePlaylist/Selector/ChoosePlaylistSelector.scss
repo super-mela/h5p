@@ -1,0 +1,21 @@
+.choose-playlist-selector {
+
+    .choose-playlist-selector-title {
+      padding-bottom: 1.5em;
+      font-weight: bold;
+    }
+
+    .h5p-playlist-list {
+      padding: 1px;
+
+      .h5p-playlist-listitem {
+        .h5p-playlist-row {
+          cursor: pointer;
+        }
+
+        &:last-child .h5p-playlist-row {
+          border-bottom-width: 1px;
+        }
+      }
+    }
+  }

@@ -1,0 +1,187 @@
+{
+  "semantics": [
+    {
+      "label": "Medio",
+      "fields": [
+        {
+          "label": "Medio"
+        },
+        {
+          "label": "Maniquí"
+        }
+      ]
+    },
+    {
+      "label": "Archivos de transcripción",
+      "entity": "archivo de transcripción",
+      "widgets": [
+        {
+          "label": "Predeterminado"
+        }
+      ],
+      "field": {
+        "label": "Datos del archivo de transcripción",
+        "fields": [
+          {
+            "label": "Transcripción (archivo WebVTT)"
+          },
+          {
+            "label": "Etiqueta",
+            "description": "Etiqueta para identificar la transcripción. No es relevante si usted solamente tiene un archivo de transcripción."
+          },
+          {
+            "label": "Código de idioma",
+            "description": "La biblioteca de transcripción intentará automáticamente determinar el idioma del texto de la transcripción como la información para lectores de pantalla. Si eso falla, usted puede manualmente configura la \"marca de idioma BCP 47\" - como por ejemplo \"en\" para Inglés, \"es\" para Español, etc."
+          }
+        ]
+      }
+    },
+    {
+      "label": "Configuraciones del comportamiento",
+      "fields": [
+        {
+          "label": "Número máximo de líneas",
+          "description": "Número máximo de líneas de transcripción mostradas a la vez. Si no se configura o su valor es 0, se mostrará la transcripción completa."
+        },
+        {
+          "label": "Mostrar transcripción al cargar",
+          "description": "Puede seleccionar si la transcripción debe mostrarse cuando se carga el contenido o no."
+        }
+      ]
+    },
+    {
+      "label": "Capítulos",
+      "fields": [
+        {
+          "label": "Usar marcadores de Video Interactivo"
+        },
+        {
+          "label": "Marcas de capítulo",
+          "description": "Usted puede opcionalmente añadir marcas de capítulo en formato común mp4chaps. La sintaxis es \"hh:mm:ss Título del capítulo\" o \"hh:mm:ss.MMM Título del capítulo\""
+        }
+      ]
+    },
+    {
+      "label": "Interfaz del usuario",
+      "fields": [
+        {
+          "label": "No se proporcionó ningún medio",
+          "default": "No se asignó ningún medio a la transcripción."
+        },
+        {
+          "label": "No se ha proporcionado transcripción alguna",
+          "default": "No se ha proporcionado transcripción alguna."
+        },
+        {
+          "label": "Problema con el archivo WebVTT",
+          "default": "Parece que hay algún problema con el archivo WebVTT. Consulta la consola de desarrollo del navegador para obtener más información."
+        },
+        {
+          "label": "Marcas de capítulo",
+          "default": "Marcas de capítulo"
+        },
+        {
+          "label": "Opción sin nombre",
+          "default": "Opción sin nombre"
+        }
+      ]
+    },
+    {
+      "label": "Lector de pantalla",
+      "fields": [
+        {
+          "label": "Transcripción visible",
+          "default": "Ocultar transcripción. Actualmente visible."
+        },
+        {
+          "label": "Transcripción invisible",
+          "default": "Mostrar transcripción. Actualmente no visible."
+        },
+        {
+          "label": "Desplazamiento automático activo",
+          "default": "Desactivar desplazamiento automático. Actualmente activo."
+        },
+        {
+          "label": "Desplazamiento automático inactivo",
+          "default": "Activa desplazamiento automático. Actualmente no activo."
+        },
+        {
+          "label": "Desplazamiento automático desactivado",
+          "default": "Opción de desplazamiento automático deshabilitada."
+        },
+        {
+          "label": "Vista de transcripción interactiva",
+          "default": "Cambiar a vista de texto sin formato"
+        },
+        {
+          "label": "Vista de texto sin formato",
+          "default": "Cambiar a la vista de transcripción interactiva."
+        },
+        {
+          "label": "Cambio de modo deshabilitado",
+          "default": "Cambio de modo deshabilitado."
+        },
+        {
+          "label": "Hora de inicio activa",
+          "default": "Ocultar hora de inicio. Mostrada actualmente."
+        },
+        {
+          "label": "Hora de inicio inactiva",
+          "default": "Mostrar hora de inicio. Actualmente no se muestra."
+        },
+        {
+          "label": "Hora de inicio deshabilitada",
+          "default": "Opción de hora de inicio deshabilitada."
+        },
+        {
+          "label": "Saltos de línea activos",
+          "default": "Ocultar saltos de línea. Mostrados actualmente."
+        },
+        {
+          "label": "Saltos de línea inactivos",
+          "default": "Mostrar saltos de línea. Actualmente no se muestran."
+        },
+        {
+          "label": "Saltos de línea deshabilitados",
+          "default": "Opción de salto de línea deshabilitada."
+        },
+        {
+          "label": "Abrir marcas de capítulo",
+          "default": "Abrir marcas de capítulo"
+        },
+        {
+          "label": "Cerrar marcas de capítulo",
+          "default": "Cerrar marcas de capítulo"
+        },
+        {
+          "label": "Marcas de capítulo deshabilitadas",
+          "default": "Marcas de capítulo deshabilitadas."
+        },
+        {
+          "label": "Transcripción interactiva",
+          "default": "Transcripción interactiva"
+        },
+        {
+          "label": "Escribir para resaltar",
+          "default": "Escribe una consulta para resaltar el texto relevante."
+        },
+        {
+          "label": "Seleccionar campo deshabilitado",
+          "default": "Seleccionar campo deshabilitado."
+        },
+        {
+          "label": "Escribir para resaltar",
+          "default": "Escriba una consulta para relevar el texto relevante."
+        },
+        {
+          "label": "Cuadro de búsqueda deshabilitado",
+          "default": "Cuadro de búsqueda deshabilitado."
+        },
+        {
+          "label": "Cerrar",
+          "default": "Cerrar"
+        }
+      ]
+    }
+  ]
+}

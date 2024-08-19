@@ -1,0 +1,143 @@
+{
+  "semantics": [
+    {
+      "label": "Puzles attēls",
+      "description": "Attēls, no kura jāgriež puzles gabaliņi."
+    },
+    {
+      "label": "Gabaliņu skaits horizontāli",
+      "description": "Iestatiet, cik gabaliņiem jābūt puzles rindā."
+    },
+    {
+      "label": "Puzles gabaliņi vertikāli",
+      "description": "Iestatiet, cik gabaliņiem jābūt puzles kolonnā."
+    },
+    {
+      "label": "Skaņas iestatījumi",
+      "description": "Šīs opcijas ļaus iestatīt ar skaņu saistītas iespējas.",
+      "fields": [
+        {
+          "label": "Sākt puzli",
+          "description": "Skaņa, ko atskaņot, kad tiek sākta puzle."
+        },
+        {
+          "label": "Paņemiet puzles gabaliņu",
+          "description": "Skaņa, ko atskaņot, kad tiek paņemts puzles gabaliņš."
+        },
+        {
+          "label": "Puzles gabaliņa nomešana (nepareizi)",
+          "description": "Skaņa, ko atskaņot, kad puzles gabaliņš tiek nomests (nepareizā vietā)."
+        },
+        {
+          "label": "Pareizi nomests puzles gabaliņš",
+          "description": "Skaņa, ko atskaņot, kad puzles gabaliņš tiek nomests pareizā vietā."
+        },
+        {
+          "label": "Puzle pabeigta",
+          "description": "Skaņa, ko atskaņot, kad puzle ir pabeigta."
+        }
+      ]
+    },
+    {
+      "label": "Uzvedības iestatītījumi",
+      "description": "Šie iestatījumi ļaus jums kontrolēt uzdevuma uzvedību.",
+      "fields": [
+        {
+          "label": "Rādīt vāju fonu",
+          "description": "Fonā rādīt vāju attēla versiju, lai norādītu, kur ir jānovieto puzles gabaliņš."
+        },
+        {
+          "label": "Rādīt puzles kontūras",
+          "description": "Rādīt puzles kontūras, lai apzīmētu, kur ir jānovieto puzles gabaliņi."
+        },
+        {
+          "label": "Šķirošanas lauka novietojums",
+          "description": "Norādiet vietu, kur jāatrodas šķirošanas laukam.",
+          "options": [
+            {
+              "label": "Puzzle next to sorting space"
+            },
+            {
+              "label": "Puzzle above sorting space"
+            }
+          ]
+        },
+        {
+          "label": "Šķirošanas laukums",
+          "description": "Iestatiet, cik vietas procentos puzles malā jāatvēlē gabaliņu šķirošanai."
+        },
+        {
+          "label": "Sķirošanas lauks",
+          "description": "Set how much space in percent relative to the puzzle should be attached below to the jigsaw puzzle for sorting the tiles."
+        },
+        {
+          "label": "Izmantot visu laukumu",
+          "description": "Iestatiet, vai sākotnēji puzles gabaliņiem vajadzētu nosegt visu laukumu, ieskaitot vietu, kur tie jānomet."
+        },
+        {
+          "label": "Iespējot pogu \"Pabeigt\""
+        },
+        {
+          "label": "Iespējot pogu \"Mēģināt vēlreiz\""
+        },
+        {
+          "label": "Iespējot pogu \"Risinājums\""
+        }
+      ]
+    },
+    {
+      "label": "Lietotāja saskarne",
+      "fields": [
+        {
+          "label": "Pogas \"Pabeigt\" teksts",
+          "default": "Pabeigt"
+        },
+        {
+          "label": "Pogas \"Mēģināt vēlreiz\" teksts",
+          "default": "Mēģināt vēlreiz"
+        },
+        {
+          "label": "Teksts ziņojumam \"Nav attēla\"",
+          "default": "Šai puzlei netika dots attēls."
+        }
+      ]
+    },
+    {
+      "label": "Ekrāna lasītājs",
+      "fields": [
+        {
+          "label": "Pogas \"Pabeigt\" apraksts asistīvajām tehnoloģijām",
+          "default": "Pabeigt puzli. Visi gabaliņi tiks novietoti pareizajās vietās."
+        },
+        {
+          "label": "Pogas \"Mēģināt vēlreiz\" apraksts priekš asistējošās tehnoloģijas",
+          "default": "Mēģināt puzli vēlreiz. Visi puzles gabaliņi tiks atkal sajaukti."
+        },
+        {
+          "label": "Pogas \"Ieiet pilnekrāna režīmā\" apraksts priekš asistējošās tehnoloģijas",
+          "default": "Ieiet pilnekrāna režīmā"
+        },
+        {
+          "label": "Pogas \"Iziet no pilnekrāna režīma\" apraksts priekš asistīvajām tehnoloģijām",
+          "default": "Iziet no pilnekrāna režīma"
+        },
+        {
+          "label": "Pogas \"Izslēgt skaņu\" apraksts priekš asistīvajām tehnoloģijām",
+          "default": "Izslēgt audio"
+        },
+        {
+          "label": "Pogas \"Ieslēgt skaņu\" apraksts priekš asistējošās tehnoloģijas",
+          "default": "Ieslēgt audio"
+        },
+        {
+          "label": "Pogas \"Atspējots\" apraksts priekš asistīvajām tehnoloģijām",
+          "default": "Atspējots"
+        },
+        {
+          "label": "Pogas \"Aizvērt\" apraksts priekš asistīvajām tehnoloģijām",
+          "default": "Aizvērt"
+        }
+      ]
+    }
+  ]
+}

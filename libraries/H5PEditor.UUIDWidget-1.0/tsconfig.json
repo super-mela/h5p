@@ -1,0 +1,10 @@
+{
+  "compilerOptions": {
+    "target": "ESNext",
+    "module": "ESNext",
+    "lib": ["ESNext", "DOM"],
+    "moduleResolution": "Bundler"
+  },
+  "include": ["h5p-editor-uuid.ts"],
+  "extends": "@tsconfig/strictest/tsconfig.json"
+}

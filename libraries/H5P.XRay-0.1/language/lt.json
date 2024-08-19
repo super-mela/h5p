@@ -1,0 +1,117 @@
+{
+  "semantics": [
+    {
+      "label": "Paveikslėlis",
+      "description": "Fono paveikslėlis."
+    },
+    {
+      "label": "Paveikslėlis",
+      "description": "Pirmo plano paveikslėlis."
+    },
+    {
+      "label": "Išvaizdos nustatymai",
+      "description": "Šios parinktys leis jums valdyti vizualinius aspektus.",
+      "fields": [
+        {
+          "label": "Paveikslo plotis",
+          "description": "Pasirinkite vietos, kurią uždengs paveikslas, plotį. Paveikslo aukštis bus priderintas atitinkamai, bet neviršys 100% pločio.",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100 %"
+            },
+            {
+              "label": "Tikrasis paveikslo plotis"
+            }
+          ]
+        },
+        {
+          "label": "Paveikslo lygiavimas",
+          "description": "Pasirinkite, kur vaizdas turėtų būti išdėstytas, palyginti su likusiu turiniu.",
+          "options": [
+            {
+              "label": "Kairė"
+            },
+            {
+              "label": "centras"
+            },
+            {
+              "label": "dešinė"
+            }
+          ]
+        },
+        {
+          "label": "X-spindulių linzės plotis",
+          "description": "Nustatykite X-spindulių objektyvo plotį kaip vaizdo pločio procentą (pvz., 20 %) arba kaip fiksuotą reikšmę pikseliais (pvz., 160 pikselių).",
+          "default": "20%"
+        },
+        {
+          "label": "X-spindulių linzės aukštis",
+          "description": "Nustatykite x-spindulių objektyvo aukštį kaip vaizdo aukščio procentą (pvz., 25 %) arba kaip fiksuotą reikšmę pikseliais (pvz., 90 pikselių).",
+          "default": "25%"
+        },
+        {
+          "label": "Patamsinti priekinio plano vaizdą X-spinduliuose",
+          "description": "Jei nustatyta, priekinio plano vaizdas patamsės, kad sustiprintų X-spindulių fokusavimo efektą."
+        }
+      ]
+    },
+    {
+      "label": "Veikimo nustatymai",
+      "description": "Šios parinktys leis jums valdyti, kaip veikia užduotis.",
+      "fields": [
+        {
+          "label": "Automatinis X-spiunduliavimas",
+          "description": "Jei pažymėta, vaizdas bus automatiškai nufotografuotas X-spinduliais, kai jį užvedate. Kitu atveju vartotojas turi įjungti ir išjungti X-spindulius."
+        },
+        {
+          "label": "Slėpti X-spindulių indikatorių",
+          "description": "X-spindulių indikatorius naudojamas kaip klaviatūros mygtukas. Paslėpus jį, jis neveiks, tačiau vartotojai turės mažiau naršymo informacijos."
+        }
+      ]
+    },
+    {
+      "label": "Ekrano skaitytuvas",
+      "fields": [
+        {
+          "label": "X-spinduliai",
+          "description": "X-spindulių mygtuko pavadinimas (matomas tik ekrano skaitytuvui).",
+          "default": "X-spinduliai"
+        },
+        {
+          "label": "X-spinduliai įjungti.",
+          "description": "Skaityti, jei X-spinduliai buvo įjungti.",
+          "default": "X-spinduliai įjungti."
+        },
+        {
+          "label": "X-spinduliai išjungti.",
+          "description": "Skaityti, jei X-spinduliai buvo išjungti.",
+          "default": "X-spinduliai išjungti."
+        },
+        {
+          "label": "Instrukcijos",
+          "description": "Instrukcijos, kaip naudotis klaviatūra. Skaitykite, kai įjungti X-spinduliai",
+          "default": "Naudokite rodyklių klavišus, kad perkeltumėte X-spindulių objektyvą."
+        },
+        {
+          "label": "Linzės perkeltos",
+          "description": "Skaitykite, jei perkeliamas X-spindulių linzės. @positionHorizontal ir @positionVertical yra nurodytos vietos, kurios bus pakeistos atitinkamomis reikšmėmis.",
+          "default": "Linzės perkeltos į @positionHorizontal horizontaliai ir į @positionVertical vertikaliai."
+        },
+        {
+          "label": "Nežinomas",
+          "description": "Atsarginis tekstas, skirtas, jei negalima nustatyti linzių padėties.",
+          "default": "nežinomas"
+        }
+      ]
+    }
+  ]
+}

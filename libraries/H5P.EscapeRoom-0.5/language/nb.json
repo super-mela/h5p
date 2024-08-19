@@ -1,0 +1,485 @@
+{
+  "semantics": [
+    {
+      "label": "Redigeringsverktøy for ... [virtuell rundtur?]",
+      "fields": [
+        {
+          "label": "Scener",
+          "entity": "scene",
+          "field": {
+            "fields": [
+              {
+                "label": "Scenetype",
+                "options": [
+                  {
+                    "label": "360°-bilde"
+                  },
+                  {
+                    "label": "Panoramabilde"
+                  },
+                  {
+                    "label": "Ubevegelig bilde"
+                  }
+                ]
+              },
+              {
+                "label": "Vis \"Tilbake\"-knapp",
+                "description": "Vis knapp som tar brukeren tilbake til forrige scene"
+              },
+              {
+                "label": "Aktiver \"Zoom\"",
+                "description": "Aktiver zooming inn og ut med zoomknapper, berøringsbevegelser og hurtigtaster."
+              },
+              {
+                "label": "SceneId"
+              },
+              {
+                "label": "Scenetittel",
+                "description": "Brukes for å identifisere scenen"
+              },
+              {
+                "label": "Scenebakgrunn"
+              },
+              {
+                "label": "Scenebeskrivelse",
+                "description": "En tekst som beskriver scenen for brukeren"
+              },
+              {
+                "label": "Scenebeskrivelse (for skjermleser)",
+                "description": "En tekst som beskriver scenen for brukeren. Den blir bare lest opp av skjermleser. Skjermleser tar ikke hensyn til formatering."
+              },
+              {
+                "label": "Vis \"Scenebeskrivelse\"",
+                "description": "Vis scenebeskrivelsen første gang scenen vises."
+              },
+              {
+                "label": "Startposisjon for kamera",
+                "description": "Kameraposisjon oppgitt som"
+              },
+              {
+                "label": "Interaksjoner",
+                "field": {
+                  "fields": [
+                    {
+                      "label": "Merkelapp",
+                      "description": "Hvis denne er tom, vises ingen merkelapp. For skjermleser brukes da scenetittel."
+                    },
+                    {
+                      "label": "Innstillinger for merkelapp",
+                      "fields": [
+                        {
+                          "label": "Plassering av merkelapp",
+                          "description": "Velg hvor merkelapp skal vises",
+                          "options": [
+                            {
+                              "label": "Bruk oppgaveinnstillinger"
+                            },
+                            {
+                              "label": "På høyre side"
+                            },
+                            {
+                              "label": "På venstre side"
+                            },
+                            {
+                              "label": "Oppe"
+                            },
+                            {
+                              "label": "Nede"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Vis merkelapp",
+                          "description": "Hvis denne ikke er haket av, vises merkelappene bare når musepekeren er over dem.",
+                          "options": [
+                            {
+                              "label": "Bruk oppgaveinnstillinger"
+                            },
+                            {
+                              "label": "Vis"
+                            },
+                            {
+                              "label": "Skjul"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Innstillinger for koden",
+                      "fields": [
+                        {
+                          "label": "Kode for å åpne innholdet",
+                          "description": "Hvis feltet ikke er tomt, må bruker skrive inn koden for å åpne innholdet. Bruk skråstrek for å skille flere riktige koder."
+                        },
+                        {
+                          "label": "Kodehint",
+                          "description": "Valgfritt hint."
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Vis som aktivt felt",
+                      "description": "Gjør det mulig å legge til trykkflate av egendefinert størrelse oppå bakgrunnsbildet."
+                    },
+                    {
+                      "label": "Innstillinger for aktive felter",
+                      "fields": [
+                        {
+                          "label": "Vis aktivt felt når mus holdes over",
+                          "description": "Lar bruker se den aktive trykkflata når mus holdes over den. Uten denne innstillinga vil det aktive feltet alltid være usynlig."
+                        },
+                        {
+                          "label": "Gjør det mulig å nå det aktive feltet med tab-knappen",
+                          "description": "Gjør det mulig å nå trykkflata med tab-knapp. Brukes for tilgjengelighet."
+                        },
+                        {
+                          "default": "256,128",
+                          "label": "Bredde og høyde for aktivt felt"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Vis som åpent innhold i scenen / Vis innhold i scenen",
+                      "description": "Tillater at innholdet vises i en åpen dialogboks i scenen"
+                    },
+                    {},
+                    {
+                      "label": "Interaction position"
+                    },
+                    {
+                      "label": "Knappetype",
+                      "description": "Velg hvordan ikonet skal se ut.",
+                      "options": [
+                        {
+                          "label": "Tekstikon"
+                        },
+                        {
+                          "label": "Info icon"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Knapptype",
+                "description": "Bestem hvordan knapper som peker til denne scenen, skal se ut. For scener som ikke fører videre til nye scener, anbefaler vi knappen \"Mer informasjon (pluss)\".",
+                "options": [
+                  {
+                    "label": "Ny scene (pil)"
+                  },
+                  {
+                    "label": "Mer informasjon (pluss)"
+                  }
+                ]
+              },
+              {
+                "label": "Lydtype",
+                "description": "Velg om det skal spilles av et lydspor eller ei spilleliste når scenen er åpen.",
+                "options": [
+                  {
+                    "label": "Lydspor"
+                  },
+                  {
+                    "label": "Spilleliste"
+                  }
+                ]
+              },
+              {
+                "label": "Lydspor",
+                "description": "Legg til et lydspor som skal spilles av når scenen er åpen."
+              },
+              {
+                "label": "Spilleliste",
+                "description": "Velg ei spilleliste som skal spilles av når scenen er åpen."
+              },
+              {
+                "label": "Start lyden på nytt når scenen åpnes"
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "Spillelister"
+        },
+        {
+          "label": "Spillelister",
+          "field": {
+            "fields": [
+              {
+                "label": "Navn på spilleliste",
+                "description": "Brukes for å kjenne igjen spillelista."
+              },
+              {
+                "label": "Lydspor",
+                "description": "Legg til ett eller flere lydspor i spillelista."
+              },
+              {}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Spillelister",
+      "description": "Velg ett av disse alternativene for å legge til spillelister i scenene.",
+      "fields": [
+        {
+          "label": "Spillelister som er lagt til",
+          "description": "Lag spillelister som er tilgjengelige for alle scener."
+        }
+      ]
+    },
+    {
+      "label": "Oppgaveinnstillinger",
+      "description": "Disse valga lar deg bestemme hvordan den virtuelle turen skal fungere.",
+      "fields": [
+        {
+          "label": "Lydtype",
+          "description": "Bestem hvilken lydtype scenen skal ha, enten et lydspor eller ei eksisterende spilleliste.",
+          "options": [
+            {
+              "label": "Global lyd"
+            },
+            {
+              "label": "Spilleliste"
+            }
+          ]
+        },
+        {
+          "label": "Global lyd",
+          "description": "Velg et lydspor som kan høres i alle scener."
+        },
+        {
+          "label": "Spilleliste",
+          "description": "Velg ei spilleliste som kan høres i alle scener."
+        },
+        {
+          "label": "Vis \"Poeng\"-knappen",
+          "description": "Vis knappen som lar brukeren se oppnådde poeng."
+        },
+        {
+          "label": "Vis \"Hjem\"-knappen",
+          "description": "Vis knappen som tar brukeren til første scene."
+        },
+        {
+          "label": "Visuell kvalitet på scenene",
+          "description": "Velg oppløsning som skal brukes for å vise en scene (rendring). Dette påvirker visningskvaliteten. Du kan øke kvaliteten dersom en scene ser \"rutete\" ut, eller hvis det blir \"bølger\" i bildet. Høyere kvalitet gir lengre innlastingstid.",
+          "options": [
+            {
+              "label": "Høy kvalitet (128 x 128)"
+            },
+            {
+              "label": "Medium kvalitet (64 x 64)"
+            },
+            {
+              "label": "Lav kvalitet (16 x 16)"
+            }
+          ]
+        },
+        {
+          "label": "Innstillinger for merkelapper",
+          "fields": [
+            {
+              "label": "Plassering av merkelapp",
+              "description": "Standardplassering av merkelapp. Plasseringen kan overstyres.",
+              "options": [
+                {
+                  "label": "På høyre side"
+                },
+                {
+                  "label": "På venstre side"
+                },
+                {
+                  "label": "Oppe"
+                },
+                {
+                  "label": "Nede"
+                }
+              ]
+            },
+            {
+              "label": "Vis merkelapper",
+              "description": "Merkelapper som ikke er valgt, vises bare som svevetekst."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Tilpass språk",
+      "fields": [
+        {
+          "label": "Aria-merkelapp for innholdstype",
+          "default": "Virtuell tur"
+        },
+        {
+          "label": "Merkelapp for lydavspilling",
+          "default": "Spill av lydspor"
+        },
+        {
+          "label": "Merkelapp for pause i avspillingen",
+          "default": "Sett lyd på pause"
+        },
+        {
+          "label": "Tittel på scenedialog",
+          "default": "Scenebeskrivelse"
+        },
+        {
+          "label": "Navn på knapp som tilbakestiller kamera",
+          "default": "Tilbakestill kamera"
+        },
+        {
+          "label": "Navn på \"Send inn\"-knapp",
+          "default": "Send inn"
+        },
+        {
+          "label": "Navn på \"Avslutt\"-knapp",
+          "default": "Avslutt"
+        },
+        {
+          "label": "Aria for knapp som utvider skrivefeltet på knapper",
+          "default": "Utvid"
+        },
+        {
+          "label": "Tekst som sier at bakgrunnsbildet til 360-scenen lastes",
+          "default": "Laster bakgrunnsbilde"
+        },
+        {
+          "label": "Tekst som sier at det ikke fins noe innhold",
+          "default": "Uten innhold"
+        },
+        {
+          "label": "Navn på menyknapp for \"Gå til scene\"",
+          "default": "Gå til scene"
+        },
+        {
+          "label": "Navn på menyknapp for \"Rediger\"",
+          "default": "Rediger"
+        },
+        {
+          "label": "Navn på menyknapp for \"Slett\"",
+          "default": "Slett"
+        },
+        {
+          "label": "Oversettelse for \"Score\"",
+          "default": "Resultat"
+        },
+        {
+          "label": "Oversettelse for \"Assignment\"",
+          "default": "Oppgave"
+        },
+        {
+          "label": "Oversettelse for \"Total\"",
+          "default": "Samlet resultat"
+        },
+        {
+          "label": "Navn på \"Vis poengoppsummering\"-knapp",
+          "default": "Vis poengoppsummering"
+        },
+        {
+          "label": "Oversettelse for \"Scene\"",
+          "default": "Scene"
+        },
+        {
+          "label": "Uten tittel",
+          "default": "Uten tittel"
+        },
+        {
+          "label": "Gå til startscenen",
+          "default": "Gå til startscenen"
+        },
+        {
+          "label": "Du er på startscenen",
+          "default": "Du er på startscenen"
+        },
+        {
+          "label": "Låst opp",
+          "default": "Låst opp"
+        },
+        {
+          "label": "Låst",
+          "default": "Låst"
+        },
+        {
+          "label": "Let i rommet til du finner koden",
+          "default": "Let i rommet til du finner koden"
+        },
+        {
+          "label": "Koden var feil. Prøv igjen.",
+          "default": "Koden var feil. Prøv igjen."
+        },
+        {
+          "label": "Innholdet ble låst opp!",
+          "default": "Innholdet ble låst opp!"
+        },
+        {
+          "label": "Kode",
+          "default": "Kode"
+        },
+        {
+          "label": "Handling når innholdet er ulåst (Fortsett)",
+          "default": "Fortsett"
+        },
+        {
+          "label": "Handling når innholdet er låst (Lås opp)",
+          "default": "Lås opp"
+        },
+        {
+          "label": "Dra vannrett for å endre størrelsen (for skjermlesere)",
+          "default": "Dra vannrett for å endre størrelse"
+        },
+        {
+          "label": "Dra loddrett for å endre størrelse (for skjermlesere)",
+          "default": "Dra loddrett for å endre størrelse"
+        },
+        {
+          "label": "Hint",
+          "default": "Hint"
+        },
+        {
+          "label": "Låst innhold",
+          "default": "Låst innhold"
+        },
+        {
+          "label": "Back",
+          "default": "Back"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (enter)",
+          "default": "Enter fullscreen mode"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (exit)",
+          "default": "Exit fullscreen mode"
+        },
+        {
+          "label": "Main toolbar",
+          "default": "Main toolbar"
+        },
+        {
+          "label": "No valid scenes set",
+          "default": "No valid scenes have been set."
+        },
+        {
+          "label": "Tekst for skjermlesere. Tittel for \"zoom inn\"-knapp",
+          "default": "Zoom inn"
+        },
+        {
+          "label": "Tekst for skjermlesere. Tittel for \"zoom ut\"-knapp",
+          "default": "Zoom ut"
+        },
+        {
+          "label": "Zoom toolbar",
+          "default": "Zoom toolbar"
+        },
+        {
+          "label": "Zoom tekst for skjermlesere",
+          "default": ":num% zoomet inn"
+        }
+      ]
+    }
+  ]
+}

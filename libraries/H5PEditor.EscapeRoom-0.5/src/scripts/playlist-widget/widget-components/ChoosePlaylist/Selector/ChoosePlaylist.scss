@@ -1,0 +1,28 @@
+.choose-playlist {
+  margin: 1em 0;
+  &.has-error .error-message {
+    display: block;
+  }
+  
+  .error-message {
+    display: none;
+    padding: 0.5em 0;
+    color: darkred;
+  }
+  
+  .selector-separator {
+    font-weight: bold;
+    padding: 1.25em 0;
+  }
+  
+  .new-playlist-title {
+    font-weight: bold;
+    margin-bottom: 0.75em;
+  }
+
+  .no-playlists {
+    padding: 0.625em;
+    border: 1px solid #e0dede;
+    display: flex;
+  }
+}

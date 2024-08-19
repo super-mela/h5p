@@ -1,0 +1,466 @@
+[
+  {
+    "name": "headline",
+    "type": "text",
+    "label": "Headline",
+    "description": "Optional headline to show in the toolbar.",
+    "optional": true
+  },
+  {
+    "name": "introduction",
+    "type": "text",
+    "label": "Introduction",
+    "description": "Optionally set some introduction telling the user what to do.",
+    "default": "<p style=\"text-align: center;\"></p>",
+    "optional": true,
+    "widget": "html",
+    "enterMode": "div",
+    "tags": [
+      "sub",
+      "sup",
+      "strong",
+      "em",
+      "p",
+      "code",
+      "u",
+      "del",
+      "a",
+      "ul",
+      "ol",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "h6",
+      "pre",
+      "hr",
+      "table"
+    ],
+    "font": {
+      "size": true,
+      "color": true,
+      "background": true
+    }
+  },
+  {
+    "name": "segments",
+    "type": "list",
+    "label": "Segments",
+    "entity": "segment",
+    "min": 1,
+    "max": 6,
+    "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Default"
+      },
+      {
+        "name": "PhraseRandomizerTextualEditor",
+        "label": "Textual"
+      }
+    ],
+    "field": {
+      "name": "segments",
+      "type": "group",
+      "label": "Segments",
+      "fields": [
+        {
+          "name": "title",
+          "type": "text",
+          "label": "Segment title",
+          "optional": true
+        },
+        {
+          "name": "options",
+          "type": "list",
+          "label": "Options",
+          "entity": "option",
+          "min": 2,
+          "field": {
+            "name": "text",
+            "type": "text",
+            "label": "Text for option"
+          }
+        },
+        {
+          "name": "colorBackground",
+          "type": "text",
+          "label": "Background color",
+          "default": "rgb(255, 255, 255)",
+          "widget": "colorSelector",
+          "optional": true,
+          "spectrum": {
+            "showInput": true,
+            "showInitial": true,
+            "showPalette": true,
+            "preferredFormat": "rgb",
+            "palette": [
+              [
+                "#96ceb4",
+                "#ffeead",
+                "#ff6f69",
+                "ffcc5c",
+                "#88d8b0"
+              ],
+              [
+                "#845ec2",
+                "#d65db1",
+                "#ff6f91",
+                "#ff9671",
+                "#ffc75f"
+              ],
+              [
+                "#a8e6cf",
+                "#dcedc1",
+                "#ffd3b6",
+                "#ffaaa5",
+                "#ff8b94"
+              ],
+              [
+                "#009688",
+                "#35a79c",
+                "#54b2a9",
+                "#65c3ba",
+                "#83d0c9"
+              ]
+            ]
+          }
+        }
+      ]
+    }
+  },
+  {
+    "name": "mode",
+    "type": "select",
+    "label": "Mode",
+    "options": [
+      {
+        "value": "free",
+        "label": "Free"
+      },
+      {
+        "value": "quiz",
+        "label": "Quiz"
+      }
+    ],
+    "default": "free"
+  },
+  {
+    "name": "solutions",
+    "type": "group",
+    "label": "Solutions",
+    "widget": "PhraseRandomizerSolutionsList",
+    "fields": [
+      {
+        "name": "solutions",
+        "type": "list",
+        "label": "Solutions",
+        "entity": "solution",
+        "field": {
+          "name": "solutionSelector",
+          "type": "text",
+          "label": "Solution",
+          "widget": "PhraseRandomizerSolutionSelector"
+        }
+      },
+      {
+        "name": "dummy",
+        "type": "boolean",
+        "label": "Dummy",
+        "widget": "none"
+      }
+    ]
+  },
+  {
+    "name": "audio",
+    "type": "group",
+    "importance": "low",
+    "label": "Audio settings",
+    "fields": [
+      {
+        "name": "useDefaultClickPreviousNext",
+        "type": "boolean",
+        "label": "Use inbuilt sound for click on next button or previous button",
+        "optional": false,
+        "default": true
+      },
+      {
+        "name": "clickPreviousNext",
+        "type": "audio",
+        "label": "Click on next button or previous button",
+        "description": "Will be played when the user clicks on the previous button or next button.",
+        "importance": "low",
+        "optional": true,
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "useDefaultClickPreviousNext",
+              "equals": false
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "importance": "low",
+    "label": "Behavioural settings",
+    "widget": "showWhen",
+    "showWhen": {
+      "rules": [
+        {
+          "field": "mode",
+          "equals": "quiz"
+        }
+      ],
+      "nullWhenHidden": true
+    },
+    "fields": [
+      {
+        "name": "maxAttempts",
+        "type": "number",
+        "label": "Lives",
+        "description": "Enter the number of lives a user starts with (every wrong answer deduces one down to 0) or leave empty to not limit the number of lives.",
+        "min": 1,
+        "optional": true
+      },
+      {
+        "name": "enableRetry",
+        "type": "boolean",
+        "label": "Enable \"Retry\" button",
+        "importance": "low",
+        "default": true,
+        "optional": true
+      },
+      {
+        "name": "enableSolutionsButton",
+        "type": "boolean",
+        "label": "Enable \"Show Solution\" button",
+        "importance": "low",
+        "default": true,
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "label": "User interface",
+    "common": true,
+    "fields": [
+      {
+        "name": "check",
+        "type": "text",
+        "label": "Check",
+        "default": "Check"
+      },
+      {
+        "name": "submit",
+        "type": "text",
+        "label": "Submit",
+        "default": "Submit"
+      },
+      {
+        "name": "showSolution",
+        "type": "text",
+        "label": "Show solution",
+        "default": "Show solution"
+      },
+      {
+        "name": "retry",
+        "type": "text",
+        "label": "Retry",
+        "default": "Retry"
+      },
+      {
+        "name": "outOfAttempts",
+        "type": "text",
+        "label": "You ran out of lives",
+        "default": "You ran out of lives."
+      },
+      {
+        "name": "theSolutionsAre",
+        "type": "text",
+        "label": "Solution",
+        "default": "These are the solutions."
+      },
+      {
+        "name": "notASolution",
+        "type": "text",
+        "label": "This is not a solution",
+        "default": "This is not a solution."
+      },
+      {
+        "name": "noMessage",
+        "type": "text",
+        "label": "No message",
+        "default": "..."
+      },
+      {
+        "name": "foundASolution",
+        "type": "text",
+        "label": "You found a solution!",
+        "default": "You found a solution!"
+      },
+      {
+        "name": "foundAllSolutions",
+        "type": "text",
+        "label": "You found all the solutions!",
+        "default": "You found all the solutions!"
+      },
+      {
+        "name": "foundSolutionsTitle",
+        "type": "text",
+        "label": "Found solutions",
+        "default": "Found solutions"
+      },
+      {
+        "name": "toBeFound",
+        "type": "text",
+        "label": "To be found",
+        "default": "To be found"
+      }
+    ]
+  },
+  {
+    "name": "a11y",
+    "type": "group",
+    "label": "Accessibility texts",
+    "common": true,
+    "fields": [
+      {
+        "name": "buttonRandomize",
+        "type": "text",
+        "label": "Randomize all segments",
+        "importance": "low",
+        "default": "Randomize all segments"
+      },
+      {
+        "name": "check",
+        "type": "text",
+        "label": "Assistive technology description for \"Check\" button",
+        "importance": "low",
+        "default": "Check the answers. The responses will be marked as correct or incorrect."
+      },
+      {
+        "name": "showSolution",
+        "type": "text",
+        "label": "Assistive technology description for \"Show Solution\" button",
+        "importance": "low",
+        "default": "Show the solutions."
+      },
+      {
+        "name": "retry",
+        "type": "text",
+        "label": "Assistive technology description for \"Retry\" button",
+        "importance": "low",
+        "default": "Retry the task. Reset all segments and start the task over again."
+      },
+      {
+        "name": "currentText",
+        "type": "text",
+        "label": "Assistive technology description for current label",
+        "description": "@text is a placeholder and will be replaced by the respective value.",
+        "importance": "low",
+        "default": "Current label: @text"
+      },
+      {
+        "name": "currentTexts",
+        "type": "text",
+        "label": "Assistive technology description for current labels",
+        "description": "@texts is a placeholder and will be replaced by the respective value.",
+        "importance": "low",
+        "default": "Current labels: @texts"
+      },
+      {
+        "name": "previousText",
+        "type": "text",
+        "label": "Assistive technology description for \"previous text\" button",
+        "importance": "low",
+        "default": "Previous text"
+      },
+      {
+        "name": "nextText",
+        "type": "text",
+        "label": "Assistive technology description for \"next text\" button",
+        "importance": "low",
+        "default": "Next text"
+      },
+      {
+        "name": "spinSegment",
+        "type": "text",
+        "label": "Assistive technology description for spin button",
+        "description": "@number is a placeholder and will be replaced by the respective value.",
+        "importance": "low",
+        "default": "Spin segment @number to get random text for it."
+      },
+      {
+        "name": "theSolutionsAre",
+        "type": "text",
+        "label": "Assistive technology description for announcing solution",
+        "description": "@number and @combination are placeholders and will be replaced by the respective values.",
+        "importance": "low",
+        "default": "These are the solutions (@number in total): @combination."
+      },
+      {
+        "name": "disabled",
+        "type": "text",
+        "label": "Assistive technology description for announcing \"disabled\"",
+        "default": "disabled"
+      },
+      {
+        "name": "randomizer",
+        "type": "text",
+        "label": "Assistive technology description for announcing \"Randomizer\"",
+        "default": "Randomizer"
+      },
+      {
+        "name": "toolbar",
+        "type": "text",
+        "label": "Assistive technology description for toolbar",
+        "default": "Toolbar"
+      },
+      {
+        "name": "segment",
+        "type": "text",
+        "label": "Assistive technology description for announcing the current segment",
+        "description": "@number and @total are placeholders and will be replaced by the respective values.",
+        "default": "Segment @number of @total"
+      },
+      {
+        "name": "solution",
+        "type": "text",
+        "label": "Solution",
+        "default": "Solution"
+      },
+      {
+        "name": "found",
+        "type": "text",
+        "label": "Found",
+        "default": "Found"
+      },
+      {
+        "name": "notFound",
+        "type": "text",
+        "label": "Not found",
+        "default": "Not found"
+      },
+      {
+        "name": "buttonAudioActive",
+        "type": "text",
+        "label": "Audio button (unmuted)",
+        "default": "Mute audio. Currently unmuted."
+      },
+      {
+        "name": "buttonAudioInactive",
+        "type": "text",
+        "label": "Audio button (muted)",
+        "default": "Unmute audio. Currently muted."
+      }
+    ]
+  }
+]

@@ -1,0 +1,32 @@
+{
+  "machineName": "H5P.NDLAThreeSixty",
+  "title": "NDLA Three Sixty",
+  "description": "The 360 degree panorama viewer with support for virtual reality.",
+  "license": "MIT",
+  "author": "Joubel AS (icc)",
+  "majorVersion": 0,
+  "minorVersion": 5,
+  "patchVersion": 0,
+  "runnable": 0,
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 12
+  },
+  "preloadedJs": [
+    {
+      "path": "dist/h5p-ndla-three-sixty.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5p-ndla-three-sixty.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.ThreeJS",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ]
+}

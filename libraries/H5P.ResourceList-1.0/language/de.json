@@ -1,0 +1,48 @@
+{
+  "semantics": [
+    {
+      "label": "Ressourcen",
+      "entity": "Ressource",
+      "widgets": [
+        {
+          "label": "Vorgabe"
+        }
+      ],
+      "field": {
+        "label": "Ressourcen",
+        "description": "Optionale Links zu Ressourcen.",
+        "fields": [
+          {
+            "label": "Titel der Ressource"
+          },
+          {
+            "label": "Einleitung"
+          },
+          {
+            "label": "URL"
+          },
+          {
+            "label": "Einleitungsbild"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Texte für Barrierefreiheit",
+      "fields": [
+        {
+          "label": "Text für Vorlesewerkzeuge: \"Ausblenden\"",
+          "default": "Ausblenden"
+        },
+        {
+          "label": "Text für Vorlesewerkzeuge: \"Ressourcen\"",
+          "default": "Ressourcen"
+        },
+        {
+          "label": "Erläuterung für Vorlesewerkzeuge zum \"Ressourcen\"-Button",
+          "default": "Siehe zusätzliche Ressourcen für mehr Informationen"
+        }
+      ]
+    }
+  ]
+}

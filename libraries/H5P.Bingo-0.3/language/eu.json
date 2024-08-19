@@ -1,0 +1,124 @@
+{
+  "semantics": [
+    {
+      "label": "Multimedia",
+      "fields": [
+        {
+          "label": "Mota",
+          "description": "Galderaren gainean erakusteko aukerazko multimedia."
+        },
+        {
+          "label": "Desgaitu irudien zooma"
+        }
+      ]
+    },
+    {
+      "label": "Atazaren deskribapena",
+      "description": "Hemen deskribapen bat eman dezakezu (aukerazkoa)."
+    },
+    {
+      "label": "Modua",
+      "description": "Aukeratu ezazu jokatzeko modua. Zenbakiak automatikoki beteko dira, hitzak eman behar dira.",
+      "options": [
+        {
+          "label": "Jokatu zenbakiekin"
+        },
+        {
+          "label": "Jokatu hitzekin"
+        }
+      ]
+    },
+    {
+      "label": "Hitzak edo esaldiak",
+      "fields": [
+        {
+          "label": "Hitzak edo esaldiak",
+          "description": "Erabili lerro bana hitz eta esaldi bakoitzarentzat."
+        }
+      ]
+    },
+    {
+      "label": "Arbelaren tamaina"
+    },
+    {
+      "label": "Itxura",
+      "description": "Hemen itxura pertsonalizatu dezakezu.",
+      "fields": [
+        {
+          "label": "Irudia",
+          "description": "Jokerraren (komodina) botoientzako irudia."
+        },
+        {
+          "label": "Atzeko planoko kolorea",
+          "description": "Arbelaren atzeko planorako kolorea."
+        }
+      ]
+    },
+    {
+      "label": "Audio",
+      "description": "Audioa pertsonaliza dezakezu hemen.",
+      "fields": [
+        {
+          "label": "Hautatu/desautatu eremu bat",
+          "description": "Eremu bat hautatu edo desautatzen denean erreproduzitzeko soinua."
+        },
+        {
+          "label": "Osatutako errenkada edo zutabea",
+          "description": "Erabiltzaileak errenkada edo zutabe osoa hautatu duenean erreproduzitzeko soinua."
+        }
+      ]
+    },
+    {
+      "label": "Portaeraren ezarpenak",
+      "description": "Aukera hauek lanaren portaera kontrolatzea ahalbidetzen dizute.",
+      "fields": [
+        {
+          "label": "Gaitu \"Saiatu berriro\""
+        },
+        {
+          "label": "Nahastu berriz saiatzean",
+          "description": "Markatuz gero, berriz saiatzerakoan hitzak/esaldiak/zenbakiak nahastuko dira."
+        },
+        {
+          "label": "Konfiguratu jokerra (komodina)",
+          "description": "Arbelaren erdian buelta eman ezin den joker (komodin) bat kokatuko du tamaina bakoitia bada."
+        },
+        {
+          "label": "Altuera mugatuko modua",
+          "description": "Erabaki taularen altuera mugatu nahi duzun eremu ikusgaira egokitzeko. Baliteke detekzio automatikoa ez izatea perfektua zure webgunearen konfigurazioaren arabera, adibidez, goiko nabigazio-barra itsaskorrak baditu. Balio pertsonalizatu onak eskuz ezartzea zaila da.",
+          "options": [
+            {
+              "label": "Mugarik gabe"
+            },
+            {
+              "label": "Automatikoa"
+            },
+            {
+              "label": "Pertsonalizatua"
+            }
+          ]
+        },
+        {
+          "label": "Altuera muga",
+          "description": "Arbelaren gehieneko altuera pixeletan."
+        }
+      ]
+    },
+    {
+      "label": "\"Saiatu berriro\" botoiarentzako testua",
+      "default": "Saiatu berriro"
+    },
+    {
+      "label": "\"Saiatu berriro\" botoiaren laguntza-teknologiaren deskribapena",
+      "default": "Saiatu berriro zeregina. Berrezarri erantzun guztiak eta hasi berriro zeregina."
+    },
+    {
+      "label": "Assistive technology description for \"Mute\" button",
+      "default": "Mute audio, currently unmuted"
+    },
+    {
+      "label": "Assistive technology description for \"Unmute\" button",
+      "default": "Unmute audio, currently muted"
+    }
+  ]
+}

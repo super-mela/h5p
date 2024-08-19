@@ -1,0 +1,296 @@
+{
+  "semantics": [
+    {
+      "label": "Mostrar pantalla del título",
+      "description": "Si se activa, se mostrará una pequeña pantalla al iniciar."
+    },
+    {
+      "label": "Pantalla del título",
+      "fields": [
+        {
+          "label": "Introducción",
+          "placeholder": "Bienvenido a ...",
+          "default": "<p style=\"text-align: center;\"></p>"
+        },
+        {
+          "label": "Pantalla del título mediana"
+        }
+      ]
+    },
+    {
+      "label": "Textos de introducción",
+      "fields": [
+        {
+          "label": "Introducción para filtrado y selección",
+          "description": "Explica lo que se espera que hagan los usuarios al filtrar y seleccionar contenido."
+        },
+        {
+          "label": "Introducción para reordenamiento",
+          "description": "Explicar lo que se espera que hagan los usuarios al hacer re-ordenamiento del contenido."
+        },
+        {
+          "label": "Introducción para vista",
+          "description": "Explicar lo que se espera que hagan los usuarios al ver contenido."
+        }
+      ]
+    },
+    {
+      "label": "Contenido",
+      "entity": "contenido",
+      "widgets": [
+        {
+          "label": "Predeterminado"
+        }
+      ],
+      "field": {
+        "label": "Contenido",
+        "fields": [
+          {
+            "label": "Etiqueta",
+            "description": "Etiqueta para el contenido. La etiqueta será configurada al título en metadatos si no se hubiera configurado etiqueta, imagen o demo."
+          },
+          {
+            "label": "Imagen",
+            "description": "Imagen ilustrativa opcional."
+          },
+          {
+            "label": "Demo",
+            "description": "Demo opcional para el contenido."
+          },
+          {
+            "label": "Palabras clave",
+            "description": "Escribir palabras clave para el contenido separadas por una coma (,)."
+          },
+          {
+            "label": "Contenido",
+            "description": "Elegir el tipo de contenido que le gustaría añadir."
+          }
+        ]
+      }
+    },
+    {
+      "label": "Configuraciones visuales",
+      "fields": [
+        {
+          "label": "Ancho de tarjeta",
+          "description": "Configurar el ancho predeterminado de tarjeta como un valor CSS (por ejemplo 100px o 14rem o 15em). Si deja vacía la unidad se asumirá px.",
+          "default": "14rem"
+        },
+        {
+          "label": "Tamaño de imagen",
+          "description": "Elegir tamaño de imágenes del contenido.",
+          "options": [
+            {
+              "label": "Usar proporción de tamaño de imagen"
+            },
+            {
+              "label": "Usar proporción personalizada"
+            }
+          ]
+        },
+        {
+          "label": "Ancho de proporción personalizada",
+          "description": "Configurar el componente de proporción horizontal para imágenes del contenido."
+        },
+        {
+          "label": "Altura de proporción personalizada",
+          "description": "Configurar el componente de proporción vertical para imágenes del contenido."
+        },
+        {
+          "label": "Máximo de líneas del demo",
+          "description": "Configurar el número máximo de líneas a mostrar para el demo del contenido."
+        }
+      ]
+    },
+    {
+      "label": "Configuraciones del comportamiento",
+      "fields": [
+        {
+          "label": "Comenzar con todo",
+          "description": "Elegir si es que todos los contenidos deberían ser seleccionados de.forma predeterminada como listos para ser usados."
+        },
+        {
+          "label": "Preseleccionar todas las palabras clave",
+          "description": "Elegir si es que todas o ninguna de las palabras clave deberían ser seleccionadas al iniciar el contenido."
+        },
+        {
+          "label": "Unir selección a marcas",
+          "description": "Elegir si las tarjetas deberían ser automáticamente seleccionadas/des-seleccionadas cuando una marca es seleccionada/des-seleccionada."
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "label": "Iniciar",
+          "description": "Etiqueta del botón Iniciar.",
+          "default": "Iniciar"
+        },
+        {
+          "label": "Seleccionado",
+          "description": "Etiqueta del estado del contenido seleccionado.",
+          "default": "seleccionado"
+        },
+        {
+          "label": "Estado: no-iniciado",
+          "description": "Etiqueta del estado para contenido no iniciado.",
+          "default": "no-iniciado"
+        },
+        {
+          "label": "Estado: visto",
+          "description": "Etiqueta del estado para contenido visto.",
+          "default": "visto"
+        },
+        {
+          "label": "Estado: completado",
+          "description": "Etiqueta del estado para contenido completado.",
+          "default": "completado"
+        },
+        {
+          "default": "despejado",
+          "label": "Estado: despejado",
+          "description": "etiqueta del estado para contenido despejado."
+        },
+        {
+          "label": "Sin tarjetas para mostrar",
+          "description": "Mensaje cuando ningún contenido coincide con alguna de las palabras clave.",
+          "default": "Usted necesita seleccionar palabras clave para que vea contenidos de los cuales seleccionar."
+        },
+        {
+          "label": "No se seleccionó ninguna tarjeta",
+          "description": "Mensaje cuando no se seleccionó contenidos..",
+          "default": "Usted no ha seleccionado ningún contenido."
+        },
+        {
+          "label": "Contenido Sin Título",
+          "description": "Etiqueta de repuesto.",
+          "default": "Contenido Sin Título"
+        },
+        {
+          "label": "Re-iniciar diálogo de confirmación: encabezado",
+          "description": "Encabezado para diálogo para confirmar re-inicializar todos los contenidos..",
+          "default": "¿Re-inicializar todos los contenido?"
+        },
+        {
+          "label": "Diálogo de confirmación de re-inicializar: texto",
+          "description": "Texto para diálogo para confirmar re-inicializar todos los contenidos.",
+          "default": "Todos sus contenidos y sus estados serán re-inicializados, pero su selección permanecerá como está. ¿Desea proceder?"
+        },
+        {
+          "label": "Diálogo de confirmación de re-inicializar: encabezado",
+          "description": "Encabezado para diálogo para confirmar re-inicializado de todos los contenidos y selecciones.",
+          "default": "¿Re-inicializar todos los contenidos y selecciones?"
+        },
+        {
+          "label": "Diálogo de confirmación de re-inicializar: texto",
+          "description": "Texto para diálogo para confirmar re-inicializar todos los contenidos y selecciones.",
+          "default": "Todos sus contenidos y sus estados y sus selecciones serán re-inicializados. ¿Desea proceder?"
+        },
+        {
+          "label": "Si",
+          "default": "Si"
+        },
+        {
+          "label": "No",
+          "default": "No"
+        },
+        {
+          "label": "Sin contenidos",
+          "default": "No se configuraron contenidos válidos."
+        }
+      ],
+      "label": "Interfaz del usuario"
+    },
+    {
+      "fields": [
+        {
+          "label": "Descripción del ejercicio",
+          "description": "@label es un reemplazable que será remplazado con el valor respectivo.",
+          "default": "Ejercicio: @label"
+        },
+        {
+          "label": "Descripción de barra de herramientas",
+          "default": "Barra de herramientas. Use la combinación de teclas Alt y T para enfocar la barra de herramientas más adelante."
+        },
+        {
+          "label": "Botón: Modo seleccionar",
+          "default": "Cambiar a modo seleccionar"
+        },
+        {
+          "label": "Botón: Modo Reordenar",
+          "default": "Cambiar a modo Reordenar"
+        },
+        {
+          "label": "Botón: Modo Ver",
+          "default": "Cambiar a modo Ver"
+        },
+        {
+          "label": "Botón: Reiniciar",
+          "default": "Reiniciar ejercicios"
+        },
+        {
+          "label": "Botón: Reiniciar todo",
+          "default": "Reiniciar ejercicios y selecciones"
+        },
+        {
+          "label": "Selector de marca",
+          "default": "Selector de marca. Use para filtrar ejercicios."
+        },
+        {
+          "label": "Selector de marca abierto",
+          "default": "El Selector de marca fue abierto."
+        },
+        {
+          "label": "Selector de marca cerrado",
+          "default": "El Selector de marca fue cerrado."
+        },
+        {
+          "label": "Seleccionado",
+          "default": "Seleccionado"
+        },
+        {
+          "label": "No seleccionado",
+          "default": "No seleccionado"
+        },
+        {
+          "label": "Seleccionado para re-ordenar",
+          "default": "Seleccionado para re-ordenar"
+        },
+        {
+          "label": "Descripción para lista de contenido: Seleccionar modo",
+          "default": "Seleccionar todos los ejercicios con los que quiera trabajar"
+        },
+        {
+          "label": "Descripción para lista de contenido: Modo Re-ordenar",
+          "default": "Cambiar el orden de los ejercicios"
+        },
+        {
+          "label": "Descripción para lista de contenidos: Modo Ver",
+          "default": "Hacer los ejercicios seleccionados"
+        },
+        {
+          "label": "Cerrar",
+          "default": "Cerrar"
+        },
+        {
+          "label": "Cambió a modo seleccionar",
+          "default": "Cambió a modo Seleccionar."
+        },
+        {
+          "label": "Cambió a modo Re-ordenar",
+          "default": "Cambió a modo Re-ordenar."
+        },
+        {
+          "label": "Cambió a modo Ver",
+          "default": "Cambió a modo Ver."
+        },
+        {
+          "label": "Se intercambiaron contenidos",
+          "description": "@position1 y ¹position2 son reemplazables y serán remplazados con los valores respectivos.",
+          "default": "Se intercambió el contenido de la posición @position1 con el contenido de la posición @position2."
+        }
+      ],
+      "label": "Textos de accesibilidad"
+    }
+  ]
+}

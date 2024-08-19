@@ -1,0 +1,21 @@
+@import "@styles/main";
+
+.h5p-combination-lock-segment {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  grid-column: 1;
+  grid-row: 1;
+  margin: 0 0.3rem;
+  user-select: none;
+  -webkit-touch-callout: none;
+  min-width: $minimum-a11y-size;
+
+  &.focus {
+    outline: solid black;
+  }
+}
+
+.h5p-content.using-mouse .h5p-combination-lock-segment.focus {
+  outline: none;
+}

@@ -1,0 +1,43 @@
+{
+  "title": "Pick the symbols",
+  "description": "Let your student put the correct symbols into sentences",
+  "majorVersion": 0,
+  "minorVersion": 1,
+  "patchVersion": 14,
+  "runnable": 1,
+  "author": "Oliver Tacke",
+  "license": "MIT",
+  "machineName": "H5P.PickTheSymbols",
+  "embedTypes": [
+    "iframe"
+  ],
+  "preloadedJs": [
+    {
+      "path": "dist/h5p-pick-the-symbols.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5p-pick-the-symbols.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.Question",
+      "majorVersion": 1,
+      "minorVersion": 5
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.RangeList",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "H5PEditor.ColorSelector",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ]
+}

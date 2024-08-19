@@ -1,0 +1,143 @@
+{
+  "semantics": [
+    {
+      "label": "Image de casse-tête",
+      "description": "Image à partir de laquelle les tuiles doivent être coupées."
+    },
+    {
+      "label": "Tuiles horizontalement",
+      "description": "Définir le nombre de tuiles de puzzle le casse-tête doit avoir horizontalement."
+    },
+    {
+      "label": "Tuiles verticalement",
+      "description": "Définir le nombre de tuiles de puzzle que le casse-tête doit avoir verticalement."
+    },
+    {
+      "label": "Paramètres du son",
+      "description": "Ces options vous permettront de définir les options liées au son.",
+      "fields": [
+        {
+          "label": "Commencer le casse-tête",
+          "description": "Son à jouer lorsque le casse-tête est lancé."
+        },
+        {
+          "label": "Ramasser la tuile du casse-tête",
+          "description": "Son à jouer lorsqu'une tuile du casse-tête est ramassée."
+        },
+        {
+          "label": "Déposer une tuile du casse-tête (incorrectement)",
+          "description": "Son à jouer lorsqu'une tuile du casse-tête est déposée (au mauvais endroit)."
+        },
+        {
+          "label": "Déposer correctement la tuile du casse-tête",
+          "description": "Son à jouer lorsqu'une tuile du casse-tête est déposée au bon endroit."
+        },
+        {
+          "label": "Terminer le casse-tête",
+          "description": "Son à jouer lorsqu'un casse-tête est terminé."
+        }
+      ]
+    },
+    {
+      "label": "Paramètres comportementaux",
+      "description": "Ces options vous permettront de contrôler le déroulement de la tâche.",
+      "fields": [
+        {
+          "label": "Afficher un fond pale",
+          "description": "Afficher une version pâle de l'image en fond pour indiquer où une tuile du casse-tête doit aller."
+        },
+        {
+          "label": "Afficher les contours du casse-tête",
+          "description": "Afficher les contours du casse-tête pour indiquer où une tuile du casse-tête doit aller."
+        },
+        {
+          "label": "Sorting space position",
+          "description": "Set where the sorting space should be positioned at.",
+          "options": [
+            {
+              "label": "Puzzle next to sorting space"
+            },
+            {
+              "label": "Puzzle above sorting space"
+            }
+          ]
+        },
+        {
+          "label": "Espace de tri",
+          "description": "Définir combien d'espace en pourcentage doit être attaché à côté du puzzle pour trier les tuiles."
+        },
+        {
+          "label": "Sorting space",
+          "description": "Set how much space in percent relative to the puzzle should be attached below to the jigsaw puzzle for sorting the tiles."
+        },
+        {
+          "label": "Utiliser toute la zone",
+          "description": "Définir si initialement les tuiles doivent couvrir toute la zone, notamment la zone où elles doivent être déposées."
+        },
+        {
+          "label": "Activer la touche « Terminer »"
+        },
+        {
+          "label": "Activer la touche « Réessayer »"
+        },
+        {
+          "label": "Activer la touche « Solution »"
+        }
+      ]
+    },
+    {
+      "label": "Interface utilisateur",
+      "fields": [
+        {
+          "label": "Texte pour la touche « Terminer »",
+          "default": "Terminer"
+        },
+        {
+          "label": "Texte pour la touche « Réessayer »",
+          "default": "Réessayer"
+        },
+        {
+          "label": "Texte du message « Pas d'image »",
+          "default": "Il n'y a pas eu pas d'image donnée pour ce puzzle."
+        }
+      ]
+    },
+    {
+      "label": "ReadSpeaker",
+      "fields": [
+        {
+          "label": "Description de la technologie fonctionnelle pour la touche « Terminer »",
+          "default": "Terminer le casse-tête. Toutes les tuiles seront mises à leur position correcte."
+        },
+        {
+          "label": "Description de la technologie fonctionnelle pour la touche « Réessayer »",
+          "default": "Réessayer le casse-tête. Toutes les tuiles du casse-tête seront mélangées sur le canvas."
+        },
+        {
+          "label": "Description de la technologie fonctionnelle pour « Accéder au bouton plein écran »",
+          "default": "Saisir en mode plein écran"
+        },
+        {
+          "label": "Description de la technologie fonctionnelle pour « Quitter le bouton plein écran »",
+          "default": "Quitter le mode plein écran"
+        },
+        {
+          "label": "Description de la technologie fonctionnelle pour la touche « Silencieux »",
+          "default": "Son désactivé"
+        },
+        {
+          "label": "Description de la technologie fonctionnelle pour la touche « Activer »",
+          "default": "Activer le son"
+        },
+        {
+          "label": "Description de la technologie fonctionnelle pour « Bloqué »",
+          "default": "Inactivée"
+        },
+        {
+          "label": "Description de la technologie fonctionnelle pour « Fermer »",
+          "default": "Fermer"
+        }
+      ]
+    }
+  ]
+}

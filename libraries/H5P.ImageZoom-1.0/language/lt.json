@@ -1,0 +1,118 @@
+{
+  "semantics": [
+    {
+      "label": "Paveikslėlis",
+      "description": "Naudotinas paveiksliukas."
+    },
+    {
+      "label": "Išvaizdos nustatymai",
+      "description": "Šios parinktys leis jums valdyti vizualinius aspektus.",
+      "fields": [
+        {
+          "label": "Paveiksliuko plotis",
+          "description": "Pasirinkite vietos, kurią uždengs paveiksliukas, plotį. Paveiksliuko aukštis bus priderintas atitinkamai, bet neviršys 100% pločio.",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100 %"
+            },
+            {
+              "label": "Tikrasis paveiksliuko plotis"
+            }
+          ]
+        },
+        {
+          "label": "Paveiksliuko lygiavimas",
+          "description": "Pasirinkite, kur paveiksliukas turėtų būti išdėstytas, palyginti su likusiu turiniu.",
+          "options": [
+            {
+              "label": "Kairė"
+            },
+            {
+              "label": "centras"
+            },
+            {
+              "label": "right"
+            }
+          ]
+        },
+        {
+          "label": "Priartinimo objektyvo plotis",
+          "description": "Nustatykite priartinimo objektyvo plotį kaip paveiksliuko pločio procentą (pvz., 20 %) arba kaip fiksuotą reikšmę pikseliais (pvz., 160 pikselių).",
+          "default": "20%"
+        },
+        {
+          "label": "Priartinimo objektyvo aukštis",
+          "description": "Nustatykite priartinimo objektyvo aukštį kaip paveiksliuko aukščio procentą (pvz., 25 %) arba kaip fiksuotą reikšmę pikseliais (pvz., 90 pikselių).",
+          "default": "25%"
+        },
+        {
+          "label": "Tamsinti vaizdą priartinus",
+          "description": "Jei nustatyta, paveiksliukas patamsės, kad sustiprintų mastelio keitimo fokusavimo efektą."
+        }
+      ]
+    },
+    {
+      "label": "Veikimo nustatymai",
+      "description": "Šios parinktys leis jums valdyti, kaip veikia užduotis.",
+      "fields": [
+        {
+          "label": "Automatinis priartinimas",
+          "description": "Jei pažymėta, paveiksliukas bus automatiškai padidinamas užvedus pelės žymeklį. Kitu atveju naudotojas turi įjungti ir išjungti didinimą."
+        },
+        {
+          "label": "Slėpti padidinimo indikatorių",
+          "description": "Didinimo indikatorius naudojamas kaip klaviatūros mygtukas. Paslėpus jį, jis neveiks, tačiau naudotojai turės mažiau naršymo informacijos."
+        }
+      ]
+    },
+    {
+      "label": "Ekrano skaitytuvas",
+      "fields": [
+        {
+          "label": "Padidinti",
+          "description": "Didinimo mygtuko pavadinimas (matoma tik ekrano skaitytuvui).",
+          "default": "Padidinti"
+        },
+        {
+          "label": "Suaktyvintas didinimas.",
+          "description": "Skaityti, kai buvo įjungtas padidinimas.",
+          "default": "Suaktyvintas didinimas."
+        },
+        {
+          "label": "Didinimas deaktyvuotas.",
+          "description": "Skaityti, kai didinimas buvo išjungtas.",
+          "default": "Didinimas deaktyvuotas."
+        },
+        {
+          "label": "Instrukcijos",
+          "description": "Instrukcijos, kaip naudotis klaviatūra. Skaityti, kai įjungtas padidinimas",
+          "default": "Use arrow keys to move magnification lens. Use plus key to zoom in. Use minus key to zoom out."
+        },
+        {
+          "label": "Zoomed to scale",
+          "description": "Read when the zoom scale is changed. @magnification is a placeholder that will be replaced by the respective value.",
+          "default": "Zoomed to scale of @magnification to 1."
+        },
+        {
+          "label": "Moved lens to",
+          "description": "Read when the magnification lens is moved. @positionHorizontal and @positionVertical are placeholders that will be replaced by the respective values.",
+          "default": "Moved lens to @positionHorizontal horizontally and to @positionVertical vertically."
+        },
+        {
+          "label": "Unknown",
+          "description": "Fallback text for when the position of the lens cannot be determined.",
+          "default": "unknown"
+        }
+      ]
+    }
+  ]
+}

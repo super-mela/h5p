@@ -1,0 +1,122 @@
+.h5p-new-scene-button {
+  display: inline-flex;
+  padding: 0.5em 1em;
+
+  font-size: 1em;
+  color: #ffffff;
+
+  background: #475ec4;
+  border: 1px solid #475ec4;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.h5p-control-bar {
+  display: flex;
+  margin-top: 0.75em;
+
+  .h5p-new-scene-button {
+    line-height: 1.6;
+  }
+}
+
+.button-wrapper {
+  display: inline-flex;
+  position: absolute;
+  right: 0;
+
+  .tooltip {
+    padding: 0.25em 1em;
+    font-size: 0.875em;
+    background: #000;
+    color: #fff;
+    position: absolute;
+    bottom: 200%;
+    z-index: 11;
+    right: -0.5em;
+    line-height: 1.75;
+    box-shadow: rgba(0, 0, 0, 0.4) 0 3px 10px;
+    pointer-events: none;
+
+    opacity: 0;
+    visibility: hidden;
+    transition: visibility 0s linear 0.1s, opacity 0.1s linear, bottom 0.1s linear;
+
+    &:after {
+      display: block;
+      background: #000;
+      box-shadow: rgba(0, 0, 0, 0.4) 0 3px 10px;
+      content: " ";
+      width: 0.75em;
+      height: 0.75em;
+      position: absolute;
+      right: 0;
+      top: 100%;
+      transform: translateX(-700%) translateY(-50%) rotate(45deg);
+    }
+
+    .text-wrapper {
+      max-width: 30em;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+  }
+  &.not-disabled:hover .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+    bottom: 140%;
+  }
+
+  &.not-disabled.has-focus .tooltip {
+    visibility: visible;
+    opacity: 1;
+    transition-delay: 0s;
+    bottom: 140%;
+  }
+}
+
+.buttons-wrapper {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  position: relative;
+}
+
+.set-starting-position-button {
+  padding: 0.5em 1em;
+  border: 0.125em solid transparent;
+  background-color: #2B2F36;
+  color: #e9ebee;
+  opacity: 1;
+  font-size: 0.875em;
+  cursor: pointer;
+  transition: border-color 100ms, opacity 100ms;
+
+  &:hover,
+  &:focus {
+    color: #e9ebee;
+    background-color: #525863;
+    border-color: #9ea2a8;
+  }
+  &:active {
+    border-color: #808080;
+  }
+
+  &[disabled] {
+    background-color: #2B2F36;
+    opacity: 0.5;
+    cursor: not-allowed;
+  }
+}
+
+.h5p-editor-escape-room-wrapper.mobile {
+  .h5p-control-bar {
+    display: block;
+  }
+
+  .buttons-wrapper {
+    margin-top: 0.75em;
+  }
+}

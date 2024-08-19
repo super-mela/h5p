@@ -1,0 +1,245 @@
+{
+  "semantics": [
+    {
+      "label": "Media",
+      "fields": [
+        {
+          "label": "Type",
+          "description": "Optional media to display above the question."
+        },
+        {
+          "label": "Disable image zooming"
+        }
+      ]
+    },
+    {
+      "label": "Question"
+    },
+    {
+      "label": "Available options",
+      "entity": "option",
+      "widgets": [
+        {
+          "label": "Default"
+        },
+        {
+          "label": "Textual"
+        }
+      ],
+      "field": {
+        "label": "Option",
+        "fields": [
+          {
+            "label": "Text"
+          },
+          {
+            "label": "Correct"
+          },
+          {
+            "label": "Feedback",
+            "fields": [
+              {
+                "label": "Message displayed if answer is selected",
+                "description": "Message will appear below the answer."
+              },
+              {
+                "label": "Message displayed if answer is not selected",
+                "description": "Message will appear below the answer."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Overall Feedback",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Default"
+            }
+          ],
+          "label": "Define custom feedback for any score range",
+          "description": "Click the \"Add range\" button to add as many ranges as you need. Example: 0-20% Bad score, 21-91% Average Score, 91-100% Great Score!",
+          "entity": "range",
+          "field": {
+            "fields": [
+              {
+                "label": "Score Range"
+              },
+              {},
+              {
+                "label": "Feedback for defined score range",
+                "placeholder": "Fill in the feedback"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Behavioural settings",
+      "fields": [
+        {
+          "label": "Mode",
+          "description": "Choose the mode that answers should be presented in.",
+          "options": [
+            {
+              "label": "Standard discrete option"
+            },
+            {
+              "label": "Present all options"
+            },
+            {
+              "label": "Present all options, let user state confidence"
+            }
+          ]
+        },
+        {
+          "label": "Enable \"Show Solution\" button"
+        },
+        {
+          "label": "Enable \"Retry\" button"
+        },
+        {
+          "label": "Only one item visible at a time",
+          "description": "Enable to hide items that have been answered already."
+        },
+        {
+          "label": "Show results",
+          "description": "Enable to show the results once the user has checked all options that were presented."
+        },
+        {
+          "label": "Give one point for the whole task",
+          "description": "Enable to give a total of one point for multiple correct answers."
+        },
+        {
+          "label": "Randomize answers",
+          "description": "Enable to randomize the order of the answers on display."
+        },
+        {
+          "label": "Confidence levels",
+          "description": "Choose what confidence levels the user can choose from for each answer.",
+          "options": [
+            {
+              "label": "100 % and 0 %"
+            },
+            {
+              "label": "100 %, 50 % and 0 %"
+            },
+            {
+              "label": "100 %, 75 %, 50 %, 25 % and 0 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "User interface",
+      "fields": [
+        {
+          "label": "\"Check\" button label",
+          "default": "Check"
+        },
+        {
+          "label": "\"Submit\" button label",
+          "default": "Submit"
+        },
+        {
+          "label": "\"Show solution\" button label",
+          "default": "Show solution"
+        },
+        {
+          "label": "\"Retry\" button label",
+          "default": "Retry"
+        },
+        {
+          "label": "Confidence",
+          "description": "@percent is a placeholder and will be replaced with the respective value.",
+          "default": "I am @percent sure."
+        },
+        {
+          "label": "Your results",
+          "default": "Your results"
+        }
+      ]
+    },
+    {
+      "label": "Accessibility texts",
+      "fields": [
+        {
+          "label": "Assistive technology description for \"Check\" button",
+          "default": "Check the answers. The responses will be marked as correct, incorrect, or unanswered."
+        },
+        {
+          "label": "Assistive technology description for \"Show solution\" button",
+          "default": "Show the solution. The task will be marked with its correct solution."
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry the task. Reset all responses and start the task over again."
+        },
+        {
+          "label": "Your result",
+          "description": "@score will be replaced by the number of points. @total will be replaced by the maximum possible points.",
+          "default": "You got @score out of @total points"
+        },
+        {
+          "label": "Choose confidence and mark answer",
+          "default": "Choose your confidence and mark as correct or incorrect"
+        },
+        {
+          "label": "Mark as correct or incorrect",
+          "default": "Mark as correct or incorrect"
+        },
+        {
+          "label": "Mark answer as correct/incorrect",
+          "description": "@status is a placeholder and will be replaced with the respective value.",
+          "default": "Mark answer as @status"
+        },
+        {
+          "label": "Correct",
+          "default": "correct"
+        },
+        {
+          "label": "Incorrect",
+          "default": "incorrect"
+        },
+        {
+          "label": "Item cannot be expanded",
+          "default": "This item can currently not be expanded."
+        },
+        {
+          "label": "Showing next answer option",
+          "description": "@option is a placeholder and will be replaced with the respective value.",
+          "default": "Showing next answer option: @option"
+        },
+        {
+          "label": "No more answer options",
+          "default": "There are no more answer options to mark."
+        },
+        {
+          "label": "You marked this as correct/incorrect",
+          "description": "@correctness is a placeholder and will be replaced with the respective value.",
+          "default": "You marked this as @correctness"
+        },
+        {
+          "label": "Confidence",
+          "description": "@value is a placeholder and will be replaced with the respective value.",
+          "default": "Confidence: @value"
+        },
+        {
+          "label": "Your answer was correct/incorrect",
+          "description": "@correctness is a placeholder and will be replaced with the respective value.",
+          "default": "Your answer was @correctness"
+        },
+        {
+          "label": "The correct answer was: correct/incorrect",
+          "description": "@correctness is a placeholder and will be replaced with the respective value.",
+          "default": "The correct answer was to mark this as @correctness"
+        }
+      ]
+    }
+  ]
+}

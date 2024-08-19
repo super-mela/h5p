@@ -1,0 +1,245 @@
+{
+  "semantics": [
+    {
+      "label": "Medios",
+      "fields": [
+        {
+          "label": "Tipo",
+          "description": "Medios opcionais amosados enriba das preguntas."
+        },
+        {
+          "label": "Desactivar zoom de imaxes"
+        }
+      ]
+    },
+    {
+      "label": "Pregunta"
+    },
+    {
+      "label": "Opcións dispoñibles",
+      "entity": "opción",
+      "widgets": [
+        {
+          "label": "Por defecto"
+        },
+        {
+          "label": "Textual"
+        }
+      ],
+      "field": {
+        "label": "Opción",
+        "fields": [
+          {
+            "label": "Texto"
+          },
+          {
+            "label": "Correcto"
+          },
+          {
+            "label": "Retroalimentación",
+            "fields": [
+              {
+                "label": "Mensaxe amosada cando se selecciona a resposta",
+                "description": "A mensaxe aparecerá debaixo da resposta."
+              },
+              {
+                "label": "Mensaxe amosada se non se selecciona a resposta",
+                "description": "A mensaxe aparecerá debaixo da resposta."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Retroalimentación Xeral",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Por defecto"
+            }
+          ],
+          "label": "Establecer retroalimentación personalizada para calquera rango de puntuación",
+          "description": "Preme o botón \"Engadir rango\" para engadir tantos rangos como precises. Exemplo: 0-20% Mala puntuación, 21-91% Puntuación media, 91-100% Puntuación estupenda!",
+          "entity": "rango",
+          "field": {
+            "fields": [
+              {
+                "label": "Rango de puntuación"
+              },
+              {},
+              {
+                "label": "Retroalimentación para o rango de puntuación definido",
+                "placeholder": "Escribe a túa retroalimentación"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Configuración de comportamento",
+      "fields": [
+        {
+          "label": "Modo",
+          "description": "Escolle o modo no que se deben presentar as respostas.",
+          "options": [
+            {
+              "label": "Opción discreta estándar"
+            },
+            {
+              "label": "Presenta todas as opcións"
+            },
+            {
+              "label": "Presenta todas as opcións, deixa que o usuario amose confianza"
+            }
+          ]
+        },
+        {
+          "label": "Activar botón \"Amosar Solución\""
+        },
+        {
+          "label": "Activar o botón \"Tentar de novo\""
+        },
+        {
+          "label": "Só un elemento visible á vez",
+          "description": "Activar para ocultar os elementos que xa foron respondidos."
+        },
+        {
+          "label": "Amosar resultados",
+          "description": "Activar para mostrar os resultados unha vez que o usuario comprobou todas as opcións que se presentaron."
+        },
+        {
+          "label": "Dar un punto pola tarefa completa",
+          "description": "Activar para dar un total de un punto por varias respostas correctas."
+        },
+        {
+          "label": "Facer as respostas aleatorias",
+          "description": "Activar para facer aleatoria a orde das respostas que se mostran."
+        },
+        {
+          "label": "Niveis de confianza",
+          "description": "Escolle que niveis de confianza pode escoller o usuario para cada resposta.",
+          "options": [
+            {
+              "label": "100 % e 0 %"
+            },
+            {
+              "label": "100 %, 50 % e 0 %"
+            },
+            {
+              "label": "100 %, 75 %, 50 %, 25 % e 0 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Interface de usuario",
+      "fields": [
+        {
+          "label": "Etiqueta do botón \"Comprobar\"",
+          "default": "Comprobar"
+        },
+        {
+          "label": "Etiqueta do botón \"Enviar\"",
+          "default": "Enviar"
+        },
+        {
+          "label": "Etiqueta do botón \"Amosar solución\"",
+          "default": "Amosar a solución"
+        },
+        {
+          "label": "Etiqueta para o botón Tentar de novo",
+          "default": "Tentar de novo"
+        },
+        {
+          "label": "Confianza",
+          "description": "@percent é un marcador de posición e substituirase polo valor respectivo.",
+          "default": "Estou @percent seguro."
+        },
+        {
+          "label": "Os teus resultados",
+          "default": "Os teus resultados"
+        }
+      ]
+    },
+    {
+      "label": "Textos de accesibilidade",
+      "fields": [
+        {
+          "label": "Descrición do botón\"Comprobar\" para tecnoloxías de asistencia",
+          "default": "Comproba as respostas. As respostas marcaranse como correctas, incorrectas ou non contestadas."
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia do botón \"Amosar solución\"",
+          "default": "Amosar a solución. Marcarase a tarefa coa resposta correcta."
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia do botón \"Tentar de novo\"",
+          "default": "Tenta de novo a tarefa. Borra todas as respostas e comeza a tarefa de novo."
+        },
+        {
+          "label": "O teu resultado",
+          "description": "Substituirase @score polo número de puntos. Substituirase @total polo número máximo de puntos.",
+          "default": "Conseguiches @score puntos de @total"
+        },
+        {
+          "label": "Escolle confianza e marca a resposta",
+          "default": "Escolle a túa confianza e marca como correcta ou incorrecta"
+        },
+        {
+          "label": "Marca como correcto ou incorrecto",
+          "default": "Marca como correcto ou incorrecto"
+        },
+        {
+          "label": "Marca a resposta como correcta/incorrecta",
+          "description": "@status é un marcador de posición e substituirase polo valor respectivo.",
+          "default": "Marcar a resposta como @status"
+        },
+        {
+          "label": "Correcto",
+          "default": "correcto"
+        },
+        {
+          "label": "Incorrecto",
+          "default": "incorrecto"
+        },
+        {
+          "label": "O elemento non se pode ampliar",
+          "default": "Este elemento non se pode ampliar actualmente."
+        },
+        {
+          "label": "Mostrando a seguinte opción de resposta",
+          "description": "@option é un marcador de posición e substituirase polo valor respectivo.",
+          "default": "Mostrando a seguinte opción de resposta: @option"
+        },
+        {
+          "label": "Non hai máis opcións de resposta",
+          "default": "Non hai máis opcións de resposta que marcar."
+        },
+        {
+          "label": "Marcaches isto como correcto/incorrecto",
+          "description": "@correctness é un marcador de posición e substituirase polo valor respectivo.",
+          "default": "Marcaches isto como @correctness"
+        },
+        {
+          "label": "Confianza",
+          "description": "@value é un marcador de posición e substituirase polo valor respectivo.",
+          "default": "Confianza: @value"
+        },
+        {
+          "label": "A túa resposta foi correcta/incorrecta",
+          "description": "@correctness é un marcador de posición e substituirase polo valor respectivo.",
+          "default": "A túa resposta foi @correctness"
+        },
+        {
+          "label": "A resposta correcta foi: correcta/incorrecta",
+          "description": "@correctness é un marcador de posición e substituirase polo valor respectivo.",
+          "default": "A resposta correcta foi marcar isto como @correctness"
+        }
+      ]
+    }
+  ]
+}

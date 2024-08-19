@@ -1,0 +1,42 @@
+@import '@styles/main';
+
+.h5p-phrase-randomizer-found-solutions {
+  box-shadow: 10px 10px 30px rgba(166, 166, 166, 0.2);
+  margin: 0 1rem 1rem 1rem;
+  padding: 1rem;
+
+  .h5p-phrase-randomizer-found-solutions-title {
+    font-weight: bold;
+  }
+
+  .h5p-phrase-randomizer-found-solutions-list {
+    color: $color-joubelui-button-hover;
+
+    .h5p-phrase-randomizer-found-solutions-list-item {
+      &::after {
+        font-family: "H5PFontAwesome4", sans-serif;
+        margin-left: 0.25rem;
+      }
+
+      &.found {
+        color: $color-correct;
+
+        &::after {
+          content: "\f00c";
+        }
+      }
+
+      &.not-found {
+        color: $color-incorrect;
+
+        &::after {
+          content: "\f00d";
+        }
+      }
+    }
+  }
+
+  &.display-none {
+    display: none;
+  }
+}

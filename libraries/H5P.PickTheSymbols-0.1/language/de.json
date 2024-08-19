@@ -1,0 +1,318 @@
+{
+  "semantics": [
+    {
+      "label": "Aufgabenbeschreibung",
+      "description": "Beschreibe deine Aufgabe hier."
+    },
+    {
+      "label": "Text",
+      "description": "Gib hier den Text mit Symbolen ein, die ausgewählt werden sollen."
+    },
+    {
+      "label": "Symbole",
+      "description": "Gib hier die Symbole ein, aus denen die Lernenden wählen sollen.",
+      "default": ".?!,:;'\""
+    },
+    {
+      "label": "Gesamtrückmeldung",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Voreinstellung"
+            }
+          ],
+          "label": "Lege Rückmeldungen für einzelne Punktebereiche fest",
+          "description": "Klicke auf den \"Bereich hinzufügen\"-Button, um so viele Bereiche hinzuzufügen, wie du brauchst. Beispiel: 0-20% Schlechte Punktzahl, 21-91% Durchschnittliche Punktzahl, 91-100% Großartige Punktzahl!",
+          "entity": "Bereich",
+          "field": {
+            "fields": [
+              {
+                "label": "Punktebereich"
+              },
+              {},
+              {
+                "label": "Rückmeldung für jeweiligen Punktebereich",
+                "placeholder": "Trage die Rückmeldung ein"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "description": "Diese Optionen kontrollieren, wie sich die Aufgabe verhält.",
+      "fields": [
+        {
+          "label": "\"Wiederholen\" zulassen"
+        },
+        {
+          "label": "\"Lösung anzeigen\" ermöglichen"
+        },
+        {
+          "label": "Kontinuierliches überprüfen erlauben",
+          "description": "Erlaube Lernenden, kontinuierlich ihre Antworten zu überprüfen, ohne ihre bisherigen Antworten zurückzusetzen."
+        },
+        {
+          "label": "Zeige alle Lücken",
+          "description": "Zeige alle Lücken bereits von Anfang an."
+        },
+        {
+          "label": "Hintergrundfarbe der Lücken"
+        },
+        {
+          "label": "Benutze schmale Lücken",
+          "description": "Wenn diese Option aktiviert ist, haben die Lücken keinen Rand und sind schmaler, um den Text natürlicher aussehen zu lassen."
+        }
+      ]
+    },
+    {
+      "label": "Bedienoberfläche",
+      "fields": [
+        {
+          "label": "Beschriftung des \"Überprüfen\"-Buttons",
+          "default": "Prüfen"
+        },
+        {
+          "label": "Beschriftung des \"Fortfahren\"-Buttons",
+          "default": "Fortfahren"
+        },
+        {
+          "label": "Beschriftung des \"Lösung anzeigen\"-Buttons",
+          "default": "Lösung anzeigen"
+        },
+        {
+          "label": "Beschriftung des \"Wiederholen\"-Buttons",
+          "default": "Wiederholen"
+        },
+        {
+          "label": "Hilfstext für die Buttons für eine Lücke",
+          "default": "Wähle das Satzzeichen"
+        },
+        {
+          "label": "Titeltext für die Symbolauswahl",
+          "default": "Wähle das Satzzeichen"
+        },
+        {
+          "label": "Beschriftung des \"Lücke anfügen\"-Buttons",
+          "default": "Lücke anfügen"
+        },
+        {
+          "label": "Beschriftung des \"Lücke löschen\"-Buttons",
+          "default": "Lücke löschen"
+        },
+        {
+          "label": "Hilfstext des \"Symbol wählen\"-Buttons",
+          "description": "@symbol wird durch das Symbol ersetzt, das ausgewählt würde.",
+          "default": "Setze @symbol in die Lücke"
+        },
+        {
+          "label": "Beschriftung des \"Fenster schließen\"-Buttons",
+          "default": "Schließe Fenster"
+        }
+      ]
+    },
+    {
+      "label": "Vorlesewerkzeug",
+      "fields": [
+        {
+          "label": "Anzeigetext der Punkteleiste für Vorlesewerkzeuge (Barrierefreiheit)",
+          "default": "Du hast :num von :total Punkten erreicht."
+        },
+        {
+          "label": "Lücke",
+          "default": "Lücke"
+        },
+        {
+          "label": "Von",
+          "default": "von"
+        },
+        {
+          "label": "Rückmeldung für richtige Antwort",
+          "default": "Korrekt beantwortet"
+        },
+        {
+          "label": "Rückmeldung für falsche Antwort",
+          "default": "Falsch beantwortet"
+        },
+        {
+          "label": "Rückmeldung bei keiner Antwort",
+          "default": "Nicht beantwortet"
+        },
+        {
+          "label": "Richtige Antwort",
+          "default": "Richtige Antwort"
+        },
+        {
+          "label": "Leerzeichen",
+          "default": "Leerzeichen"
+        },
+        {
+          "label": "Punkt",
+          "default": "Punkt"
+        },
+        {
+          "label": "Ausrufezeichen",
+          "default": "Ausrufezeichen"
+        },
+        {
+          "label": "Fragezeichen",
+          "default": "Fragezeichen"
+        },
+        {
+          "label": "Komma",
+          "default": "Komma"
+        },
+        {
+          "label": "Einfaches Anführungszeichen",
+          "default": "einfaches Anführungszeichen"
+        },
+        {
+          "label": "Doppeltes Anführungszeichen",
+          "default": "doppeltes Anführungszeichen"
+        },
+        {
+          "label": "Doppelpunkt",
+          "default": "Doppelpunkt"
+        },
+        {
+          "label": "Semikolon",
+          "default": "Semikolon"
+        },
+        {
+          "label": "Plus",
+          "default": "Plus"
+        },
+        {
+          "label": "Minus",
+          "default": "Minus"
+        },
+        {
+          "label": "Sternchen",
+          "default": "Sternchen"
+        },
+        {
+          "label": "Schrägstrich vorwärts",
+          "default": "Schrägstrich vorwärts"
+        },
+        {
+          "label": "Schrägstrich rückwärts",
+          "default": "Schrägstrich rückwärts"
+        },
+        {
+          "label": "Tilde",
+          "default": "Tilde"
+        },
+        {
+          "label": "Umgedrehtes Ausrufezeichen",
+          "default": "umgedrehtes Ausrufezeichen"
+        },
+        {
+          "label": "Umgedrehtes Fragezeichen",
+          "default": "umgedrehtes Fragezeichen"
+        },
+        {
+          "label": "Raute",
+          "default": "Raute"
+        },
+        {
+          "label": "Klammer links",
+          "default": "Klammer links"
+        },
+        {
+          "label": "Klammer rechts",
+          "default": "Klammer rechts"
+        },
+        {
+          "label": "Caret-Zeichen",
+          "default": "Caret-Zeichen"
+        },
+        {
+          "label": "Unterstrich",
+          "default": "Unterstrich"
+        },
+        {
+          "label": "Vertikaler Strich",
+          "default": "vertikaler Strich"
+        },
+        {
+          "label": "Einfaches Anführungszeichen links",
+          "default": "einfaches Anführungszeichen links"
+        },
+        {
+          "label": "Einfaches Anführungszeichen links unten",
+          "default": "einfaches Anführungszeichen links unten"
+        },
+        {
+          "label": "Einfaches Anführungszeichen rechts",
+          "default": "einfaches Anführungszeichen rechts"
+        },
+        {
+          "label": "Doppeltes Anführungszeichen links",
+          "default": "doppeltes Anführungszeichen links"
+        },
+        {
+          "label": "Doppeltes Anführungszeichen links unten",
+          "default": "doppeltes Anführungszeichen links unten"
+        },
+        {
+          "label": "Doppeltes Anführungszeichen rechts",
+          "default": "doppeltes Anführungszeichen rechts"
+        },
+        {
+          "label": "Einfache spitze Klammer links",
+          "default": "einfachs spitze Klammer links"
+        },
+        {
+          "label": "Einfache spitze Klammer rechts",
+          "default": "einfache spitze Klammer rechts"
+        },
+        {
+          "label": "Doppelte spitze Klammer links",
+          "default": "doppelte spitze Klammer links"
+        },
+        {
+          "label": "Doppelte spitze Klammer rechts",
+          "default": "doppelte spitze Klammer rechts"
+        },
+        {
+          "label": "Geschweifte Klammer links",
+          "default": "geschweifte Klammer links"
+        },
+        {
+          "label": "Geschweifte Klammer rechts",
+          "default": "geschweifte Klammer rechts"
+        },
+        {
+          "label": "Eckige Klammer links",
+          "default": "eckige Klammer links"
+        },
+        {
+          "label": "Eckige Klammer rechts",
+          "default": "eckige Klammer rechts"
+        },
+        {
+          "label": "Paragraph",
+          "default": "Paragraph"
+        },
+        {
+          "label": "Geteilt durch",
+          "default": "geteilt durch"
+        },
+        {
+          "label": "Multipliziert mit",
+          "default": "multipliziert mit"
+        },
+        {
+          "label": "Kleiner als",
+          "default": "kleiner als"
+        },
+        {
+          "label": "Größer als",
+          "default": "größer als"
+        }
+      ]
+    }
+  ]
+}

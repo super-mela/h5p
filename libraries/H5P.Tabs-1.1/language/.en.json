@@ -1,0 +1,76 @@
+{
+  "semantics": [
+    {
+      "label": "Tabs",
+      "entity": "tab",
+      "widgets": [
+        {
+          "label": "Default"
+        }
+      ],
+      "field": {
+        "label": "Content",
+        "entity": "content"
+      }
+    },
+    {
+      "label": "Behavioural settings",
+      "description": "These options will let you control how the task behaves.",
+      "fields": [
+        {
+          "label": "Tab placement",
+          "description": "Choose where the tabs will be placed.",
+          "options": [
+            {
+              "label": "Based on screen size"
+            },
+            {
+              "label": "On top of content"
+            },
+            {
+              "label": "Left of content"
+            }
+          ]
+        },
+        {
+          "label": "Tab spread",
+          "description": "Define what percentage of the tab panel's horizontal space will be used for tabs."
+        },
+        {
+          "label": "Tab color",
+          "description": "Allows you to adjust the color of tabs.",
+          "default": "#1a73d9"
+        },
+        {
+          "label": "Background color",
+          "description": "Allows you to adjust the background color so the tabs may blend into your environment.",
+          "default": "rgba(255, 255, 255, 0)"
+        }
+      ]
+    },
+    {
+      "label": "User interface",
+      "fields": [
+        {
+          "label": "Tab",
+          "default": "tab"
+        },
+        {
+          "label": "No content",
+          "default": "There is no content to be displayed."
+        }
+      ]
+    },
+    {
+      "label": "Accessibility texts",
+      "fields": [
+        {
+          "label": "Choose a tab",
+          "description": "Text for screenreaders.",
+          "default": "Choose a tab."
+        },
+        {}
+      ]
+    }
+  ]
+}

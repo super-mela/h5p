@@ -1,0 +1,118 @@
+{
+  "semantics": [
+    {
+      "label": "Imagen",
+      "description": "Imagen a usar."
+    },
+    {
+      "label": "Configuraciones visuales",
+      "description": "Estas opciones le permitirán controlar aspectos visuales.",
+      "fields": [
+        {
+          "label": "Anchura de la imagen",
+          "description": "Selecciona la anchura del espacio dado que la imagen debería cubrir. La altura de la imagen se escalará apropiadamente y nunca excederá 100% de la anchura.",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100 %"
+            },
+            {
+              "label": "Anchura natural de la imagen"
+            }
+          ]
+        },
+        {
+          "label": "Alineación de la imagen",
+          "description": "Selecciona donde debería estar posicionada la imagen relativa al resto del contenido.",
+          "options": [
+            {
+              "label": "izquierda"
+            },
+            {
+              "label": "centro"
+            },
+            {
+              "label": "derecha"
+            }
+          ]
+        },
+        {
+          "label": "Anchura de la lente de zoom",
+          "description": "Configura la anchura de la lente de zoom como porcentaje del ancho de la imagen (por ejemplo 20%) o como un valor fijo en píxeles (por ejemplo 160px).",
+          "default": "20%"
+        },
+        {
+          "label": "Altura de la lente de zoom",
+          "description": "Configura la altura de la lente de zoom como porcentaje de la altura de la imagen (por ejemplo 25%) o como un valor fijo en píxeles (por ejemplo 90px).",
+          "default": "25%"
+        },
+        {
+          "label": "Oscurecer imagen al hacer zoom",
+          "description": "Si se activa, la imagen se oscurecerá para reforzar el efecto del enfoque al hacer zoom."
+        }
+      ]
+    },
+    {
+      "label": "Configuración del comportamiento",
+      "description": "Estas opciones le permitirán controlar como se comporta la tarea.",
+      "fields": [
+        {
+          "label": "Zoom automático",
+          "description": "Si se activa, la imagen se aumenta automáticamente al pasarle el ratón por encima. En caso contrario, el usuario necesita alternar la magnificación activándola y desactivándola."
+        },
+        {
+          "label": "Ocultar indicador de aumento",
+          "description": "El indicador de aumento se usa como botón para uso del teclado. Al ocultarlo no se evitará que funcione, pero los usuarios tendrán menos información de navegación."
+        }
+      ]
+    },
+    {
+      "label": "Lector de pantalla",
+      "fields": [
+        {
+          "label": "Aumentar",
+          "description": "Etiqueta para el botón aumentar (solamente visible para lectores de pantalla).",
+          "default": "Aumentar"
+        },
+        {
+          "label": "Aumento activado.",
+          "description": "Leer cuando se activó el aumento.",
+          "default": "Aumento activado."
+        },
+        {
+          "label": "Aumento desactivado.",
+          "description": "Leer cuando el aumento fue desactivado.",
+          "default": "Aumento desactivado."
+        },
+        {
+          "label": "Instrucciones",
+          "description": "Instrucciones sobre el uso del teclado. Lee cuando se activa el aumento",
+          "default": "Usa las teclas de dirección para mover la lente de aumento. Usa la tecla más para acercar. Usa la tecla menos para alejar."
+        },
+        {
+          "label": "Zoom a escala",
+          "description": "Lee cuando se cambia la escala de zoom. @magnification es una variable que será reemplazada por el valor respectivo.",
+          "default": "Zoom a escala de @magnification a 1."
+        },
+        {
+          "label": "Se movió la lente a",
+          "description": "Lee cuando se mueve la lente de aumento. @positionHorizontal y @positionVertical son variables que serán reemplazados por los valores respectivos.",
+          "default": "Se movió la lente a @positionHorizontal horizontalmente y a @positionVertical verticalmente."
+        },
+        {
+          "label": "Desconocido",
+          "description": "Texto por defecto cuando no se puede determinar la posición de la lente.",
+          "default": "desconocido"
+        }
+      ]
+    }
+  ]
+}

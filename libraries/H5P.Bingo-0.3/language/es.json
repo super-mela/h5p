@@ -1,0 +1,124 @@
+{
+  "semantics": [
+    {
+      "label": "Medios",
+      "fields": [
+        {
+          "label": "Tipo",
+          "description": "Medios opcionales mostrados encima de la pregunta."
+        },
+        {
+          "label": "Deshabilitar acercamiento de imagen"
+        }
+      ]
+    },
+    {
+      "label": "Descripción del trabajo",
+      "description": "Opcionalmente, dar aquí una descripción."
+    },
+    {
+      "label": "Modo",
+      "description": "Elegir el modo de juego. Los números pueden completarse automáticamente, las palabras hay que proporcionarlas.",
+      "options": [
+        {
+          "label": "Jugar con números"
+        },
+        {
+          "label": "Jugar con palabras"
+        }
+      ]
+    },
+    {
+      "label": "Palabras o frases",
+      "fields": [
+        {
+          "label": "Palabras o frases",
+          "description": "Usar una línea para cada palabra y frase."
+        }
+      ]
+    },
+    {
+      "label": "Tamaño del tablero"
+    },
+    {
+      "label": "Visuales",
+      "description": "Puedes personalizar aquí la apariencia visual.",
+      "fields": [
+        {
+          "label": "Imagen",
+          "description": "Imagen de comodín para los botones."
+        },
+        {
+          "label": "Color del fondo",
+          "description": "Color del fondo para el tablero."
+        }
+      ]
+    },
+    {
+      "label": "Audio",
+      "description": "Puedes personalizar aquí el audio.",
+      "fields": [
+        {
+          "label": "Has seleccionado/dejado de seleccionar un campo",
+          "description": "Sonido a reproducir cuando un campo es seleccionado o dejado de seleccionar."
+        },
+        {
+          "label": "Fila o columna completada",
+          "description": "Sonido a reproducir cuando el usuario ha seleccionado una fila o columna completa."
+        }
+      ]
+    },
+    {
+      "label": "Configuraciones del comportamiento",
+      "description": "Estas opciones te permitirán controlar cómo se comporta la tarea.",
+      "fields": [
+        {
+          "label": "Habilitar \"Intentar de nuevo\""
+        },
+        {
+          "label": "Barajar al intentar de nuevo",
+          "description": "Si se activa, las palabras/frases/números serán barajados al intentar de nuevo."
+        },
+        {
+          "label": "Configurar comodín",
+          "description": "Colocará un comodín que no se puede girar en el centro del tablero si su tamaño es impar."
+        },
+        {
+          "label": "Modo de límite de altura",
+          "description": "Decide si quieres limitar la altura del tablero para que quepa en el área visible. La detección automática puede no ser perfecta dependiendo de la configuración de tu sitio web; por ejemplo, si tiene barras pegajosas superiores de navegación. Los valores personalizados correctos son difíciles de configurar manualmente.",
+          "options": [
+            {
+              "label": "Sin límite"
+            },
+            {
+              "label": "Automático"
+            },
+            {
+              "label": "Personalizado"
+            }
+          ]
+        },
+        {
+          "label": "Límite de altura",
+          "description": "Altura máxima del tablero en pixeles."
+        }
+      ]
+    },
+    {
+      "label": "Texto para el botón \"Intentar de nuevo\"",
+      "default": "Intentar de nuevo"
+    },
+    {
+      "label": "Descripción para las tecnologías de asistencia del botón \"Intentar de nuevo\"",
+      "default": "Vuelve a intentar la tarea. Borra todas tus respuestas y empieza de nuevo."
+    },
+    {
+      "label": "Descripción para las tecnologías de asistencia del botón \"Silenciar\"",
+      "default": "Silenciar audio, actualmente activado"
+    },
+    {
+      "label": "Descripción para las tecnologías de asistencia del botón \"Activar audio\"",
+      "default": "Activar audio, actualmente silenciado"
+    }
+  ]
+}

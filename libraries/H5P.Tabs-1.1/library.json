@@ -1,0 +1,52 @@
+{
+  "title": "Tabs",
+  "majorVersion": 1,
+  "minorVersion": 1,
+  "patchVersion": 5,
+  "embedTypes": [
+    "iframe"
+  ],
+  "runnable": 1,
+  "fullscreen": 0,
+  "machineName": "H5P.Tabs",
+  "author": "Joubel",
+  "coreApi": {
+    "majorVersion": 1,
+    "minorVersion": 5
+  },
+  "license": "MIT",
+  "preloadedJs": [
+    {
+      "path": "dist/h5p-tabs.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5p-tabs.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.Tabs",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "H5PEditor.VerticalTabs",
+      "majorVersion": 1,
+      "minorVersion": 3
+    },
+    {
+      "machineName": "H5PEditor.ColorSelector",
+      "majorVersion": 1,
+      "minorVersion": 3
+    }
+  ]
+}

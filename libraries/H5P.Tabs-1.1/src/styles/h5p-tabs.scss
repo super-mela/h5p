@@ -1,0 +1,95 @@
+@import "@styles/main";
+
+.h5p-tabs {
+  background-color: var(--color-background);
+  width: 100%;
+  overflow: hidden;
+
+  .h5p-tabs-container {
+    display: flex;
+    flex-direction: column;
+
+    &.h5p-tabs-message {
+      background-color: $color-hint-message-background;
+      border: 1px solid $color-hint-message-border;
+      color: $color-hint-message-text;
+      margin: 0;
+      padding: .8em;
+      text-align: center;
+    }
+
+    .h5p-tabs-tabs-label {
+      position: absolute;
+      left: $offset-offscreen;
+    }
+
+    .h5p-tabs-tabs {
+      display: flex;
+      width: var(--tab-spread);
+    }
+
+    .h5p-tabs-content {
+      flex-grow: 1;
+      width: 100%;
+    }
+  }
+}
+
+.h5p-tabs.tab-placement-left {
+  .h5p-tabs-container {
+    flex-direction: row;
+
+    .h5p-tabs-tabs {
+      flex-direction: column;
+      flex-shrink: 1;
+      max-width: 20em;
+      width: auto;
+
+      .h5p-tabs-button {
+        flex-shrink: 1;
+        text-align: left;
+        width: 100%;
+
+        &:not(:last-child) {
+          border-right: 0;
+          border-bottom: solid 1px var(--color-tab-background-hover, $color-content);;
+        }
+
+        &:last-child {
+          border-top-right-radius: 0;
+          border-bottom-left-radius: 1em;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 480px) {
+  .h5p-tabs.tab-placement-dynamic {
+    .h5p-tabs-container {
+      flex-direction: row;
+
+      .h5p-tabs-tabs {
+        flex-direction: column;
+        flex-shrink: 1;
+        max-width: 10em;
+
+        .h5p-tabs-button {
+          flex-shrink: 1;
+          text-align: left;
+          width: 100%;
+
+          &:not(:last-child) {
+            border-right: 0;
+            border-bottom: solid 1px var(--color-tab-background-hover, $color-content);
+          }
+
+          &:last-child {
+            border-top-right-radius: 0;
+            border-bottom-left-radius: 1em;
+          }
+        }
+      }
+    }
+  }
+}

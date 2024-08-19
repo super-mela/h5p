@@ -1,0 +1,15 @@
+@import "@styles/main";
+
+.h5p-tabs-content-container {
+  border: solid 1px var(--color-tab-background, $color-content);
+  height: 100%;
+  width: 100%;
+
+  &.display-none {
+    display: none;
+  }
+
+  .h5p-tabs-tab-content {
+    background-color: $color-background;
+  }
+}

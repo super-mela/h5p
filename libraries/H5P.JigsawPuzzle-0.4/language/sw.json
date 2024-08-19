@@ -1,0 +1,143 @@
+{
+  "semantics": [
+    {
+      "label": "Picha ya fumbo",
+      "description": "Picha ambayo vigae vinapaswa kukatwa kutoka."
+    },
+    {
+      "label": "Vigae kwa usawa",
+      "description": "Weka vigae vingapi vya fumbo ambavyo fumbo linalohitaji kuunganishwa linapaswa kuwa nazo kwa mlalo."
+    },
+    {
+      "label": "Vigae vya wima",
+      "description": "Weka vigae vingapi vya fumbo ambavyo fumbo linalohitaji kuunganishwa linapaswa kuwa nazo kwa wima."
+    },
+    {
+      "label": "Mipangilio ya sauti",
+      "description": "Chaguzi hizi zitakuwezesha kuweka chaguo zinazohusiana na sauti.",
+      "fields": [
+        {
+          "label": "Anza fumbo",
+          "description": "Sauti ya kucheza wakati fumbo linapoanzishwa."
+        },
+        {
+          "label": "Chukua kigae cha fumbo",
+          "description": "Sauti ya kucheza wakati kigae cha fumbo kinachukuliwa."
+        },
+        {
+          "label": "Achia kigae cha mafumbo (vibaya)",
+          "description": "Sauti ya kucheza wakati kigae cha fumbo kimedondoshwa (mahali pasipofaa)."
+        },
+        {
+          "label": "Achia kigae cha fumbo kwa usahihi",
+          "description": "Sauti ya kucheza wakati kigae cha chemshabongo kimeangushwa mahali pazuri."
+        },
+        {
+          "label": "Fumbo kamili",
+          "description": "Sauti ya kucheza fumbo linapokamilika."
+        }
+      ]
+    },
+    {
+      "label": "Mipangilio ya tabia",
+      "description": "Chaguzi hizi zitakuwezesha kudhibiti jinsi kazi inavyofanya.",
+      "fields": [
+        {
+          "label": "Onyesha mandharinyuma hafifu",
+          "description": "Onyesha toleo hafifu la picha katika mandharinyuma ili kuonyesha mahali gani kigae cha fumbo kinahitaji kwenda."
+        },
+        {
+          "label": "Onyesha muhtasari wa mafumbo",
+          "description": "Onyesha muhtasari wa mafumbo ili kuonyesha mahali ambapo kigae cha fumbo kinahitaji kwenda."
+        },
+        {
+          "label": "Sorting space position",
+          "description": "Set where the sorting space should be positioned at.",
+          "options": [
+            {
+              "label": "Puzzle next to sorting space"
+            },
+            {
+              "label": "Puzzle above sorting space"
+            }
+          ]
+        },
+        {
+          "label": "Sorting space",
+          "description": "Set how much space in percent should be attached next to the jigsaw puzzle for sorting the tiles."
+        },
+        {
+          "label": "Nafasi ya kupanga",
+          "description": "Weka ni kiasi gani cha nafasi katika asilimia kinapaswa kuambatishwa kando ya fumbo linalohitaji kuunganishwa kwa kupanga vigae."
+        },
+        {
+          "label": "Tumia eneo kamili",
+          "description": "Weka ikiwa mwanzoni vigae vinapaswa kufunika eneo kamili pamoja na eneo ambapo zinahitaji kudodoshwa."
+        },
+        {
+          "label": "Washa kitufe cha \"Kamilisha\""
+        },
+        {
+          "label": "Washa kitufe cha \"Jaribu tena\""
+        },
+        {
+          "label": "Washa kitufe cha Suluhisho"
+        }
+      ]
+    },
+    {
+      "label": "Kiolesura cha mtumiaji",
+      "fields": [
+        {
+          "label": "Maandishi kwa kitufe cha Kamilisha",
+          "default": "Kamilisha"
+        },
+        {
+          "label": "Maandishi kwa kitufe cha \"Jaribu tena\"",
+          "default": "Jaribu tena"
+        },
+        {
+          "label": "Maandishi ya ujumbe wa Hakuna picha",
+          "default": "Hakukuwa na picha iliyotolewa kwa fumbo hili linalohitaji kuunganisha vigae."
+        }
+      ]
+    },
+    {
+      "label": "Kisoma maandishi",
+      "fields": [
+        {
+          "label": "Maelezo ya teknolojia ya usaidizi ya kitufe cha Kamilisha",
+          "default": "Kukamilisha fumbo. Vigae vyote vitawekwa kwenye nafasi yake sahihi."
+        },
+        {
+          "label": "Maelezo ya teknolojia ya usaidizi kwa kitufe cha \"Jaribu tena\"",
+          "default": "Jaribu tena fumbo. Vigae vyote vya mafumbo vitachanganyika kwenye turubai."
+        },
+        {
+          "label": "Maelezo ya teknolojia ya kusaidia ya \"Ingiza kitufe cha skrini nzima\"",
+          "default": "Ingiza hali ya skrini kamili"
+        },
+        {
+          "label": "Maelezo ya teknolojia ya usaidizi ya \"Ondoka kwenye kitufe cha skrini nzima\"",
+          "default": "Toka kwenye njia ya skrini kamili"
+        },
+        {
+          "label": "Maelezo ya teknolojia ya kusaidia kwa kitufe cha \"Nyamaza\"",
+          "default": "Zima sauti"
+        },
+        {
+          "label": "Maelezo ya teknolojia ya kusaidia kwa kitufe cha \"Rejesha\"",
+          "default": "Tangua sauti"
+        },
+        {
+          "label": "Maelezo ya teknolojia ya usaidizi ya \"Walemavu\"",
+          "default": "Imezimwa"
+        },
+        {
+          "label": "Maelezo ya teknolojia ya usaidizi ya \"Funga\"",
+          "default": "Funga"
+        }
+      ]
+    }
+  ]
+}

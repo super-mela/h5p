@@ -1,0 +1,245 @@
+{
+  "semantics": [
+    {
+      "label": "媒體",
+      "fields": [
+        {
+          "label": "類型",
+          "description": "可選的媒體，顯示在問題上方。"
+        },
+        {
+          "label": "禁用圖片縮放"
+        }
+      ]
+    },
+    {
+      "label": "問題"
+    },
+    {
+      "label": "可用選項",
+      "entity": "選項",
+      "widgets": [
+        {
+          "label": "預設值"
+        },
+        {
+          "label": "文字方式"
+        }
+      ],
+      "field": {
+        "label": "選項",
+        "fields": [
+          {
+            "label": "文本"
+          },
+          {
+            "label": "正確"
+          },
+          {
+            "label": "反饋",
+            "fields": [
+              {
+                "label": "選中答案時顯示的消息",
+                "description": "消息將顯示在答案下方。"
+              },
+              {
+                "label": "未選中答案時顯示的消息",
+                "description": "消息將顯示在答案下方。"
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "整體反饋",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "默認"
+            }
+          ],
+          "label": "為任何得分範圍定義自定義反饋",
+          "description": "點擊“添加範圍”按鈕以添加所需的範圍。例如：0-20％ 糟糕的得分，21-91％ 平均得分，91-100％ 優秀得分！",
+          "entity": "range",
+          "field": {
+            "fields": [
+              {
+                "label": "得分範圍"
+              },
+              {},
+              {
+                "label": "定義得分範圍的反饋",
+                "placeholder": "填寫反饋"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "行為設置",
+      "fields": [
+        {
+          "label": "模式",
+          "description": "選擇答案應該呈現的模式。",
+          "options": [
+            {
+              "label": "標準離散選項"
+            },
+            {
+              "label": "顯示所有選項"
+            },
+            {
+              "label": "顯示所有選項，讓用戶指定信心"
+            }
+          ]
+        },
+        {
+          "label": "啟用“顯示解答”按鈕"
+        },
+        {
+          "label": "啟用“重試”按鈕"
+        },
+        {
+          "label": "同時只顯示一個項目",
+          "description": "啟用後，已回答的項目將被隱藏。"
+        },
+        {
+          "label": "顯示結果",
+          "description": "在用戶檢查所有呈現的選項後顯示結果。"
+        },
+        {
+          "label": "對整個任務給予一分",
+          "description": "為多個正確答案總共給予一分。"
+        },
+        {
+          "label": "隨機排列答案",
+          "description": "在顯示答案時隨機排列答案的順序。"
+        },
+        {
+          "label": "信心水平",
+          "description": "為每個答案選擇的信心水平。",
+          "options": [
+            {
+              "label": "100％和0％"
+            },
+            {
+              "label": "100％，50％和0％"
+            },
+            {
+              "label": "100％，75％，50％，25％和0％"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "用戶界面",
+      "fields": [
+        {
+          "label": "“檢查”按鈕標籤",
+          "default": "檢查"
+        },
+        {
+          "label": "“提交”按鈕標籤",
+          "default": "提交"
+        },
+        {
+          "label": "“顯示解答”按鈕標籤",
+          "default": "顯示解答"
+        },
+        {
+          "label": "“重試”按鈕標籤",
+          "default": "重試"
+        },
+        {
+          "label": "信心",
+          "description": "@percent 是一個占位符，將被相應的值替換。",
+          "default": "我有 @percent 的把握。"
+        },
+        {
+          "label": "您的結果",
+          "default": "您的結果"
+        }
+      ]
+    },
+    {
+      "label": "輔助功能文本",
+      "fields": [
+        {
+          "label": "“檢查”按鈕的輔助技術描述",
+          "default": "檢查答案。答案將被標記為正確、不正確或未回答。"
+        },
+        {
+          "label": "“顯示解答”按鈕的輔助技術描述",
+          "default": "顯示解答。任務將被標記為其正確解答。"
+        },
+        {
+          "label": "“重試”按鈕的輔助技術描述",
+          "default": "重試任務。重置所有回答並重新開始任務。"
+        },
+        {
+          "label": "您的結果",
+          "description": "@score 將被替換為得分數字。@total 將被替換為最大可能得分。",
+          "default": "您獲得 @score 分，最高可能得分為 @total 分"
+        },
+        {
+          "label": "選擇信心並標記答案",
+          "default": "選擇您的信心並標記為正確或不正確"
+        },
+        {
+          "label": "標記為正確或不正確",
+          "default": "標記為正確或不正確"
+        },
+        {
+          "label": "標記答案為正確/不正確",
+          "description": "@status 是一個占位符，將被相應的值替換。",
+          "default": "將答案標記為 @status"
+        },
+        {
+          "label": "正確",
+          "default": "正確"
+        },
+        {
+          "label": "不正確",
+          "default": "不正確"
+        },
+        {
+          "label": "無法展開該項目",
+          "default": "該項目目前無法展開。"
+        },
+        {
+          "label": "顯示下一個答案選項",
+          "description": "@option 是一個占位符，將被相應的值替換。",
+          "default": "顯示下一個答案選項：@option"
+        },
+        {
+          "label": "沒有更多答案選項",
+          "default": "沒有更多答案選項可標記。"
+        },
+        {
+          "label": "您將此標記為正確/不正確",
+          "description": "@correctness 是一個占位符，將被相應的值替換。",
+          "default": "您將此標記為 @correctness"
+        },
+        {
+          "label": "信心",
+          "description": "@value 是一個占位符，將被相應的值替換。",
+          "default": "信心：@value"
+        },
+        {
+          "label": "您的答案正確/不正確",
+          "description": "@correctness 是一個占位符，將被相應的值替換。",
+          "default": "您的答案是 @correctness"
+        },
+        {
+          "label": "正確答案為：正確/不正確",
+          "description": "@correctness 是一個占位符，將被相應的值替換。",
+          "default": "正確答案是將此標記為 @correctness"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,118 @@
+{
+  "semantics": [
+    {
+      "label": "图像",
+      "description": "要使用的图像。"
+    },
+    {
+      "label": "视觉设置",
+      "description": "这些选项将允许您控制视觉设置。",
+      "fields": [
+        {
+          "label": "图像宽度",
+          "description": "选择给定图像应该覆盖的空间的宽度。图像的高度将相应地缩放，永远不会超过100%的宽度。",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100 %"
+            },
+            {
+              "label": "图像的自然宽度"
+            }
+          ]
+        },
+        {
+          "label": "图像对齐",
+          "description": "选择图像相对于其他内容的位置。",
+          "options": [
+            {
+              "label": "左侧"
+            },
+            {
+              "label": "中间"
+            },
+            {
+              "label": "右侧"
+            }
+          ]
+        },
+        {
+          "label": "变焦镜头宽度",
+          "description": "将变焦镜头的宽度设置为图像宽度的百分比(例如20%)或固定的像素值(例如160px)。",
+          "default": "20%"
+        },
+        {
+          "label": "变焦镜头高度",
+          "description": "将变焦镜头的高度设置为图像高度的百分比(例如25%)或以像素为单位的固定值(例如90px)。",
+          "default": "25%"
+        },
+        {
+          "label": "变焦时图像变暗",
+          "description": "如果设置，图像将变暗，以加强变焦的聚焦效果。"
+        }
+      ]
+    },
+    {
+      "label": "行为设置",
+      "description": "这些选项将允许您控制任务的行为。",
+      "fields": [
+        {
+          "label": "自动缩放",
+          "description": "如果勾选此项，图像在悬停时自动放大。否则，用户需要切换放大和关闭。"
+        },
+        {
+          "label": "隐藏放大指示器",
+          "description": "放大指示器用作键盘使用的按钮。隐藏它不会阻止它的工作，但用户将有更少的导航信息。"
+        }
+      ]
+    },
+    {
+      "label": "屏幕阅读器",
+      "fields": [
+        {
+          "label": "放大",
+          "description": "放大按钮的标签(仅对屏幕阅读器可见)。",
+          "default": "放大"
+        },
+        {
+          "label": "放大激活。",
+          "description": "当放大被激活时读取。",
+          "default": "放大激活。"
+        },
+        {
+          "label": "放大停用。",
+          "description": "放大停用时读取。",
+          "default": "放大停用。"
+        },
+        {
+          "label": "说明",
+          "description": "如何使用键盘的说明。当放大激活时读取",
+          "default": "使用方向键移动放大镜。使用加号键放大。使用减号键缩小。"
+        },
+        {
+          "label": "按比例放大",
+          "description": "当缩放比例改变时读取。@magnification是一个占位符，将被相应的值替换。",
+          "default": "放大到@放大倍率为1。"
+        },
+        {
+          "label": "镜头移动到",
+          "description": "当放大镜移动时读取。@positionHorizontal和@positionVertical是占位符，它们将被各自的值替换。",
+          "default": "将镜头水平移动到@positionHorizontal，垂直移动到@positionVertical。"
+        },
+        {
+          "label": "未知",
+          "description": "当无法确定镜头的位置时的备用文本。",
+          "default": "未知"
+        }
+      ]
+    }
+  ]
+}

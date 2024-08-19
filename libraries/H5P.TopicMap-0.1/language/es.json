@@ -1,0 +1,497 @@
+{
+  "semantics": [
+    {
+      "label": "Editor de mapas temáticos",
+      "fields": [
+        {
+          "label": "Elementos del mapa temático",
+          "entity": "Elemento del mapa temático",
+          "field": {
+            "label": "Elemento",
+            "fields": [
+              {
+                "label": "Id"
+              },
+              {
+                "label": "Posición X como porcentaje del ancho del contenedor"
+              },
+              {
+                "label": "Posición Y como porcentaje de la altura del contenedor"
+              },
+              {
+                "label": "Ancho como porcentaje del ancho del contenedor"
+              },
+              {
+                "label": "Altura como porcentaje de la altura del contenedor"
+              },
+              {
+                "label": "Etiqueta"
+              },
+              {
+                "label": "Descripción"
+              },
+              {
+                "label": "Imagen del tema",
+                "description": "Imagen de fondo de la tarjeta e imagen encima del texto en el cuadro de diálogo"
+              },
+              {
+                "label": "Texto alternativo de la imagen del tema",
+                "description": "Texto alternativo para la imagen que utilizan los lectores de pantalla"
+              },
+              {
+                "label": "Diálogo",
+                "fields": [
+                  {
+                    "label": "Mostrar área de texto de notas"
+                  },
+                  {
+                    "label": "Número máximo de caracteres",
+                    "description": "Especifica el número máximo de caracteres para la nota."
+                  },
+                  {
+                    "label": "Texto"
+                  },
+                  {
+                    "label": "Vídeo"
+                  },
+                  {
+                    "label": "Audio",
+                    "fields": [
+                      {
+                        "label": "Audio"
+                      },
+                      {
+                        "label": "Subtexto"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Enlaces",
+                    "description": "Estos enlaces están como enlaces auxiliares para el usuario en la ventana modal del elemento",
+                    "entity": "elemntoenlace",
+                    "field": {
+                      "label": "Enlace",
+                      "fields": [
+                        {
+                          "label": "Id"
+                        },
+                        {
+                          "label": "Etiqueta"
+                        },
+                        {
+                          "label": "URL"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Mostrar la opción de añadir enlaces"
+                  }
+                ]
+              },
+              {
+                "label": "Índice",
+                "description": "⚠️ Función avanzada: se utiliza para configurar manualmente el orden de las pestañas."
+              }
+            ]
+          }
+        },
+        {
+          "label": "Flechas",
+          "entity": "elementoflecha",
+          "field": {
+            "label": "Flecha",
+            "fields": [
+              {
+                "label": "Id"
+              },
+              {
+                "label": "Posición porcentual del elemento de inicio",
+                "fields": [
+                  {
+                    "label": "Posición X como porcentaje del ancho del contenedor"
+                  },
+                  {
+                    "label": "Posición Y como porcentaje de la altura del contenedor"
+                  }
+                ]
+              },
+              {
+                "label": "Posición porcentual del elemento de inicio",
+                "fields": [
+                  {
+                    "label": "Posición X como porcentaje del ancho del contenedor"
+                  },
+                  {
+                    "label": "Posición Y como porcentaje de la altura del contenedor"
+                  }
+                ]
+              },
+              {
+                "label": "Posición de cuadrícula del elemento de inicio",
+                "fields": [
+                  {
+                    "label": "Posición X como coordenada de cuadrícula"
+                  },
+                  {
+                    "label": "Posición Y como coordenada de cuadrícula"
+                  }
+                ]
+              },
+              {
+                "label": "Posición de cuadrícula del elemento de inicio",
+                "fields": [
+                  {
+                    "label": "Posición X como coordenada de cuadrícula"
+                  },
+                  {
+                    "label": "Posición Y como coordenada de cuadrícula"
+                  }
+                ]
+              },
+              {
+                "label": "ID del elemento de inicio"
+              },
+              {
+                "label": "ID del elemento final"
+              },
+              {
+                "label": "Etiqueta",
+                "description": "La etiqueta la utilizan los lectores de pantalla y la página de resumen"
+              },
+              {
+                "label": "Descripción",
+                "description": "La descripción se muestra en la parte superior de la imagen de fondo, debajo de la etiqueta"
+              },
+              {
+                "label": "Imagen del tema",
+                "description": "Imagen encima del texto en el diálogo"
+              },
+              {
+                "label": "Texto alternativo de la imagen del tema",
+                "description": "Texto alternativo para la imagen que utilizan los lectores de pantalla"
+              },
+              {
+                "label": "Tipo de flecha",
+                "options": [
+                  {
+                    "label": "Direccional"
+                  },
+                  {
+                    "label": "Bidireccional"
+                  },
+                  {
+                    "label": "No direccional"
+                  }
+                ]
+              },
+              {
+                "label": "Mostrar punta de flecha final"
+              },
+              {
+                "label": "Diálogo",
+                "fields": [
+                  {
+                    "label": "Mostrar área de texto de notas"
+                  },
+                  {
+                    "label": "Número máximo de caracteres",
+                    "description": "Especifica el número máximo de caracteres para la nota."
+                  },
+                  {
+                    "label": "Texto"
+                  },
+                  {
+                    "label": "Vídeo"
+                  },
+                  {
+                    "label": "Audio",
+                    "fields": [
+                      {
+                        "label": "Audio"
+                      },
+                      {
+                        "label": "Subtexto"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Enlaces",
+                    "description": "Estos enlaces son como enlaces auxiliares para el usuario en la ventana modal del elemento",
+                    "entity": "elementoenlace",
+                    "field": {
+                      "label": "Enlace",
+                      "fields": [
+                        {
+                          "label": "Id"
+                        },
+                        {
+                          "label": "Etiqueta"
+                        },
+                        {
+                          "label": "URL"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "label": "Mostrar la opción de añadir enlaces"
+                  }
+                ]
+              },
+              {
+                "label": "Índice"
+              },
+              {
+                "label": "Puntos de ruptura de flecha",
+                "entity": "punto de ruptura",
+                "field": {
+                  "label": "Punto de ruptura",
+                  "fields": [
+                    {
+                      "label": "Posición X como índice de cuadrícula"
+                    },
+                    {
+                      "label": "Posición Y como índice de cuadrícula"
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Puntos de ruptura de flecha relativos",
+                "entity": "punto de ruptura",
+                "field": {
+                  "label": "Punto de ruptura",
+                  "fields": [
+                    {
+                      "label": "Posición X como porcentaje del ancho del contenedor"
+                    },
+                    {
+                      "label": "Posición Y como porcentaje de la altura del contenedor"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "Imagen de Fondo"
+        },
+        {
+          "label": "Tema de color",
+          "options": [
+            {
+              "label": "Azul"
+            },
+            {
+              "label": "Verde"
+            },
+            {
+              "label": "Rojo"
+            },
+            {
+              "label": "Gris"
+            }
+          ]
+        },
+        {
+          "label": "Cuadrícula",
+          "fields": [
+            {
+              "label": "Número de columnas"
+            },
+            {
+              "label": "Número de filas"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Configuraciones del comportamiento"
+    },
+    {
+      "label": "Adaptación local",
+      "fields": [
+        {
+          "label": "Diálogo para Cerrar",
+          "description": "Utilizado por lectores de pantalla",
+          "default": "Diálogo para Cerrar"
+        },
+        {
+          "label": "Audio",
+          "description": "Se muestra delante de las declaraciones de derechos de autor",
+          "default": "Audio"
+        },
+        {
+          "label": "Foto",
+          "description": "Se muestra delante de las declaraciones de derechos de autor",
+          "default": "Foto"
+        },
+        {
+          "label": "Vídeo",
+          "description": "Se muestra delante de las declaraciones de derechos de autor",
+          "default": "Vídeo"
+        },
+        {
+          "label": "Etiqueta de guardado de notas",
+          "default": "Guardando…"
+        },
+        {
+          "label": "Etiqueta de nota guardada",
+          "default": "Guardada"
+        },
+        {
+          "label": "Etiqueta de límite de caracteres excedido",
+          "default": "Límite de caracteres excedido"
+        },
+        {
+          "label": "Marcador de posición de nota",
+          "default": "Escribe tus notas aquí…"
+        },
+        {
+          "label": "Marcar nota como hecha",
+          "default": "Marcar como hecho"
+        },
+        {
+          "label": "Etiquetas de recursos de diálogo: Enlaces relevantes",
+          "default": "Enlaces relevantes"
+        },
+        {
+          "label": "Etiquetas de recursos de diálogo: Enlaces personalizados",
+          "default": "Tus enlaces"
+        },
+        {
+          "label": "Etiquetas de recursos de diálogo: Agregar",
+          "default": "Agregar"
+        },
+        {
+          "label": "Etiqueta de botón de pantalla completa - ingresar",
+          "default": "Entrar en modo de pantalla completa"
+        },
+        {
+          "label": "Etiqueta de botón de pantalla completa - salir",
+          "default": "Salir del modo de pantalla completa"
+        },
+        {
+          "label": "Etiqueta de la lista de pestañas de la barra de navegación",
+          "description": "Utilizado por lectores de pantalla",
+          "default": "Barra de navegación"
+        },
+        {
+          "label": "Etiqueta de la sección del mapa de temas de la barra de navegación",
+          "default": "Mapa temático"
+        },
+        {
+          "label": "Etiqueta de la sección de notas de la barra de navegación",
+          "default": "Mis notas"
+        },
+        {
+          "label": "Etiquetas de diálogo de recursos",
+          "default": "Recursos"
+        },
+        {
+          "label": "Texto",
+          "default": "Texto"
+        },
+        {
+          "label": "Nota",
+          "default": "Nota"
+        },
+        {
+          "label": "Lista de pestañas",
+          "default": "Lista de pestañas"
+        },
+        {
+          "label": "Título de la sección de notas de la barra de navegación",
+          "default": "Mis notas"
+        },
+        {
+          "label": "Cuerpo de la sección de notas de la barra de navegación",
+          "default": "Esta es una vista general de sus notas. Están guardadas localmente en este navegador. Usted puede imprimirlas o copiarla a un documento."
+        },
+        {
+          "label": "Etiqueta del botón de impresión de notas de la barra de navegación",
+          "default": "Imprimir"
+        },
+        {
+          "label": "Navbar notes copy button label",
+          "default": "Copy"
+        },
+        {
+          "label": "Etiqueta de borrado de todas las notas en la barra de navegación",
+          "default": "Eliminar todas las notas"
+        },
+        {
+          "label": "Etiqueta de lista de notas vacía en la barra de navegación",
+          "default": "No hay notas de diálogo disponibles en este mapa temático."
+        },
+        {
+          "label": "Etiqueta de nota no presente en barra de navegación",
+          "default": "━ Aún no se han añadido notas"
+        },
+        {
+          "label": "Ventana de confirmación de eliminación de todas las notas",
+          "default": "¿Estás seguro de que quieres eliminar todas tus notas?"
+        },
+        {
+          "label": "Etiqueta de confirmación de eliminación de todas las notas",
+          "default": "Borrar"
+        },
+        {
+          "label": "Etiqueta para rechazar borrado de todas las notas",
+          "default": "Cancelar"
+        },
+        {
+          "label": "Texto descriptivo de la barra de progreso",
+          "default": "Nota de progreso: @markedNotes de @totalNotes notas marcadas como hechas"
+        },
+        {
+          "label": "Etiqueta de envío de todos los datos de notas en la barra de navegación",
+          "default": "Enviar todos los datos"
+        },
+        {
+          "label": "Etiqueta de ventana de confirmación de envío de todas las notas",
+          "default": "¿Estás seguro de que quieres enviar todos tus datos?"
+        },
+        {
+          "label": "Etiqueta de confirmación de enviar todos los datos",
+          "default": "Enviar"
+        },
+        {
+          "label": "Etiqueta negar enviar todos los datos",
+          "default": "Cancelar"
+        },
+        {
+          "label": "Texto descriptivo para flecha direccional",
+          "default": "Flecha desde @startItem a @endItem"
+        },
+        {
+          "label": "Texto descriptivo para flecha bi-direccional",
+          "default": "Flecha entre @startItem y @endItem"
+        },
+        {
+          "label": "Texto descriptivo para nota estado hecho",
+          "default": "Nota marcada como hecha"
+        },
+        {
+          "label": "Texto descriptivo para estado de nota iniciado",
+          "default": "Nota iniciada"
+        },
+        {
+          "label": "Texto descriptivo para estado de nota predeterminado",
+          "default": "Nota vacía"
+        },
+        {
+          "label": "Texto descriptivo para área de texto de nota",
+          "default": "Área de texto con límite de @max caracteres."
+        },
+        {
+          "label": "Texto descriptivo para número de caracteres de nota",
+          "default": "@count de @max caracteres"
+        }
+      ]
+    }
+  ]
+}

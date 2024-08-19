@@ -1,0 +1,296 @@
+{
+  "semantics": [
+    {
+      "label": "Mostrar a pantalla de título",
+      "description": "Se está marcado, aparecerá unha pantalla de título ao comezar."
+    },
+    {
+      "label": "Pantalla de título",
+      "fields": [
+        {
+          "label": "Introdución",
+          "placeholder": "Benvido a ...",
+          "default": "<p style=\"text-align: center;\"></p>"
+        },
+        {
+          "label": "Medio de pantalla de título"
+        }
+      ]
+    },
+    {
+      "label": "Textos de introdución",
+      "fields": [
+        {
+          "label": "Introdución ao filtrado e selección",
+          "description": "Explica o que se espera que fagan os usuarios ao filtrar e seleccionar contido."
+        },
+        {
+          "label": "Introdución para a reordenación",
+          "description": "Explica o que se espera que fagan os usuarios ao reordenar o contido."
+        },
+        {
+          "label": "Introdución para ver",
+          "description": "Explica o que se espera que fagan os usuarios ao ver contido."
+        }
+      ]
+    },
+    {
+      "label": "Contidos",
+      "entity": "contido",
+      "widgets": [
+        {
+          "label": "Por defecto"
+        }
+      ],
+      "field": {
+        "label": "Contido",
+        "fields": [
+          {
+            "label": "Etiqueta",
+            "description": "Etiqueta para o contido. A etiqueta establecerase co título dos metadatos se non se establece ningunha etiqueta, imaxe ou tráiler."
+          },
+          {
+            "label": "Imaxe",
+            "description": "Imaxe ilustrativa opcional."
+          },
+          {
+            "label": "Tráiler",
+            "description": "Tráiler opcional para o contido."
+          },
+          {
+            "label": "Palabras chave",
+            "description": "Introduce palabras clave para o contido separadas por unha coma (,)."
+          },
+          {
+            "label": "Contido",
+            "description": "Escolle o tipo de contido que che gustaría engadir."
+          }
+        ]
+      }
+    },
+    {
+      "label": "Configuración visual",
+      "fields": [
+        {
+          "label": "Ancho da tarxeta",
+          "description": "Establece o ancho da tarxeta predeterminado como un valor CSS (por exemplo, 100px ou 14rem ou 15em). Se non especificas a unidade, asumirase px.",
+          "default": "14rem"
+        },
+        {
+          "label": "Tamaño da imaxe",
+          "description": "Escolle como deberán dimensionarse as imaxes de contido.",
+          "options": [
+            {
+              "label": "Usar a relación de tamaño da imaxe"
+            },
+            {
+              "label": "Usar unha proporción personalizada"
+            }
+          ]
+        },
+        {
+          "label": "Ancho da proporción personalizada",
+          "description": "Establece o compoñente de proporción horizontal para as imaxes do contido."
+        },
+        {
+          "label": "Altura da proporción personalizada",
+          "description": "Establece o compoñente de proporción vertical para as imaxes do contido."
+        },
+        {
+          "label": "Máximo de liñas do tráiler",
+          "description": "Establece o número máximo de liñas para mostrar para o tráiler do contido."
+        }
+      ]
+    },
+    {
+      "label": "Configuración do comportamento",
+      "fields": [
+        {
+          "label": "Comeza con todo",
+          "description": "Escolle se todos os contidos deben estar seleccionados por defecto listos para ser usados."
+        },
+        {
+          "label": "Preselección de todas as palabras clave",
+          "description": "Escolle se deben seleccionarse todas ou ningunha palabra clave ao iniciar o contido."
+        },
+        {
+          "label": "Vincular a selección ás etiquetas",
+          "description": "Escolle se as tarxetas deben seleccionarse/deseleccionarse automaticamente cando se selecciona/desmarca unha etiqueta."
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "label": "Empezar",
+          "description": "Etiqueta do botón de inicio.",
+          "default": "Empezar"
+        },
+        {
+          "label": "Seleccionado",
+          "description": "Etiqueta de estado do contido seleccionado.",
+          "default": "seleccionado"
+        },
+        {
+          "label": "Estado: sen iniciar",
+          "description": "Etiqueta de estado do contido non iniciado.",
+          "default": "sen iniciar"
+        },
+        {
+          "label": "Estado: visto",
+          "description": "Etiqueta de estado do contido visto.",
+          "default": "visto"
+        },
+        {
+          "label": "Estado: rematado",
+          "description": "Etiqueta de estado do contido completado.",
+          "default": "completado"
+        },
+        {
+          "label": "Estado: borrado",
+          "description": "Etiqueta de estado do contido borrado.",
+          "default": "despexado"
+        },
+        {
+          "label": "Non hai tarxetas para mostrar",
+          "description": "Mensaxe cando ningún contido coincida con ningunha das palabras clave escollidas.",
+          "default": "Debes seleccionar palabras clave para ver os contidos a seleccionar."
+        },
+        {
+          "label": "Non se seleccionou ningunha tarxeta",
+          "description": "Mensaxe cando non se seleccionou ningún contido.",
+          "default": "Non seleccionaches ningún contido."
+        },
+        {
+          "label": "Contido sen título",
+          "description": "Etiqueta alternativa.",
+          "default": "Contido sen título"
+        },
+        {
+          "label": "Diálogo de confirmación para restablecer: cabeceira",
+          "description": "Cabeceira do diálogo para confirmar o restablecemento de todos os contidos.",
+          "default": "Queres restablecer todos os contidos?"
+        },
+        {
+          "label": "Diálogo de confirmación para restablecer: texto",
+          "description": "Texto para o diálogo para confirmar o restablecemento de todos os contidos.",
+          "default": "Restableceranse todos os teus contidos e o seu estado, pero a túa selección permanecerá como está. Queres continuar?"
+        },
+        {
+          "label": "Diálogo de confirmación para restablecer: cabeceira",
+          "description": "Cabeceira do diálogo para confirmar o restablecemento de todos os contidos e seleccións.",
+          "default": "Queres restablecer todos os contidos e seleccións?"
+        },
+        {
+          "label": "Diálogo de confirmación para restablecer: texto",
+          "description": "Texto para o diálogo para confirmar o restablecemento de todos os contidos e seleccións.",
+          "default": "Restableceranse todos os teus contidos, o seu estado e as túas seleccións. Queres continuar?"
+        },
+        {
+          "label": "Si",
+          "default": "Si"
+        },
+        {
+          "label": "Non",
+          "default": "Non"
+        },
+        {
+          "label": "Non hai contido",
+          "default": "Non se definiu ningún contido válido."
+        }
+      ],
+      "label": "Interface de usuario"
+    },
+    {
+      "fields": [
+        {
+          "label": "Descrición do exercicio",
+          "description": "@label é un marcador de posición que se substituirá polo valor respectivo.",
+          "default": "Exercicio: @label"
+        },
+        {
+          "label": "Descrición da barra de ferramentas",
+          "default": "Barra de ferramentas. Usa a combinación de teclas Alt máis T para centrar a barra de ferramentas máis tarde."
+        },
+        {
+          "label": "Botón: Seleccionar modo",
+          "default": "Cambia ao modo de selección"
+        },
+        {
+          "label": "Botón: Modo reordenar",
+          "default": "Cambia ao modo de reordenación"
+        },
+        {
+          "label": "Botón: modo de visualización",
+          "default": "Cambia ao modo de visualización"
+        },
+        {
+          "label": "Botón: Restablecer",
+          "default": "Reiniciar exercicios"
+        },
+        {
+          "label": "Botón: Restablecer todo",
+          "default": "Restablecer exercicios e seleccións"
+        },
+        {
+          "label": "Selector de etiquetas",
+          "default": "Selector de etiquetas. Usar para filtrar exercicios."
+        },
+        {
+          "label": "Abriuse o selector de etiquetas",
+          "default": "Abriuse o selector de etiquetas."
+        },
+        {
+          "label": "Selector de etiquetas pechado",
+          "default": "Pechouse o selector de etiquetas."
+        },
+        {
+          "label": "Seleccionado",
+          "default": "Seleccionado"
+        },
+        {
+          "label": "Non seleccionado",
+          "default": "Non seleccionado"
+        },
+        {
+          "label": "Seleccionado para reordenar",
+          "default": "Seleccionado para reordenar"
+        },
+        {
+          "label": "Descrición da lista de contido: seleccionar o modo",
+          "default": "Selecciona todos os exercicios nos que queres traballar"
+        },
+        {
+          "label": "Descrición da lista de contido: modo de reordenación",
+          "default": "Cambiar a orde dos exercicios"
+        },
+        {
+          "label": "Descrición da lista de contido: modo de visualización",
+          "default": "Fai os exercicios seleccionados"
+        },
+        {
+          "label": "Pechar",
+          "default": "Pechar"
+        },
+        {
+          "label": "Cambia ao modo de selección",
+          "default": "Cambiouse ao modo de selección."
+        },
+        {
+          "label": "Cambiouse ao modo de reordenación",
+          "default": "Cambiouse ao modo de reordenación."
+        },
+        {
+          "label": "Cambiouse ao modo de visualización",
+          "default": "Cambiouse ao modo de visualización."
+        },
+        {
+          "label": "Contidos intercambiados",
+          "description": "@position1 e ¹position2 son marcadores de posición e substituiranse polos valores respectivos.",
+          "default": "Intercambiouse o contido na posición @position1 co contido na posición @position2."
+        }
+      ],
+      "label": "Textos de accesibilidade"
+    }
+  ]
+}

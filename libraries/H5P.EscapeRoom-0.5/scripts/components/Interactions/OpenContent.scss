@@ -1,0 +1,102 @@
+@import '../../styles/icons';
+@import '../../styles/colors';
+
+$labelPadding: 0.5em;
+$labelWidth: 9em;
+
+.open-content-wrapper {
+  position: absolute;
+  display: inline-flex;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &:hover {
+    z-index: 3;
+  }
+  &.active-element {
+    z-index: 2;
+  }
+  .open-content {
+    border: .25em solid transparent;
+    width: $buttonSize;
+    height: $buttonSize;
+    padding: 0;
+    line-height: 1;
+    background-color: white;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    z-index: 1;
+    box-shadow: 0.2em 0.2em 0.3em rgba(0,0,0,0.2);
+    position: static;
+    overflow: hidden;
+    .inner-content {
+      padding: 1rem;
+      img {
+        width: 100%;
+      }
+    }
+    &.dragging, &.focused{
+      z-index: 3;
+    }
+    &--editor {
+      /* for "deactivating" a tags so we don't accidentally click them when positioning the content box*/
+      a {
+        pointer-events: none;
+        cursor: default;
+      }
+    }
+    .drag {
+      width: 2em;
+      height: 2em;
+      padding: 0;
+      background-color: $dragBg;
+      border: 0;
+      position: absolute;
+      cursor: pointer;
+      z-index: 1;
+      border-radius: 2px;
+      &:before {
+        font-family: "360-image";
+        vertical-align: middle;
+        color: $dragIcon;
+        font-size: 1.25em;
+      }
+      &--horizontal {
+        right: 0;
+        transform: translateX(50%) translateY(-50%);
+        top: 50%;
+        &:before {
+          content: $arrow-horiz-scale;
+        }
+      }
+      &--vertical {
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%) translateY(50%);
+        &:before {
+          content: $arrow-verti-scale;
+        }
+      }
+    }
+  }
+  &.render-in-3d {
+    .open-content .drag {
+      width: 3.5em;
+      height: 3.5em;
+
+      &:before {
+        font-size: 2.25em;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+

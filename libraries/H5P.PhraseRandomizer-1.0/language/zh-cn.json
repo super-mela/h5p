@@ -1,0 +1,235 @@
+{
+  "semantics": [
+    {
+      "label": "标题",
+      "description": "在工具栏中显示的可选标题。"
+    },
+    {
+      "label": "介绍",
+      "description": "可选地设置一些介绍，告诉用户该做什么。",
+      "default": "<p style=\"text-align: center;\"></p>"
+    },
+    {
+      "label": "片段",
+      "entity": "片段",
+      "widgets": [
+        {
+          "label": "默认"
+        },
+        {
+          "label": "文本的"
+        }
+      ],
+      "field": {
+        "label": "片段",
+        "fields": [
+          {
+            "label": "片段标题"
+          },
+          {
+            "label": "选项",
+            "entity": "选项",
+            "field": {
+              "label": "选项文本"
+            }
+          },
+          {
+            "label": "背景颜色"
+          }
+        ]
+      }
+    },
+    {
+      "label": "模式",
+      "options": [
+        {
+          "label": "自由"
+        },
+        {
+          "label": "测验"
+        }
+      ]
+    },
+    {
+      "label": "答案",
+      "fields": [
+        {
+          "label": "答案",
+          "entity": "答案",
+          "field": {
+            "label": "答案"
+          }
+        },
+        {
+          "label": "预设"
+        }
+      ]
+    },
+    {
+      "label": "音频设置",
+      "fields": [
+        {
+          "label": "利用内置声音提示点击下一个按钮或上一个按钮"
+        },
+        {
+          "label": "点击下一个按钮或上一个按钮",
+          "description": "将在用户点击上一个按钮或下一个按钮时播放。"
+        }
+      ]
+    },
+    {
+      "label": "行为设置",
+      "fields": [
+        {
+          "label": "生命",
+          "description": "输入用户开始时的生命数(每个错误答案将1减为0)或留空以不限制生命数。"
+        },
+        {
+          "label": "启用“重试”按钮"
+        },
+        {
+          "label": "启用“显示答案”按钮"
+        }
+      ]
+    },
+    {
+      "label": "用户界面",
+      "fields": [
+        {
+          "label": "检查",
+          "default": "检查"
+        },
+        {
+          "label": "提交",
+          "default": "提交"
+        },
+        {
+          "label": "显示答案",
+          "default": "显示答案"
+        },
+        {
+          "label": "重试",
+          "default": "重试"
+        },
+        {
+          "label": "你耗尽了生命",
+          "default": "您耗尽了生命。"
+        },
+        {
+          "label": "答案",
+          "default": "这些是答案。"
+        },
+        {
+          "label": "这不是答案",
+          "default": "这不是答案。"
+        },
+        {
+          "label": "没有信息",
+          "default": "..."
+        },
+        {
+          "label": "你找到答案了!",
+          "default": "你找到答案了！"
+        },
+        {
+          "label": "你找到了所有答案！",
+          "default": "你找到了所有答案！"
+        },
+        {
+          "label": "找到答案",
+          "default": "找到答案"
+        },
+        {
+          "label": "待发现",
+          "default": "待发现"
+        }
+      ]
+    },
+    {
+      "label": "辅助功能文本",
+      "fields": [
+        {
+          "label": "随机化所有片段",
+          "default": "随机化所有片段"
+        },
+        {
+          "label": "“检查”按钮的辅助技术说明",
+          "default": "检查答案。回答将被标记为正确或错误。"
+        },
+        {
+          "label": "“显示答案”按钮的辅助技术说明",
+          "default": "显示答案。"
+        },
+        {
+          "label": "“重试”按钮的辅助技术说明",
+          "default": "重试该任务。重置所有片段并重新开始任务。"
+        },
+        {
+          "label": "当前标签的辅助技术描述",
+          "description": "@text是一个占位符，将被相应的值替换。",
+          "default": "当前标签:@text"
+        },
+        {
+          "label": "当前标签的辅助技术描述",
+          "description": "@texts是一个占位符，将被相应的值替换。",
+          "default": "当前标签:@文本"
+        },
+        {
+          "label": "“上一个文本”按钮的辅助技术说明",
+          "default": "之前的文本"
+        },
+        {
+          "label": "“下一个文本”按钮的辅助技术描述",
+          "default": "下一个文本"
+        },
+        {
+          "label": "旋转按钮辅助技术说明",
+          "description": "@number是一个占位符，将被相应的值替换。",
+          "default": "旋转段@number以获得它的随机文本。"
+        },
+        {
+          "label": "宣布答案的辅助技术描述",
+          "description": "@number和@combination是占位符，将被各自的值替换。",
+          "default": "这些是答案(@总数):@组合。"
+        },
+        {
+          "label": "宣布“禁用”的辅助技术说明",
+          "default": "禁用"
+        },
+        {
+          "label": "宣布“随机器”的辅助技术描述",
+          "default": "随机器"
+        },
+        {
+          "label": "工具栏的辅助技术描述",
+          "default": "工具栏"
+        },
+        {
+          "label": "宣布当前片段的辅助技术描述",
+          "description": "@number和@total是占位符，将被各自的值替换。",
+          "default": "片段@number @total"
+        },
+        {
+          "label": "答案",
+          "default": "答案"
+        },
+        {
+          "label": "找到",
+          "default": "找到"
+        },
+        {
+          "label": "没有找到",
+          "default": "未找到"
+        },
+        {
+          "label": "音频按钮(未静音)",
+          "default": "静音。目前静音状态。"
+        },
+        {
+          "label": "音频按钮(静音)",
+          "default": "静音音频。目前有限。"
+        }
+      ]
+    }
+  ]
+}

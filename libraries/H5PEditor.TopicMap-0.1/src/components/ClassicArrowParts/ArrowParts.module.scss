@@ -1,0 +1,33 @@
+@use "sass:math";
+
+.headHorizontal,
+.headVertical,
+.bodyHorizontal,
+.bodyVertical {
+  fill: var(--theme-color-1);
+}
+
+.headHorizontal {
+  height: 100%;
+  width: auto;
+}
+
+.headVertical {
+  height: auto;
+  width: 100%;
+}
+
+.bodyHorizontal,
+.bodyVertical {
+  flex-grow: 1;
+  height: 100%;
+  width: 100%;
+}
+
+.mirrorX {
+  transform: scaleX(-1);
+}
+
+.mirrorY {
+  transform: scaleY(-1);
+}

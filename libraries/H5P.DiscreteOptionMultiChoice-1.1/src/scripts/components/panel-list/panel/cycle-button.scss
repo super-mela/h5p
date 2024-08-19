@@ -1,0 +1,45 @@
+@import "@styles/main";
+
+.h5p-discrete-option-multi-choice-cycle-button {
+  background-color: rgba(255,255,255,0.5);
+  border: 3px solid rgba(255,255,255,0.5); /* Same px value as used by Joubel in Interactive Book */
+  border-radius: 3px; /* Same px value as used by Joubel in Interactive Book */
+  color: rgb(23, 104, 196);
+  font-size: 1em;
+  font-weight: bold;
+  height: var(--button-size);
+  line-height: calc(var(--button-size) - 6px);
+  overflow: hidden;
+  padding: 0 0.5em 0 0.5em;
+  position: relative;
+  text-align: left;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: calc(2 * var(--button-size) + 0.5rem);
+
+  &::before {
+    content: '\f021';
+    font-family: "H5PFontAwesome4", sans-serif;
+    font-size: var(--background-size);
+    font-weight: normal;
+    margin-right: 0.5em;
+  }
+
+  &:disabled {
+    color: $color-disabled;
+    &::before {
+      color: $color-disabled;
+    }
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      background-color: $color-primary-5;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: $color-primary-15;
+    }
+  }
+}

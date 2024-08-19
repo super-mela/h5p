@@ -1,0 +1,485 @@
+{
+  "semantics": [
+    {
+      "label": "Editor für Virtuelle Touren",
+      "fields": [
+        {
+          "label": "Szenen",
+          "entity": "Szene",
+          "field": {
+            "fields": [
+              {
+                "label": "Szenentyp",
+                "options": [
+                  {
+                    "label": "360°-Bild"
+                  },
+                  {
+                    "label": "Panoramabild"
+                  },
+                  {
+                    "label": "Statisches Bild"
+                  }
+                ]
+              },
+              {
+                "label": "\"Zurück\"-Button anzeigen",
+                "description": "Button anzeigen, um zur vorherigen Szene zurückzukehren"
+              },
+              {
+                "label": "Enable \"Zoom\"",
+                "description": "Enable zooming in and out with zoom buttons, mouse wheel, touch gestures and keyboard shortcuts."
+              },
+              {
+                "label": "Szenen-Id"
+              },
+              {
+                "label": "Titel der Szene",
+                "description": "Hilft dabei, die Szene zu identifizieren"
+              },
+              {
+                "label": "Hintergrund der Szene"
+              },
+              {
+                "label": "Beschreibung der Szene",
+                "description": "Ein Text, der die Szene für die Nutzenden beschreibt"
+              },
+              {
+                "label": "Szenenbeschreibung (für Vorlesewerkzeuge)",
+                "description": "Ein Text, der die Szene für die Nutzenden beschreibt. Er wird nicht sichtbar sein, sondern nur von Vorlesewerkzeugen vorgelesen."
+              },
+              {
+                "label": "Zeige die Szenenbeschreibung beim Öffnen der Szene",
+                "description": "Zeige die Szenenbeschreibung beim ersten Öffnen der Szene"
+              },
+              {
+                "label": "Kamera-Startposition",
+                "description": "Kameraposition in Winkelangabe (oben-unten und links-rechts)"
+              },
+              {
+                "label": "Interaktionen",
+                "field": {
+                  "fields": [
+                    {
+                      "label": "Beschriftung",
+                      "description": "Wenn leer, wird keine Beschriftung angezeigt und für Vorlesewerkzeuge wird der Szenentitel verwendet"
+                    },
+                    {
+                      "label": "Einstellungen der Beschriftung",
+                      "fields": [
+                        {
+                          "label": "Position der Beschriftung",
+                          "description": "Legt fest, wo die Beschriftung angezeigt werden soll",
+                          "options": [
+                            {
+                              "label": "Verhaltenseinstellungen verwenden"
+                            },
+                            {
+                              "label": "Rechts ausgerichtet"
+                            },
+                            {
+                              "label": "Links ausgerichtet"
+                            },
+                            {
+                              "label": "Oben ausgerichtet"
+                            },
+                            {
+                              "label": "Unten ausgerichtet"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Beschriftung anzeigen",
+                          "description": "Wenn verborgen, werden Beschriftungen nur beim Darüberfahren mit der Maus angezeigt",
+                          "options": [
+                            {
+                              "label": "Verhaltenseinstellungen verwenden"
+                            },
+                            {
+                              "label": "Anzeigen"
+                            },
+                            {
+                              "label": "Verbergen"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Passworteinstellungen",
+                      "fields": [
+                        {
+                          "label": "Code für die Interaktion",
+                          "description": "Falls nicht leer, müssen die Nutzenden den Code eingeben, um den Inhalt zu öffnen. Trenne mehrere korrekte Lösungen mit einem / ab."
+                        },
+                        {
+                          "label": "Ein Hinweis für den Interaktionscode",
+                          "description": "Ein optionaler Hinweis für den Code, kann bei Bedarf leer gelassen werden"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Als Hotspot anzeigen",
+                      "description": "Ermöglicht das Hinzufügen von Interaktionsbereichen zum Hintergrundbild mit benutzerdefinierter Größe."
+                    },
+                    {
+                      "label": "Hotspot settings",
+                      "fields": [
+                        {
+                          "label": "Hotspot anzeigen, wenn der Mauszeiger darüber schwebt",
+                          "description": "Zeigt den Hotspot an, wenn der Mauszeiger über dem Bereich schwebt."
+                        },
+                        {
+                          "label": "Erlaube das Anwählen des Hotspots mit der Tab-Taste",
+                          "description": "Erlaubt das Anspringen des Hotspots mit der Tab-Taste. Dies ist aus Gründen der Barrierefreiheit sinnvoll."
+                        },
+                        {
+                          "default": "256,128",
+                          "label": "Werte zum Speichern der Höhe und Breite für den Hotspot"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Als offenen Inhalt in der Szene anzeigen",
+                      "description": "Ermöglicht das Anzeigen des Inhalts in einem geöffneten Dialogfeld direkt in der Szene."
+                    },
+                    {},
+                    {
+                      "label": "Interaction position"
+                    },
+                    {
+                      "label": "Button-Stil",
+                      "description": "Entscheide, wie das Icon aussehen soll.",
+                      "options": [
+                        {
+                          "label": "Textsymbol"
+                        },
+                        {
+                          "label": "Info-Symbol"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Button-Stil",
+                "description": "Lege fest, wie Buttons aussehen, die auf diese Szene verweisen. Für Szenen, die statisch sind und nicht zu weiteren Szenen führen, empfiehlt sich die Option \"Mehr Informationen\".",
+                "options": [
+                  {
+                    "label": "Neue Szene (Pfeil)"
+                  },
+                  {
+                    "label": "Mehr Informationen (Plus)"
+                  }
+                ]
+              },
+              {
+                "label": "Tontyp",
+                "description": "Entscheide, welchen Audiotyp diese Szene verwenden soll. Verwende entweder eine Tonspur oder wähle eine vorhandene Wiedergabeliste.",
+                "options": [
+                  {
+                    "label": "Tonspur"
+                  },
+                  {
+                    "label": "Wiedergabeliste"
+                  }
+                ]
+              },
+              {
+                "label": "Tonspur",
+                "description": "Füge eine Tonspur hinzu, die nur in dieser Szene gespielt wird."
+              },
+              {
+                "label": "Wiedergabeliste",
+                "description": "Hier kannst du eine existierende Wiedergabeliste auswählen."
+              },
+              {
+                "label": "Starte die Tonspur von vorne, wenn die Szene erneut geöffnet wird"
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "Wiedergabelisten"
+        },
+        {
+          "label": "Wiedergabelisten",
+          "field": {
+            "fields": [
+              {
+                "label": "Titel der Wiedergabeliste",
+                "description": "Wird genutzt, um die Wiedergabeliste zu identifizieren."
+              },
+              {
+                "label": "Tonspuren",
+                "description": "Füge der Wiedergabeliste eine Tonspur hinzu."
+              },
+              {}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Wiedergabelisten",
+      "description": "Mit diesen Optionen kannst du Wiedergabelisten für die Szenen hinzufügen.",
+      "fields": [
+        {
+          "label": "Hinzugefügte Wiedergabelisten",
+          "description": "Erstelle Wiedergabelisten, die standardmäßig für alle Szenen genutzt werden."
+        }
+      ]
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "description": "Diese Optionen legen fest, wie die Tour im Detail funktioniert.",
+      "fields": [
+        {
+          "label": "Tontyp",
+          "description": "Entscheide, welchen Audiotyp diese Szene verwenden soll. Verwende entweder eine Tonspur oder wähle eine vorhandene Wiedergabeliste.",
+          "options": [
+            {
+              "label": "Globale Tonspur"
+            },
+            {
+              "label": "Wiedergabeliste"
+            }
+          ]
+        },
+        {
+          "label": "Tonspur für alle Szenen",
+          "description": "Füge eine Tonspur hinzu, die standardmäßig in allen Szenen gespielt wird."
+        },
+        {
+          "label": "Wiedergabeliste",
+          "description": "Hier kannst du eine existierende Wiedergabeliste auswählen."
+        },
+        {
+          "label": "Zeige den \"Punkte\"-Button",
+          "description": "Zeige den Button, um die Punkte der Aufgaben anzeigen zu lassen."
+        },
+        {
+          "label": "Zeige den \"Home\"-Button",
+          "description": "Zeige den Button an, mit dem man zur Startszene gelangt."
+        },
+        {
+          "label": "Darstellungsqualität der Szenen",
+          "description": "Erlaubt die Anzahl der Segmente zu wählen, die bei der Darstellung der Szene verwendet werden sollen. Dies wirkt sich direkt auf die Darstellungsqualität aus. Erhöhe die Qualität, wenn eine Szene \"blockartig\" aussieht oder \"Wellen\" innerhalb der Szene auftreten. Höhere Qualitätsstufen führen zu längeren Ladezeiten.",
+          "options": [
+            {
+              "label": "Hohe Qualität (128x128)"
+            },
+            {
+              "label": "Mittlere Qualität (64x64)"
+            },
+            {
+              "label": "Niedrige Qualität (16x16)"
+            }
+          ]
+        },
+        {
+          "label": "Beschriftungseinstellungen",
+          "fields": [
+            {
+              "label": "Position der Beschriftung",
+              "description": "Die Standard-Position der Beschriftung. Sie kann pro Interaktion überschrieben werden.",
+              "options": [
+                {
+                  "label": "Rechts ausgerichtet"
+                },
+                {
+                  "label": "Links ausgerichtet"
+                },
+                {
+                  "label": "Oben ausgerichtet"
+                },
+                {
+                  "label": "Unten ausgerichtet"
+                }
+              ]
+            },
+            {
+              "label": "Beschriftungen anzeigen",
+              "description": "Wenn nicht ausgewählt, werden Beschriftungen nur beim Darüberfahren mit der Maus angezeigt"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Bezeichnungen und Beschriftungen",
+      "fields": [
+        {
+          "label": "Aria-Label für den Inhaltstyp",
+          "default": "Virtuelle Tour"
+        },
+        {
+          "label": "Beschriftung des \"Tonspur abspielen\"-Buttons",
+          "default": "Tonspur abspielen"
+        },
+        {
+          "label": "Beschriftung des \"Tonspur pausieren\"-Buttons",
+          "default": "Tonspur pausieren"
+        },
+        {
+          "label": "Titel des Szenendialogs",
+          "default": "Szenenbeschreibung"
+        },
+        {
+          "label": "Beschriftung des \"Kamera zurücksetzen\"-Buttons",
+          "default": "Kamera zurücksetzen"
+        },
+        {
+          "label": "Beschriftung des \"Absenden\"-Buttons",
+          "default": "Absenden"
+        },
+        {
+          "label": "Beschriftung des \"Schließen\"-Buttons",
+          "default": "Schließen"
+        },
+        {
+          "label": "Aria-Label des \"Beschriftung ausklappen\"-Buttons",
+          "default": "Beschriftung ausklappen"
+        },
+        {
+          "label": "Hinweistext, wenn der Hintergrund der 360°-Szene lädt",
+          "default": "Lade Hintergrundbild..."
+        },
+        {
+          "label": "Hinweistext, wenn kein Inhalt vorhanden ist",
+          "default": "Kein Inhalt"
+        },
+        {
+          "label": "Beschriftung des \"Gehe zu Szene\"-Buttons",
+          "default": "Gehe zu Szene"
+        },
+        {
+          "label": "Beschriftung des \"Bearbeiten\"-Buttons",
+          "default": "Bearbeiten"
+        },
+        {
+          "label": "Beschriftung des \"Löschen\"-Buttons",
+          "default": "Löschen"
+        },
+        {
+          "label": "Punkte",
+          "default": "Punkte"
+        },
+        {
+          "label": "Aufgabe",
+          "default": "Aufgabe"
+        },
+        {
+          "label": "Gesamtpunktzahl",
+          "default": "Gesamtpunktzahl"
+        },
+        {
+          "label": "Beschriftung des \"Zeige Punkteübersicht\"-Buttons",
+          "default": "Zeige Punkteübersicht"
+        },
+        {
+          "label": "Szene",
+          "default": "Szene"
+        },
+        {
+          "label": "Unbenannt",
+          "default": "Unbenannt"
+        },
+        {
+          "label": "Gehe zur Startszene",
+          "default": "Gehe zur Startszene"
+        },
+        {
+          "label": "Du bist bei der Startszene",
+          "default": "Du bist bei der Startszene"
+        },
+        {
+          "label": "Zugänglich",
+          "default": "Zugänglich"
+        },
+        {
+          "label": "Gesperrt",
+          "default": "Gesperrt"
+        },
+        {
+          "label": "Durchsuche die Szene, bis du den Code findest",
+          "default": "Durchsuche die Szene, bis du den Code findest"
+        },
+        {
+          "label": "Der Code war falsch, versuche es noch einmal.",
+          "default": "Der Code war falsch, versuche es noch einmal."
+        },
+        {
+          "label": "Der Inhalt wurde zugänglich gemacht!",
+          "default": "Der Inhalt wurde zugänglich gemacht!"
+        },
+        {
+          "label": "Code",
+          "default": "Code"
+        },
+        {
+          "label": "Freigeschalteter Inhalt (Weiter)",
+          "default": "Weiter"
+        },
+        {
+          "label": "Gesperrter Inhalt (Entsperren)",
+          "default": "Entsperren"
+        },
+        {
+          "label": "Ziehe horizontal zum Skalieren (für Vorlesewerkzeuge)",
+          "default": "Ziehe horizontal zum Skalieren"
+        },
+        {
+          "label": "Ziehe vertikal zum Skalieren (für Vorlesewerkzeuge)",
+          "default": "Ziehe vertikal zum Skalieren"
+        },
+        {
+          "label": "Hinweis",
+          "default": "Hinweis"
+        },
+        {
+          "label": "Gesperrter Inhalt",
+          "default": "Gesperrter Inhalt"
+        },
+        {
+          "label": "Zurück",
+          "default": "Zurück"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (enter)",
+          "default": "Enter fullscreen mode"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (exit)",
+          "default": "Exit fullscreen mode"
+        },
+        {
+          "label": "Main toolbar",
+          "default": "Main toolbar"
+        },
+        {
+          "label": "No valid scenes set",
+          "default": "No valid scenes have been set."
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom in button",
+          "default": "Zoom in"
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom out button",
+          "default": "Zoom out"
+        },
+        {
+          "label": "Zoom toolbar",
+          "default": "Zoom toolbar"
+        },
+        {
+          "label": "Zoom aria text for screenreaders",
+          "default": ":num% zoomed in"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,123 @@
+@use "./../../abstracts/mixins" as *;
+
+.navbarWrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.25rem;
+  background-color: var(--theme-color-2);
+}
+
+.navbarTitle {
+  background-color: transparent;
+  border: none;
+  border-radius: 0;
+  color: #ffffff;
+  flex-grow: 1;
+  padding-left: 0.25rem;
+  text-align: left;
+}
+
+.sectionsWrapper {
+  position: relative;
+}
+
+.sectionsMenu {
+  display: flex;
+  flex-direction: row;
+}
+
+.progressBarWrapper {
+  display: none;
+}
+
+.fullscreenButton {
+  transform: scale(1);
+}
+
+.xSmallUp {
+  .navbarWrapper {
+    padding: 0.5rem;
+  }
+
+  .progressBarWrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 0.3rem;
+    margin-right: 0.5rem;
+  }
+
+  /**
+   * {1} The width of the text when it says "100%"
+   */
+  .progressPercentage {
+    color: var(--theme-color-4);
+    cursor: default;
+    min-width: 2.625rem; /* {1} */
+    text-align: right;
+  }
+
+  .progress[value] {
+    /* Reset the default appearance */
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+
+    /* Get rid of default border in Firefox. */
+    border: none;
+
+    /* Set dimensions */
+    width: 10rem;
+    height: 1.25rem;
+
+    /* For Firefox */
+    background-color: var(--theme-color-1);
+    border-radius: 0.625rem;
+
+    &::-webkit-progress-bar {
+      background-color: var(--theme-color-1);
+      border-radius: 0.625rem;
+    }
+
+    &::-webkit-progress-value {
+      background-color: var(--theme-color-4);
+      border-radius: 0.625rem;
+      transition: width 1s ease-in-out 0s;
+    }
+
+    /* For Firefox */
+    &::-moz-progress-bar {
+      background-color: var(--theme-color-4);
+      border-radius: 0.625rem;
+      /* Transition is not working in Firefox */
+    }
+  }
+
+  /* HTML fallback for progress element */
+  .progressBar {
+    width: 10rem;
+    height: 1.25rem;
+    border: none;
+    border-radius: 0.625rem;
+    background-color: var(--theme-color-1);
+    position: relative;
+    display: block;
+
+    & > span {
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      background-color: var(--theme-color-4);
+      border-radius: 0.625rem;
+      transition: width 1s ease-in-out 0s;
+    }
+  }
+
+  .visuallyHidden {
+    @include visually-hidden;
+  }
+}

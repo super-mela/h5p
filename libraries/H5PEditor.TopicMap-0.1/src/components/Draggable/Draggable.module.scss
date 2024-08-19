@@ -1,0 +1,31 @@
+/**
+ * {1} The item is 2px wider and taller than it should be,
+ *     to counteract floating point errors. Moving the element
+ *     1px to the side and up will re-center it.
+ */
+.draggable {
+  background-position: 50% 50%;
+  background-size: cover;
+  cursor: move;
+  margin: -1px; /* {1} */
+  position: absolute;
+  transition: transform 0.2s ease-out;
+  will-change: transform;
+  z-index: 1;
+
+  &:not(:focus) {
+    outline: none;
+  }
+
+  &.preview {
+    transition: none;
+  }
+
+  &[aria-grabbed="true"] {
+    transition: none;
+  }
+}
+
+.inner {
+  height: 100%;
+}

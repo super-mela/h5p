@@ -1,0 +1,41 @@
+@import "@styles/main";
+
+.h5p-phrase-randomizer-button {
+  --border-width: 2px;
+  aspect-ratio: 1 / 1;
+  background: linear-gradient(#d0d3dc 0%, #fff 50%, #d0d3dc 100%);
+  border: var(--border-width) solid transparent;
+  color: $color-text;
+  font-family: "H5PFontAwesome4", sans-serif;
+  font-size: 1.25rem;
+  height: max($minimum-a11y-size, 1.5rem);
+  line-height: max($minimum-a11y-size, 1.5rem);
+  padding: 0;
+  position: relative;
+
+  &::before {
+    left: 50%;
+    margin-left: -50%;
+    position: absolute;
+    top: calc(var(--border-width) * -1);
+    width: 100%;
+  }
+
+  &:not(.disabled) {
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.95);
+    }
+
+    &:active {
+      border: var(--border-width) solid $color-text;
+      filter: brightness(0.9);
+    }
+  }
+
+  &.disabled {
+    filter: brightness(0.8);
+    cursor: auto;
+  }
+}

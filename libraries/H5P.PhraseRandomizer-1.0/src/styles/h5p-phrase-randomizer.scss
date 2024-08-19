@@ -1,0 +1,49 @@
+@import "@styles/main";
+
+.h5p-phrase-randomizer {
+  background-color: $color-background;
+  color: $color-text;
+  width: 100%;
+
+  .h5p-phrase-randomizer-main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    justify-content: center;
+
+    .h5p-phrase-randomizer-introduction {
+      width: 100%;
+
+      .h5p-phrase-randomizer-intro-content {
+        margin: 0;
+
+        > *:first-child {
+          margin-top: 0;
+        }
+      }
+    }
+  }
+
+  .h5p-question-feedback-content.has-content {
+    text-align: center;
+  }
+
+  .h5p-question-scorebar {
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  &.h5p-standalone {
+    .h5p-question-buttons {
+      display: flex;
+      justify-content: center;
+      margin-left: 0;
+      margin-right: 0;
+      width: 100%;
+    }
+  }
+}

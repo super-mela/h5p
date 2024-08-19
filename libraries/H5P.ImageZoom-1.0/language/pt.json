@@ -1,0 +1,118 @@
+{
+  "semantics": [
+    {
+      "label": "Imagem",
+      "description": "Imagem a ser utilizada."
+    },
+    {
+      "label": "Configurações visuais",
+      "description": "Estas opções irão permitir controlar os aspectos visuais.",
+      "fields": [
+        {
+          "label": "Largura da imagem",
+          "description": "Selecione a largura do espaço dado que a imagem deve cobrir. A altura da imagem será dimensionada de acordo e nunca excederá 100% da largura.",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100"
+            },
+            {
+              "label": "Largura natural da imagem"
+            }
+          ]
+        },
+        {
+          "label": "Alinhamento de imagem",
+          "description": "Selecionar onde a imagem deve ser posicionada em relação ao restante do guia do autor do conteúdo.",
+          "options": [
+            {
+              "label": "esquerda"
+            },
+            {
+              "label": "centro"
+            },
+            {
+              "label": "direita"
+            }
+          ]
+        },
+        {
+          "label": "Largura da lente de zoom",
+          "description": "Definir a largura da lente de zoom como percentagem da largura da imagem (por exemplo 20%) ou como um valor fixo em pixels (por exemplo 160px).",
+          "default": "20%"
+        },
+        {
+          "label": "Altura da lente de zoom",
+          "description": "Definir a altura da lente de zoom como percentagem da altura da imagem (por exemplo, 25%) ou como um valor fixo em pixels (por exemplo, 90px).",
+          "default": "25%"
+        },
+        {
+          "label": "Escurecer a imagem no zoom",
+          "description": "Se definida, a imagem escurecerá para fortalecer o efeito de foco do zoom."
+        }
+      ]
+    },
+    {
+      "label": "Configurações comportamentais",
+      "description": "Essas opções permitem controlar como a tarefa se comportará.",
+      "fields": [
+        {
+          "label": "Zoom automático",
+          "description": "Se activada, a imagem é ampliada automaticamente enquanto se está passando sobre ela. Caso contrário, o utilizador precisa activar e desactivar a ampliação."
+        },
+        {
+          "label": "Ocultar indicador de ampliação",
+          "description": "O indicador de ampliação é usado como botão para o uso pelo teclado. Ocultá-lo não impedirá que funcione, mas os utilizadores terão menos informações de navegação."
+        }
+      ]
+    },
+    {
+      "label": "Leitor de ecrã",
+      "fields": [
+        {
+          "label": "Ampliar",
+          "description": "Etiqueta para o botão de ampliação (visível apenas para o leitor de ecrã).",
+          "default": "Ampliar"
+        },
+        {
+          "label": "Ampliação activada.",
+          "description": "Leia quando a ampliação foi activada.",
+          "default": "Ampliação activada."
+        },
+        {
+          "label": "Ampliação desactivada.",
+          "description": "Leia quando a ampliação foi desactivada.",
+          "default": "Ampliação desactivada."
+        },
+        {
+          "label": "Instruções",
+          "description": "Instruções sobre como usar o teclado. Ler quando a ampliação for activada",
+          "default": "Use as teclas de seta para mover a lente de ampliação. Use a tecla + para aumentar o zoom. Use a tecla menos para diminuir o zoom."
+        },
+        {
+          "label": "Ampliado para a escala",
+          "description": "Leia quando a escala de zoom é alterada. @magnification é um marcador de posição que será substituído pelo respectivo valor.",
+          "default": "Ampliado para a escala de @magnification para 1."
+        },
+        {
+          "label": "Lente movida para",
+          "description": "Leia quando a lente de ampliação é movida. @positionHorizontal e @positionVertical são marcadores de posição que serão substituídos pelos respectivos valores.",
+          "default": "Lente movida para @positionHorizontal horizontalmente e para @positionVertical verticalmente."
+        },
+        {
+          "label": "Desconhecido",
+          "description": "Texto recuperação de dados para quando a posição da lente não puder ser determinada.",
+          "default": "desconhecido"
+        }
+      ]
+    }
+  ]
+}

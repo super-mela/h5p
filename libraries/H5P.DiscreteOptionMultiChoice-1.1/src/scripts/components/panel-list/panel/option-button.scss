@@ -1,0 +1,91 @@
+@import "@styles/main";
+
+.h5p-discrete-option-multi-choice-option-button {
+  background-color: rgba(255,255,255,0.5);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: var(--background-size) var(--background-size);
+  border: 3px solid rgba(255,255,255,0.5); /* Same px value as used by Joubel in Interactive Book */
+  border-radius: 3px; /* Same px value as used by Joubel in Interactive Book */
+  color: rgb(23, 104, 196);
+  flex-shrink: 0;
+  font-size: 1em;
+  height: var(--button-size);
+  padding: 0;
+  position: relative;
+  width: var(--button-size);
+
+  &::before {
+    font-family: "H5PFontAwesome4", sans-serif;
+    font-size: var(--background-size);
+    height: var(--background-size);
+    left: 50%;
+    margin-left: calc(-1 * var(--background-size) / 2);
+    margin-top: calc(-1 * var(--background-size) / 2);
+    position: absolute;
+    top: 50%;
+    width: var(--background-size);
+  }
+
+  &.selected {
+    border-color: $color-primary;
+    box-shadow: 0 0 0.5em 0 $color-primary;
+
+    &.answer-correct {
+      border-color: $color-correct;
+      box-shadow: 0 0 0.5em 0 $color-correct;
+    }
+
+    &.answer-incorrect {
+      border-color: $color-incorrect;
+      box-shadow: 0 0 0.5em 0 $color-incorrect;
+    }
+  }
+
+  &:disabled {
+    &::before {
+      color: $color-disabled;
+    }
+  }
+
+  &:not(:disabled) {
+    &:hover {
+      background-color: $color-primary-5;
+      cursor: pointer;
+    }
+
+    &:active {
+      background-color: $color-primary-15;
+    }
+  }
+
+  &.option-correct {
+    background-color: $color-correct-background;
+
+    &::before {
+      color: $color-correct;
+    }
+  }
+
+  &.option-incorrect {
+    background-color: $color-incorrect-background;
+
+    &::before {
+      color: $color-incorrect;
+    }
+  }
+
+  &.correct::before {
+    content: '\f00c';
+  }
+
+  &.incorrect::before {
+    content: '\f00d';
+  }
+
+  .h5p-question-plus-one,
+  .h5p-question-minus-one {
+    top: -0.5rem;
+    right: -1rem;
+  }
+}

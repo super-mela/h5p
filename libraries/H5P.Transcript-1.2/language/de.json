@@ -1,0 +1,187 @@
+{
+  "semantics": [
+    {
+      "label": "Medium",
+      "fields": [
+        {
+          "label": "Medium"
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Transkriptdateien",
+      "entity": "Transkriptdatei",
+      "widgets": [
+        {
+          "label": "Vorgabewert"
+        }
+      ],
+      "field": {
+        "label": "Transkriptdateidaten",
+        "fields": [
+          {
+            "label": "Transkript (WebVTT-Datei)"
+          },
+          {
+            "label": "Beschriftung",
+            "description": "Beschriftung, um das Transkript zu identifizieren. Nicht relevant, wenn es nur eine Transkriptdatei gibt."
+          },
+          {
+            "label": "Sprachcode",
+            "description": "Die Transkriptbibliothek wird versuchen, die Sprache des Transkripts automatisch für Screenreader zu ermitteln. Für den Fall, dass das nicht gelingt, kannst du händisch eine \"BCP 47-Sprachmarkierung\" setzen - z. B. \"de\" für Deutsch, \"nb\" für das norwegische bokmål, usw."
+          }
+        ]
+      }
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "fields": [
+        {
+          "label": "Maximale Anzahl Zeilen",
+          "description": "Maximale Anzahl an Zeilen des Transkripts, die zur selben Zeit angezeigt werden sollen. Wenn nichts oder 0 gesetzt wird, wird das gesamte Transkript angezeigt."
+        },
+        {
+          "label": "Zeige Transkript beim Start an",
+          "description": "Du kannst einstellen, ob das Transkript beim Start angezeigt werden soll oder nicht."
+        }
+      ]
+    },
+    {
+      "label": "Kapitel",
+      "fields": [
+        {
+          "label": "Benutze die Lesezeichen von Interactive Video"
+        },
+        {
+          "label": "Kapitelmarken",
+          "description": "Du kannst optional Kapitelmarken im gängigen mp4chaps-Format hinzufügen. Die Syntax lautet \"hh:mm:ss Kapiteltitel\" oder \"hh:mm:ss.MMM Kapiteltitel\""
+        }
+      ]
+    },
+    {
+      "label": "Bezeichnungen und Beschriftungen",
+      "fields": [
+        {
+          "label": "Kein Medium bereitgestellt",
+          "default": "Dem Transkript wurde kein Medium zugewiesen."
+        },
+        {
+          "label": "Kein Transkript bereitgestellt",
+          "default": "Es wurde kein Transkript bereitgestellt."
+        },
+        {
+          "label": "Problem mit WebVTT-Datei",
+          "default": "Es scheint etwas mit der WebVTT-Datei nicht in Ordnung zu sein. Bitte prüfe die Ausgabe der Entwicklungskonsole des Brosers für nähere Informationen."
+        },
+        {
+          "label": "Kapitelmarken",
+          "default": "Kapitelmarken"
+        },
+        {
+          "label": "Unbenannte Option",
+          "default": "Unbenannte Option"
+        }
+      ]
+    },
+    {
+      "label": "Vorlesewerkzeug",
+      "fields": [
+        {
+          "label": "Transkript sichtbar",
+          "default": "Blende Transkript aus. Derzeit sichtbar."
+        },
+        {
+          "label": "Transkript nicht sichtbar",
+          "default": "Blende Transkript ein. Derzeit nicht sichtbar."
+        },
+        {
+          "label": "Automatisches Scrollen aktiv",
+          "default": "Schalte automatisches Scrollen aus. Derzeit aktiv."
+        },
+        {
+          "label": "Automatisches Scrollen inaktiv",
+          "default": "Schalte automatisches Scrollen ein. Derzeit inaktiv."
+        },
+        {
+          "label": "Automatisches Scrollen deaktiviert",
+          "default": "Automatisches Scrollen deaktiviert."
+        },
+        {
+          "label": "Ansicht: Interaktives Transkript",
+          "default": "Schalte in die Ansicht mit einfachem Text"
+        },
+        {
+          "label": "Ansicht: einfacher Text",
+          "default": "Schalte in die Ansicht mit interaktivem Transkript."
+        },
+        {
+          "label": "Ändern der Ansicht deaktiviert",
+          "default": "Ändern der Ansicht deaktiviert."
+        },
+        {
+          "label": "Startzeit angezeigt",
+          "default": "Blende Startzeit aus. Derzeit angegezeigt."
+        },
+        {
+          "label": "Startzeit nicht angezeigt",
+          "default": "Blende Startzeit ein. Derzeit nicht angezeigt."
+        },
+        {
+          "label": "Startzeit ändern deaktiviert",
+          "default": "Startzeitoption deaktiviert."
+        },
+        {
+          "label": "Zeilenumbrüche aktiv",
+          "default": "Brich Zeilen nicht um. Werden derzeit umgebrochen."
+        },
+        {
+          "label": "Zeilenumbrüche inaktiv",
+          "default": "Brich Zeilen um. Werden derzeit nicht umgebrochen."
+        },
+        {
+          "label": "Zeilenumbrüche deaktiviert",
+          "default": "Option für Zeilenumbrüche deaktiviert."
+        },
+        {
+          "label": "Öffne Kapitelmarken",
+          "default": "Öffne Kapitelmarken"
+        },
+        {
+          "label": "Schließe Kapitelmarken",
+          "default": "Schließe Kapitelmarken"
+        },
+        {
+          "label": "Kapitelmarken deaktiviert",
+          "default": "Kapitelmarken deaktiviert."
+        },
+        {
+          "label": "Interaktives Transkript",
+          "default": "Interaktives Transkript"
+        },
+        {
+          "label": "Eingeben zum Markieren",
+          "default": "Gibt einen Suchbegriff ein, um entsprechenden Text zu markieren."
+        },
+        {
+          "label": "Auswahlfeld deaktiviert",
+          "default": "Auswahlfeld deaktiviert."
+        },
+        {
+          "label": "Zum Hervorheben eingeben",
+          "default": "Gib eine Suchanfrage ein, um relevanten Text zu markieren."
+        },
+        {
+          "label": "Suchfeld deaktiviert",
+          "default": "Suchfeld deaktiviert."
+        },
+        {
+          "label": "Schließen",
+          "default": "Schließen"
+        }
+      ]
+    }
+  ]
+}

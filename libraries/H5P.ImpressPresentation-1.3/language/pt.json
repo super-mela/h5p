@@ -1,0 +1,103 @@
+{
+  "semantics": [
+    {
+      "fields": [
+        {
+          "label": "Criar vistas",
+          "description": "Aqui pode criar vistas com diferentes transições e textos.",
+          "entity": "opção",
+          "field": {
+            "label": "Ver instância",
+            "fields": [
+              {},
+              {
+                "fields": [
+                  {
+                    "label": "centrar texto"
+                  },
+                  {
+                    "label": "Posição em X"
+                  },
+                  {
+                    "label": "Posição em Y"
+                  },
+                  {
+                    "label": "Posição em Z",
+                    "description": "Valores negativos estão mais longe da câmara e valores positivos estão mais perto."
+                  },
+                  {
+                    "label": "Rotação em X",
+                    "description": "Rotação padrão é 0."
+                  },
+                  {
+                    "label": "Rotação em Y",
+                    "description": "Rotação padrão é 0."
+                  },
+                  {
+                    "label": "Rotação em Z",
+                    "description": "Rotação padrão é 0."
+                  }
+                ]
+              },
+              {
+                "fields": [
+                  {
+                    "label": "Fundo transparente",
+                    "description": "Desmarque se pretende escolher uma cor ou uma imagem de fundo"
+                  },
+                  {
+                    "label": "Cor do fundo",
+                    "description": "Opcional, pode ser definido para adicionar uma cor ao fundo desta etapa",
+                    "default": "#fff"
+                  },
+                  {
+                    "label": "Imagem de fundo"
+                  },
+                  {
+                    "label": "Largura do plano de fundo"
+                  },
+                  {
+                    "label": "Altura do plano de fundo"
+                  }
+                ]
+              },
+              {
+                "label": "Ordenação",
+                "fields": [
+                  {
+                    "label": "Incluir etapa no trajeto"
+                  },
+                  {
+                    "label": "Índice no trajeto"
+                  },
+                  {
+                    "label": "Nome definido pelo utilizador"
+                  }
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "label": "Proporção da perspectiva"
+        },
+        {
+          "label": "Trajeto da rota"
+        }
+      ]
+    },
+    {
+      "label": "Leitor de ecrã",
+      "fields": [
+        {
+          "label": "Slide anterior",
+          "default": "Slide anterior"
+        },
+        {
+          "label": "Próximo slide",
+          "default": "Próximo slide"
+        }
+      ]
+    }
+  ]
+}

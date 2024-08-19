@@ -1,0 +1,60 @@
+@import "@styles/h5p-jigsaw-puzzle-main";
+
+.h5p-jigsaw-puzzle {
+
+  .h5p-jigsaw-puzzle-content {
+
+    .h5p-jigsaw-puzzle-message {
+      text-align: center;
+    }
+
+    .h5p-jigsaw-puzzle-puzzle-area {
+      display: flex;
+
+      &:not(.h5p-jigsaw-puzzle-puzzle-direction-column) {
+        flex-direction: row;
+      }
+
+      &.h5p-jigsaw-puzzle-puzzle-direction-column {
+        flex-direction: column;
+      }
+
+      .h5p-jigsaw-puzzle-tile-container {
+        background-color: white;
+        background-size: cover;
+        border: $border-width-normal solid $color-grey-0-10;
+        box-shadow: $box-shadow-normal;
+        width: 100%;
+
+        .h5p-jigsaw-puzzle-background-image {
+          filter: opacity(10%);
+          width: 100%;
+        }
+      }
+    }
+
+    .h5p-invisible-audio {
+      height: 0;
+      opacity: 0;
+      visibility: hidden;
+      width: 0;
+    }
+  }
+
+  .h5p-question-buttons {
+
+    .h5p-joubelui-button {
+      &[disabled] {
+        cursor: auto;
+
+        &:hover {
+          background: $color-joubel-ui-button;
+        }
+      }
+    }
+
+    .h5p-question-complete::before {
+      content: "\F11E";
+    }
+  }
+}

@@ -1,0 +1,288 @@
+[
+  {
+    "name": "puzzleImage",
+    "label": "Puzzle image",
+    "description": "Image that the tiles should be cut from.",
+    "type": "library",
+    "options": [
+      "H5P.Image 1.1"
+    ]
+  },
+  {
+    "name": "tilesHorizontal",
+    "label": "Tiles horizontally",
+    "description": "Set how many puzzle tiles the jigsaw puzzle should have horizontally.",
+    "type": "number",
+    "min": 2,
+    "default": 4
+  },
+  {
+    "name": "tilesVertical",
+    "label": "Tiles vertically",
+    "description": "Set how many puzzle tiles the jigsaw puzzle should have vertically.",
+    "type": "number",
+    "min": 2,
+    "default": 3
+  },
+  {
+    "name": "sound",
+    "type": "group",
+    "label": "Sound settings",
+    "importance": "low",
+    "description": "These options will let you set sound related options.",
+    "fields": [
+      {
+        "name": "puzzleStarted",
+        "type": "audio",
+        "label": "Start puzzle",
+        "description": "Sound to play when puzzle is started.",
+        "importance": "low",
+        "optional": true
+      },
+      {
+        "name": "puzzleTilePickUp",
+        "type": "audio",
+        "label": "Pick up puzzle tile",
+        "description": "Sound to play when a puzzle tile is picked up.",
+        "importance": "low",
+        "optional": true
+      },
+      {
+        "name": "puzzleTileIncorrect",
+        "type": "audio",
+        "label": "Drop puzzle tile (incorrectly)",
+        "description": "Sound to play when a puzzle tile is dropped (in a wrong spot).",
+        "importance": "low",
+        "optional": true
+      },
+      {
+        "name": "puzzleTileCorrect",
+        "type": "audio",
+        "label": "Drop puzzle tile correctly",
+        "description": "Sound to play when a puzzle tile is dropped in the correct spot.",
+        "importance": "low",
+        "optional": true
+      },
+      {
+        "name": "puzzleCompleted",
+        "type": "audio",
+        "label": "Complete puzzle",
+        "description": "Sound to play when a puzzle is completed.",
+        "importance": "low",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Behavioural settings",
+    "importance": "low",
+    "description": "These options will let you control how the task behaves.",
+    "fields": [
+      {
+        "name": "showBackground",
+        "label": "Show faint background",
+        "description": "Show a faint version of the image in the background to indicate where a puzzle tile needs to go.",
+        "type": "boolean",
+        "importance": "low",
+        "default": true,
+        "optional": true
+      },
+      {
+        "name": "showPuzzleOutlines",
+        "label": "Show puzzle outlines",
+        "description": "Show puzzle outlines to indicate where a puzzle tile needs to go.",
+        "type": "boolean",
+        "importance": "low",
+        "default": true,
+        "optional": true
+      },
+      {
+        "name": "sortingSpacePosition",
+        "type": "select",
+        "label": "Sorting space position",
+        "description": "Set where the sorting space should be positioned at.",
+        "importance": "low",
+        "options": [
+          {
+            "value": "row",
+            "label": "Puzzle next to sorting space"
+          },
+          {
+            "value": "column",
+            "label": "Puzzle above sorting space"
+          }
+        ],
+        "default": "row"
+      },
+      {
+        "name": "sortingSpace",
+        "label": "Sorting space",
+        "description": "Set how much space in percent should be attached next to the jigsaw puzzle for sorting the tiles.",
+        "type": "number",
+        "importance": "low",
+        "default": 50,
+        "min": 0,
+        "max": 75,
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "sortingSpacePosition",
+              "equals": "row"
+            }
+          ]
+        }
+      },
+      {
+        "name": "sortingSpaceColumn",
+        "label": "Sorting space",
+        "description": "Set how much space in percent relative to the puzzle should be attached below to the jigsaw puzzle for sorting the tiles.",
+        "type": "number",
+        "importance": "low",
+        "default": 100,
+        "min": 50,
+        "max": 200,
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "sortingSpacePosition",
+              "equals": "column"
+            }
+          ]
+        }
+      },
+      {
+        "name": "useFullArea",
+        "label": "Use full area",
+        "description": "Set if initially the tiles should cover the complete area including the area where they need to be dropped.",
+        "type": "boolean",
+        "importance": "low",
+        "default": false,
+        "optional": true
+      },
+      {
+        "name": "enableComplete",
+        "label": "Enable \"Complete\" button",
+        "type": "boolean",
+        "importance": "low",
+        "default": true,
+        "optional": true
+      },
+      {
+        "name": "enableRetry",
+        "label": "Enable \"Retry\" button",
+        "type": "boolean",
+        "importance": "low",
+        "default": true,
+        "optional": true
+      },
+      {
+        "name": "enableSolutionsButton",
+        "label": "Enable \"Solution\" button",
+        "type": "boolean",
+        "importance": "low",
+        "default": true,
+        "optional": true,
+        "widget": "none"
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "common": true,
+    "label": "User interface",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "complete",
+        "type": "text",
+        "label": "Text for \"Complete\" button",
+        "importance": "low",
+        "default": "Complete"
+      },
+      {
+        "name": "tryAgain",
+        "label": "Text for \"Retry\" button",
+        "type": "text",
+        "importance": "low",
+        "default": "Retry"
+      },
+      {
+        "name": "messageNoImage",
+        "label": "Text for \"No image\" message",
+        "type": "text",
+        "importance": "low",
+        "default": "There was no image given for this jigsaw puzzle."
+      }
+    ]
+  },
+  {
+    "name": "a11y",
+    "type": "group",
+    "common": true,
+    "label": "Readspeaker",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "complete",
+        "type": "text",
+        "label": "Assistive technology description for \"Complete\" button",
+        "importance": "low",
+        "default": "Complete the puzzle. All tiles will be put to their correct position."
+      },
+      {
+        "name": "tryAgain",
+        "label": "Assistive technology description for \"Retry\" button",
+        "type": "text",
+        "importance": "low",
+        "default": "Retry the puzzle. All puzzle tiles will be shuffled on the canvas."
+      },
+      {
+        "name": "buttonFullscreenEnter",
+        "type": "text",
+        "label": "Assistive technology description for \"Enter fullscreen button\"",
+        "importance": "low",
+        "default": "Enter fullscreen mode"
+      },
+      {
+        "name": "buttonFullscreenExit",
+        "type": "text",
+        "label": "Assistive technology description for \"Exit fullscreen button\"",
+        "importance": "low",
+        "default": "Exit fullscreen mode"
+      },
+      {
+        "name": "buttonAudioMute",
+        "type": "text",
+        "label": "Assistive technology description for \"Mute\" button",
+        "importance": "low",
+        "default": "Mute audio"
+      },
+      {
+        "name": "buttonAudioUnmute",
+        "type": "text",
+        "label": "Assistive technology description for \"Unmute\" button",
+        "importance": "low",
+        "default": "Unmute audio"
+      },
+      {
+        "name": "disabled",
+        "type": "text",
+        "label": "Assistive technology description for \"Disabled\"",
+        "importance": "low",
+        "default": "Disabled"
+      },
+      {
+        "name": "close",
+        "type": "text",
+        "label": "Assistive technology description for \"Close\"",
+        "importance": "low",
+        "default": "Close"
+      }
+    ]
+  }
+]

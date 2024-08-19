@@ -1,0 +1,65 @@
+@import "@styles/main";
+
+.h5p-combination-lock-case {
+  background: linear-gradient(#fff, #b3b7c6);
+  border-radius: 0.5rem;
+  box-shadow: inset 0 -0.5rem 0.25rem -0.25rem #8288a1, 0 2px 3px 1px rgb(0 0 0 / 50%);
+  display: flex;
+  margin-bottom: 0.25rem;
+  padding: 1rem;
+
+  .h5p-combination-lock-elements {
+    background: linear-gradient(#676e89, #5e6078);
+    border-radius: 0.5rem;
+    display: flex;
+    flex-direction: column;
+    padding: 0.5rem 1rem;
+
+    .h5p-combination-lock-segments {
+      display: flex;
+      flex-direction: row;
+      margin-bottom: 1rem;
+
+      .h5p-combination-lock-group-label,
+      .h5p-combination-lock-current-combination-aria {
+        position: absolute;
+        left: $offset-offscreen;
+      }
+    }
+  }
+
+  &.animate {
+    &.wrong-combination {
+      animation: wrong-combination;
+      animation-duration: 0.25s;
+    }
+  }
+
+  @keyframes wrong-combination {
+    0% {
+      transform: translate3d(0, 0, 0);
+    }
+
+    15%,
+    45%,
+    75% {
+      transform: translate3d(-10px, 0, 0);
+    }
+
+    30%,
+    60%,
+    90% {
+      transform: translate3d(10px, 0, 0);
+    }
+
+    100% {
+      transform: translate3d(0, 0, 0);
+    }
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .h5p-combination-lock-case.animate.wrong-combination {
+    animation-duration: 1ms;
+  }
+}

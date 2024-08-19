@@ -1,0 +1,17 @@
+.github
+build_info
+node_modules
+src
+.babelrc
+.eslintrc.json
+.gitignore
+.h5pignore
+babel.config.js
+jest.config.ts
+package-lock.json
+package.json
+README.md
+tsconfig.json
+typings.d.ts
+webpack.config.js
+LICENSE

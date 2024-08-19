@@ -1,0 +1,26 @@
+.arrow {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &:hover {
+    .path {
+      fill: var(--theme-color-5);
+    }
+  }
+}
+
+.arrowSvg {
+  width: 100%;
+  height: 100%;
+}
+
+.polyline {
+  pointer-events: painted;
+  cursor: pointer;
+
+  &:hover {
+    stroke: var(--theme-color-5);
+  }
+}

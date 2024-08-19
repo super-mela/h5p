@@ -1,0 +1,9 @@
+.h5peditor-datetime {
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .h5peditor-text {
+    width: 20em;
+  }
+}

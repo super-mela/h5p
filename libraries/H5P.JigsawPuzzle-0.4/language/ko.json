@@ -1,0 +1,143 @@
+{
+  "semantics": [
+    {
+      "label": "그림 퍼즐 이미지",
+      "description": "퍼즐 그림 조각이 분리되어 나오는 이미지."
+    },
+    {
+      "label": "가로방향 그림 조각",
+      "description": "가로 방향으로 그림 퍼즐이 몇 조각이 있는지 설정"
+    },
+    {
+      "label": "세로방향 그림 조각",
+      "description": "세로 방향으로 그림 퍼즐이 몇 조각이 있는지 설정"
+    },
+    {
+      "label": "소리 설정",
+      "description": "이 옵션으로 소리와 관련된 설정을 할 수 있습니다.",
+      "fields": [
+        {
+          "label": "그림 퍼즐 시작",
+          "description": "그림 퍼즐 시작시 소리"
+        },
+        {
+          "label": "그림 퍼즐 조각을 선택",
+          "description": "그림 퍼즐이 선택될 때 나는 소리"
+        },
+        {
+          "label": "잘못된 위치에 그림 퍼즐을 놓기",
+          "description": "잘못된 위치에 그림 퍼즐을 놓을 때 나는 소리"
+        },
+        {
+          "label": "올바른 위치에 그림퍼즐을 놓기",
+          "description": "올바른 위치에 그림퍼즐을 놓을 때 나는 소리"
+        },
+        {
+          "label": "그림퍼즐 완성하기",
+          "description": "그림퍼즐이 완성될 때 나는 소리"
+        }
+      ]
+    },
+    {
+      "label": "동작 설정",
+      "description": "이 옵션은 과제가 동작하는 방식을 제어합니다.",
+      "fields": [
+        {
+          "label": "희미한 배경 보이기",
+          "description": "배경에 희미한 이미지를 통해 그림퍼즐 조각의 위치를 보여주기"
+        },
+        {
+          "label": "그림퍼즐 외곽선 보이기",
+          "description": "그림퍼즐 외곽선을 통해 그림퍼즐 조각의 위치를 보여주기"
+        },
+        {
+          "label": "Sorting space position",
+          "description": "Set where the sorting space should be positioned at.",
+          "options": [
+            {
+              "label": "Puzzle next to sorting space"
+            },
+            {
+              "label": "Puzzle above sorting space"
+            }
+          ]
+        },
+        {
+          "label": "공간 정렬",
+          "description": "그림퍼즐 조각을 정렬하기 위해 그림 퍼즐 조각 옆에 붙여야 하는 공간의 비율(%)을 설정합니다."
+        },
+        {
+          "label": "Sorting space",
+          "description": "Set how much space in percent relative to the puzzle should be attached below to the jigsaw puzzle for sorting the tiles."
+        },
+        {
+          "label": "전체 영역 사용",
+          "description": "처음에 그림퍼즐 조각을 놓아야 하는 영역을 포함하여 전체 영역을 덮어야 하는 경우 설정"
+        },
+        {
+          "label": "\"Complete(완료)\" 버튼 활성화"
+        },
+        {
+          "label": "\"Retry(재시도)\" 버튼 활성화"
+        },
+        {
+          "label": "\"Solution(해답)\" 버튼 활성화"
+        }
+      ]
+    },
+    {
+      "label": "사용자 인터페이스",
+      "fields": [
+        {
+          "label": "\"Complete(완료)\" 버튼 텍스트",
+          "default": "완료"
+        },
+        {
+          "label": "\"Retry(재시도)\" 버튼 텍스트",
+          "default": "재시도"
+        },
+        {
+          "label": "\"No image(이미지 없음)\" 메시지",
+          "default": "이 그림퍼즐을 위해 주어진 이미지가 없습니다."
+        }
+      ]
+    },
+    {
+      "label": "읽어주기 스피커",
+      "fields": [
+        {
+          "label": "\"Complete(완료)\" 버튼에 대한 보조기술 설명",
+          "default": "그림퍼즐을 완성하세요. 모든 그림퍼즐 조각이 올바른 위치에 배치됩니다."
+        },
+        {
+          "label": "\"Retry(재시도)\" 버튼에 대한 보조기술 설명",
+          "default": "그림퍼즐이 재시도하세요. 모든 그림퍼즐 조각이 올바른 위치에 배치됩니다. 모든 그림퍼즐이 캔버스에서 섞입니다."
+        },
+        {
+          "label": "\"Enter fullscreen button(전체 화면 실행)\"에 대한 보조기술 설명",
+          "default": "전체 화면 들어가기"
+        },
+        {
+          "label": "\"Exit fullscreen button(전체화면 종료)\"에 대한 보조기술 설명",
+          "default": "전체 화면 종료"
+        },
+        {
+          "label": "\"Mute(음소거)\" 버튼에 대한 보조기술 설명",
+          "default": "음소거"
+        },
+        {
+          "label": "\"Unmute(음소거 해제)\" 버튼에 대한 보조기술 설명",
+          "default": "음소거 해제"
+        },
+        {
+          "label": "\"Disabled(비활성화)\"에 대한 보조기술 설명",
+          "default": "비활성화"
+        },
+        {
+          "label": "\"Close(닫기)\"에 대한 보조기술 설명",
+          "default": "닫기"
+        }
+      ]
+    }
+  ]
+}

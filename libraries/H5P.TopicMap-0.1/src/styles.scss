@@ -1,0 +1,69 @@
+$h5p-navbar-z-index: 600;
+
+:root {
+  --item-z-index: 1;
+  --notesection-z-index: calc(var(--item-z-index) + 1);
+  --overlay-z-index: calc(var(--item-z-index) + 1);
+  --dialog-z-index: calc(var(--overlay-z-index) + 1);
+  --confirm-overlay-z-index: calc(var(--dialog-z-index) + 1);
+  --confirm-dialog-z-index: calc(var(--confirm-overlay-z-index) + 1);
+}
+
+.h5p-topic-map {
+  background-color: var(--theme-color-1);
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+
+  &,
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+
+  button,
+  input,
+  option,
+  select,
+  textarea {
+    font-family: inherit;
+    font-size: inherit;
+  }
+}
+
+.theme-1 {
+  --theme-color-1: #2f4050;
+  --theme-color-2: #40586f;
+  --theme-color-3: #567B95;
+  --theme-color-4: #BECCE0;
+  --theme-color-5: #DAE2EC;
+}
+
+.theme-2 {
+  --theme-color-1: #2f5050;
+  --theme-color-2: #3d6060;
+  --theme-color-3: #4E7E7E;
+  --theme-color-4: #AFD9D9;
+  --theme-color-5: #CBE7E7;
+}
+
+.theme-3 {
+  --theme-color-1: #7a1719;
+  --theme-color-2: #981b1e;
+  --theme-color-3: #D7282A;
+  --theme-color-4: #F9A9AC;
+  --theme-color-5: #FBDADA;
+}
+
+.theme-4 {
+  --theme-color-1: #131516;
+  --theme-color-2: #373d3f;
+  --theme-color-3: #6B777B;
+  --theme-color-4: #C0C4C8;
+  --theme-color-5: #DFE2E2;
+}
+
+.iPhoneFullscreenStyle {
+  z-index: $h5p-navbar-z-index + 1;
+}

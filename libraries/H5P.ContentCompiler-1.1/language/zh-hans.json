@@ -1,0 +1,296 @@
+{
+  "semantics": [
+    {
+      "label": "显示标题屏幕",
+      "description": "如果选中，启动时将显示标题屏幕。"
+    },
+    {
+      "label": "标题屏幕",
+      "fields": [
+        {
+          "label": "介绍",
+          "placeholder": "欢迎来到...",
+          "default": "<p style=\"text-align: center ;\"></p>"
+        },
+        {
+          "label": "标题屏幕媒体"
+        }
+      ]
+    },
+    {
+      "label": "介绍文本",
+      "fields": [
+        {
+          "label": "筛选和选择的介绍",
+          "description": "向用户说明在筛选和选择内容时应该如何操作。"
+        },
+        {
+          "label": "重新排序的介绍",
+          "description": "向用户说明在重新排序内容时应该如何操作。"
+        },
+        {
+          "label": "查看内容的介绍",
+          "description": "向用户说明在查看内容时应该如何操作。"
+        }
+      ]
+    },
+    {
+      "label": "内容",
+      "entity": "内容",
+      "widgets": [
+        {
+          "label": "默认"
+        }
+      ],
+      "field": {
+        "label": "内容",
+        "fields": [
+          {
+            "label": "标签",
+            "description": "内容的标签。如果未设置标签、图像或引导语，标签将设置为元数据的标题。"
+          },
+          {
+            "label": "图片",
+            "description": "可选的插图。"
+          },
+          {
+            "label": "引导语",
+            "description": "内容的可选引导语。"
+          },
+          {
+            "label": "关键词",
+            "description": "为内容输入匹配的关键词，每个关键词之间用逗号（,）分隔。"
+          },
+          {
+            "label": "内容",
+            "description": "选择要添加的内容类型。"
+          }
+        ]
+      }
+    },
+    {
+      "label": "视觉设置",
+      "fields": [
+        {
+          "label": "卡片宽度",
+          "description": "设置默认卡片宽度为CSS值（例如100px或14rem或15em）。如果省略单位，则默认为px。",
+          "default": "14rem"
+        },
+        {
+          "label": "图像大小",
+          "description": "选择内容图像应如何调整大小。",
+          "options": [
+            {
+              "label": "使用图像大小比例"
+            },
+            {
+              "label": "使用自定义比例"
+            }
+          ]
+        },
+        {
+          "label": "自定义比例宽度",
+          "description": "设置内容图像的水平比例组件。"
+        },
+        {
+          "label": "自定义比例高度",
+          "description": "设置内容图像的垂直比例组件。"
+        },
+        {
+          "label": "最大引导语行数",
+          "description": "设置要显示的内容引导语的最大行数。"
+        }
+      ]
+    },
+    {
+      "label": "行为设置",
+      "fields": [
+        {
+          "label": "从所有内容开始",
+          "description": "选择是否默认选择所有内容，准备好使用。"
+        },
+        {
+          "label": "预选所有关键字",
+          "description": "选择开始内容时是否应选择所有或无关键字。"
+        },
+        {
+          "label": "将选择绑定到标签",
+          "description": "选择是否在选择/取消选择标签时自动选择/取消选择卡片。"
+        }
+      ]
+    },
+    {
+      "label": "用户界面",
+      "fields": [
+        {
+          "label": "开始",
+          "description": "开始按钮的标签。",
+          "default": "开始"
+        },
+        {
+          "label": "已选择",
+          "description": "已选择内容的状态标签。",
+          "default": "已选择"
+        },
+        {
+          "label": "状态: 未开始",
+          "description": "未开始内容的状态标签。",
+          "default": "未开始"
+        },
+        {
+          "label": "状态: 已查看",
+          "description": "已查看内容的状态标签。",
+          "default": "已查看"
+        },
+        {
+          "label": "状态: 已完成",
+          "description": "已完成内容的状态标签。",
+          "default": "已完成"
+        },
+        {
+          "label": "状态: 已清除",
+          "description": "已清除内容的状态标签。",
+          "default": "已清除"
+        },
+        {
+          "label": "没有可展示的卡片",
+          "description": "当没有内容匹配选择的关键字时的提示信息。",
+          "default": "您需要选择关键字才能查看可供选择的内容。"
+        },
+        {
+          "label": "没有选择卡片",
+          "description": "当没有选择任何内容时的提示信息。",
+          "default": "您尚未选择任何内容。"
+        },
+        {
+          "label": "无标题内容",
+          "description": "回退标签。",
+          "default": "无标题内容"
+        },
+        {
+          "label": "重置确认对话框: 标题",
+          "description": "确认重置所有内容的对话框标题。",
+          "default": "重置所有内容？"
+        },
+        {
+          "label": "重置确认对话框: 文本",
+          "description": "确认重置所有内容的对话框文本。",
+          "default": "所有内容及其状态将被重置，但您的选择将保持不变。是否要继续？"
+        },
+        {
+          "label": "重置确认对话框: 标题",
+          "description": "确认重置所有内容和选择的对话框标题。",
+          "default": "重置所有内容和选择？"
+        },
+        {
+          "label": "重置确认对话框: 文本",
+          "description": "确认重置所有内容和选择的对话框文本。",
+          "default": "所有内容及其状态和您的选择将被重置。是否要继续？"
+        },
+        {
+          "label": "是的",
+          "default": "是的"
+        },
+        {
+          "label": "取消",
+          "default": "取消"
+        },
+        {
+          "label": "没有内容",
+          "default": "未设置有效内容。"
+        }
+      ]
+    },
+    {
+      "label": "辅助功能文本",
+      "fields": [
+        {
+          "label": "练习描述",
+          "description": "@label 是一个占位符，将被替换为相应的值。",
+          "default": "练习：@label"
+        },
+        {
+          "label": "工具栏描述",
+          "default": "工具栏。使用 Alt + T 组合键以聚焦到工具栏。"
+        },
+        {
+          "label": "按钮：选择模式",
+          "default": "切换到选择模式"
+        },
+        {
+          "label": "按钮：重排模式",
+          "default": "切换到重排模式"
+        },
+        {
+          "label": "按钮：查看模式",
+          "default": "切换到查看模式"
+        },
+        {
+          "label": "按钮：重置",
+          "default": "重置练习"
+        },
+        {
+          "label": "按钮：重置所有",
+          "default": "重置练习和选择"
+        },
+        {
+          "label": "标签选择器",
+          "default": "标签选择器。用于筛选练习。"
+        },
+        {
+          "label": "标签选择器已打开",
+          "default": "标签选择器已打开。"
+        },
+        {
+          "label": "标签选择器已关闭",
+          "default": "标签选择器已关闭。"
+        },
+        {
+          "label": "已选择",
+          "default": "已选择"
+        },
+        {
+          "label": "未选择",
+          "default": "未选择"
+        },
+        {
+          "label": "选择用于重排",
+          "default": "选择用于重新排序的内容"
+        },
+        {
+          "label": "内容列表描述：选择模式",
+          "default": "选择您要练习的所有练习内容"
+        },
+        {
+          "label": "内容列表描述：重排模式",
+          "default": "更改练习的顺序"
+        },
+        {
+          "label": "内容列表描述：查看模式",
+          "default": "做选定的练习"
+        },
+        {
+          "label": "关闭",
+          "default": "关闭"
+        },
+        {
+          "label": "切换到选择模式",
+          "default": "已切换到选择模式。"
+        },
+        {
+          "label": "切换到重排模式",
+          "default": "已切换到重排模式。"
+        },
+        {
+          "label": "切换到查看模式",
+          "default": "已切换到查看模式。"
+        },
+        {
+          "label": "交换内容",
+          "description": "@position1 和 @position2 是占位符，将被替换为相应的值。",
+          "default": "已交换位于位置 @position1 和位置 @position2 的内容。"
+        }
+      ]
+    }
+  ]
+}

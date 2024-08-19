@@ -1,0 +1,497 @@
+{
+  "semantics": [
+    {
+      "label": "Temakart-redigeringsverktøy",
+      "fields": [
+        {
+          "label": "Temakart-elementer",
+          "entity": "Temakart-element",
+          "field": {
+            "label": "Element",
+            "fields": [
+              {
+                "label": "Id"
+              },
+              {
+                "label": "X-position as a percentage of the container width"
+              },
+              {
+                "label": "Y-position as a percentage of the container height"
+              },
+              {
+                "label": "Width as a percentage of the container width"
+              },
+              {
+                "label": "Height as a percentage of the container height"
+              },
+              {
+                "label": "Tittel"
+              },
+              {
+                "label": "Beskrivelse"
+              },
+              {
+                "label": "Temabilde",
+                "description": "Vises som bakgrunnsbilde på boksen og som bilde over teksten i dialogen."
+              },
+              {
+                "label": "Alt-tekst for temabildet",
+                "description": "Beskrivende tekst om hva bildet forteller. Brukes av skjermlesere."
+              },
+              {
+                "label": "Dialog",
+                "fields": [
+                  {
+                    "label": "Vis notatfelt"
+                  },
+                  {
+                    "label": "Maks antall tegn",
+                    "description": "Spesifiserer maks antall tegn for notatet."
+                  },
+                  {
+                    "label": "Tekst"
+                  },
+                  {
+                    "label": "Video"
+                  },
+                  {
+                    "label": "Lyd",
+                    "fields": [
+                      {
+                        "label": "Lyd"
+                      },
+                      {
+                        "label": "Beskrivende tekst under lyden"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Lenker",
+                    "description": "Disse hjelpelenkene kan brukes for å gi ekstern informasjon om innholdet",
+                    "entity": "Lenke",
+                    "field": {
+                      "label": "Lenke",
+                      "fields": [
+                        {
+                          "label": "Id"
+                        },
+                        {
+                          "label": "Tittel"
+                        },
+                        {
+                          "label": "Url"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "label": "La brukeren legge til lenker selv"
+                  }
+                ]
+              },
+              {
+                "label": "Indeks",
+                "description": "⚠️ Avansert funksjonalitet: Kan brukes for å endre tab-rekkefølgen til elementene i temakartet. Alle elementer med en indeks vil komme før de uten, uansett."
+              }
+            ]
+          }
+        },
+        {
+          "label": "Piler",
+          "entity": "Pil",
+          "field": {
+            "label": "Pil",
+            "fields": [
+              {
+                "label": "Id"
+              },
+              {
+                "label": "Percentage position of start element",
+                "fields": [
+                  {
+                    "label": "X-position as a percentage of the container width"
+                  },
+                  {
+                    "label": "Y-position as a percentage of the container height"
+                  }
+                ]
+              },
+              {
+                "label": "Percentage position of start element",
+                "fields": [
+                  {
+                    "label": "X-position as a percentage of the container width"
+                  },
+                  {
+                    "label": "Y-position as a percentage of the container height"
+                  }
+                ]
+              },
+              {
+                "label": "Grid position of start element",
+                "fields": [
+                  {
+                    "label": "X-position as a grid coordinate"
+                  },
+                  {
+                    "label": "Y-position as a grid coordinate"
+                  }
+                ]
+              },
+              {
+                "label": "Grid position of start element",
+                "fields": [
+                  {
+                    "label": "X-position as a grid coordinate"
+                  },
+                  {
+                    "label": "Y-position as a grid coordinate"
+                  }
+                ]
+              },
+              {
+                "label": "Id of start element"
+              },
+              {
+                "label": "Id of end element"
+              },
+              {
+                "label": "Tittel",
+                "description": "Brukes av skjermlesere og vises på eksport-siden"
+              },
+              {
+                "label": "Ingress",
+                "description": "The description is shown on top of the background image, below the label"
+              },
+              {
+                "label": "Temabilde",
+                "description": "Vises over teksten i dialogen"
+              },
+              {
+                "label": "Alt-tekst for temabildet",
+                "description": "Beskrivende tekst om hva bildet forteller. Brukes av skjermlesere."
+              },
+              {
+                "label": "Piltype",
+                "options": [
+                  {
+                    "label": "Directional"
+                  },
+                  {
+                    "label": "Bi-directional"
+                  },
+                  {
+                    "label": "Non-directional"
+                  }
+                ]
+              },
+              {
+                "label": "Show end arrow-head"
+              },
+              {
+                "label": "Dialog",
+                "fields": [
+                  {
+                    "label": "Vis notatfelt"
+                  },
+                  {
+                    "label": "Maks antall tegn",
+                    "description": "Spesifiserer maks antall tegn for notatet."
+                  },
+                  {
+                    "label": "Tekst"
+                  },
+                  {
+                    "label": "Video"
+                  },
+                  {
+                    "label": "Lyd",
+                    "fields": [
+                      {
+                        "label": "Lyd"
+                      },
+                      {
+                        "label": "Beskrivende tekst under lyden"
+                      }
+                    ]
+                  },
+                  {
+                    "label": "Lenker",
+                    "description": "Disse hjelpelenkene kan brukes for å gi ekstern informasjon om innholdet",
+                    "entity": "Lenke",
+                    "field": {
+                      "label": "Lenke",
+                      "fields": [
+                        {
+                          "label": "Id"
+                        },
+                        {
+                          "label": "Tittel"
+                        },
+                        {
+                          "label": "Url"
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "label": "La brukeren legge til lenker selv"
+                  }
+                ]
+              },
+              {
+                "label": "Indeks"
+              },
+              {
+                "label": "Arrow breakpoints",
+                "entity": "breakpoint",
+                "field": {
+                  "label": "Breakpoint",
+                  "fields": [
+                    {
+                      "label": "X-position as grid index"
+                    },
+                    {
+                      "label": "Y-position as grid index"
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Arrow Relative breakpoints",
+                "entity": "breakpoint",
+                "field": {
+                  "label": "Breakpoint",
+                  "fields": [
+                    {
+                      "label": "X-position as a percentage of the container width"
+                    },
+                    {
+                      "label": "Y-position as a percentage of the container height"
+                    }
+                  ]
+                }
+              }
+            ]
+          }
+        },
+        {
+          "label": "Bakgrunnsbilde"
+        },
+        {
+          "label": "Fargetema",
+          "options": [
+            {
+              "label": "Blå"
+            },
+            {
+              "label": "Grønn"
+            },
+            {
+              "label": "Rød"
+            },
+            {
+              "label": "Grå"
+            }
+          ]
+        },
+        {
+          "label": "Rutenett",
+          "fields": [
+            {
+              "label": "Antall kolonner"
+            },
+            {
+              "label": "Antall rader"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Innstillinger for oppførsel"
+    },
+    {
+      "label": "Oversett",
+      "fields": [
+        {
+          "label": "Lukk dialog",
+          "description": "Brukt av skjermlesere",
+          "default": "Lukk dialog"
+        },
+        {
+          "label": "Lyd",
+          "description": "Vises foran kopibeskyttelse",
+          "default": "Lyd"
+        },
+        {
+          "label": "Bilde",
+          "description": "Vises foran kopibeskyttelse",
+          "default": "Bilde"
+        },
+        {
+          "label": "Video",
+          "description": "Vises foran kopibeskyttelse",
+          "default": "Video"
+        },
+        {
+          "label": "Notat lagres",
+          "default": "Lagrer…"
+        },
+        {
+          "label": "Notat ferdig lagret",
+          "default": "Lagret"
+        },
+        {
+          "label": "Tekst som vises når maks antall tegn er overskredet",
+          "default": "Tegngrensen er overskredet"
+        },
+        {
+          "label": "Forslagstekst i notatfelt",
+          "default": "Skriv notatene dine her…"
+        },
+        {
+          "label": "Markér notat som ferdig",
+          "default": "Markér som ferdig"
+        },
+        {
+          "label": "Relevante lenker",
+          "default": "Relevante lenker"
+        },
+        {
+          "label": "Egendefinerte lenker",
+          "default": "Dine lenker"
+        },
+        {
+          "label": "Legg til lenke",
+          "default": "Legg til"
+        },
+        {
+          "label": "Tittel på fullskjerm-knapp - på",
+          "default": "Slå på fullskjerm"
+        },
+        {
+          "label": "Tittel på fullskjerm-knapp - av",
+          "default": "Slå av fullskjerm"
+        },
+        {
+          "label": "Navigasjonslinje",
+          "description": "Brukes av skjermlesere",
+          "default": "Navigasjonslinje"
+        },
+        {
+          "label": "Navigasjonslinje-valg: Temakart",
+          "default": "Temakart"
+        },
+        {
+          "label": "Navigasjonslinje-valg: Mine notater",
+          "default": "Mine notater"
+        },
+        {
+          "label": "Fanetittel i dialog: Ressurser",
+          "default": "Ressurser"
+        },
+        {
+          "label": "Tekst",
+          "default": "Tekst"
+        },
+        {
+          "label": "Notat",
+          "default": "Notat"
+        },
+        {
+          "label": "Faneliste",
+          "default": "Faneliste"
+        },
+        {
+          "label": "Overskrift på notatside",
+          "default": "Mine notater"
+        },
+        {
+          "label": "Beskrivese på notatside",
+          "default": "Dette er en oversikt over notatene dine. De er lagret lokalt i denne nettleseren. Du kan skrive ut eller kopiere notatene dine inn i et dokument."
+        },
+        {
+          "label": "Skriv ut",
+          "default": "Skriv ut"
+        },
+        {
+          "label": "Kopier",
+          "default": "Kopier"
+        },
+        {
+          "label": "Slett alle notater",
+          "default": "Slett alle notater"
+        },
+        {
+          "label": "Ingen notater",
+          "default": "Du har ikke skrevet noen notater ennå"
+        },
+        {
+          "label": "Boks eller pil mangler notat",
+          "default": "━ Notat mangler"
+        },
+        {
+          "label": "Er du sikker på at du vil slette alle notater?",
+          "default": "Er du sikker på at du vil slette alle notater?"
+        },
+        {
+          "label": "Slett",
+          "default": "Slett"
+        },
+        {
+          "label": "Avbryt",
+          "default": "Avbryt"
+        },
+        {
+          "label": "Beskrivende tekst for fremdriftsindikatoren",
+          "default": "Fremdrift i notater: @markedNotes av @totalNotes notater markert som ferdig"
+        },
+        {
+          "label": "Send inn alle data-knapp",
+          "default": "Send inn alle data"
+        },
+        {
+          "label": "Er du sikker på at du vil sende inn alle data?",
+          "default": "Er du sikker på at du vil sende inn alle data?"
+        },
+        {
+          "label": "Send inn",
+          "default": "Send inn"
+        },
+        {
+          "label": "Avbryt",
+          "default": "Cancel"
+        },
+        {
+          "label": "Beskrivende tekst for enveis pil",
+          "default": "Pil fra @startItem til @endItem"
+        },
+        {
+          "label": "Beskrivende tekst for toveis pil",
+          "default": "Pil mellom @startItem og @endItem"
+        },
+        {
+          "label": "Beskrivende tekst for notatstatus ferdig",
+          "default": "Notat markert som ferdig"
+        },
+        {
+          "label": "Beskrivende tekst for notatstatus påbegynt",
+          "default": "Notat påbegynt"
+        },
+        {
+          "label": "Beskrivende tekst for notatstatus ikke påbegynt",
+          "default": "Notat ikke påbegynt"
+        },
+        {
+          "label": "Beskrivende tekst for notatets tekstområde",
+          "default": "Tekstområde med plass til @max tegn."
+        },
+        {
+          "label": "Beskrivende tekst for antall tegn i notatet",
+          "default": "@count av @max tegn"
+        }
+      ]
+    }
+  ]
+}

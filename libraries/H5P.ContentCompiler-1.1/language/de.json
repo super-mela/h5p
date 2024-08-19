@@ -1,0 +1,296 @@
+{
+  "semantics": [
+    {
+      "label": "Titelbildschirm anzeigen",
+      "description": "Wenn diese Option aktiviert ist, wird beim Starten ein Titelbildschirm angezeigt."
+    },
+    {
+      "label": "Titelbildschirm",
+      "fields": [
+        {
+          "label": "Einleitung",
+          "placeholder": "Willkommen zu ...",
+          "default": "<p style=\"text-align: center;\"></p>"
+        },
+        {
+          "label": "Medium für den Titelbildschirm"
+        }
+      ]
+    },
+    {
+      "label": "Einleitungstexte",
+      "fields": [
+        {
+          "label": "Einleitung für Filtern und Auswahl",
+          "description": "Erkläre, was die Benutzerinnen und Benutzer beim Filtern und Auswählen von Inhalten tun sollen."
+        },
+        {
+          "label": "Einleitung für das Umsortieren",
+          "description": "Erkläre, was die Benutzerinnen und Benutzer beim Umsortieren von Inhalten tun sollen."
+        },
+        {
+          "label": "Einleitung für das Bearbeiten",
+          "description": "Erkläre, was die Benutzerinnen und Benutzer beim Bearbeiten von Inhalten tun sollen."
+        }
+      ]
+    },
+    {
+      "label": "Inhalte",
+      "entity": "Inhalt",
+      "widgets": [
+        {
+          "label": "Vorgabe"
+        }
+      ],
+      "field": {
+        "label": "Inhalt",
+        "fields": [
+          {
+            "label": "Beschriftung",
+            "description": "Beschriftung für den Inhalt."
+          },
+          {
+            "label": "Bild",
+            "description": "Optionales, illustratives Bild."
+          },
+          {
+            "label": "Teaser",
+            "description": "Optionales Teaser für den Inhalt."
+          },
+          {
+            "label": "Schlagwörter",
+            "description": "Gib Schlagwörter für den Inhalt ein und trenne sie mit einem Komma (,)."
+          },
+          {
+            "label": "Inhalt",
+            "description": "Wähe den Inhaltstyp, den du hinzufügen möchtest."
+          }
+        ]
+      }
+    },
+    {
+      "label": "Optische Einstellungen",
+      "fields": [
+        {
+          "label": "Kartenbreite",
+          "description": "Setze die Standardbreite für eine Karte als CSS-Wert (zum Beispiel 100px oder 14rem oder 15em). Wenn du keine Einheit angibst, werden Pixel angenommen.",
+          "default": "14rem"
+        },
+        {
+          "label": "Bildskalierung",
+          "description": "Wähle, wie die Bilder für die Karten skaliert werden sollen.",
+          "options": [
+            {
+              "label": "Benutze das Seitenverhältnis des jeweiligen Bildes"
+            },
+            {
+              "label": "Wähle für alle ein vorgegebenes Seitenverhältnis"
+            }
+          ]
+        },
+        {
+          "label": "Breite des Seitenverhältnisses",
+          "description": "Setze die horizontale Komponente für das Seitenverhältnis von Bildern für eine Karte."
+        },
+        {
+          "label": "Höhe des Seitenverhältnisses",
+          "description": "Setze die vertikale Komponente für das Seitenverhältnis von Bildern für eine Karte."
+        },
+        {
+          "label": "Maximale Anzahl von Teaserzeilen",
+          "description": "Setze die maximale Anzahl von Zeilen, die für den Teaser auf der Karte angezeigt werden sollen."
+        }
+      ]
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "fields": [
+        {
+          "label": "Starten mit Vorauswahl",
+          "description": "Wähle, ob beim Starten alle Inhalte bereits ausgewählt und bereit zum Bearbeiten sind."
+        },
+        {
+          "label": "Wähle alle Schlagwörter",
+          "description": "Wähle, ob beim Starten alle oder keine Schlagwörter vorausgewählt sein sollen."
+        },
+        {
+          "label": "Kopple Auswahl an Schlagworte",
+          "description": "Wähle, ob die Karten automatisch ausgewählt/abgewählt werden, wenn ein Schlagwort ausgewählt/abgewählt wird."
+        }
+      ]
+    },
+    {
+      "label": "Bedienoberfläche",
+      "fields": [
+        {
+          "label": "Start",
+          "description": "Beschriftung des \"Start\"-Buttons.",
+          "default": "Start"
+        },
+        {
+          "label": "Ausgewählt",
+          "description": "Statusbeschriftung für ausgewählten Inhalt.",
+          "default": "ausgewählt"
+        },
+        {
+          "label": "Status: nicht gestartet",
+          "description": "Statusbeschriftung für noch nicht gestarteten Inhalt.",
+          "default": "nicht gestartet"
+        },
+        {
+          "label": "Status: angesehen",
+          "description": "Statusbeschriftung für angesehenen Inhalt.",
+          "default": "angesehen"
+        },
+        {
+          "label": "Status: abgeschlossen",
+          "description": "Statusbeschriftung für abgeschlossenen Inhalt.",
+          "default": "abgeschlossen"
+        },
+        {
+          "label": "Status: gemeistert",
+          "description": "Statusbeschriftung für gemeisterten Inhalt.",
+          "default": "gemeistert"
+        },
+        {
+          "label": "Keine Karten zum Zeigen",
+          "description": "Nachricht, die gezeigt wird, wenn kein Schlagwort ausgewählt wurde.",
+          "default": "Du musst Schlagworte auswählen, um Inhalte zum Auswählen zu sehen."
+        },
+        {
+          "label": "Keine Karten ausgewählt",
+          "description": "Nachricht, die gezeigt wird, wenn keine Karte ausgewählt wurde.",
+          "default": "Du hast keine Karten ausgewählt."
+        },
+        {
+          "label": "Inhalt ohne Titel",
+          "description": "Notfall-Beschriftung.",
+          "default": "Inhalt ohne Titel"
+        },
+        {
+          "label": "Bestätigungsdialog zum Zurücksetzen: Überschrift",
+          "description": "Überschrift für den Dialog zum Zurücksetzen aller Inhalte.",
+          "default": "Alle Inhalte zurücksetzen?"
+        },
+        {
+          "label": "Bestätigungsdialog zum Zurücksetzen: Text",
+          "description": "Text für den Dialog zum Zurücksetzen aller Inhalte.",
+          "default": "Alle deine Inhalte und ihr Status werden zurückgesetzt, aber deine Auswahl der Karten bleibt erhalten. Möchtest du fortfahren?"
+        },
+        {
+          "label": "Bestätigungsdialog zum kompletten Zurücksetzen: Überschrift",
+          "description": "Überschrift für den Dialog zum Zurücksetzen aller Inhalte und der Auswahl.",
+          "default": "Alle Inhalte und deine Auswahl zurücksetzen?"
+        },
+        {
+          "label": "Bestätigungsdialog zum kompletten Zurücksetzen: Text",
+          "description": "Text für den Dialog zum Zurücksetzen aller Inhalte und der Auswahl.",
+          "default": "Alle deine Inhalte, ihr Status und deine Auswahl werden zurückgesetzt. Möchtest du fortfahren?"
+        },
+        {
+          "label": "Ja",
+          "default": "Ja"
+        },
+        {
+          "label": "Nein",
+          "default": "Nein"
+        },
+        {
+          "label": "Keine Inhalte",
+          "default": "Es wurden keine gültigen Inhalte definiert."
+        }
+      ]
+    },
+    {
+      "label": "Texte für Barrierefreiheit",
+      "fields": [
+        {
+          "label": "Beschreibung der Aufgabe",
+          "description": "@label ist ein Platzhalter der durch den jeweiligen Wert ersetzt wird.",
+          "default": "Aufgabe: @label"
+        },
+        {
+          "label": "Beschreibung der Werkzeugleiste",
+          "default": "Werkzeugleiste. Benutze die Tastenkombination Alt und T um die Werkzeugleiste später zu fokussieren."
+        },
+        {
+          "label": "Button: Auswahlmodus",
+          "default": "Wechsle zum Auswahlmodus"
+        },
+        {
+          "label": "Button: Umsortiermodus",
+          "default": "Wechsle zum Umsortiermodus"
+        },
+        {
+          "label": "Button: Bearbeitungsmodus",
+          "default": "Wechsle zum Bearbeiten"
+        },
+        {
+          "label": "Button: Zurücksetzen",
+          "default": "Setze Aufgaben zurück"
+        },
+        {
+          "label": "Button: Alles zurücksetzen",
+          "default": "Setze Aufgaben und Auswahl zurück"
+        },
+        {
+          "label": "Schlagwortauswahl",
+          "default": "Schlagwortauswahl. Benutze sie zum Filtern der angezeigten Inhalte."
+        },
+        {
+          "label": "Schlagwortauswahl wurde geöffnet",
+          "default": "Schlagwortauswahl wurde geöffnet."
+        },
+        {
+          "label": "Schlagwortauswahl wurde geschlossen",
+          "default": "Schlagwortauswahl wurde geschlossen."
+        },
+        {
+          "label": "Ausgewählt",
+          "default": "Ausgwählt"
+        },
+        {
+          "label": "Nicht ausgewählt",
+          "default": "Nicht ausgewählt"
+        },
+        {
+          "label": "Ausgewählt zum Umsortieren",
+          "default": "Ausgewählt zum Umsortieren"
+        },
+        {
+          "label": "Beschreibung für die Aufgabenliste: Auswahlmodus",
+          "default": "Wähle alle Aufgaben, die du bearbeiten möchtest"
+        },
+        {
+          "label": "Beschreibung für die Aufgabenliste: Umsortiermodus",
+          "default": "Ändere die Reihenfolge der Ausgaben"
+        },
+        {
+          "label": "Beschreibung für die Aufgabenliste: Bearbeitungsmodus",
+          "default": "Bearbeite die ausgewählten Aufgaben"
+        },
+        {
+          "label": "Schließen",
+          "default": "Schließen"
+        },
+        {
+          "label": "In den Auswahlmodus gewechselt",
+          "default": "In den Auswahlmodus gewechselt."
+        },
+        {
+          "label": "In den Umsortiermodus gewechselt",
+          "default": "In den Umsortiermodus gewechselt."
+        },
+        {
+          "label": "In den Bearbeitungsmodus gewechselt",
+          "default": "In den Bearbeitungsmodus gewechselt."
+        },
+        {
+          "label": "Inhalte miteinander getauscht",
+          "description": "@position1 und ¹position2 sind Platzhalter und werden durch die jeweiligen Werte ersetzt.",
+          "default": "Der Inhalt an Position @position1 wurde mit dem Inhalt an Position @position2 getauscht."
+        }
+      ]
+    }
+  ]
+}

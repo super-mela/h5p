@@ -1,0 +1,196 @@
+{
+  "semantics": [
+    {
+      "label": "Goiburua"
+    },
+    {
+      "label": "Zereginaren deskribapena"
+    },
+    {
+      "label": "Argudioak",
+      "fields": [
+        {
+          "label": "Argudioak",
+          "entity": "argudioa",
+          "field": {
+            "label": "argudioa"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Laburpena",
+      "default": "Laburpena"
+    },
+    {
+      "label": "Laburpenerako jarraibideak"
+    },
+    {
+      "label": "Baliabideak",
+      "fields": [
+        {
+          "label": "Baliabideak",
+          "description": "Baliabideetarako aukerako estekak."
+        }
+      ]
+    },
+    {
+      "label": "Jokabide-ezarpenak",
+      "description": "Aukera hauek jokabidea kontrolatzeko aukera emango dizute.",
+      "fields": [
+        {
+          "label": "Berriro saiatzea gaitu?",
+          "description": "Markatu hau erabiltzaileak berriro saiatu ahal izatea nahi baduzu"
+        },
+        {
+          "label": "Ordenatu argudioak ausaz",
+          "description": "Argudioak ausaz ordenatuko ditu"
+        },
+        {
+          "label": "Eman aukera erabiltzaileei beren argudioak gehitzeko",
+          "description": "Erabiltzaileak bere argudioak gehitzen uzten dio"
+        },
+        {
+          "label": "Erakutsi laburpena",
+          "description": "Erabiltzaileak bere erantzunen arrazoiak azalduz laburpen bat ematea nahi al duzu"
+        }
+      ]
+    },
+    {
+      "label": "Tokiko egokitzapena",
+      "fields": [
+        {
+          "label": "\"Aldekoak\" zutabearen goiburua",
+          "default": "ALDEKO argudioak"
+        },
+        {
+          "label": "'Aurkako' zutabearen goiburua",
+          "default": "AURKAKO argudioak"
+        },
+        {
+          "label": "Testu-koadroetarako behin behineko testua",
+          "default": "Egin laburpen labur bat zure hitzekin"
+        },
+        {
+          "label": "Behin behineko testua argudiorik ez dagoenean",
+          "default": "Argudiorik ez"
+        },
+        {
+          "label": "\"Baliabideak\" botoiaren etiketa",
+          "default": "Baliabideak"
+        },
+        {
+          "label": "\"Berrabiarazi\" botoiaren etiketa",
+          "default": "Berrabiarazi"
+        },
+        {
+          "label": "\"Gehitu argudioa\" botoiaren etiketa",
+          "default": "Gehitu argudioa"
+        },
+        {
+          "label": "\"Bai\" botoiaren etiketa",
+          "default": "Bai"
+        },
+        {
+          "label": "\"Ez\" botoiaren etiketa",
+          "default": "Ez"
+        },
+        {
+          "label": "Jarraituz gero, datuak galduko direla jakinarazi erabiltzaileari",
+          "default": "Jarraitzen baduzu, zure aldaketa guztiak galduko dira"
+        },
+        {
+          "label": "\"Jarraitu\" botoiaren etiketa",
+          "default": "Jarraitu"
+        },
+        {
+          "label": "Testu laburra argudioak mugi daitezkeen aukeren aurrean",
+          "default": "Mugitu hona"
+        },
+        {
+          "label": "Ezabatzeko ekintza erakusteko erabiltzen den etiketa",
+          "default": "Ezabatu argudioa"
+        },
+        {
+          "label": "Edizio-ekintza erakusteko erabiltzen den etiketa",
+          "default": "Editatu argumentua"
+        },
+        {
+          "label": "Argudiorako etiketa",
+          "default": "Argudioa"
+        },
+        {
+          "label": "Argumentuak jaregiteko eremuaren barruan dagoen testua",
+          "default": "Jaregin argudioak hona"
+        }
+      ]
+    },
+    {
+      "label": "Baliabideen txostena",
+      "fields": [
+        {
+          "label": "\"Sortu dokumentua\" botoiaren etiketa",
+          "default": "Sortu dokumentua"
+        },
+        {
+          "label": "\"Esportatu\" botoiaren etiketa",
+          "default": "Esportatu"
+        },
+        {
+          "label": "\"Hautatu denak\" botoiaren etiketa",
+          "default": "Hautatu denak"
+        },
+        {
+          "label": "\"Baliabideak\" taularen gaineko izenburua",
+          "default": "Baliabideak"
+        },
+        {
+          "label": "Baliabideen taularen izenburua",
+          "default": "Izenburua"
+        },
+        {
+          "label": "Sartu izenburua baliabideen taulan",
+          "default": "Sarrera"
+        },
+        {
+          "label": "Baliabideen taulako URLen goiburua",
+          "default": "URL"
+        },
+        {
+          "label": "Baliabiderik aurkitzen ez denerako etiketa",
+          "default": "Baliabiderik ez"
+        },
+        {
+          "label": "Laburpenik ematen ez denerako etiketa",
+          "default": "Iruzkinik ez"
+        }
+      ]
+    },
+    {
+      "label": "Irisgarritasuna",
+      "fields": [
+        {
+          "label": "\"Itxi\" ikonoaren ordez erabiltzen da",
+          "default": "Itxi"
+        },
+        {
+          "label": "\"Arrastatu\" ikonoaren ordez erabiltzen da",
+          "default": "Arrastatu"
+        },
+        {
+          "label": "Pantaila-irakurleentzako 'Elementu arrastagarria' etiketa",
+          "description": "Eskuragarri dauden aldagaiak dira :argument",
+          "default": "Elementu arrastagarria: :argument"
+        },
+        {
+          "label": "Ekintzen menuko elkarrizketa-koadroaren izenburua",
+          "default": "Ekintzen menua"
+        },
+        {
+          "label": "Ekintzen menuko elkarrizketa-koadroaren deskribapena",
+          "default": "Hautatu argudio honetan egin nahi duzun ekintza"
+        }
+      ]
+    }
+  ]
+}

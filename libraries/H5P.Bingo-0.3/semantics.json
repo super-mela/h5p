@@ -1,0 +1,287 @@
+[
+  {
+    "name": "media",
+    "type": "group",
+    "label": "Media",
+    "importance": "medium",
+    "fields": [
+      {
+        "name": "type",
+        "type": "library",
+        "label": "Type",
+        "importance": "medium",
+        "options": [
+          "H5P.Image 1.1",
+          "H5P.Video 1.6",
+          "H5P.Audio 1.5"
+        ],
+        "optional": true,
+        "description": "Optional media to display above the question."
+      },
+      {
+        "name": "disableImageZooming",
+        "type": "boolean",
+        "label": "Disable image zooming",
+        "importance": "low",
+        "default": false,
+        "optional": true,
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "type",
+              "equals": "H5P.Image 1.1"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "taskDescription",
+    "label": "Task description",
+    "type": "text",
+    "widget": "html",
+    "importance": "high",
+    "description": "Optionally give a description here.",
+    "optional": true,
+    "enterMode": "div",
+    "tags": [
+      "strong",
+      "em",
+      "u",
+      "a",
+      "ul",
+      "ol",
+      "h2",
+      "h3",
+      "hr"
+    ]
+  },
+  {
+    "label": "Mode",
+    "description": "Choose the mode for playing. Numbers will be filled in automatically, words need to be given.",
+    "name": "mode",
+    "type": "select",
+    "optional": false,
+    "options": [
+      {
+        "value": "numbers",
+        "label": "Play with numbers"
+      },
+      {
+        "value": "words",
+        "label": "Play with words"
+      }
+    ],
+    "default": "words"
+  },
+  {
+    "name": "words",
+    "label": "Words or phrases",
+    "type": "group",
+    "expanded": true,
+    "widget": "showWhen",
+    "showWhen": {
+      "rules": [
+        {
+          "field": "mode",
+          "equals": "words"
+        }
+      ]
+    },
+    "fields": [
+      {
+        "name": "wordsContent",
+        "label": "Words or phrases",
+        "description": "Use one line for each word and phrase.",
+        "type": "text",
+        "widget": "textarea",
+        "optional": true
+      }
+    ]
+  },
+  {
+    "label": "Board size",
+    "importance": "high",
+    "name": "size",
+    "type": "number",
+    "default": 5,
+    "min": 3,
+    "max": 7
+  },
+  {
+    "name": "visuals",
+    "type": "group",
+    "label": "Visuals",
+    "importance": "low",
+    "description": "You can customize the visual appearance here.",
+    "fields": [
+      {
+        "name": "buttonImage",
+        "type": "image",
+        "label": "Image",
+        "description": "Joker image for the buttons.",
+        "importance": "low",
+        "optional": true
+      },
+      {
+        "name": "backgroundColor",
+        "type": "text",
+        "label": "Background Color",
+        "importance": "low",
+        "description": "Background color for the board.",
+        "optional": true,
+        "widget": "colorSelector",
+        "spectrum": {
+          "showInput": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "sound",
+    "type": "group",
+    "label": "Audio",
+    "importance": "low",
+    "description": "You can customize audio here.",
+    "fields": [
+      {
+        "name": "soundSelected",
+        "type": "audio",
+        "label": "Selected/unselected a field",
+        "description": "Sound to play when a field is selected or unselected.",
+        "importance": "low",
+        "optional": true,
+        "widgetExtensions": [
+          "AudioRecorder"
+        ]
+      },
+      {
+        "name": "soundCompleted",
+        "type": "audio",
+        "label": "Completed row or column",
+        "description": "Sound to play when the user has selected a complete row or column.",
+        "importance": "low",
+        "optional": true,
+        "widgetExtensions": [
+          "AudioRecorder"
+        ]
+      }
+    ]
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Behavioural settings",
+    "importance": "low",
+    "description": "These options will let you control how the task behaves.",
+    "fields": [
+      {
+        "name": "enableRetry",
+        "label": "Enable \"Retry\"",
+        "type": "boolean",
+        "importance": "low",
+        "default": true,
+        "optional": true
+      },
+      {
+        "label": "Shuffle on retry",
+        "description": "If checked, the words/phrases/numbers will be shuffled on retry.",
+        "importance": "low",
+        "name": "shuffleOnRetry",
+        "type": "boolean",
+        "default": true,
+        "optional": true,
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "enableRetry",
+              "equals": true
+            }
+          ]
+        }
+      },
+      {
+        "label": "Set joker",
+        "description": "Will place an unturnable joker in the center of the board if its size is odd.",
+        "importance": "low",
+        "name": "joker",
+        "type": "boolean",
+        "default": false,
+        "optional": true
+      },
+      {
+        "name": "heightLimitMode",
+        "type": "select",
+        "label": "Height limit mode",
+        "description": "Decide if you want to limit the board height to fit the visible area. Automatic detection may not be perfect depending on your website's setup, e.g. if it has sticky top navigation bars. Good custom values are hard to set manually.",
+        "options": [
+          {
+            "value": "none",
+            "label": "No limit"
+          },
+          {
+            "value": "auto",
+            "label": "Automatic"
+          },
+          {
+            "value": "custom",
+            "label": "Custom"
+          }
+        ],
+        "default": "none"
+      },
+      {
+        "name": "heightLimit",
+        "type": "number",
+        "label": "Height limit",
+        "min": 1,
+        "description": "Maximum height of the board in pixels.",
+        "optional": true,
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "heightLimitMode",
+              "equals": "custom"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "tryAgain",
+    "label": "Text for \"Retry\" button",
+    "type": "text",
+    "importance": "low",
+    "default": "Retry",
+    "common": true
+  },
+  {
+    "name": "a11yTryAgain",
+    "type": "text",
+    "label": "Assistive technology description for \"Retry\" button",
+    "importance": "low",
+    "default": "Retry the task. Reset all responses and start the task over again.",
+    "common": true
+  },
+  {
+    "name": "a11yMute",
+    "type": "text",
+    "label": "Assistive technology description for \"Mute\" button",
+    "importance": "low",
+    "default": "Mute audio, currently unmuted",
+    "common": true
+  },
+  {
+    "name": "a11yUnmute",
+    "type": "text",
+    "label": "Assistive technology description for \"Unmute\" button",
+    "importance": "low",
+    "default": "Unmute audio, currently muted",
+    "common": true
+  }
+]

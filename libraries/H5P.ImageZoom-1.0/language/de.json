@@ -1,0 +1,118 @@
+{
+  "semantics": [
+    {
+      "label": "Bild",
+      "description": "Zu verwendendes Bild."
+    },
+    {
+      "label": "Darstellungsoptionen",
+      "description": "Diese Optionen erlauben die Kontrolle der Darstellung.",
+      "fields": [
+        {
+          "label": "Bildbreite",
+          "description": "Wähle die Breite des Bildes innerhalb seines Rahmen. Sie wird nie 100% überschreiten und die Höhe wird entsprechend angepasst.",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100 %"
+            },
+            {
+              "label": "Eigentliche Breite des Bildes"
+            }
+          ]
+        },
+        {
+          "label": "Bildausrichtung",
+          "description": "Wähle, wo das Bild innerhalb seines Rahmens platziert werden soll.",
+          "options": [
+            {
+              "label": "linksbündig"
+            },
+            {
+              "label": "zentriert"
+            },
+            {
+              "label": "rechtsbündig"
+            }
+          ]
+        },
+        {
+          "label": "Breite des Vergrößerungsglases",
+          "description": "Lege die Breite in Prozent der Bildbreite (z.B. 20%) oder als festen Wert in Pixeln (z.B. 160px) fest.",
+          "default": "20%"
+        },
+        {
+          "label": "Höhe des Vergrößerungsglases",
+          "description": "Lege die Höhe in Prozent der Bildbreite (z.B. 25%) oder als festen Wert in Pixeln (z.B. 90px) fest.",
+          "default": "25%"
+        },
+        {
+          "label": "Bild beim Zoomen abdunkeln",
+          "description": "Wenn eingestellt, wird das Bild abgedunkelt, um den Fokussierungseffekt des Zoomens zu verstärken."
+        }
+      ]
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "description": "Diese Optionen kontrollieren, wie sich die Aufgabe verhält.",
+      "fields": [
+        {
+          "label": "Automatisches Zoomen",
+          "description": "Wenn diese Option aktiviert ist, wird das Bild automatisch vergrößert, während die Maus darüber schwebt. Andernfalls muss der Benutzer die Vergrößerung ein- und ausschalten."
+        },
+        {
+          "label": "Vergrößerungsanzeige ausblenden",
+          "description": "Die Vergrößerungsanzeige wird als Taste für die Tastaturbedienung verwendet. Das Ausblenden verhindert nicht, dass es funktioniert, aber die Benutzer haben weniger Navigationsinformationen."
+        }
+      ]
+    },
+    {
+      "label": "Vorlesewerkzeug",
+      "fields": [
+        {
+          "label": "Vergrößern",
+          "description": "Beschriftung des Vergrößerungs-Buttons (nur für Vorlesewerkzeuge sichtbar).",
+          "default": "Vergrößern"
+        },
+        {
+          "label": "Vergrößerung aktiviert.",
+          "description": "Wird vorgelesen, wenn die Vergrößerung aktiviert wurde.",
+          "default": "Vergrößerung aktiviert."
+        },
+        {
+          "label": "Vergrößerung deaktiviert.",
+          "description": "Wird vorgelesen, wenn die Vergrößerung deaktiviert wurde.",
+          "default": "Vergrößerung deaktiviert."
+        },
+        {
+          "label": "Anweisungen",
+          "description": "Anweisungen zur Verwendung der Tastatur. Wird vorgelesen, wenn die Vergrößerung aktiviert wurde",
+          "default": "Verwende die Pfeiltasten, um das Vergrößerungsglas zu bewegen. Verwende die Plus-Taste zum Vergrößern. Verwende die Minus-Taste zum Verkleinern."
+        },
+        {
+          "label": "Vergrößerung geändert auf",
+          "description": "Wird vorgelesen, wenn der Vergrößerungsfaktor geändert wurde. @magnification ist ein Platzhalter, der durch den jeweiligen Wert ersetzt wird.",
+          "default": "Auf Faktor @magnification zu 1 vergrößert."
+        },
+        {
+          "label": "Vergrößerungsglas verschoben nach",
+          "description": "Wird vorgelesen, wenn das Vergrößerungsglas bewegt wird. @positionHorizontal und @positionVertical sind Platzhalter, die durch die jeweiligen Werte ersetzt werden.",
+          "default": "Vergrößerungsglas horizontal auf @positionHorizontal und vertikal auf @positionVertical verschoben."
+        },
+        {
+          "label": "Unbekannt",
+          "description": "Ersatztext, wenn die Position des Vergrößerungsglases nicht bestimmt werden kann.",
+          "default": "Unbekannt"
+        }
+      ]
+    }
+  ]
+}

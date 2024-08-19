@@ -1,0 +1,28 @@
+{
+  "libraryStrings": {
+    "context-menu_delete": "Ezabatu",
+    "context-menu_arrow-bi-directional": "Alde bietako gezia",
+    "context-menu_arrow-non-directional": "Lerro bakarra",
+    "dialog_close": "Itxiera mezua",
+    "draggable_delete-confirmation": "Ziur zaude elementu hau ezabatu nahi duzula?",
+    "draggable_delete-positive": "Ezabatu elementua",
+    "draggable_delete-negative": "Utzi",
+    "draggable_not-selected": "Sakatu enter aukeratzeko",
+    "grid-indicator_label": "Egin klik eta eraman elementu berria sortzeko",
+    "map-editor-view_item-dialog-title": "ELementua",
+    "semantics-form_save": "Gorde",
+    "toolbar-button-type_map-appearance": "Mapeatu itxura",
+    "toolbar-button-type_create-box": "Sortu kutxa",
+    "toolbar-button-type_create-arrow": "Sortu gezia",
+    "context-menu_edit": "Editatu",
+    "context-menu_arrow-directional": "Alde bateko gezia",
+    "draggable_selected": "Sakatu gezietan mugitzeko. Sakatu Esc aukeratutakoak desmarkatzeko.",
+    "appearance-dialog_title": "Aldatu atalaren maparen itxura",
+    "theme-picker_label": "Azalaren kolorea",
+    "toolbar-button-type_cannot-create-arrow": "Gutxienez bi kutxa egon behar dira gezi bat gehitu ahal izateko",
+    "global_theme-1": "Urdina",
+    "global_theme-2": "Berdea",
+    "global_theme-3": "Gorria",
+    "global_theme-4": "Grisa"
+  }
+}

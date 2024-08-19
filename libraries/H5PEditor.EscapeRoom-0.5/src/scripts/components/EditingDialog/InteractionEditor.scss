@@ -1,0 +1,81 @@
+@import "@styles/icons.scss";
+
+.h5p-editing-dialog-body {
+  .field.library .libwrap {
+    margin-top: 0;
+  }
+
+  .field-name-nextSceneId {
+    display: none;
+  }
+
+  .semantics-wrapper{
+    &.go-to-scene {
+      margin-top: 0;
+
+      .library {
+        display: none;
+      }
+    }
+    .library .h5p-audio-editor .field-name {
+      &-playerMode,
+      &-fitToWrapper,
+      &-controls,
+      &-autoplay {
+        display: none;
+      }
+    }
+  }
+}
+
+.h5p-editing-dialog-header {
+  .title:before {
+    font-family: H5PFontAwesome4;
+  }
+
+  .h5p-gotoscene:before {
+    font-family: '360-image';
+    content: $goToScene;
+  }
+
+  .h5p-advancedtext:before {
+    content: 'T';
+  }
+
+  .h5p-image:before {
+    content: $image;
+  }
+
+  .h5p-audio:before {
+    content: $audio;
+  }
+
+  .h5p-video:before {
+    content: $video;
+  }
+
+  .h5p-imageslider:before,
+  .h5p-singlechoiceset:before,
+  .h5p-multichoice:before,
+  .h5p-blanks:before,
+  .h5p-summary:before {
+    font-family: "H5PFontIcons";
+    content: $summary;
+  }
+
+  .h5p-singlechoiceset:before {
+    content: $singleChoiceSet;
+  }
+
+  .h5p-multichoice:before {
+    content: $multiChoice;
+  }
+
+  .h5p-imageslider:before {
+    content: $imageSlider;
+  }
+
+  .h5p-blanks:before {
+    content: $blanks;
+  }
+}

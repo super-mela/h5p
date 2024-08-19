@@ -1,0 +1,136 @@
+[
+  {
+    "name": "tabs",
+    "type": "list",
+    "label": "Tabs",
+    "entity": "tab",
+    "max": 100,
+    "min": 1,
+    "widgets": [
+      {
+        "name": "VerticalTabs",
+        "label": "Default"
+      }
+    ],
+    "field": {
+      "name": "content",
+      "type": "library",
+      "label": "Content",
+      "importance": "medium",
+      "entity": "content",
+      "options": [
+        "H5P.Column 1.16"
+      ],
+      "widget": "editorTabs"
+    }
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Behavioural settings",
+    "importance": "low",
+    "description": "These options will let you control how the task behaves.",
+    "fields": [
+      {
+        "name": "tabPlacement",
+        "type": "select",
+        "label": "Tab placement",
+        "description": "Choose where the tabs will be placed.",
+        "options": [
+          {
+            "label": "Based on screen size",
+            "value": "dynamic"
+          },
+          {
+            "label": "On top of content",
+            "value": "top"
+          },
+          {
+            "label": "Left of content",
+            "value": "left"
+          }
+        ],
+        "default": "dynamic"
+      },
+      {
+        "name": "tabSpread",
+        "type": "number",
+        "label": "Tab spread",
+        "description": "Define what percentage of the tab panel's horizontal space will be used for tabs.",
+        "default": 70,
+        "min": 50,
+        "max": 100
+      },
+      {
+        "name": "colorBase",
+        "type": "text",
+        "label": "Tab color",
+        "description": "Allows you to adjust the color of tabs.",
+        "importance": "medium",
+        "optional": true,
+        "default": "#1a73d9",
+        "widget": "colorSelector",
+        "spectrum": {
+          "showInput": true,
+          "showInitial": true,
+          "showAlpha": true
+        }
+      },
+      {
+        "name": "colorBackground",
+        "type": "text",
+        "label": "Background color",
+        "description": "Allows you to adjust the background color so the tabs may blend into your environment.",
+        "importance": "medium",
+        "optional": true,
+        "default": "rgba(255, 255, 255, 0)",
+        "widget": "colorSelector",
+        "spectrum": {
+          "showInput": true,
+          "showInitial": true,
+          "showAlpha": true
+        }
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "label": "User interface",
+    "common": true,
+    "fields": [
+      {
+        "name": "tab",
+        "type": "text",
+        "label": "Tab",
+        "default": "tab"
+      },
+      {
+        "name": "noContent",
+        "type": "text",
+        "label": "No content",
+        "default": "There is no content to be displayed."
+      }
+    ]
+  },
+  {
+    "name": "a11y",
+    "type": "group",
+    "label": "Accessibility texts",
+    "common": true,
+    "fields": [
+      {
+        "name": "tabList",
+        "type": "text",
+        "label": "Choose a tab",
+        "description": "Text for screenreaders.",
+        "default": "Choose a tab."
+      },
+      {
+        "name": "dummy",
+        "type": "text",
+        "widget": "none"
+      }
+    ]
+  }
+]

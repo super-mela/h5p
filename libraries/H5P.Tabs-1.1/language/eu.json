@@ -1,0 +1,76 @@
+{
+  "semantics": [
+    {
+      "label": "Fitxak",
+      "entity": "Fitxa",
+      "widgets": [
+        {
+          "label": "Lehenetsia"
+        }
+      ],
+      "field": {
+        "label": "Edukia",
+        "entity": "edukia"
+      }
+    },
+    {
+      "label": "Jokabide-ezarpenak",
+      "description": "Aukera hauek zereginaren portaera kontrolatzeko aukera emango dizute.",
+      "fields": [
+        {
+          "label": "Fitxen kokapena",
+          "description": "Aukeratu fitxak non kokatuko diren.",
+          "options": [
+            {
+              "label": "Pantailaren tamainan oinarrituta"
+            },
+            {
+              "label": "Edukiaren gainean"
+            },
+            {
+              "label": "Edukiaren ezkerrean"
+            }
+          ]
+        },
+        {
+          "label": "Fitxen banaketa",
+          "description": "Zehaztu fitxen paneleko espazio horizontalaren zein ehuneko erabiliko den fitxetarako."
+        },
+        {
+          "label": "Fitxen kolorea",
+          "description": "Fitxen kolorea doitzeko aukera ematen du.",
+          "default": "#1a73d9"
+        },
+        {
+          "label": "Atzeko planoaren kolorea",
+          "description": "Atzeko planoaren kolorea doitzeko aukera ematen du, fitxak zure ingurunean nahas daitezen.",
+          "default": "rgba(255, 255, 255, 0)"
+        }
+      ]
+    },
+    {
+      "label": "Erabiltzaile interfazea",
+      "fields": [
+        {
+          "label": "Fitxa",
+          "default": "fitxa"
+        },
+        {
+          "label": "Edukirik ez",
+          "default": "Ez dago bistaratu beharreko edukirik."
+        }
+      ]
+    },
+    {
+      "label": "Irisgarritasun testuak",
+      "fields": [
+        {
+          "label": "Aukeratu fitxa bat",
+          "description": "Pantaila irakurleentzako testua.",
+          "default": "Aukeratu fitxa bat."
+        },
+        {}
+      ]
+    }
+  ]
+}

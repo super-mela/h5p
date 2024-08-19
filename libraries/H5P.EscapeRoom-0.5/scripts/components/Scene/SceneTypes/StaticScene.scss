@@ -1,0 +1,65 @@
+.image-scene-overlay {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+
+  .image-scene-wrapper {
+    position: relative;
+    width: 100%;
+  }
+
+  .static-scene {
+    &.grab-cursor {
+      cursor: move;
+      cursor: grab;
+      cursor: -moz-grab;
+      cursor: -webkit-grab;
+    }
+
+    &.dragging {
+      cursor: grabbing;
+      cursor: -moz-grabbing;
+      cursor: -webkit-grabbing;
+    }
+  }
+
+  /* Make sure image is centered in the scene */
+  .image-scene-wrapper:not(.vertical) {
+    display: flex;
+  }
+
+  .image-scene-wrapper.vertical {
+    height: 100%;
+    
+    .image-scene {
+      height: 100%;
+      width: auto;
+      max-width: 100%;
+    }
+  }
+
+  .image-scene {
+    align-self: center;
+    width: 100%;
+
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+  }
+
+  .interaction {
+    background: white;
+  }
+
+  .nav-button-wrapper {
+    transform: translate(-50%, -50%);
+  }
+}

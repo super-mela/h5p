@@ -1,0 +1,76 @@
+{
+  "semantics": [
+    {
+      "label": "Skirtukai",
+      "entity": "skirtukas",
+      "widgets": [
+        {
+          "label": "Numatytasis"
+        }
+      ],
+      "field": {
+        "label": "Turinys",
+        "entity": "turinys"
+      }
+    },
+    {
+      "label": "Veikimo nustatymai",
+      "description": "Šios parinktys leis jums valdyti, kaip veikia užduotis.",
+      "fields": [
+        {
+          "label": "Skirtuko vieta",
+          "description": "Pasirinkite, kur bus dedami skirtukai.",
+          "options": [
+            {
+              "label": "Pagal ekrano dydį"
+            },
+            {
+              "label": "Turinio viršuje"
+            },
+            {
+              "label": "Turinio kairėje"
+            }
+          ]
+        },
+        {
+          "label": "Skirtukų pasiskirstymas",
+          "description": "Apibrėžkite, kiek procentų skirtukų skydelio horizontalios erdvės bus naudojama skirtukams."
+        },
+        {
+          "label": "Skirtuko spalva",
+          "description": "Leidžia reguliuoti skirtukų spalvą.",
+          "default": "#1a73d9"
+        },
+        {
+          "label": "Fono spalva",
+          "description": "Leidžia reguliuoti fono spalvą, kad skirtukai galėtų susilieti su aplinka.",
+          "default": "rgba(255, 255, 255, 0)"
+        }
+      ]
+    },
+    {
+      "label": "Naudotojo sąsaja",
+      "fields": [
+        {
+          "label": "Skirtukas",
+          "default": "skirtukas"
+        },
+        {
+          "label": "Nėra turinio",
+          "default": "Nėra turinio, kurį būtų galima rodyti."
+        }
+      ]
+    },
+    {
+      "label": "Pritaikymo tekstai",
+      "fields": [
+        {
+          "label": "Pasirinkite skirtuką",
+          "description": "Tekstas ekrano skaitytuvams.",
+          "default": "Pasirinkite skirtuką."
+        },
+        {}
+      ]
+    }
+  ]
+}

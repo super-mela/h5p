@@ -1,0 +1,196 @@
+{
+  "semantics": [
+    {
+      "label": "Overskrift"
+    },
+    {
+      "label": "Beskrivelse"
+    },
+    {
+      "label": "Argumenter",
+      "fields": [
+        {
+          "label": "Argumenter",
+          "entity": "argument",
+          "field": {
+            "label": "Argument"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Oppsummering",
+      "default": "Oppsummering"
+    },
+    {
+      "label": "Instruksjoner til oppsummeringen"
+    },
+    {
+      "label": "Ressurser",
+      "fields": [
+        {
+          "label": "Resources",
+          "description": "Valgfrie lenker til ressurser."
+        }
+      ]
+    },
+    {
+      "label": "Innstillinger",
+      "description": "Disse innstillingene lar deg bestemme oppførsel.",
+      "fields": [
+        {
+          "label": "Tillat å ta på nytt?",
+          "description": "Kryss av hvis du vil at brukeren skal kunne besvare på nytt"
+        },
+        {
+          "label": "Sett inn påstandende i tilfeldig rekkefølge",
+          "description": "Skal påstandene vises i tilfeldig rekkefølge?"
+        },
+        {
+          "label": "La brukeren legge inn egne påstander",
+          "description": "Lar brukeren opprette sine egne påstander"
+        },
+        {
+          "label": "Vis oppsummering",
+          "description": "Vil du at brukeren skal oppgi en oppsummering der vedkommende begrunner sine valg?"
+        }
+      ]
+    },
+    {
+      "label": "Localize",
+      "fields": [
+        {
+          "label": "Tittel som bruker si 'For'-kolonnen",
+          "default": "Argumenter FOR"
+        },
+        {
+          "label": "Tittel som bruker si 'Mot'-kolonnen",
+          "default": "Argumenter MOT"
+        },
+        {
+          "label": "Midlertidig tekst for tekstfeltene",
+          "default": "Skriv en begrunnelse for dine svar"
+        },
+        {
+          "label": "Plassholder som vises når ingen argumenter er satt",
+          "default": "Ingen argumenter"
+        },
+        {
+          "label": "Tekst på \"Ressurs\"-knappen",
+          "default": "Ressurser"
+        },
+        {
+          "label": "Tekst på \"Start på nytt\"-knappen",
+          "default": "Start på nytt"
+        },
+        {
+          "label": "Tekst på \"Legg til argument\"-knappen",
+          "default": "Legg til argument"
+        },
+        {
+          "label": "Tekst på \"Ja\"-knappen",
+          "default": "Ja"
+        },
+        {
+          "label": "Tekst på \"Nei\"-knappen",
+          "default": "Nei"
+        },
+        {
+          "label": "Informer brukeren om at all data vil gå tapt om vedkommende fortsetter",
+          "default": "Hvis du fortsetter vil alle data gå tapt."
+        },
+        {
+          "label": "Tekst på \"Fortsett\"-knappen",
+          "default": "Fortsett"
+        },
+        {
+          "label": "Kort tekst foran alternativene man kan flytte argumenter til",
+          "default": "Flytt til"
+        },
+        {
+          "label": "Tekst som brukes for i vise 'slett' muligheten",
+          "default": "Slett argument"
+        },
+        {
+          "label": "Tekst som brukes for å vise 'rediger' muligheten",
+          "default": "Rediger argument"
+        },
+        {
+          "label": "Tekst for argumentet",
+          "default": "Argument"
+        },
+        {
+          "label": "Tekst som vises inne i slippsonen for argumenter",
+          "default": "Slipp argumenter her"
+        }
+      ]
+    },
+    {
+      "label": "Ressursrapport",
+      "fields": [
+        {
+          "label": "Tekst på \"Opprett dokument\"-knappen",
+          "default": "Opprett dokument"
+        },
+        {
+          "label": "Tekst på \"Eksporter\"-knappen",
+          "default": "Eksporter"
+        },
+        {
+          "label": "Tekst på \"Velg alt\"-knappen",
+          "default": "Velg alt"
+        },
+        {
+          "label": "Overskrift over \"Ressurser\"-tabellen",
+          "default": "Ressurser"
+        },
+        {
+          "label": "Overskrift i 'Tittel'-kolonnen",
+          "default": "Tittel"
+        },
+        {
+          "label": "Overskrift i 'Ingress'-kolonnen",
+          "default": "Ingress"
+        },
+        {
+          "label": "Overskrift i 'Lenke'-kolonnen",
+          "default": "Lenke"
+        },
+        {
+          "label": "Tekst når ingen ressurser er registrert",
+          "default": "Ingen ressurser"
+        },
+        {
+          "label": "Tekst som vises når ingen oppsummering er gitt",
+          "default": "Ingen oppsummering"
+        }
+      ]
+    },
+    {
+      "label": "Tilgjengelighet",
+      "fields": [
+        {
+          "label": "Brukt istedenfor 'Lukk' ikonet",
+          "default": "Lukk"
+        },
+        {
+          "label": "Brukt istedenfor 'Dra' ikonet",
+          "default": "Dra"
+        },
+        {
+          "label": "'Flyttbar element' etikett for skjermleser",
+          "description": "Tilgjengelige variabler er :argument",
+          "default": "Flyttbar element: :argument"
+        },
+        {
+          "label": "Tittel for handlingsmenyen i dialogboks",
+          "default": "Handlingsmeny"
+        },
+        {
+          "label": "Beskrivelse av tilgjengelige handlinger i dialogboksen",
+          "default": "Velg den handlingen du vil utføre på dette argumentet"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,76 @@
+{
+  "semantics": [
+    {
+      "label": "Karteireiter",
+      "entity": "Karteireiter",
+      "widgets": [
+        {
+          "label": "Eingabemaske"
+        }
+      ],
+      "field": {
+        "label": "Inhalt",
+        "entity": "Inhalt"
+      }
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "description": "Diese Optionen kontrollieren, wie sich die Aufgabe verhält.",
+      "fields": [
+        {
+          "label": "Positionierung",
+          "description": "Wähle, wo die Karteireiter positioniert werden.",
+          "options": [
+            {
+              "label": "Je nach Bildschirmgröße"
+            },
+            {
+              "label": "Oberhalb des Inhalts"
+            },
+            {
+              "label": "Links vom Inhalt"
+            }
+          ]
+        },
+        {
+          "label": "Verteilung der Karteireiter",
+          "description": "Lege fest, welcher Prozentsatz der Fläche der Leiste mit den Karteireitern von den Karteireitern genutzt wird."
+        },
+        {
+          "label": "Tab-Farbe",
+          "description": "Erlaubt es dir, die Farbe der Tabs anzupassen.",
+          "default": "#1a73d9"
+        },
+        {
+          "label": "Hintergrundfarbe",
+          "description": "Erlaubt es dir, die Hintergrundfarbe so anzupassen, dass die Tabs sich in die Umgebung einpassen.",
+          "default": "rgba(255, 255, 255, 0)"
+        }
+      ]
+    },
+    {
+      "label": "Bezeichnungen und Beschriftungen",
+      "fields": [
+        {
+          "label": "Karteireiter",
+          "default": "Karteireiter"
+        },
+        {
+          "label": "Kein Inhalt",
+          "default": "Es gibt keinen Inhalt zum Anzeigen."
+        }
+      ]
+    },
+    {
+      "label": "Vorlesewerkzeug",
+      "fields": [
+        {
+          "label": "Wähle einen Karteireiter",
+          "description": "Vorlesewerkzeug-Beschreibung.",
+          "default": "Wähle einen Karteireiter."
+        },
+        {}
+      ]
+    }
+  ]
+}

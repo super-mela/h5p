@@ -1,0 +1,485 @@
+{
+  "semantics": [
+    {
+      "label": "3-Afbeeldingseditor",
+      "fields": [
+        {
+          "label": "Scènes",
+          "entity": "Scène",
+          "field": {
+            "fields": [
+              {
+                "label": "Scènetype",
+                "options": [
+                  {
+                    "label": "360 graden foto"
+                  },
+                  {
+                    "label": "Panoramic image"
+                  },
+                  {
+                    "label": "Statische afbeelding"
+                  }
+                ]
+              },
+              {
+                "label": "Toon \"Terug\" knop",
+                "description": "Toon knop om terug te gaan naar de vorige scene"
+              },
+              {
+                "label": "Enable \"Zoom\"",
+                "description": "Enable zooming in and out with zoom buttons, mouse wheel, touch gestures and keyboard shortcuts."
+              },
+              {
+                "label": "SceneId"
+              },
+              {
+                "label": "Scènetitel",
+                "description": "Deze wordt gebruikt om de scène voor de auteurs te identificeren"
+              },
+              {
+                "label": "Scèneachtergrond"
+              },
+              {
+                "label": "Scèneomschrijving",
+                "description": "Een tekst die de scène beschrijft voor de eindgebruiker"
+              },
+              {
+                "label": "Scene description (for screen readers)",
+                "description": "A text that can describe the scene for the end-user. It will not be visible but read by screen readers, so formatting will be ignored."
+              },
+              {
+                "label": "Display \"Scene Description\" initially",
+                "description": "Display the scene description when the scene starts for the first time"
+              },
+              {
+                "label": "Oorspronkelijke camerapositie",
+                "description": "Camerapositie in x en z stand"
+              },
+              {
+                "label": "Interacties",
+                "field": {
+                  "fields": [
+                    {
+                      "label": "Label",
+                      "description": "Indien leeg gelaten wordt geen label getoond en zullen we proberen het titelveld te gebruiken voor screenreaders"
+                    },
+                    {
+                      "label": "Labelinstellingen",
+                      "fields": [
+                        {
+                          "label": "Labelpositie",
+                          "description": "Kies waar de label moet verschijnen",
+                          "options": [
+                            {
+                              "label": "Gebruik gedragsinstelling"
+                            },
+                            {
+                              "label": "Rechts uitgelijnd"
+                            },
+                            {
+                              "label": "Links uitgelijnd"
+                            },
+                            {
+                              "label": "Boven uitgelijnd"
+                            },
+                            {
+                              "label": "Onder uitgelijnd"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Label weergave",
+                          "description": "Indien verborgen worden labels alleen getoond bij mouse over",
+                          "options": [
+                            {
+                              "label": "Gebruik gedragsinstelling"
+                            },
+                            {
+                              "label": "Tonen"
+                            },
+                            {
+                              "label": "Verbergen"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Password settings",
+                      "fields": [
+                        {
+                          "label": "Code for the interaction",
+                          "description": "If not empty, the user has to input the code in order to open this content. Separate multiple correct codes with /."
+                        },
+                        {
+                          "label": "A hint for the interaction code",
+                          "description": "An optional hint for the code, can be left empty if wanted"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Show as hotspot",
+                      "description": "Allows for adding interaction areas to the background image that can be custom size."
+                    },
+                    {
+                      "label": "Hotspot settings",
+                      "fields": [
+                        {
+                          "label": "Show hotspot when mouse is hovering",
+                          "description": "Will allow hotspot to be visible when mouse is hovering the area."
+                        },
+                        {
+                          "label": "Set the hotspot be tabbable",
+                          "description": "Will allow hotspot to be tabbable. Required to be checked to make the content accessible!"
+                        },
+                        {
+                          "default": "256,128",
+                          "label": "Values for storing the height and width for hotspot"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Show as open content in the scene",
+                      "description": "Allows the content to be shown in an open dialog box directly in the scene."
+                    },
+                    {},
+                    {
+                      "label": "Interaction position"
+                    },
+                    {
+                      "label": "Button style",
+                      "description": "Decide how the icon should look.",
+                      "options": [
+                        {
+                          "label": "Text icon"
+                        },
+                        {
+                          "label": "Info icon"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Knopstijl",
+                "description": "Bepaal hoe knoppen die naar deze scène verwijzen eruit moeten zien. Voor scènes die statisch zijn en niet naar nieuwe scènes leiden, bevelen we de \"Meer informatie\" knop aan.",
+                "options": [
+                  {
+                    "label": "Nieuwe scène (pijl)"
+                  },
+                  {
+                    "label": "Meer informatie (plus)"
+                  }
+                ]
+              },
+              {
+                "label": "Audio type",
+                "description": "Decide what audio type this scene will use, either use an audio track or choose an existing audio playlist.",
+                "options": [
+                  {
+                    "label": "Audio Track"
+                  },
+                  {
+                    "label": "Playlist"
+                  }
+                ]
+              },
+              {
+                "label": "Geluidsbestand",
+                "description": "Voeg een geluidsbestand toe dat specifiek is voor deze scène."
+              },
+              {
+                "label": "Playlist",
+                "description": "Here you can pick an existing playlist as audio."
+              },
+              {
+                "label": "Restart audio when scene is reopened"
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "Playlists"
+        },
+        {
+          "label": "Playlists",
+          "field": {
+            "fields": [
+              {
+                "label": "Playlist Title",
+                "description": "Used to identify the playlist"
+              },
+              {
+                "label": "Audio Tracks",
+                "description": "Add audio tracks to the playlist."
+              },
+              {}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Playlists",
+      "description": "These options will let you add playlists for the scenes.",
+      "fields": [
+        {
+          "label": "Added playlists",
+          "description": "Make playlists that's available for all scenes by default."
+        }
+      ]
+    },
+    {
+      "label": "Gedragsinstellingen",
+      "description": "Met deze opties kun je bepalen hoe de interactie zich gedraagt.",
+      "fields": [
+        {
+          "label": "Audio type",
+          "description": "Decide what audio type this scene will use, either use an audio track or choose an existing audio playlist.",
+          "options": [
+            {
+              "label": "Global Audio"
+            },
+            {
+              "label": "Playlist"
+            }
+          ]
+        },
+        {
+          "label": "Algemene audio",
+          "description": "Voeg een audiobestand toe dat standaard beschikbaar is voor alle scènes."
+        },
+        {
+          "label": "Playlist",
+          "description": "Here you can pick an existing playlist as audio."
+        },
+        {
+          "label": "Display \"Scores\" button",
+          "description": "Display button for showing the scores from assignments."
+        },
+        {
+          "label": "Display \"Home\" button",
+          "description": "Display button for going to start scene."
+        },
+        {
+          "label": "Weergavekwaliteit van de scène",
+          "description": "Kies het aantal breedte- en hoogtesegmenten dat wordt gebruikt om een scène te renderen. Dit heeft direct invloed op het kwaliteitsniveau van de scène. Probeer de kwaliteit te verhogen als een scène er \"blokkerig\" uitziet of dat er \"golven\" te zien zijn tussen de scènes. Let op dat bij het laden van een hogere kwaliteit het renderen meer tijd in beslag neemt.",
+          "options": [
+            {
+              "label": "Hoge kwaliteit (128x128)"
+            },
+            {
+              "label": "Gemiddelde kwaliteit Quality (64x64)"
+            },
+            {
+              "label": "Lage kwaliteit (16x16)"
+            }
+          ]
+        },
+        {
+          "label": "Labelinstellingen",
+          "fields": [
+            {
+              "label": "Labelpositie",
+              "description": "De standaard labelpositie. De positie kan per interactie worden overschreven",
+              "options": [
+                {
+                  "label": "Rechts uitgelijnd"
+                },
+                {
+                  "label": "Links uitgelijnd"
+                },
+                {
+                  "label": "Boven uitgelijnd"
+                },
+                {
+                  "label": "Onder uitgelijnd"
+                }
+              ]
+            },
+            {
+              "label": "Label weergave",
+              "description": "Indien uitgevinkt worden labels alleen getoond bij mouse over"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Localiseren",
+      "fields": [
+        {
+          "label": "Aria label voor inhoudstype",
+          "default": "Virtuele Tour"
+        },
+        {
+          "label": "Label om audio af te spelen",
+          "default": "Audio Track afspelen"
+        },
+        {
+          "label": "Label om audio te pauzeren",
+          "default": "Audio Track pauzeren"
+        },
+        {
+          "label": "Titel bij scène dialaog",
+          "default": "Scène beschrijving"
+        },
+        {
+          "label": "Label voor knop om camera te resetten",
+          "default": "Camera resetten"
+        },
+        {
+          "label": "Label voor de dialoog indienen knop",
+          "default": "Dialoog indienen"
+        },
+        {
+          "label": "Label voor de dialoog sluiten knop",
+          "default": "Dialoog sluiten"
+        },
+        {
+          "label": "Aria label voor de label uitbreiden knop",
+          "default": "De visuele label uitbreiden"
+        },
+        {
+          "label": "Label voor als er een achtergorndafbeelding aan het laden is in een 360 scene",
+          "default": "Achtergrondafbeelding aan het laden..."
+        },
+        {
+          "label": "Label voor als er geen inhoud bestaat",
+          "default": "Geen inhoud"
+        },
+        {
+          "label": "Label for context menu button for go to scene",
+          "default": "Go to scene"
+        },
+        {
+          "label": "Label for context menu button for edit",
+          "default": "Edit"
+        },
+        {
+          "label": "Label for context menu button for delete",
+          "default": "Delete"
+        },
+        {
+          "label": "Translation for \"Score\"",
+          "default": "Score"
+        },
+        {
+          "label": "Translation for \"Assignment\"",
+          "default": "Assignment"
+        },
+        {
+          "label": "Translation for \"Total\"",
+          "default": "Total"
+        },
+        {
+          "label": "Label for button to show score summary",
+          "default": "Show Score Summary"
+        },
+        {
+          "label": "Translation for 'Scene'",
+          "default": "Scene"
+        },
+        {
+          "label": "Untitled",
+          "default": "Untitled"
+        },
+        {
+          "label": "Go to start scene",
+          "default": "Go to start scene"
+        },
+        {
+          "label": "You are at the start scene",
+          "default": "You are at the start scene"
+        },
+        {
+          "label": "Unlocked",
+          "default": "Unlocked"
+        },
+        {
+          "label": "Locked",
+          "default": "Locked"
+        },
+        {
+          "label": "Search the room until you find the code",
+          "default": "Search the room until you find the code"
+        },
+        {
+          "label": "The code was wrong, try again.",
+          "default": "The code was wrong, try again."
+        },
+        {
+          "label": "The content has been unlocked!",
+          "default": "The content has been unlocked!"
+        },
+        {
+          "label": "Code",
+          "default": "Code"
+        },
+        {
+          "label": "Unlocked interaction action (Continue)",
+          "default": "Continue"
+        },
+        {
+          "label": "Locked interaction action (Unlock)",
+          "default": "Unlock"
+        },
+        {
+          "label": "Drag horizontally to scale (for screen readers)",
+          "default": "Drag horizontally to scale"
+        },
+        {
+          "label": "Drag vertically to scale (for screen readers)",
+          "default": "Drag vertically to scale"
+        },
+        {
+          "label": "Hint",
+          "default": "Hint"
+        },
+        {
+          "label": "Locked content",
+          "default": "Locked content"
+        },
+        {
+          "label": "Back",
+          "default": "Back"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (enter)",
+          "default": "Enter fullscreen mode"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (exit)",
+          "default": "Exit fullscreen mode"
+        },
+        {
+          "label": "Main toolbar",
+          "default": "Main toolbar"
+        },
+        {
+          "label": "No valid scenes set",
+          "default": "No valid scenes have been set."
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom in button",
+          "default": "Zoom in"
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom out button",
+          "default": "Zoom out"
+        },
+        {
+          "label": "Zoom toolbar",
+          "default": "Zoom toolbar"
+        },
+        {
+          "label": "Zoom aria text for screenreaders",
+          "default": ":num% zoomed in"
+        }
+      ]
+    }
+  ]
+}

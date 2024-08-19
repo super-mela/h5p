@@ -1,0 +1,235 @@
+{
+  "semantics": [
+    {
+      "label": "Cabeceira",
+      "description": "Título opcional para mostrar na barra de ferramentas."
+    },
+    {
+      "label": "Introdución",
+      "description": "Opcionalmente, establecer algunha introdución que lle indique ao usuario o que debe facer.",
+      "default": "<p style=\"text-align: center;\"></p>"
+    },
+    {
+      "label": "Segmentos",
+      "entity": "segmento",
+      "widgets": [
+        {
+          "label": "Por defecto"
+        },
+        {
+          "label": "Textual"
+        }
+      ],
+      "field": {
+        "label": "Segmentos",
+        "fields": [
+          {
+            "label": "Título do segmento"
+          },
+          {
+            "label": "Opcións",
+            "entity": "opción",
+            "field": {
+              "label": "Texto para a opción"
+            }
+          },
+          {
+            "label": "Cor de fondo"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Modo",
+      "options": [
+        {
+          "label": "Libre"
+        },
+        {
+          "label": "Cuestionario"
+        }
+      ]
+    },
+    {
+      "label": "Solucións",
+      "fields": [
+        {
+          "label": "Solucións",
+          "entity": "solución",
+          "field": {
+            "label": "Solución"
+          }
+        },
+        {
+          "label": "Maniquí"
+        }
+      ]
+    },
+    {
+      "label": "Configuración de son",
+      "fields": [
+        {
+          "label": "Usar o son incorporado para facer clic no botón seguinte ou no botón anterior"
+        },
+        {
+          "label": "Fai clic no botón seguinte ou no botón anterior",
+          "description": "Reproducirase cando o usuario prema no botón anterior ou seguinte."
+        }
+      ]
+    },
+    {
+      "label": "Configuración do comportamento",
+      "fields": [
+        {
+          "label": "Vidas",
+          "description": "Introduza o número de vidas coas que comeza un usuario (cada resposta incorrecta deduce unha ata 0) ou déixeo baleiro para non limitar o número de vidas."
+        },
+        {
+          "label": "Activar o botón \"Tentar de novo\""
+        },
+        {
+          "label": "Activar o botón \"Amosar Solución\""
+        }
+      ]
+    },
+    {
+      "label": "Interface de usuario",
+      "fields": [
+        {
+          "label": "Comprobar",
+          "default": "Comprobar"
+        },
+        {
+          "label": "Enviar",
+          "default": "Enviar"
+        },
+        {
+          "label": "Amosar a solución",
+          "default": "Amosar a solución"
+        },
+        {
+          "label": "Tentar de novo",
+          "default": "Tentar de novo"
+        },
+        {
+          "label": "Quedaches sen vidas",
+          "default": "Quedaches sen vidas."
+        },
+        {
+          "label": "Solución",
+          "default": "Estas son as solucións."
+        },
+        {
+          "label": "Esta non é unha solución",
+          "default": "Esta non é unha solución."
+        },
+        {
+          "label": "Sen mensaxes",
+          "default": "..."
+        },
+        {
+          "label": "Atopaches unha solución!",
+          "default": "Atopaches unha solución!"
+        },
+        {
+          "label": "Atopaches todas as solucións!",
+          "default": "Atopaches todas as solucións!"
+        },
+        {
+          "label": "Solucións atopadas",
+          "default": "Solucións atopadas"
+        },
+        {
+          "label": "Por atopar",
+          "default": "Por atopar"
+        }
+      ]
+    },
+    {
+      "label": "Textos de accesibilidade",
+      "fields": [
+        {
+          "label": "Facer aleatorios todos os segmentos",
+          "default": "Facer aleatorios todos os segmentos"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia do botón \"Comprobar\"",
+          "default": "Comprobar as túas respostas. As respostas marcaranse como correctas ou incorrectas."
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia do botón \"Amosar solución\"",
+          "default": "Mostrar as solucións."
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia do botón \"Tentar de novo\"",
+          "default": "Tentar de novo a tarefa. Borrar todos os segmentos e comenzar a tarefa de novo."
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia para a etiqueta actual",
+          "description": "@text é un marcador de posición e substituirase polo valor respectivo.",
+          "default": "Etiqueta actual: @text"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia para as etiquetas actuais",
+          "description": "@texts é un marcador de posición e substituirase polo valor respectivo.",
+          "default": "Etiquetas actuais: @texts"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia para o botón \"texto anterior\"",
+          "default": "Texto anterior"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia para o botón \"texto seguinte\"",
+          "default": "Texto seguinte"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia para o botón de xiro",
+          "description": "@number é un marcador de posición e substituirase polo valor respectivo.",
+          "default": "Xira o segmento @number para obter texto aleatorio para el."
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia para anunciar a solución",
+          "description": "@number e @combination son marcadores de posición e serán substituídos polos valores respectivos.",
+          "default": "Estas son as solucións (@number en total): @combination."
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia para anunciar \"desactivado\"",
+          "default": "desactivado"
+        },
+        {
+          "label": "Descrición da tecnoloxía de asistencia para anunciar \"Facer aleatorio\"",
+          "default": "Facer aleatorio"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia para a barra de ferramentas",
+          "default": "Barra de ferramentas"
+        },
+        {
+          "label": "Descrición para as tecnoloxías de asistencia para anunciar o segmento actual",
+          "description": "@number e @total son marcadores de posición e serán substituídos polos valores respectivos.",
+          "default": "Segmento @number de @total"
+        },
+        {
+          "label": "Solución",
+          "default": "Solución"
+        },
+        {
+          "label": "Atopado",
+          "default": "Atopado"
+        },
+        {
+          "label": "Non atopado",
+          "default": "Non atopado"
+        },
+        {
+          "label": "Botón de son (desactivado)",
+          "default": "Silenciar o son, actualmente activado"
+        },
+        {
+          "label": "Botón de son (silenciado)",
+          "default": "Activar o son, actualmente silenciado."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "semantics": [
+    {
+      "label": "Vidutinis",
+      "fields": [
+        {
+          "label": "Vidutinis"
+        },
+        {
+          "label": "Maketas"
+        }
+      ]
+    },
+    {
+      "label": "Įrašo failai",
+      "entity": "įrašo failas",
+      "widgets": [
+        {
+          "label": "Numatytasis"
+        }
+      ],
+      "field": {
+        "label": "Įrašo failo duomenys",
+        "fields": [
+          {
+            "label": "Transkripcija (WebVTT failas)"
+          },
+          {
+            "label": "Pavadinimas",
+            "description": "Pavadinimas, pagal kurį identifikuojamas įrašas. Neaktualu, jei turite tik vieną įrašo failą."
+          },
+          {
+            "label": "Kalbos kodas",
+            "description": "Įrašo biblioteka bandys automatiškai nustatyti įrašo teksto kalbą kaip informaciją ekrano skaitytuvams. Jei nepavyksta, galite rankiniu būdu nustatyti „BCP 47 kalbos žymą“ – pvz. „en“ – anglų kalba, „nb“ – norvegų bokmål ir kt."
+          }
+        ]
+      }
+    },
+    {
+      "label": "Veikimo nustatymai",
+      "fields": [
+        {
+          "label": "Didžiausias eilučių skaičius",
+          "description": "Didžiausias įrašo eilučių skaičius, kuris turėtų būti rodomas vienu metu. Jei neįtrauksite arba 0, bus rodomas visas nuorašas."
+        },
+        {
+          "label": "Show transcript on load",
+          "description": "You can select whether the transcript should be shown when the content is loaded or not."
+        }
+      ]
+    },
+    {
+      "label": "Skyriai",
+      "fields": [
+        {
+          "label": "Naudoti interaktyvaus video žymas"
+        },
+        {
+          "label": "Skyriaus žymos",
+          "description": "Galite pasirinktinai pridėti skyriaus žymas įprastu mp4chaps formatu. Sintaksė yra „hh:mm:ss Skyriaus pavadinimas“ arba „hh:mm:ss.MMM Skyriaus pavadinimas“"
+        }
+      ]
+    },
+    {
+      "label": "Naudotojo sąsaja",
+      "fields": [
+        {
+          "label": "Laikmena nepateikta",
+          "default": "Laikmena nepriskirta įrašui."
+        },
+        {
+          "label": "Nepateiktas įrašas",
+          "default": "Nepateiktas įrašas."
+        },
+        {
+          "label": "Problema su WebVTT failu",
+          "default": "Atrodo, kad kažkas negerai su WebVTT failu. Daugiau informacijos rasite naršyklės kūrimo konsolėje."
+        },
+        {
+          "label": "Skyriaus žymos",
+          "default": "Skyriaus žymos"
+        },
+        {
+          "label": "Neįvardinta parinktis",
+          "default": "Neįvardinta parinktis"
+        }
+      ]
+    },
+    {
+      "label": "Skaitytuvas",
+      "fields": [
+        {
+          "label": "Įrašas matomas",
+          "default": "Slėpti įrašą. Dabar matomas."
+        },
+        {
+          "label": "Įrašas nematomas",
+          "default": "Rodyti įrašą. Dabar nematomas."
+        },
+        {
+          "label": "Autoslinkimas įjungtas",
+          "default": "Išjungti autoslinkimą. Dabar įjungtas."
+        },
+        {
+          "label": "Autoslinkimas neįjungtas",
+          "default": "Įjungti autoslinkimą. Dabar išjungtas."
+        },
+        {
+          "label": "Autoslinkimas išjungtas",
+          "default": "Autoslinkimo parinktis išjungta."
+        },
+        {
+          "label": "Interaktyvi įrašo peržiūra",
+          "default": "Perjungti į paprasto teksto rodymą"
+        },
+        {
+          "label": "Paprasto teksto rodymas",
+          "default": "Perjungti į interaktyvų įrašo rodymą."
+        },
+        {
+          "label": "Režimo perjungimas išjungtas",
+          "default": "Režimo perjungimas išjungtas."
+        },
+        {
+          "label": "Pradžios laikas įjungtas",
+          "default": "Slėpti pradžios laiką. Dabar rodomas."
+        },
+        {
+          "label": "Pradžios laikas neaktyvus",
+          "default": "Rodyti pradžio laiką. Dabar nerodomas."
+        },
+        {
+          "label": "Pradžios laikas išjungtas",
+          "default": "Pradžios laiko parinktis išjungta."
+        },
+        {
+          "label": "Line breaks active",
+          "default": "Hide line breaks. Currently shown."
+        },
+        {
+          "label": "Line breaks inactive",
+          "default": "Show line breaks. Currently not shown."
+        },
+        {
+          "label": "Line breaks disabled",
+          "default": "Line break option disabled."
+        },
+        {
+          "label": "Open chapter marks",
+          "default": "Open chapter marks"
+        },
+        {
+          "label": "Close chapter marks",
+          "default": "Close chapter marks"
+        },
+        {
+          "label": "Chapter marks disabled.",
+          "default": "Chapter marks disabled."
+        },
+        {
+          "label": "Interactive transcript",
+          "default": "Interactive transcript"
+        },
+        {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
+          "label": "Select field disabled",
+          "default": "Select field disabled."
+        },
+        {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
+          "label": "Search box disabled",
+          "default": "Search box disabled."
+        },
+        {
+          "label": "Uždaryti",
+          "default": "Uždaryti"
+        }
+      ]
+    }
+  ]
+}

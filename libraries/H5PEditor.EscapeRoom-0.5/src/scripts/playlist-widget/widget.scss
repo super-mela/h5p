@@ -1,0 +1,31 @@
+.h5p-new-playlist-button {
+  display: inline-flex;
+  padding: 0.5em 1em;
+
+  font-size: 1em;
+  color: #ffffff;
+
+  background: #475ec4;
+  border: 1px solid #475ec4;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.h5p-control-bar-playlist {
+  display: flex;
+  flex-direction: column;
+
+  .h5p-new-playlist-button {
+    line-height: 1.6;
+  }
+}
+
+.h5p-editor-escape-room-wrapper.mobile {
+  .h5p-control-bar {
+    display: block;
+  }
+
+  .buttons-wrapper {
+    margin-top: 0.75em;
+  }
+}

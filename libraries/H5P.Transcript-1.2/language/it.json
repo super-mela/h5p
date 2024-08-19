@@ -1,0 +1,187 @@
+{
+  "semantics": [
+    {
+      "label": "Medium",
+      "fields": [
+        {
+          "label": "Medium"
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "field": {
+        "label": "Transcript file data",
+        "fields": [
+          {
+            "label": "Transcript (WebVTT file)"
+          },
+          {
+            "label": "Label",
+            "description": "Label to identify the transcript with. Not relevant if you only have one transcript file."
+          },
+          {
+            "label": "Language code",
+            "description": "The transcript library will try to automatically determine the language of the transcription text as information for screen readers. If that fails, you can manually set the \"BCP 47 language tag\" - e.g. \"en\" for English, \"nb\" for Norwegian bokmål, etc."
+          }
+        ]
+      },
+      "label": "Transcript files",
+      "entity": "transcript file",
+      "widgets": [
+        {
+          "label": "Default"
+        }
+      ]
+    },
+    {
+      "label": "Behavioural settings",
+      "fields": [
+        {
+          "label": "Maximum number of lines",
+          "description": "Maximum number of transcript lines that should be displayed at once. If left out or 0, will display complete transcript."
+        },
+        {
+          "label": "Show transcript on load",
+          "description": "You can select whether the transcript should be shown when the content is loaded or not."
+        }
+      ]
+    },
+    {
+      "label": "Chapters",
+      "fields": [
+        {
+          "label": "Use bookmarks of Interactive Video"
+        },
+        {
+          "label": "Chapter marks",
+          "description": "You can optionally add chapter marks in common mp4chaps format. The syntax is \"hh:mm:ss Chapter title\" or \"hh:mm:ss.MMM Chapter title\""
+        }
+      ]
+    },
+    {
+      "label": "User interface",
+      "fields": [
+        {
+          "label": "No medium provided",
+          "default": "No medium was assigned to the transcript."
+        },
+        {
+          "label": "No transcript provided",
+          "default": "No transcript was provided."
+        },
+        {
+          "label": "Problem with WebVTT file",
+          "default": "There seems to be something wrong with the WebVTT file. Please consult the browser's development console for more information."
+        },
+        {
+          "label": "Chapter marks",
+          "default": "Chapter marks"
+        },
+        {
+          "label": "Unnamed option",
+          "default": "Unnamed option"
+        }
+      ]
+    },
+    {
+      "label": "Readspeaker",
+      "fields": [
+        {
+          "label": "Transcript visible",
+          "default": "Hide transcript. Currently visible."
+        },
+        {
+          "label": "Transcript invisible",
+          "default": "Show transcript. Currently not visible."
+        },
+        {
+          "label": "Autoscroll active",
+          "default": "Turn off autoscroll. Currently active."
+        },
+        {
+          "label": "Autoscroll inactive",
+          "default": "Turn on autoscroll. Currently not active."
+        },
+        {
+          "label": "Autoscroll disabled",
+          "default": "Autoscroll option disabled."
+        },
+        {
+          "label": "Interactive transcript view",
+          "default": "Switch to plaintext view"
+        },
+        {
+          "label": "Plain text view",
+          "default": "Switch to interactive transcript view."
+        },
+        {
+          "label": "Mode switching disabled",
+          "default": "Mode switching disabled."
+        },
+        {
+          "label": "Start time active",
+          "default": "Hide start time. Currently shown."
+        },
+        {
+          "label": "Start time inactive",
+          "default": "Show start time. Currently not shown."
+        },
+        {
+          "label": "Start time disabled",
+          "default": "Start time option disabled."
+        },
+        {
+          "label": "Line breaks active",
+          "default": "Hide line breaks. Currently shown."
+        },
+        {
+          "label": "Line breaks inactive",
+          "default": "Show line breaks. Currently not shown."
+        },
+        {
+          "label": "Line breaks disabled",
+          "default": "Line break option disabled."
+        },
+        {
+          "label": "Open chapter marks",
+          "default": "Open chapter marks"
+        },
+        {
+          "label": "Close chapter marks",
+          "default": "Close chapter marks"
+        },
+        {
+          "label": "Chapter marks disabled",
+          "default": "Chapter marks disabled."
+        },
+        {
+          "label": "Interactive transcript",
+          "default": "Interactive transcript"
+        },
+        {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
+          "label": "Select field disabled",
+          "default": "Select field disabled."
+        },
+        {
+          "label": "Enter to highlight",
+          "default": "Enter a query to highlight relevant text."
+        },
+        {
+          "label": "Search box disabled",
+          "default": "Search box disabled."
+        },
+        {
+          "label": "Close",
+          "default": "Close"
+        }
+      ]
+    }
+  ]
+}

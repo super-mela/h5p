@@ -1,0 +1,28 @@
+{
+  "libraryStrings": {
+    "context-menu_delete": "Verwijderen",
+    "context-menu_arrow-directional": "Eenzijdige pijl",
+    "context-menu_arrow-bi-directional": "Dubbelzijdige pijl",
+    "draggable_delete-positive": "Verwijder onderdeel",
+    "draggable_delete-negative": "Annuleer",
+    "draggable_selected": "Klik pijltjestoetsen om te verplaatsen. Klik Escape voor deselecteren.",
+    "draggable_not-selected": "Klik Enter om te selecteren",
+    "grid-indicator_label": "Klik-en-sleep om nieuw element te maken",
+    "map-editor-view_item-dialog-title": "Item",
+    "semantics-form_save": "Opslaan",
+    "toolbar-button-type_map-appearance": "Kaart uiterlijk",
+    "toolbar-button-type_create-box": "Box maken",
+    "toolbar-button-type_create-arrow": "Pijl maken",
+    "context-menu_edit": "Bewerken",
+    "context-menu_arrow-non-directional": "Enkele lijn",
+    "dialog_close": "Dialoog sluiten",
+    "draggable_delete-confirmation": "Weet je zeker dat je dit onderdeel wilt verwijderen?",
+    "appearance-dialog_title": "Change the topic map's appearance",
+    "global_theme-1": "Blue",
+    "global_theme-3": "Red",
+    "global_theme-2": "Green",
+    "theme-picker_label": "Color theme",
+    "toolbar-button-type_cannot-create-arrow": "There must be at least two boxes before an arrow can be added",
+    "global_theme-4": "Gray"
+  }
+}

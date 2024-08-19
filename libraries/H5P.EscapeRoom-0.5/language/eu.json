@@ -1,0 +1,485 @@
+{
+  "semantics": [
+    {
+      "label": "Hiru Irudiak Editorea",
+      "fields": [
+        {
+          "label": "Eszenak",
+          "entity": "Eszena",
+          "field": {
+            "fields": [
+              {
+                "label": "Eszena-mota",
+                "options": [
+                  {
+                    "label": "360 irudia"
+                  },
+                  {
+                    "label": "Irudi panoramikoa"
+                  },
+                  {
+                    "label": "Irudi estatikoa"
+                  }
+                ]
+              },
+              {
+                "label": "Erakutsi \"Atzera\" botoia",
+                "description": "Erakutsi aurreko eszenara joateko botoia"
+              },
+              {
+                "label": "Enable \"Zoom\"",
+                "description": "Enable zooming in and out with zoom buttons, mouse wheel, touch gestures and keyboard shortcuts."
+              },
+              {
+                "label": "SceneId"
+              },
+              {
+                "label": "Eszenaren izenburua",
+                "description": "Egileentzako eszena identifikatzeko erabiltzen da"
+              },
+              {
+                "label": "Eszenaren atzeko planoa"
+              },
+              {
+                "label": "Eszenaren deskribapena",
+                "description": "Erabiltzaileari eszena deskribatzen dion testua"
+              },
+              {
+                "label": "Eszenaren deskribapena (pantaila-irakurleentzat)",
+                "description": "A text that can describe the scene for the end-user. It will not be visible but read by screen readers, so formatting will be ignored."
+              },
+              {
+                "label": "Display \"Scene Description\" initially",
+                "description": "Display the scene description when the scene starts for the first time"
+              },
+              {
+                "label": "Kameraren hasierako kokapena",
+                "description": "Kamerak hasieran izango duen kokapena"
+              },
+              {
+                "label": "Elkarrekintzak",
+                "field": {
+                  "fields": [
+                    {
+                      "label": "Etiketa",
+                      "description": "Hutsik utziz gero ez da etiketarik erakutsiko eta pantaila-irakurleentzat izenburuko eremua erabiltzen saiatuko gara"
+                    },
+                    {
+                      "label": "Etiketen Ezarpenak",
+                      "fields": [
+                        {
+                          "label": "Etiketaren kokapena",
+                          "description": "Aukeratu etiketa non agertuko den",
+                          "options": [
+                            {
+                              "label": "Erabili jokaeraren ezarpena"
+                            },
+                            {
+                              "label": "Eskuinera lerrokatuta"
+                            },
+                            {
+                              "label": "Ezkerrera lerrokatuta"
+                            },
+                            {
+                              "label": "Gora lerrokatuta"
+                            },
+                            {
+                              "label": "Behera lerrokatuta"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Erakutsi etiketa",
+                          "description": "Ezkutatuz gero - etiketak sagua gainetik pasatzerakoan erakutsiko da",
+                          "options": [
+                            {
+                              "label": "Erabili jokaeraren ezarpena"
+                            },
+                            {
+                              "label": "Erakutsi"
+                            },
+                            {
+                              "label": "Ezkutatu"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Password settings",
+                      "fields": [
+                        {
+                          "label": "Elkarrekintzarako kodea",
+                          "description": "If not empty, the user has to input the code in order to open this content."
+                        },
+                        {
+                          "label": "Interakzio-kodearen aholkua",
+                          "description": "Koderako aukerako aholku bat, nahi izanez gero hutsik utz daiteke"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Erakutsi puntu bero gisa",
+                      "description": "Atzeko irudiari interakzio-eremuak gehitzeko aukera ematen du. Haien tamaina pertsonalizatu daiteke."
+                    },
+                    {
+                      "label": "Hotspot settings",
+                      "fields": [
+                        {
+                          "label": "Erakutsi puntu beroa sagua gainetik pasatzean",
+                          "description": "Puntu beroa ikusgai egongo da sagua eremuaren gainetik pasatzean."
+                        },
+                        {
+                          "label": "Ezarri puntu beroa tabulagarria izan dadin",
+                          "description": "Puntu beroa tabulatzeko aukera emango du. Required to be checked to make the content accessible!"
+                        },
+                        {
+                          "default": "256,128",
+                          "label": "Puntu beroaren altuera eta zabalera gordetzeko balioak"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Erakutsi eszenan eduki ireki gisa",
+                      "description": "Edukia irekita dagoen elkarrizketa-koadroan zuzenean eszenan erakusteko aukera ematen du."
+                    },
+                    {},
+                    {
+                      "label": "Interaction position"
+                    },
+                    {
+                      "label": "Button style",
+                      "description": "Decide how the icon should look.",
+                      "options": [
+                        {
+                          "label": "Text icon"
+                        },
+                        {
+                          "label": "Info icon"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Botoi-estiloa",
+                "description": "Erabaki eszena hau erakutsiko duten botoiek izango duten itxura. Estatikoak diren eta beste eszenetara ez doazen eszenetan, \"Informazio gehiago\" botoia gomendatzen dugu.",
+                "options": [
+                  {
+                    "label": "Eszena berria (gezia)"
+                  },
+                  {
+                    "label": "Informazio gehiago (plus)"
+                  }
+                ]
+              },
+              {
+                "label": "Audio type",
+                "description": "Decide what audio type this scene will use, either use an audio track or choose an existing audio playlist.",
+                "options": [
+                  {
+                    "label": "Audio pista"
+                  },
+                  {
+                    "label": "Erreprodukzio zerrenda"
+                  }
+                ]
+              },
+              {
+                "label": "Audio-pista",
+                "description": "Gehitu audio-pista bat eszena honentzat."
+              },
+              {
+                "label": "Playlist",
+                "description": "Hemen lehendik dagoen erreprodukzio-zerrenda bat hauta dezakezu audio gisa."
+              },
+              {
+                "label": "Berrabiarazi audioa eszena berriro irekitzen denean"
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "Playlists"
+        },
+        {
+          "label": "Playlists",
+          "field": {
+            "fields": [
+              {
+                "label": "Playlist Title",
+                "description": "Used to identify the playlist"
+              },
+              {
+                "label": "Audio Tracks",
+                "description": "Add audio tracks to the playlist."
+              },
+              {}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Playlists",
+      "description": "These options will let you add playlists for the scenes.",
+      "fields": [
+        {
+          "label": "Added playlists",
+          "description": "Make playlists that's available for all scenes by default."
+        }
+      ]
+    },
+    {
+      "label": "Portaeraren ezarpenak",
+      "description": "Aukera hauek munduaren portaera kontrolatzen utziko dizute.",
+      "fields": [
+        {
+          "label": "Audio type",
+          "description": "Decide what audio type this scene will use, either use an audio track or choose an existing audio playlist.",
+          "options": [
+            {
+              "label": "Global Audio"
+            },
+            {
+              "label": "Playlist"
+            }
+          ]
+        },
+        {
+          "label": "Audio globala",
+          "description": "Gehitu eszena guztietan modu lehenetsian eskuragarri egongo den audio-pista bat."
+        },
+        {
+          "label": "Playlist",
+          "description": "Here you can pick an existing playlist as audio."
+        },
+        {
+          "label": "Display \"Scores\" button",
+          "description": "Display button for showing the scores from assignments."
+        },
+        {
+          "label": "Display \"Home\" button",
+          "description": "Display button for going to start scene."
+        },
+        {
+          "label": "Eszenaren renderizatze-kalitatea",
+          "description": "Aukeratu eszena bat renderizatzeko erabiliko diren segmentuen zabalera eta altuera. Honek eszenaren kalitatean eragin zuzena dauka, saiatu zaitez kalitatea igotzen eszena pixka bat  \"pixelatua\" edo \"lausoa\" ikusten bada. Kontuan izan renderizatze-kalitate handiagoak kargatze-denbora gehiago behar duela.",
+          "options": [
+            {
+              "label": "Kalitate handia (128x128)"
+            },
+            {
+              "label": "Kalitate ertaina (64x64)"
+            },
+            {
+              "label": "Kalitate baxua (16x16)"
+            }
+          ]
+        },
+        {
+          "label": "Etiketen ezarpena",
+          "fields": [
+            {
+              "label": "Etiketaren kokapena",
+              "description": "Etiketaren kokapen lehenetsia. Kokapena interakzioetan baliogabetu daiteke",
+              "options": [
+                {
+                  "label": "Eskuinera lerrokatuta"
+                },
+                {
+                  "label": "Ezkerrera lerrokatuta"
+                },
+                {
+                  "label": "Gora lerrokatuta"
+                },
+                {
+                  "label": "Behera lerrokatuta"
+                }
+              ]
+            },
+            {
+              "label": "Erakutsi etiketak",
+              "description": "Ezkutatuz gero - etiketak sagua gainetik pasatzerakoan erakutsiko da"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Mugatu",
+      "fields": [
+        {
+          "label": "Aria etiketa eduki-motarentzat",
+          "default": "Ibilbide Birtuala"
+        },
+        {
+          "label": "Audioa erreproduzitzeko etiketa",
+          "default": "Erreproduzitu Audio Pista"
+        },
+        {
+          "label": "Audioa geratzeko etiketa",
+          "default": "Geratu Audio Pista"
+        },
+        {
+          "label": "Eszena-elkarrizketarako izenburua",
+          "default": "Eszenaren Deskribapena"
+        },
+        {
+          "label": "Kamera berrabiarazteko botoiaren etiketa",
+          "default": "Berrabiarazi kamera"
+        },
+        {
+          "label": "Elkarrizketa bidaltzeko botoiaren etiketa",
+          "default": "Bidali Elkarrizketa"
+        },
+        {
+          "label": "Elkarrizketa ixteko botoiaren etiketa",
+          "default": "Itxi Elkarrizketa"
+        },
+        {
+          "label": "Zabaldu botoiaren etiketaren Aria etiketa",
+          "default": "Zabaldu etiketa bisuala"
+        },
+        {
+          "label": "Atzeko planoko irudia 360 eszenan zabaltzen ari denerako etiketa",
+          "default": "Atzeko planoko irudia kargatzen..."
+        },
+        {
+          "label": "Edukirik ez dagoenerako etiketa",
+          "default": "Edukirik ez"
+        },
+        {
+          "label": "Label for context menu button for go to scene",
+          "default": "Go to scene"
+        },
+        {
+          "label": "Label for context menu button for edit",
+          "default": "Edit"
+        },
+        {
+          "label": "Label for context menu button for delete",
+          "default": "Delete"
+        },
+        {
+          "label": "Translation for \"Score\"",
+          "default": "Score"
+        },
+        {
+          "label": "Translation for \"Assignment\"",
+          "default": "Assignment"
+        },
+        {
+          "label": "Translation for \"Total\"",
+          "default": "Total"
+        },
+        {
+          "label": "Label for button to show score summary",
+          "default": "Show Score Summary"
+        },
+        {
+          "label": "Translation for 'Scene'",
+          "default": "Scene"
+        },
+        {
+          "label": "Untitled",
+          "default": "Untitled"
+        },
+        {
+          "label": "Go to start scene",
+          "default": "Go to start scene"
+        },
+        {
+          "label": "You are at the start scene",
+          "default": "You are at the start scene"
+        },
+        {
+          "label": "Unlocked",
+          "default": "Unlocked"
+        },
+        {
+          "label": "Locked",
+          "default": "Locked"
+        },
+        {
+          "label": "Search the room until you find the code",
+          "default": "Search the room until you find the code"
+        },
+        {
+          "label": "The code was wrong, try again.",
+          "default": "The code was wrong, try again."
+        },
+        {
+          "label": "The content has been unlocked!",
+          "default": "The content has been unlocked!"
+        },
+        {
+          "label": "Code",
+          "default": "Code"
+        },
+        {
+          "label": "Unlocked interaction action (Continue)",
+          "default": "Continue"
+        },
+        {
+          "label": "Locked interaction action (Unlock)",
+          "default": "Unlock"
+        },
+        {
+          "label": "Drag horizontally to scale (for screen readers)",
+          "default": "Drag horizontally to scale"
+        },
+        {
+          "label": "Drag vertically to scale (for screen readers)",
+          "default": "Drag vertically to scale"
+        },
+        {
+          "label": "Hint",
+          "default": "Hint"
+        },
+        {
+          "label": "Blokeatutako edukia",
+          "default": "Blokeatutako edukia"
+        },
+        {
+          "label": "Back",
+          "default": "Back"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (enter)",
+          "default": "Enter fullscreen mode"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (exit)",
+          "default": "Exit fullscreen mode"
+        },
+        {
+          "label": "Main toolbar",
+          "default": "Main toolbar"
+        },
+        {
+          "label": "No valid scenes set",
+          "default": "No valid scenes have been set."
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom in button",
+          "default": "Zoom in"
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom out button",
+          "default": "Zoom out"
+        },
+        {
+          "label": "Zoom toolbar",
+          "default": "Zoom toolbar"
+        },
+        {
+          "label": "Zoom aria text for screenreaders",
+          "default": ":num% zoomed in"
+        }
+      ]
+    }
+  ]
+}

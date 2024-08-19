@@ -1,0 +1,30 @@
+.threed-model-view {
+  height: 100%;
+  width: 100%;
+
+  &.display-none {
+    display: none;
+  }
+
+  .hotspot {
+    background-color: rgba(255, 255, 255, 0.5);
+    border: 1px solid rgba(0, 0, 0, 0.2);
+    border-radius: 50%;
+    box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.2);
+    height: 1rem;
+    width: 1rem;
+  }
+
+  .hotspot-label {
+    background-color: #eeeeee;
+    border-radius: 4px;
+    color: #101010;
+    max-width: 30ch;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transform: translate(1.25rem, calc(-50% + 0.5rem));
+    padding: 0.25rem 0.5rem;
+    position: absolute;
+    white-space: nowrap;
+  }
+}

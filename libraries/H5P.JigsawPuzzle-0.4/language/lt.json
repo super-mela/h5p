@@ -1,0 +1,143 @@
+{
+  "semantics": [
+    {
+      "label": "Dėlionės paveiksliukas",
+      "description": "Paveiksliukas, iš kurio reikia pjauti dalis."
+    },
+    {
+      "label": "Plytelės horizontaliai",
+      "description": "Nustatykite, kiek dėlionės plytelių turėtų būti dėlionėje horizontaliai."
+    },
+    {
+      "label": "Plytelės vertikaliai",
+      "description": "Nustatykite, kiek dėlionės plytelių turėtų būti vertikaliai."
+    },
+    {
+      "label": "Garso nustatymai",
+      "description": "Šiose parinktyse jūs galite nustatyti garso parinktis.",
+      "fields": [
+        {
+          "label": "Pradėkite dėlionę",
+          "description": "Garsas, grojamas kai dėlionė paleidžiama."
+        },
+        {
+          "label": "Pick up puzzle tile",
+          "description": "Sound to play when a puzzle tile is picked up."
+        },
+        {
+          "label": "Drop puzzle tile (incorrectly)",
+          "description": "Sound to play when a puzzle tile is dropped (in a wrong spot)."
+        },
+        {
+          "label": "Drop puzzle tile correctly",
+          "description": "Sound to play when a puzzle tile is dropped in the correct spot."
+        },
+        {
+          "label": "Complete puzzle",
+          "description": "Sound to play when a puzzle is completed."
+        }
+      ]
+    },
+    {
+      "label": "Veikimo nustatymai",
+      "description": "Šios parinktys leis jums valdyti, kaip veikia užduotis.",
+      "fields": [
+        {
+          "label": "Show faint background",
+          "description": "Show a faint version of the image in the background to indicate where a puzzle tile needs to go."
+        },
+        {
+          "label": "Show puzzle outlines",
+          "description": "Show puzzle outlines to indicate where a puzzle tile needs to go."
+        },
+        {
+          "label": "Sorting space position",
+          "description": "Set where the sorting space should be positioned at.",
+          "options": [
+            {
+              "label": "Puzzle next to sorting space"
+            },
+            {
+              "label": "Puzzle above sorting space"
+            }
+          ]
+        },
+        {
+          "label": "Sorting space",
+          "description": "Set how much space in percent should be attached next to the jigsaw puzzle for sorting the tiles."
+        },
+        {
+          "label": "Sorting space",
+          "description": "Set how much space in percent relative to the puzzle should be attached below to the jigsaw puzzle for sorting the tiles."
+        },
+        {
+          "label": "Use full area",
+          "description": "Set if initially the tiles should cover the complete area including the area where they need to be dropped."
+        },
+        {
+          "label": "Enable \"Complete\" button"
+        },
+        {
+          "label": "Enable \"Retry\" button"
+        },
+        {
+          "label": "Enable \"Solution\" button"
+        }
+      ]
+    },
+    {
+      "label": "User interface",
+      "fields": [
+        {
+          "label": "Text for \"Complete\" button",
+          "default": "Complete"
+        },
+        {
+          "label": "Text for \"Retry\" button",
+          "default": "Bandyti dar kartą"
+        },
+        {
+          "label": "Text for \"No image\" message",
+          "default": "There was no image given for this jigsaw puzzle."
+        }
+      ]
+    },
+    {
+      "label": "Skaitymo garsiakalbis",
+      "fields": [
+        {
+          "label": "Assistive technology description for \"Complete\" button",
+          "default": "Complete the puzzle. All tiles will be put to their correct position."
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry the puzzle. All puzzle tiles will be shuffled on the canvas."
+        },
+        {
+          "label": "Assistive technology description for \"Enter fullscreen button\"",
+          "default": "Enter fullscreen mode"
+        },
+        {
+          "label": "Assistive technology description for \"Exit fullscreen button\"",
+          "default": "Exit fullscreen mode"
+        },
+        {
+          "label": "Assistive technology description for \"Mute\" button",
+          "default": "Mute audio"
+        },
+        {
+          "label": "Assistive technology description for \"Unmute\" button",
+          "default": "Unmute audio"
+        },
+        {
+          "label": "Assistive technology description for \"Disabled\"",
+          "default": "Disabled"
+        },
+        {
+          "label": "Assistive technology description for \"Close\"",
+          "default": "Uždaryti"
+        }
+      ]
+    }
+  ]
+}

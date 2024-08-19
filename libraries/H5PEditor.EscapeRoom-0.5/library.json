@@ -1,0 +1,78 @@
+{
+  "title": "NDLA Escape Room 360 (Editor)",
+  "description": "Editor for a tool that can explore 3D spaces.",
+  "majorVersion": 0,
+  "minorVersion": 5,
+  "patchVersion": 0,
+  "runnable": 0,
+  "author": "Joubel, NDLA",
+  "license": "MIT",
+  "machineName": "H5PEditor.EscapeRoom",
+  "preloadedJs": [
+    {
+      "path": "dist/h5p-editor-ndla-escape-room.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5p-editor-ndla-escape-room.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "H5P.AdvancedText",
+      "majorVersion": 1,
+      "minorVersion": 1
+    },
+    {
+      "machineName": "H5P.Image",
+      "majorVersion": 1,
+      "minorVersion": 1
+    },
+    {
+      "machineName": "H5P.Audio",
+      "majorVersion": 1,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.Video",
+      "majorVersion": 1,
+      "minorVersion": 6
+    },
+    {
+      "machineName": "H5P.Summary",
+      "majorVersion": 1,
+      "minorVersion": 10
+    },
+    {
+      "machineName": "H5P.SingleChoiceSet",
+      "majorVersion": 1,
+      "minorVersion": 11
+    },
+    {
+      "machineName": "H5P.MultiChoice",
+      "majorVersion": 1,
+      "minorVersion": 16
+    },
+    {
+      "machineName": "H5P.Blanks",
+      "majorVersion": 1,
+      "minorVersion": 14
+    },
+    {
+      "machineName": "H5P.Crossword",
+      "majorVersion": 0,
+      "minorVersion": 4
+    },
+    {
+      "machineName": "H5P.EscapeRoom",
+      "majorVersion": 0,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    }
+  ]
+}

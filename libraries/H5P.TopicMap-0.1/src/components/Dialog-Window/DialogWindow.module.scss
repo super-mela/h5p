@@ -1,0 +1,87 @@
+@use "./../../abstracts/mixins" as *;
+
+.overlay {
+  @include modal-overlay;
+}
+
+.closeButton {
+  @include modal-close-button;
+}
+
+.contentWrapper {
+  @include modal-wrapper;
+}
+
+.contentWrapperSmallScreen {
+  @include modal-wrapper;
+  display: flex;
+  flex-direction: column;
+}
+
+.dialogContent,
+.dialogContentWide,
+.dialogContentSmallScreen {
+  @include modal-content;
+}
+
+.dialogContent {
+  width: 40vw;
+}
+
+.dialogContentWide {
+  width: 70vw;
+}
+
+.dialogContentSmallScreen {
+  width: 90vw;
+}
+
+.tabWrapper {
+  width: 47%;
+  display: inline-block;
+  height: 90%;
+}
+
+.noteWrapper {
+  float: right;
+  width: 47%;
+  height: 90%;
+
+  &.fullWidth {
+    float: left;
+    width: 100%;
+  }
+}
+
+.dialogContent:focus,
+.dialogContentWide:focus {
+  outline: none;
+}
+
+.dialogTitle {
+  margin: 0;
+  font-weight: bold;
+  color: black;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+@keyframes show-overlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-dialog {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

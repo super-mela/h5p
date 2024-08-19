@@ -1,0 +1,28 @@
+{
+  "libraryStrings": {
+    "context-menu_arrow-bi-directional": "Frecha con dúas puntas",
+    "context-menu_arrow-directional": "Frecha cunha punta",
+    "context-menu_arrow-non-directional": "Liña simple",
+    "context-menu_delete": "Borrar",
+    "context-menu_edit": "Editar",
+    "dialog_close": "Pechar diálogo",
+    "draggable_delete-confirmation": "Seguro que queres borrar este elemento?",
+    "draggable_delete-negative": "Cancelar",
+    "draggable_delete-positive": "Borrar elemento",
+    "draggable_not-selected": "Premer enter para seleccionar",
+    "draggable_selected": "Premer as teclas de dirección para mover. ESC para desfacer a selección.",
+    "grid-indicator_label": "Preme e arrastra para crear un novo elemento",
+    "map-editor-view_item-dialog-title": "Elemento",
+    "semantics-form_save": "Gardar",
+    "toolbar-button-type_create-arrow": "Crear frecha",
+    "toolbar-button-type_create-box": "Crear caixa",
+    "appearance-dialog_title": "Cambia a aparencia do mapa temático",
+    "global_theme-2": "Verde",
+    "global_theme-3": "Vermello",
+    "global_theme-4": "Gris",
+    "theme-picker_label": "Tema de cor",
+    "toolbar-button-type_cannot-create-arrow": "Debe haber polo menos dúas caixas para que se poida engadir unha frecha",
+    "toolbar-button-type_map-appearance": "Aspecto do mapa",
+    "global_theme-1": "Azul"
+  }
+}

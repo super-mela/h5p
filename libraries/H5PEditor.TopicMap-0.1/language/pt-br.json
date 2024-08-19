@@ -1,0 +1,28 @@
+{
+  "libraryStrings": {
+    "context-menu_arrow-bi-directional": "Seta dupla",
+    "context-menu_arrow-directional": "Seta simples",
+    "context-menu_arrow-non-directional": "Linha única",
+    "context-menu_delete": "Excluir",
+    "context-menu_edit": "Editar",
+    "dialog_close": "Fechar caixa de diálogo",
+    "draggable_delete-confirmation": "Tem certeza que deseja excluir este item?",
+    "draggable_delete-negative": "Cancelar",
+    "draggable_delete-positive": "Excluir item",
+    "draggable_not-selected": "Pressione enter para selecionar",
+    "draggable_selected": "Pressione as teclas de seta para mover. Pressione escape para desmarcar.",
+    "grid-indicator_label": "Clique e arraste para criar um novo elemento",
+    "map-editor-view_item-dialog-title": "Item",
+    "semantics-form_save": "Salvar",
+    "toolbar-button-type_create-arrow": "Criar seta",
+    "toolbar-button-type_create-box": "Criar caixa",
+    "appearance-dialog_title": "Change the topic map's appearance",
+    "global_theme-1": "Blue",
+    "global_theme-4": "Gray",
+    "theme-picker_label": "Color theme",
+    "toolbar-button-type_cannot-create-arrow": "There must be at least two boxes before an arrow can be added",
+    "global_theme-2": "Green",
+    "global_theme-3": "Red",
+    "toolbar-button-type_map-appearance": "Map appearance"
+  }
+}

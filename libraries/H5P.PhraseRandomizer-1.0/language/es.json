@@ -1,0 +1,235 @@
+{
+  "semantics": [
+    {
+      "label": "Encabezado",
+      "description": "Encabezado opcional a mostrar en la barra de herramientas."
+    },
+    {
+      "label": "Introducción",
+      "description": "Opcionalmente configurar una introducción que le dice al usuario que hacer.",
+      "default": "<p style=\"text-align: center;\"></p>"
+    },
+    {
+      "label": "Segmentos",
+      "entity": "segmento",
+      "widgets": [
+        {
+          "label": "Predeterminado"
+        },
+        {
+          "label": "Textual"
+        }
+      ],
+      "field": {
+        "label": "Segmentos",
+        "fields": [
+          {
+            "label": "Título del segmento"
+          },
+          {
+            "label": "Opciones",
+            "entity": "opción",
+            "field": {
+              "label": "Texto para opción"
+            }
+          },
+          {
+            "label": "Color del fondo"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Modo",
+      "options": [
+        {
+          "label": "Libre"
+        },
+        {
+          "label": "Examen"
+        }
+      ]
+    },
+    {
+      "label": "Soluciones",
+      "fields": [
+        {
+          "label": "Soluciones",
+          "entity": "solución",
+          "field": {
+            "label": "Solución"
+          }
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Configuraciones de audio",
+      "fields": [
+        {
+          "label": "Usar sonido incluido para clic en botón siguiente o botón anterior"
+        },
+        {
+          "label": "Clic en botón siguiente o botón anterior",
+          "description": "Será reproducido cuando el usuario haga clic en el botón siguiente o botón anterior."
+        }
+      ]
+    },
+    {
+      "label": "Configuraciones del comportamiento",
+      "fields": [
+        {
+          "label": "Vidas",
+          "description": "Escriba el número de vidas con las que comienza un usuario (cada respuesta incorrecta disminuye una vida hasta llegar a 0) o deje vacío para no limitar el número de vidas."
+        },
+        {
+          "label": "Habilitar botón \"Reintentar\""
+        },
+        {
+          "label": "Habilitar botón \"Mostrar solución\""
+        }
+      ]
+    },
+    {
+      "label": "Interfase del usuario",
+      "fields": [
+        {
+          "label": "Comprobar",
+          "default": "Comprobar"
+        },
+        {
+          "label": "Enviar",
+          "default": "Enviar"
+        },
+        {
+          "label": "Mostrar solución",
+          "default": "Mostrar solución"
+        },
+        {
+          "label": "Reintentar",
+          "default": "Reintentar"
+        },
+        {
+          "label": "Se te acabaron las vidas",
+          "default": "Se te acabaron las vidas."
+        },
+        {
+          "label": "Solución",
+          "default": "Estas son las soluciones."
+        },
+        {
+          "label": "Esta no es una solución",
+          "default": "Esta no es una solución."
+        },
+        {
+          "label": "Sin mensaje",
+          "default": "..."
+        },
+        {
+          "label": "¡Encontraste una solución!",
+          "default": "¡Encontraste una solución!"
+        },
+        {
+          "label": "¡Encontraste todas las soluciones!",
+          "default": "¡Encontraste todas las soluciones!"
+        },
+        {
+          "label": "Encontró soluciones",
+          "default": "Encontró soluciones"
+        },
+        {
+          "label": "Por encontrar",
+          "default": "Por encontrar"
+        }
+      ]
+    },
+    {
+      "label": "Pruebas de accesibilidad",
+      "fields": [
+        {
+          "label": "Aleatorizar todos los segmentos",
+          "default": "Aleatorizar todos los segmentos"
+        },
+        {
+          "label": "Descripción de tecnología asistiva para botón \"Comprobar\"",
+          "default": "Comprobar las respuestas. Las respuestas serán marcadas como correctas o incorrectas."
+        },
+        {
+          "label": "Descripción de tecnología asistiva para botón \"Mostrar solución\"",
+          "default": "Mostrar las soluciones."
+        },
+        {
+          "label": "Descripción de tecnología asistiva para botón \"Reintentar\"",
+          "default": "Reintentar el trabajo. Reiniciar todos los segmentos y comenzar de nuevo el trabajo."
+        },
+        {
+          "label": "Descripción de tecnología asistiva para etiqueta actual",
+          "description": "@text ies un reemplazable y será reemplazado por el valor respectivo.",
+          "default": "Etiqueta actual: @text"
+        },
+        {
+          "label": "Descripción de tecnología asistiva para etiquetas actuales",
+          "description": "@texts es un reemplazable y será reemplazado por el valor respectivo.",
+          "default": "Etiquetas actuales: @texts"
+        },
+        {
+          "label": "Descripción de tecnología asistiva para botón \"texto anterior\"",
+          "default": "Texto anterior"
+        },
+        {
+          "label": "Descripción de tecnología asistiva para botón \"texto siguiente\"",
+          "default": "Texto siguiente"
+        },
+        {
+          "label": "Descripción de tecnología asistiva para botón girar",
+          "description": "@number es un reemplazable y será reemplazado por el valor respectivo.",
+          "default": "Girar segmento @number para obtener texto aleatorio para él."
+        },
+        {
+          "label": "Descripción de tecnología asistiva para anunciar solución",
+          "description": "@number y @combination son reemplazables y serán reemplazados por los valores respectivos.",
+          "default": "Estas son las soluciones (@number en total): @combination."
+        },
+        {
+          "label": "Descripción de tecnología asistiva para anunciar \"deshabilitado\"",
+          "default": "deshabilitado"
+        },
+        {
+          "label": "Descripción de tecnología asistiva para anunciar \"Aleatorizador\"",
+          "default": "Aleatorizador"
+        },
+        {
+          "label": "Descripción de tecnología asistiva para barra de herramientas",
+          "default": "Barra de herramientas"
+        },
+        {
+          "label": "Descripción de tecnología asistiva para anunciar el segmento actual",
+          "description": "@number y @total son reemplazables y serán reemplazados por los valores respectivos.",
+          "default": "Segmento @number de @total"
+        },
+        {
+          "label": "Solución",
+          "default": "Solución"
+        },
+        {
+          "label": "Encontrado",
+          "default": "Encontrado"
+        },
+        {
+          "label": "No encontrado",
+          "default": "No encontrado"
+        },
+        {
+          "label": "Botón de audio (sonoro)",
+          "default": "Silenciar audio. Actualmente silenciado."
+        },
+        {
+          "label": "Botón de audio (silenciado)",
+          "default": "Habilitar audio. Actualmente silenciado."
+        }
+      ]
+    }
+  ]
+}

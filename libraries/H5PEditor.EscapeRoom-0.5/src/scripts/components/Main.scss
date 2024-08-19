@@ -1,0 +1,55 @@
+@font-face {
+  font-family: '360-image';
+  src:  url('@assets/360-image.eot?nghxo3');
+  src:  url('@assets/360-image.eot?nghxo3#iefix') format('embedded-opentype'),
+  url('@assets/360-image.ttf?nghxo3') format('truetype'),
+  url('@assets/360-image.woff?nghxo3') format('woff'),
+  url('@assets/360-image.svg?nghxo3#360-image') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.h5p-escaperoom-editor {
+  .scene-editor {
+    position: relative;
+    /*****
+    Might be added to get the inital design (no spacing on the sides). But
+    probably needs to be removed in fullscreen.
+    left: -1.25em;
+    width: calc(100% + 2.5em);
+    ******/
+  }
+
+  .scene-wrapper.no-scenes .scene-container {
+    display: none;
+  }
+
+  .h5p-editing-dialog .field-name-iconTypeTextBox .h5p-editor-radio-group-container {
+    .h5p-editor-radio-group-button {
+      font-family: "360-Image";
+
+      &.checked {
+        background-color: #b0b0b0;
+        border-radius: 2px;
+      }
+
+      &:hover {
+        background-color: #d8d8d8;
+      }
+
+      &.text-icon::before {
+        content: "\e91f"
+      }
+      &.info-icon::before {
+        content: "\e91a"
+      }
+    }
+
+    &.horizontal {
+      .h5p-editor-radio-group-button {
+        display: inline-block;
+        padding: 0.2rem 0.5rem;
+      }
+    }
+  }
+}

@@ -1,0 +1,42 @@
+@import '@styles/main';
+
+.status-container {
+  align-items: flex-end;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+
+  // Workaround for iOS < 14.5 which doesn't support gap for flexbox
+  @supports (-webkit-touch-callout: none) and (not (translate: none)) {
+    &:not(:last-child) {
+      margin-right: 1.25rem;
+    }
+  }
+
+  &::before {
+    color: $color-joubelui-button-hover;
+    margin-right: 0.5rem;
+  }
+
+  &.display-none {
+    display: none;
+  }
+
+  .status-container-values {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    font-weight: bold;
+    justify-content: center;
+
+    span.value, span.max-value {
+      color: $color-joubelui-button-hover;
+    }
+
+    span.delimiter {
+      text-align: center;
+      width: 1rem;
+    }
+  }
+}

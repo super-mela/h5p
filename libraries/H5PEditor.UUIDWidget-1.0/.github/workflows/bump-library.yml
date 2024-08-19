@@ -1,0 +1,13 @@
+on: [issue_comment]
+
+jobs:
+  bump-library:
+    name: Bump library version
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Bump and commit library
+        uses: boyum/bump-and-commit-h5p-library@latest
+        with:
+          github-token: ${{ secrets.GITHUB_TOKEN }}

@@ -1,0 +1,485 @@
+{
+  "semantics": [
+    {
+      "label": "Redigerare för Three Image",
+      "fields": [
+        {
+          "label": "Scener",
+          "entity": "Scen",
+          "field": {
+            "fields": [
+              {
+                "label": "Scentyp",
+                "options": [
+                  {
+                    "label": "360 bild"
+                  },
+                  {
+                    "label": "Panoramisk bild"
+                  },
+                  {
+                    "label": "Statisk bild"
+                  }
+                ]
+              },
+              {
+                "label": "Visa knapp \"Tillbaka\"",
+                "description": "Visa knapp för att navigera bakåt till din föregående scen"
+              },
+              {
+                "label": "Enable \"Zoom\"",
+                "description": "Enable zooming in and out with zoom buttons, mouse wheel, touch gestures and keyboard shortcuts."
+              },
+              {
+                "label": "SceneId"
+              },
+              {
+                "label": "Scen-titel",
+                "description": "Används för att identifiera scenen"
+              },
+              {
+                "label": "Scen-bakgrund"
+              },
+              {
+                "label": "Scen-beskrivning",
+                "description": "En text som kan beskriva scenen för slutanvändaren"
+              },
+              {
+                "label": "Beskrivning av scen (för skärmläsare)",
+                "description": "En text som kan beskriva scenen för slutanvändaren. Texten kommer att användas av skärmläsare."
+              },
+              {
+                "label": "Visa \"Scenbeskrivning\" i början",
+                "description": "Visar scenbeskrivningen när scenen visas första gången."
+              },
+              {
+                "label": "Initial kameraposition",
+                "description": "Kameraposition i pitch-and-yaw"
+              },
+              {
+                "label": "Interaktioner",
+                "field": {
+                  "fields": [
+                    {
+                      "label": "Etikett",
+                      "description": "Om detta lämnas tomt så kommer ingen etikett att visas och titelfältet kommer istället användas för skärmläsare"
+                    },
+                    {
+                      "label": "Etikett-inställningar",
+                      "fields": [
+                        {
+                          "label": "Etikett-position",
+                          "description": "Välj var etiketten ska visas",
+                          "options": [
+                            {
+                              "label": "Använd beteende-inställning"
+                            },
+                            {
+                              "label": "Högerlinjerad"
+                            },
+                            {
+                              "label": "Vänsterlinjerad"
+                            },
+                            {
+                              "label": "Linjerad i överkant"
+                            },
+                            {
+                              "label": "Linjerad i underkant"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Visa etikett",
+                          "description": "Om dold så kommer etiketter endast visas vid hovring",
+                          "options": [
+                            {
+                              "label": "Använd beteende-inställning"
+                            },
+                            {
+                              "label": "Visa"
+                            },
+                            {
+                              "label": "Dölj"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Password settings",
+                      "fields": [
+                        {
+                          "label": "Kod för interaktionen",
+                          "description": "If not empty, the user has to input the code in order to open this content."
+                        },
+                        {
+                          "label": "En ledtråd för interaktionskoden",
+                          "description": "En valfri ledtråd för koden, kan lämnas tomt om så önskas"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Visa som hotspot",
+                      "description": "Möjliggör att lägga till interaktions-områden på bakgrundsbilden som kan av vara anpassad storlek."
+                    },
+                    {
+                      "label": "Hotspot settings",
+                      "fields": [
+                        {
+                          "label": "Visa hotspot vid hovring med markör",
+                          "description": "Låter hotspot bli synlig vid hovring med markör över området."
+                        },
+                        {
+                          "label": "Gör så att det går att använda tabb för att nå hotspot",
+                          "description": "Gör så att hotspot kan nås via tabbning. Required to be checked to make the content accessible!"
+                        },
+                        {
+                          "default": "256,128",
+                          "label": "Värden för att lagra höjd och bredd för hotspot"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Visa som öppet innehåll i scenen",
+                      "description": "Tillåter att innehållet visas i en öppen dialogbox, direkt i scenen."
+                    },
+                    {},
+                    {
+                      "label": "Interaction position"
+                    },
+                    {
+                      "label": "Button style",
+                      "description": "Decide how the icon should look.",
+                      "options": [
+                        {
+                          "label": "Text icon"
+                        },
+                        {
+                          "label": "Info icon"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Knappformat",
+                "description": "Avgör hur knappar som visar på denna scen ska se ut. För scener som är statiska och inte leder till nya scener så rekommenderas knappen \"Mer information\".",
+                "options": [
+                  {
+                    "label": "Ny scen (pil)"
+                  },
+                  {
+                    "label": "Mer information (plus)"
+                  }
+                ]
+              },
+              {
+                "label": "Audio type",
+                "description": "Ställ in vilken ljudtyp denna scen ska använda, använd antingen ett ljudspår eller välj en befintlig spellista.",
+                "options": [
+                  {
+                    "label": "Ljudspår"
+                  },
+                  {
+                    "label": "Spellista"
+                  }
+                ]
+              },
+              {
+                "label": "Ljudspår",
+                "description": "Lägg till ett ljudspår som är specifikt för denna scen."
+              },
+              {
+                "label": "Playlist",
+                "description": "Här kan du välja en befintlig spellista som ljud."
+              },
+              {
+                "label": "Starta om ljud när scenen återöppnas"
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "Spellistor"
+        },
+        {
+          "label": "Spellistor",
+          "field": {
+            "fields": [
+              {
+                "label": "Titel på spellista",
+                "description": "Används för att identifiera spellistan"
+              },
+              {
+                "label": "Ljudspår",
+                "description": "Lägg till ljudspår till spellistan."
+              },
+              {}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Spellistor",
+      "description": "Dessa inställningar låter dig lägga till spellistor till scenerna.",
+      "fields": [
+        {
+          "label": "Tillagda spellistor",
+          "description": "Gör spellistor tillgängliga för alla scener som standard."
+        }
+      ]
+    },
+    {
+      "label": "Beteende-inställningar",
+      "description": "Dessa inställningar avgör hur världen beter sig.",
+      "fields": [
+        {
+          "label": "Audio type",
+          "description": "Ställ in vilken ljudtyp denna scen ska använda, använd antingen ett ljudspår eller välj en befintlig spellista.",
+          "options": [
+            {
+              "label": "Global Audio"
+            },
+            {
+              "label": "Playlist"
+            }
+          ]
+        },
+        {
+          "label": "Globalt ljud",
+          "description": "Lägg till ett ljudspår som är tillgängligt som standard för alla scener."
+        },
+        {
+          "label": "Playlist",
+          "description": "Här kan du välja en befintlig spellista som ljud."
+        },
+        {
+          "label": "Visa \"Poäng\"-knappen",
+          "description": "Visa en knapp som låter användaren se sina poäng."
+        },
+        {
+          "label": "Visa \"Hem\"-knappen",
+          "description": "Visa knapp som tar användaren till startscenen."
+        },
+        {
+          "label": "Renderingskvalitet för scen",
+          "description": "Välj hur många bredd- och höjdsegment som ska användas för att tolka (rendera) en scen. Detta har en direkt påverkan på kvalitetsnivån på scenen, pröva att öka kvaliteten om en scen ser \"rutig\" ut eller om \"vågor\" syns i scenerna. Notera att högre renderingskvalitet tar mer tid att ladda.",
+          "options": [
+            {
+              "label": "Hög kvalitet (128x128)"
+            },
+            {
+              "label": "Medium kvalitet (64x64)"
+            },
+            {
+              "label": "Låg kvalitet (16x16)"
+            }
+          ]
+        },
+        {
+          "label": "Etikett-inställningar",
+          "fields": [
+            {
+              "label": "Etikett-position",
+              "description": "Förvald etikett-position. Positionen kan ignoreras per interaktion.",
+              "options": [
+                {
+                  "label": "Högerlinjerad"
+                },
+                {
+                  "label": "Vänsterlinjerad"
+                },
+                {
+                  "label": "Linjerad i överkant"
+                },
+                {
+                  "label": "Linjerad i underkant"
+                }
+              ]
+            },
+            {
+              "label": "Visa etiketter",
+              "description": "Om ej ibockat, så kommer etiketter endast visas vid hovring"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Lokalisera",
+      "fields": [
+        {
+          "label": "Aria-etikett för innehållstyp",
+          "default": "Virtual tur"
+        },
+        {
+          "label": "Etikett för att spela ljud",
+          "default": "Spela ljudspår"
+        },
+        {
+          "label": "Etikett för att pausa ljud",
+          "default": "Pausa ljudspår"
+        },
+        {
+          "label": "Titel för scendialog",
+          "default": "Scenbeskrivning"
+        },
+        {
+          "label": "Etikett för knapp för att återställa kamera",
+          "default": "Återställ kamera"
+        },
+        {
+          "label": "Etikett för skicka-in-dialog-knapp",
+          "default": "Skicka in dialog"
+        },
+        {
+          "label": "Etikett för stäng-dialog-knapp",
+          "default": "Stäng dialog"
+        },
+        {
+          "label": "Aria-etikett för knappen expandera etikett",
+          "default": "Expandera visuell etikett"
+        },
+        {
+          "label": "Etikett som visas när bakgrundsbild laddas i en 360-scen",
+          "default": "Laddar bakgrundsbild ..."
+        },
+        {
+          "label": "Etikett för när det inte finns något innehåll",
+          "default": "Inget innehåll"
+        },
+        {
+          "label": "Text för menyknappen för Gå till scen",
+          "default": "Gå till scen"
+        },
+        {
+          "label": "Text för menyknappen Redigera",
+          "default": "Redigera"
+        },
+        {
+          "label": "Text för menyknappen Radera",
+          "default": "Delete"
+        },
+        {
+          "label": "Översättning av \"Poäng\"",
+          "default": "Score"
+        },
+        {
+          "label": "Översättning av \"Uppgift\"",
+          "default": "Uppgift"
+        },
+        {
+          "label": "Översättning av \"Summa\"",
+          "default": "Total"
+        },
+        {
+          "label": "Text för knappen som visar sammanfattning av poäng",
+          "default": "Visa sammanfattning av poäng"
+        },
+        {
+          "label": "Översättning av 'Scen'",
+          "default": "Scen"
+        },
+        {
+          "label": "Utan titel",
+          "default": "Utan titel"
+        },
+        {
+          "label": "Gå till startscenen",
+          "default": "Gå till startscenen"
+        },
+        {
+          "label": "Du är på startscenen",
+          "default": "Du är på startscenen"
+        },
+        {
+          "label": "Upplåst",
+          "default": "Upplåst"
+        },
+        {
+          "label": "Låst",
+          "default": "Låst"
+        },
+        {
+          "label": "Sök i rummet tills du hittar koden",
+          "default": "Sök i rummet tills du hittar koden"
+        },
+        {
+          "label": "Koden var fel, försök igen.",
+          "default": "Koden var fel, försök igen."
+        },
+        {
+          "label": "Innehållet har låsts upp!",
+          "default": "Innehållet har låsts upp!"
+        },
+        {
+          "label": "Code",
+          "default": "Code"
+        },
+        {
+          "label": "Handling när innehållet är upplåst (Fortsätt)",
+          "default": "Fortsätt"
+        },
+        {
+          "label": "Handling när innehållet är låst (Lås upp)",
+          "default": "Lås upp"
+        },
+        {
+          "label": "Drag horisontellt för att ändra storleken (för skärmläsare)",
+          "default": "Drag horisontellt för att ändra storleken"
+        },
+        {
+          "label": "Drag vertikalt för att ändra storleken (för skärmläsare)",
+          "default": "Drag vertikalt för att ändra storleken"
+        },
+        {
+          "label": "Ledtråd",
+          "default": "Ledtråd"
+        },
+        {
+          "label": "Låst innehåll",
+          "default": "Låst innehåll"
+        },
+        {
+          "label": "Back",
+          "default": "Back"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (enter)",
+          "default": "Enter fullscreen mode"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (exit)",
+          "default": "Exit fullscreen mode"
+        },
+        {
+          "label": "Main toolbar",
+          "default": "Main toolbar"
+        },
+        {
+          "label": "No valid scenes set",
+          "default": "No valid scenes have been set."
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom in button",
+          "default": "Zoom in"
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom out button",
+          "default": "Zoom out"
+        },
+        {
+          "label": "Zoom toolbar",
+          "default": "Zoom toolbar"
+        },
+        {
+          "label": "Zoom aria text for screenreaders",
+          "default": ":num% zoomed in"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+.arrow {
+  cursor: pointer;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  pointer-events: none;
+
+  &:hover {
+    .arrowPath {
+      fill: var(--theme-color-5);
+    }
+
+    .path,
+    .pathSelected {
+      stroke: var(--theme-color-5);
+    }
+  }
+}
+
+.arrowSvg {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+}
+
+.path {
+  z-index: 1;
+}
+
+.selectable {
+  pointer-events: all;
+}
+
+.pathSelected {
+  pointer-events: all;
+}
+
+.deleteConfirmationPositive,
+.deleteConfirmationNegative {
+  background-color: #fff;
+  border-radius: 0.25em;
+  border: 2px solid currentColor;
+  box-sizing: border-box;
+  color: #0d2769;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+  padding: 0.5rem 1.25rem;
+  width: auto;
+}
+
+.deleteConfirmationPositive {
+  background-color: #0d2769;
+  color: #fff;
+}
+
+.deleteConfirmationButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 1rem 0 0;
+  pointer-events: all;
+  z-index: 10;
+}

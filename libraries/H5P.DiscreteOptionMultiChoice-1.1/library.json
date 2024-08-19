@@ -1,0 +1,58 @@
+{
+  "title": "Discrete Option Multiple Choice",
+  "description": "Let your students answer discrete option Multiple Choice questions",
+  "majorVersion": 1,
+  "minorVersion": 1,
+  "patchVersion": 1,
+  "runnable": 1,
+  "author": "Oliver Tacke",
+  "license": "MIT",
+  "machineName": "H5P.DiscreteOptionMultiChoice",
+  "embedTypes": [
+    "iframe"
+  ],
+  "preloadedJs": [
+    {
+      "path": "dist/h5p-discrete-option-multi-choice.js"
+    }
+  ],
+  "preloadedCss": [
+    {
+      "path": "dist/h5p-discrete-option-multi-choice.css"
+    }
+  ],
+  "preloadedDependencies": [
+    {
+      "machineName": "FontAwesome",
+      "majorVersion": 4,
+      "minorVersion": 5
+    },
+    {
+      "machineName": "H5P.Question",
+      "majorVersion": 1,
+      "minorVersion": 5
+    }
+  ],
+  "editorDependencies": [
+    {
+      "machineName": "H5PEditor.RangeList",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "H5PEditor.ShowWhen",
+      "majorVersion": 1,
+      "minorVersion": 0
+    },
+    {
+      "machineName": "H5PEditor.VerticalTabs",
+      "majorVersion": 1,
+      "minorVersion": 3
+    },
+    {
+      "machineName": "H5PEditor.DiscreteOptionMultiChoiceTextualEditor",
+      "majorVersion": 1,
+      "minorVersion": 0
+    }
+  ]
+}

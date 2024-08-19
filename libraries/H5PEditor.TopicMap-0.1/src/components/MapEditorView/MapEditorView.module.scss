@@ -1,0 +1,59 @@
+.mapEditorView {
+  background-color: var(--theme-color-1);
+  font-size: 1rem;
+  overflow: hidden;
+}
+
+.gridBorder {
+  border-bottom: 1px solid #d1d1d1;
+  border-left: 1px solid #d1d1d1;
+  border-right: 1px solid #d1d1d1;
+  padding: 1em;
+  position: relative;
+
+  &.backgroundImage {
+    background-size: cover;
+    height: 100%;
+    width: 100%;
+  }
+
+  &.backgroundImage::before {
+    content: " ";
+    background-color: var(--theme-color-1);
+    display: block;
+    height: 100%;
+    left: 0;
+    opacity: 0.8;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.deleteConfirmationPositive,
+.deleteConfirmationNegative {
+  background-color: #fff;
+  border-radius: 0.25em;
+  border: 2px solid currentColor;
+  box-sizing: border-box;
+  color: #0d2769;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+  padding: 0.5rem 1.25rem;
+  width: auto;
+}
+
+.deleteConfirmationPositive {
+  background-color: #0d2769;
+  color: #fff;
+}
+
+.deleteConfirmationButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 1rem 0 0;
+}

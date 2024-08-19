@@ -1,0 +1,118 @@
+{
+  "semantics": [
+    {
+      "label": "Picha",
+      "description": "Picha ya kutumika."
+    },
+    {
+      "label": "Mipangilio ya kuona",
+      "description": "Chaguzi hizi zitakuwezesha kudhibiti vipengele vya kuona.",
+      "fields": [
+        {
+          "label": "Upana wa picha",
+          "description": "Chagua upana wa sehemu kutokana na kwamba picha inapaswa kufunika. Urefu wa picha itakuwa kupunguzwa ipasavyo na kamwe kisichozidi 100% upana.",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100 %"
+            },
+            {
+              "label": "Upana wa asili wa picha"
+            }
+          ]
+        },
+        {
+          "label": "Usawazishaji wa picha",
+          "description": "Chagua mahali ambapo picha inapaswa kuwekwa kulingana na maudhui yaliyosalia.",
+          "options": [
+            {
+              "label": "kushoto"
+            },
+            {
+              "label": "kati"
+            },
+            {
+              "label": "kulia"
+            }
+          ]
+        },
+        {
+          "label": "Kuza upana wa lenzi",
+          "description": "Weka upana wa lenzi ya kukuza kama asilimia ya upana wa picha (kwa mfano asilimia 20%) au kama thamani isiyobadilika katika pikseli (kwa mfano pikseli160).",
+          "default": "20%"
+        },
+        {
+          "label": "Kuza urefu wa lenzi",
+          "description": "Weka urefu wa lenzi ya kukuza kama asilimia ya urefu wa picha (kwa mfano asilimia 25%) au kama thamani isiyobadilika katika pikseli (kwa mfano pikseli 90).",
+          "default": "25%"
+        },
+        {
+          "label": "Weka picha nyeusi kwenye kukuza",
+          "description": "Ikiwa imewekwa, picha itatiwa giza ili kuimarisha athari ya kulenga ya kukuza."
+        }
+      ]
+    },
+    {
+      "label": "Mipangilio ya tabia",
+      "description": "Chaguzi hizi zitakuwezesha kudhibiti jinsi kazi inavyofanya.",
+      "fields": [
+        {
+          "label": "Kukuza kiotomatiki",
+          "description": "Ikiachaguliwa, picha hukuzwa kiotomatiki huku ikiipeperushwa. Vinginevyo, mtumiaji anahitaji kuwasha na kuzima ukuzaji."
+        },
+        {
+          "label": "Ficha kiashiria cha ukuzaji",
+          "description": "Kiashirio cha ukuzaji kinatumika kama kitufe cha matumizi ya kibodi. Kuficha hakutaizuia isifanye kazi, lakini watumiaji watakuwa na taarifa chache za urambazaji."
+        }
+      ]
+    },
+    {
+      "label": "Kisomaji skrini",
+      "fields": [
+        {
+          "label": "Ukuzaji",
+          "description": "Lebo ya kitufe cha ukuzaji (inachoonekana tu kwa kisomaji skrini).",
+          "default": "Ukuzaji"
+        },
+        {
+          "label": "Ukuzaji umewashwa.",
+          "description": "Soma ukuzaji ulipoamilishwa.",
+          "default": "Ukuzaji umewashwa."
+        },
+        {
+          "label": "Ukuzaji umezimwa.",
+          "description": "Soma wakati ukuzaji ulipozimwa.",
+          "default": "Ukuzaji umezimwa."
+        },
+        {
+          "label": "Maelekezo",
+          "description": "Maelekezo ya jinsi ya kutumia kibodi. Soma wakati ukuzaji umeamilishwa",
+          "default": "Tumia vitufe vya vishale kusogeza lenzi ya ukuzaji. Tumia kitufe cha kuongeza ili kuvuta karibu. Tumia kitufe cha kupunguza ili kuvuta nje."
+        },
+        {
+          "label": "Imekuzwa kwa kiwango",
+          "description": "Soma wakati ukubwa wa kukuza umebadilishwa.@magnification ni kishikilia nafasi ambacho kitabadilishwa na thamani husika.",
+          "default": "Imekuzwa kwa kiwango cha @magnification hadi 1."
+        },
+        {
+          "label": "Imesogezwa kwenye lenzi",
+          "description": "Soma wakati lenzi ya ukuzaji inaposogezwa. @positionHorizontalna @positionVerticalni vishikilia nafasi ambavyo vitabadilishwa na thamani husika.",
+          "default": "Umesogezwa kwenye lenzi @positionHorizontal kwa usawa na @positionVertical kwa wima."
+        },
+        {
+          "label": "Isiyojulikana",
+          "description": "Maandishi ya kurudi nyuma wakati nafasi ya lenzi haiwezi kuamua.",
+          "default": "haijulikani"
+        }
+      ]
+    }
+  ]
+}

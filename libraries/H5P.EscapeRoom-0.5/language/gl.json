@@ -1,0 +1,485 @@
+{
+  "semantics": [
+    {
+      "label": "Editor de Tres Imaxes",
+      "fields": [
+        {
+          "label": "Escenas",
+          "entity": "Escena",
+          "field": {
+            "fields": [
+              {
+                "label": "Tipo de escena",
+                "options": [
+                  {
+                    "label": "Imaxe 360"
+                  },
+                  {
+                    "label": "Imaxe panorámica"
+                  },
+                  {
+                    "label": "Imaxe estática"
+                  }
+                ]
+              },
+              {
+                "label": "Amosar botón \"Atrás\"",
+                "description": "Amosar botón para volver á escena anterior"
+              },
+              {
+                "label": "Enable \"Zoom\"",
+                "description": "Enable zooming in and out with zoom buttons, mouse wheel, touch gestures and keyboard shortcuts."
+              },
+              {
+                "label": "SceneId"
+              },
+              {
+                "label": "Título da Escena",
+                "description": "Úsase para identificar a escena"
+              },
+              {
+                "label": "Fondo da Escena"
+              },
+              {
+                "label": "Descrición da escena",
+                "description": "Texto que pode describir a escena ao usuario"
+              },
+              {
+                "label": "Descrición da escena (para lectores de pantalla)",
+                "description": "Un texto que pode describir a escena para o usuario final. Non será visible pero a lerán os lectores de pantalla, polo que se ignorará o formato."
+              },
+              {
+                "label": "Amosar \"Descrición da escena\" inicialmente",
+                "description": "Amosa a descrición da escena cando a escena comeza por primeira vez"
+              },
+              {
+                "label": "Posición inicial da cámara",
+                "description": "Posición da cámara en cabeceo e guiñada"
+              },
+              {
+                "label": "Interaccións",
+                "field": {
+                  "fields": [
+                    {
+                      "label": "Etiqueta",
+                      "description": "Se o deixamos en branco, non se amosará ningunha etiqueta e intentarase amosar o campo do título para os lectores de pantalla"
+                    },
+                    {
+                      "label": "Configuración de Etiquetas",
+                      "fields": [
+                        {
+                          "label": "Posición da etiqueta",
+                          "description": "Escolle onde debería aparecer a etiqueta",
+                          "options": [
+                            {
+                              "label": "Usar a configuración do comportamento"
+                            },
+                            {
+                              "label": "Aliñada á dereita"
+                            },
+                            {
+                              "label": "Aliñada á esquerda"
+                            },
+                            {
+                              "label": "Aliñada á parte superior"
+                            },
+                            {
+                              "label": "Aliñada á parte inferior"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Amosar etiqueta",
+                          "description": "Se están ocultas - as etiquetas amosaranse só ao pasar o rato por riba",
+                          "options": [
+                            {
+                              "label": "Usar a configuración do comportamento"
+                            },
+                            {
+                              "label": "Amosar"
+                            },
+                            {
+                              "label": "Agochar"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Password settings",
+                      "fields": [
+                        {
+                          "label": "Código para a interacción",
+                          "description": "Se non está baleiro, o usuario ten que introducir o código para poder abrir este contido. Separa varios códigos correctos con /."
+                        },
+                        {
+                          "label": "Unha pista para o código de interacción",
+                          "description": "Unha pista opcional para o código, pódese deixar baleira se se quere"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Amosar como punto de acceso",
+                      "description": "Permite engadir áreas de interacción á imaxe de fondo que poden ter un tamaño personalizado."
+                    },
+                    {
+                      "label": "Hotspot settings",
+                      "fields": [
+                        {
+                          "label": "Amosar o punto de acceso cando o rato estea enriba",
+                          "description": "Permitirá que o punto de acceso sexa visible cando o rato estea sobre a zona."
+                        },
+                        {
+                          "label": "Establece que o punto de acceso sexa tabulable",
+                          "description": "Permitirá que o punto de acceso sexa tabulable. Required to be checked to make the content accessible!"
+                        },
+                        {
+                          "default": "256,128",
+                          "label": "Valores para almacenar a altura e o ancho do punto de acceso"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Amosar como contido aberto na escena",
+                      "description": "Permite que o contido se amose nunha caixa de diálogo aberta directamente na escena."
+                    },
+                    {},
+                    {
+                      "label": "Interaction position"
+                    },
+                    {
+                      "label": "Button style",
+                      "description": "Decide how the icon should look.",
+                      "options": [
+                        {
+                          "label": "Text icon"
+                        },
+                        {
+                          "label": "Info icon"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Estilo do botón",
+                "description": "Decide o comportamento dos botóns que levan a esta escena. Para escenas estáticas que non levan a novas escenas, recoméndase o botón \"Máis información\".",
+                "options": [
+                  {
+                    "label": "Nova escena (frecha)"
+                  },
+                  {
+                    "label": "Máis información (máis)"
+                  }
+                ]
+              },
+              {
+                "label": "Tipo de audio",
+                "description": "Decide que tipo de son usará esta escena, ben utiliza unha pista de son ou escolle unha lista de reprodución de son existente.",
+                "options": [
+                  {
+                    "label": "Pista de son"
+                  },
+                  {
+                    "label": "Lista de reprodución"
+                  }
+                ]
+              },
+              {
+                "label": "Pista de son",
+                "description": "Engade unha pista de son específica para esta escena."
+              },
+              {
+                "label": "Lista de reprodución",
+                "description": "Aquí podes escoller unha lista de reprodución existente como son."
+              },
+              {
+                "label": "Reinicia o son cando se volva abrir a escena"
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "Listas de reprodución"
+        },
+        {
+          "label": "Playlists",
+          "field": {
+            "fields": [
+              {
+                "label": "Playlist Title",
+                "description": "Used to identify the playlist"
+              },
+              {
+                "label": "Audio Tracks",
+                "description": "Add audio tracks to the playlist."
+              },
+              {}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Listas de reprodución",
+      "description": "Estas opcións permítenche engadir listas de reprodución para as escenas.",
+      "fields": [
+        {
+          "label": "Listas de reprodución engadidas",
+          "description": "Crea listas de reprodución que estean dispoñibles para todas as escenas de forma predeterminada."
+        }
+      ]
+    },
+    {
+      "label": "Configuración do comportamento",
+      "description": "Estas opcións permítenche controlar o comportamento da tarefa.",
+      "fields": [
+        {
+          "label": "Tipo de son",
+          "description": "Decide que tipo de son usará esta escena, ben utiliza unha pista de son ou escolle unha lista de reprodución existente.",
+          "options": [
+            {
+              "label": "Son Global"
+            },
+            {
+              "label": "Lista de reprodución"
+            }
+          ]
+        },
+        {
+          "label": "Son Global",
+          "description": "Engade unha pista de son dispoñible por defecto en todas as escenas."
+        },
+        {
+          "label": "Lista de reprodución",
+          "description": "Aquí podes escoller unha lista de reprodución existente como son."
+        },
+        {
+          "label": "Amosar o botón \"Puntuacións\"",
+          "description": "Botón de visualización para amosar as puntuacións das tarefas."
+        },
+        {
+          "label": "Mostra o botón \"Inicio\"",
+          "description": "Amosar botón para ir a escena de inicio."
+        },
+        {
+          "label": "Calidade de renderizado da escena",
+          "description": "Escolle a cantidade de segmentos de anchura e altura empregados para renderizar unha escena. Isto afecta directamente ao seu nivel de calidade. Proba a aumentalo se as escena parece estar formada por bloques ou se aparecen ondas dentro delas. Lembra que unha calidade máis alta implica maior tempo de renderizado.",
+          "options": [
+            {
+              "label": "Calidade Alta (128x128)"
+            },
+            {
+              "label": "Calidade Media (64x64)"
+            },
+            {
+              "label": "Calidade Baixa (16x16)"
+            }
+          ]
+        },
+        {
+          "label": "Configuración de Etiquetas",
+          "fields": [
+            {
+              "label": "Posición da etiqueta",
+              "description": "A posición por defecto da etiqueta. Pode anularse por medio dunha interacción",
+              "options": [
+                {
+                  "label": "Aliñada á dereita"
+                },
+                {
+                  "label": "Aliñada á esquerda"
+                },
+                {
+                  "label": "Aliñada á parte superior"
+                },
+                {
+                  "label": "Aliñada á parte inferior"
+                }
+              ]
+            },
+            {
+              "label": "Amosar etiquetas",
+              "description": "Se non está marcada - as etiquetas amosaranse só cando pase por riba o cursor do rato"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Adaptación local",
+      "fields": [
+        {
+          "label": "Etiqueta Aria para tipo de contido",
+          "default": "Xira Virtual"
+        },
+        {
+          "label": "Etiqueta para reproducir son",
+          "default": "Reproducir pista de son"
+        },
+        {
+          "label": "Etiqueta para pausar a reprodución do son",
+          "default": "Pausar pista de son"
+        },
+        {
+          "label": "Título para o diálogo da escena",
+          "default": "Descrición da escena"
+        },
+        {
+          "label": "Etiqueta do botón para restablecer a cámara",
+          "default": "Restablecer Cámara"
+        },
+        {
+          "label": "Etiqueta para o botón do diálogo de envío",
+          "default": "Diálogo de Envío"
+        },
+        {
+          "label": "Etiqueta para o botón do diálogo de peche",
+          "default": "Diálogo de Peche"
+        },
+        {
+          "label": "Etiqueta Aria para o botón da etiqueta de expansión",
+          "default": "Expandir a etiqueta visual"
+        },
+        {
+          "label": "Etiqueta para cando a imaxe de fondo está a cargar nunha escena 360",
+          "default": "Cargando imaxe de fondo..."
+        },
+        {
+          "label": "Etiqueta para cando non hai contido",
+          "default": "Non hai contido"
+        },
+        {
+          "label": "Etiqueta para o botón do menú contextual para ir á escena",
+          "default": "Ir á escena"
+        },
+        {
+          "label": "Etiqueta para o botón do menú contextual para editar",
+          "default": "Editar"
+        },
+        {
+          "label": "Etiqueta para o botón do menú contextual para eliminar",
+          "default": "Borrar"
+        },
+        {
+          "label": "Tradución para \"Puntuación\"",
+          "default": "Puntuación"
+        },
+        {
+          "label": "Tradución para \"Tarefa\"",
+          "default": "Tarefa"
+        },
+        {
+          "label": "Tradución para \"Total\"",
+          "default": "Total"
+        },
+        {
+          "label": "Etiqueta do botón para amosar o resumo da puntuación",
+          "default": "Amosar resumo da puntuación"
+        },
+        {
+          "label": "Tradución para \"Escena\"",
+          "default": "Escena"
+        },
+        {
+          "label": "Sen título",
+          "default": "Sen título"
+        },
+        {
+          "label": "Ir á escena de inicio",
+          "default": "Ir á escena de inicio"
+        },
+        {
+          "label": "Estás na escena inicial",
+          "default": "Estás na escena inicial"
+        },
+        {
+          "label": "Desbloqueado",
+          "default": "Desbloqueado"
+        },
+        {
+          "label": "Pechado",
+          "default": "Pechado"
+        },
+        {
+          "label": "Busca na sala ata atopar o código",
+          "default": "Busca na sala ata atopar o código"
+        },
+        {
+          "label": "O código era incorrecto, téntao de novo.",
+          "default": "O código era incorrecto, téntao de novo."
+        },
+        {
+          "label": "Desbloqueouse o contido!",
+          "default": "Desbloqueouse o contido!"
+        },
+        {
+          "label": "Código",
+          "default": "Código"
+        },
+        {
+          "label": "Acción de interacción desbloqueada (Continuar)",
+          "default": "Continuar"
+        },
+        {
+          "label": "Acción de interacción bloqueada (desbloquear)",
+          "default": "Desbloquear"
+        },
+        {
+          "label": "Arrastra horizontalmente para aumentar (para lectores de pantalla)",
+          "default": "Arrastra horizontalmente para escalar"
+        },
+        {
+          "label": "Arrastra verticalmente para aumentar (para lectores de pantalla)",
+          "default": "Arrastra verticalmente para escalar"
+        },
+        {
+          "label": "Pista",
+          "default": "Pista"
+        },
+        {
+          "label": "Contido bloqueado",
+          "default": "Contido bloqueado"
+        },
+        {
+          "label": "Back",
+          "default": "Back"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (enter)",
+          "default": "Enter fullscreen mode"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (exit)",
+          "default": "Exit fullscreen mode"
+        },
+        {
+          "label": "Main toolbar",
+          "default": "Main toolbar"
+        },
+        {
+          "label": "No valid scenes set",
+          "default": "No valid scenes have been set."
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom in button",
+          "default": "Zoom in"
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom out button",
+          "default": "Zoom out"
+        },
+        {
+          "label": "Zoom toolbar",
+          "default": "Zoom toolbar"
+        },
+        {
+          "label": "Zoom aria text for screenreaders",
+          "default": ":num% zoomed in"
+        }
+      ]
+    }
+  ]
+}

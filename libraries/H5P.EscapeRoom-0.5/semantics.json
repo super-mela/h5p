@@ -1,0 +1,917 @@
+[
+  {
+    "name": "threeImage",
+    "type": "group",
+    "widget": "EscapeRoom",
+    "label": "Three Image Editor",
+    "importance": "high",
+    "fields": [
+      {
+        "name": "scenes",
+        "type": "list",
+        "label": "Scenes",
+        "entity": "Scene",
+        "min": 0,
+        "field": {
+          "name": "scene",
+          "type": "group",
+          "fields": [
+            {
+              "name": "sceneType",
+              "type": "select",
+              "label": "Scene type",
+              "widget": "radioGroup",
+              "alignment": "horizontal",
+              "options": [
+                {
+                  "value": "360",
+                  "label": "360 image"
+                },
+                {
+                  "value": "panorama",
+                  "label": "Panoramic image"
+                },
+                {
+                  "value": "static",
+                  "label": "Static image"
+                }
+              ],
+              "default": "360"
+            },
+            {
+              "name": "showBackButton",
+              "type": "boolean",
+              "label": "Display \"Back\" button",
+              "description": "Display button for navigating back to your previous scene",
+              "default": true,
+              "widget": "showWhen",
+              "showWhen": {
+                "rules": [
+                  {
+                    "field": "sceneType",
+                    "equals": "static"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "enableZoom",
+              "type": "boolean",
+              "label": "Enable \"Zoom\"",
+              "description": "Enable zooming in and out with zoom buttons, mouse wheel, touch gestures and keyboard shortcuts.",
+              "default": true
+            },
+            {
+              "name": "sceneId",
+              "type": "number",
+              "label": "SceneId",
+              "widget": "none"
+            },
+            {
+              "name": "scenename",
+              "type": "text",
+              "label": "Scene Title",
+              "description": "Used to identify the scene"
+            },
+            {
+              "name": "scenesrc",
+              "type": "image",
+              "label": "Scene Background"
+            },
+            {
+              "name": "scenedescription",
+              "type": "text",
+              "widget": "html",
+              "label": "Scene Description",
+              "description": "A text that can describe the scene for the end-user",
+              "optional": true,
+              "tags": [
+                "p",
+                "br",
+                "strong",
+                "em",
+                "code"
+              ]
+            },
+            {
+              "name": "sceneDescriptionARIA",
+              "type": "text",
+              "widget": "html",
+              "label": "Scene description (for screen readers)",
+              "description": "A text that can describe the scene for the end-user. It will not be visible but read by screen readers, so formatting will be ignored.",
+              "optional": true
+            },
+            {
+              "name": "showSceneDescriptionInitially",
+              "type": "boolean",
+              "label": "Display \"Scene Description\" initially",
+              "description": "Display the scene description when the scene starts for the first time",
+              "default": false
+            },
+            {
+              "name": "cameraStartPosition",
+              "type": "text",
+              "label": "Initial camera position",
+              "description": "Camera position in pitch and yaw",
+              "optional": true,
+              "widget": "none"
+            },
+            {
+              "name": "interactions",
+              "label": "Interactions",
+              "type": "list",
+              "min": 0,
+              "field": {
+                "name": "interaction",
+                "type": "group",
+                "fields": [
+                  {
+                    "name": "labelText",
+                    "type": "text",
+                    "label": "Label",
+                    "optional": true,
+                    "description": "If left blank no label will be displayed and we'll try to use the title field for screen readers"
+                  },
+                  {
+                    "name": "label",
+                    "type": "group",
+                    "label": "Label settings",
+                    "importance": "low",
+                    "fields": [
+                      {
+                        "name": "labelPosition",
+                        "type": "select",
+                        "label": "Label position",
+                        "description": "Choose where the label should appear",
+                        "options": [
+                          {
+                            "value": "inherit",
+                            "label": "Use behavioral setting"
+                          },
+                          {
+                            "value": "right",
+                            "label": "Right aligned"
+                          },
+                          {
+                            "value": "left",
+                            "label": "Left aligned"
+                          },
+                          {
+                            "value": "top",
+                            "label": "Top aligned"
+                          },
+                          {
+                            "value": "bottom",
+                            "label": "Bottom aligned"
+                          }
+                        ],
+                        "default": "inherit"
+                      },
+                      {
+                        "name": "showLabel",
+                        "type": "select",
+                        "label": "Display Label",
+                        "description": "If hidden - labels will show only on mouse over",
+                        "options": [
+                          {
+                            "value": "inherit",
+                            "label": "Use behavioral setting"
+                          },
+                          {
+                            "value": "show",
+                            "label": "Show"
+                          },
+                          {
+                            "value": "hide",
+                            "label": "Hide"
+                          }
+                        ],
+                        "default": "inherit"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "passwordSettings",
+                    "type": "group",
+                    "label": "Code settings",
+                    "importance": "low",
+                    "fields": [
+                      {
+                        "name": "interactionPassword",
+                        "type": "text",
+                        "label": "Code for the interaction",
+                        "description": "If not empty, the user has to input the code in order to open this content. Separate multiple correct codes with /.",
+                        "optional": true
+                      },
+                      {
+                        "name": "interactionPasswordHint",
+                        "type": "text",
+                        "label": "A hint for the interaction code",
+                        "description": "An optional hint for the code, can be left empty if wanted",
+                        "optional": true,
+                        "widget": "html",
+                        "tags": [
+                          "br",
+                          "strong",
+                          "em"
+                        ]
+                      }
+                    ]
+                  },
+                  {
+                    "name": "showAsHotspot",
+                    "type": "boolean",
+                    "label": "Show as hotspot",
+                    "description": "Allows for adding interaction areas to the background image that can be custom size.",
+                    "optional": true
+                  },
+                  {
+                    "type": "group",
+                    "name": "hotspotSettings",
+                    "label": "Hotspot settings",
+                    "importance": "low",
+                    "widget": "showWhen",
+                    "showWhen": {
+                      "rules": [
+                        {
+                          "field": "showAsHotspot",
+                          "equals": true
+                        }
+                      ]
+                    },
+                    "fields": [
+                      {
+                        "name": "showHotspotOnHover",
+                        "type": "boolean",
+                        "label": "Show hotspot when mouse is hovering",
+                        "description": "Will allow hotspot to be visible when mouse is hovering the area.",
+                        "default": false,
+                        "optional": true
+                      },
+                      {
+                        "name": "isHotspotTabbable",
+                        "type": "boolean",
+                        "label": "Set the hotspot be tabbable",
+                        "description": "Will allow hotspot to be tabbable. Required to be checked to make the content accessible!",
+                        "optional": true,
+                        "default": true
+                      },
+                      {
+                        "name": "hotSpotSizeValues",
+                        "type": "text",
+                        "default": "256,128",
+                        "label": "Values for storing the height and width for hotspot",
+                        "widget": "none"
+                      }
+                    ]
+                  },
+                  {
+                    "name": "showAsOpenSceneContent",
+                    "type": "boolean",
+                    "label": "Show as open content in the scene",
+                    "description": "Allows the content to be shown in an open dialog box directly in the scene.",
+                    "optional": true,
+                    "widget": "showWhen",
+                    "showWhen": {
+                      "rules": [
+                        {
+                          "field": "showAsHotspot",
+                          "equals": false
+                        }
+                      ]
+                    }
+                  },
+                  {
+                    "name": "action",
+                    "type": "library",
+                    "options": [
+                      "H5P.GoToScene 0.1",
+                      "H5P.AdvancedText 1.1",
+                      "H5P.Image 1.1",
+                      "H5P.Audio 1.5",
+                      "H5P.Video 1.6",
+                      "H5P.Summary 1.10",
+                      "H5P.SingleChoiceSet 1.11",
+                      "H5P.MultiChoice 1.16",
+                      "H5P.Blanks 1.14",
+                      "H5P.Crossword 0.5"
+                    ]
+                  },
+                  {
+                    "name": "interactionpos",
+                    "type": "text",
+                    "label": "Interaction position",
+                    "widget": "none"
+                  },
+                  {
+                    "name": "iconTypeTextBox",
+                    "type": "select",
+                    "label": "Button style",
+                    "description": "Decide how the icon should look.",
+                    "widget": "showWhen",
+                    "showWhen": {
+                      "rules": [
+                        {
+                          "field": "action",
+                          "equals": [
+                            "H5P.AdvancedText"
+                          ]
+                        }
+                      ],
+                      "widget": "radioGroup"
+                    },
+                    "alignment": "horizontal",
+                    "fontFamily": "360-Image",
+                    "options": [
+                      {
+                        "value": "text-icon",
+                        "label": "Text icon"
+                      },
+                      {
+                        "value": "info-icon",
+                        "label": "Info icon"
+                      }
+                    ],
+                    "default": "text-icon"
+                  }
+                ]
+              }
+            },
+            {
+              "name": "iconType",
+              "type": "select",
+              "label": "Button style",
+              "description": "Decide how buttons pointing to this scene should look. For scenes that are static and does not lead to new scenes, we recommend the \"More information\" button.",
+              "widget": "radioGroup",
+              "alignment": "horizontal",
+              "options": [
+                {
+                  "value": "arrow",
+                  "label": "New scene (arrow)"
+                },
+                {
+                  "value": "plus",
+                  "label": "More information (plus)"
+                }
+              ],
+              "default": "arrow"
+            },
+            {
+              "name": "audioType",
+              "type": "select",
+              "label": "Audio type",
+              "description": "Decide what audio type this scene will use, either use an audio track or choose an existing audio playlist.",
+              "widget": "radioGroup",
+              "alignment": "horizontal",
+              "options": [
+                {
+                  "label": "Audio Track",
+                  "value": "audio"
+                },
+                {
+                  "label": "Playlist",
+                  "value": "playlist"
+                }
+              ],
+              "default": "audio"
+            },
+            {
+              "name": "audio",
+              "type": "audio",
+              "label": "Audio Track",
+              "description": "Add an audio track that's specific for this scene.",
+              "optional": true,
+              "widgetExtensions": [
+                "AudioRecorder"
+              ],
+              "widget": "showWhen",
+              "showWhen": {
+                "rules": [
+                  {
+                    "field": "audioType",
+                    "equals": "audio"
+                  }
+                ]
+              }
+            },
+            {
+              "label": "Playlist",
+              "description": "Here you can pick an existing playlist as audio.",
+              "name": "playlist",
+              "type": "text",
+              "optional": true,
+              "widget": "showWhen",
+              "showWhen": {
+                "rules": [
+                  {
+                    "field": "audioType",
+                    "equals": "playlist"
+                  }
+                ],
+                "widget": "playlist"
+              }
+            },
+            {
+              "label": "Restart audio when scene is reopened",
+              "name": "restartAudioOnSceneStart",
+              "type": "boolean",
+              "default": false
+            }
+          ]
+        }
+      },
+      {
+        "name": "startSceneId",
+        "type": "number",
+        "default": 0
+      },
+      {
+        "name": "audio",
+        "type": "audio",
+        "label": "Audio track",
+        "optional": true
+      },
+      {
+        "name": "playlists",
+        "type": "list",
+        "label": "Playlists",
+        "optional": true,
+        "field": {
+          "name": "playlist",
+          "type": "group",
+          "fields": [
+            {
+              "label": "Playlist Title",
+              "name": "title",
+              "type": "text",
+              "description": "Used to identify the playlist",
+              "optional": false
+            },
+            {
+              "label": "Audio Tracks",
+              "name": "audioTracks",
+              "type": "audio",
+              "description": "Add audio tracks to the playlist.",
+              "optional": false,
+              "widgetExtensions": [
+                "AudioRecorder"
+              ]
+            },
+            {
+              "name": "playlistId",
+              "type": "text",
+              "widget": "none"
+            }
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "name": "audioPlaylistsGroup",
+    "type": "group",
+    "label": "Playlists",
+    "importance": "low",
+    "description": "These options will let you add playlists for the scenes.",
+    "optional": true,
+    "fields": [
+      {
+        "name": "audioPlaylists",
+        "type": "number",
+        "label": "Added playlists",
+        "description": "Make playlists that's available for all scenes by default.",
+        "widget": "playlist",
+        "optional": true,
+        "canEdit": true
+      }
+    ]
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Behavioral settings",
+    "importance": "low",
+    "description": "These options will let you control how the world behaves.",
+    "fields": [
+      {
+        "name": "audioType",
+        "type": "select",
+        "label": "Audio type",
+        "description": "Decide what audio type this scene will use, either use an audio track or choose an existing audio playlist.",
+        "widget": "radioGroup",
+        "alignment": "horizontal",
+        "options": [
+          {
+            "label": "Global Audio",
+            "value": "audio"
+          },
+          {
+            "label": "Playlist",
+            "value": "playlist"
+          }
+        ],
+        "default": "audio"
+      },
+      {
+        "name": "audio",
+        "type": "audio",
+        "label": "Global Audio",
+        "description": "Add an audio track that's available for all of the scenes by default.",
+        "optional": true,
+        "widgetExtensions": [
+          "AudioRecorder"
+        ],
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "audioType",
+              "equals": "audio"
+            }
+          ]
+        }
+      },
+      {
+        "label": "Playlist",
+        "description": "Here you can pick an existing playlist as audio.",
+        "name": "playlist",
+        "type": "text",
+        "widget": "showWhen",
+        "showWhen": {
+          "rules": [
+            {
+              "field": "audioType",
+              "equals": "playlist"
+            }
+          ],
+          "widget": "playlist"
+        }
+      },
+      {
+        "name": "showScoresButton",
+        "type": "boolean",
+        "label": "Display \"Scores\" button",
+        "description": "Display button for showing the scores from assignments.",
+        "default": false
+      },
+      {
+        "name": "showHomeButton",
+        "type": "boolean",
+        "label": "Display \"Home\" button",
+        "description": "Display button for going to start scene.",
+        "default": true
+      },
+      {
+        "name": "sceneRenderingQuality",
+        "type": "select",
+        "label": "Scene rendering quality",
+        "description": "Choose the amount of width and height segments used to render a scene. This directly affects the quality level of the scene, try increasing the quality if a scene looks \"blocky\" or \"waves\" are seen within the scenes. Note that higher quality rendering takes more time to load.",
+        "options": [
+          {
+            "value": "high",
+            "label": "High Quality (128x128)"
+          },
+          {
+            "value": "medium",
+            "label": "Medium Quality (64x64)"
+          },
+          {
+            "value": "low",
+            "label": "Low Quality (16x16)"
+          }
+        ],
+        "default": "high"
+      },
+      {
+        "name": "label",
+        "type": "group",
+        "label": "Label settings",
+        "importance": "low",
+        "expanded": true,
+        "fields": [
+          {
+            "name": "labelPosition",
+            "type": "select",
+            "label": "Label position",
+            "description": "The default label position. The position may be overriden per interaction",
+            "options": [
+              {
+                "value": "right",
+                "label": "Right aligned"
+              },
+              {
+                "value": "left",
+                "label": "Left aligned"
+              },
+              {
+                "value": "top",
+                "label": "Top aligned"
+              },
+              {
+                "value": "bottom",
+                "label": "Bottom aligned"
+              }
+            ],
+            "default": "right"
+          },
+          {
+            "name": "showLabel",
+            "type": "boolean",
+            "label": "Display Labels",
+            "description": "If unchecked - labels will show only on mouse over",
+            "default": true
+          }
+        ]
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "common": true,
+    "label": "Localize",
+    "fields": [
+      {
+        "name": "title",
+        "type": "text",
+        "label": "Aria label for content type",
+        "default": "Virtual Tour"
+      },
+      {
+        "name": "playAudioTrack",
+        "type": "text",
+        "label": "Label for to play audio",
+        "default": "Play Audio Track"
+      },
+      {
+        "name": "pauseAudioTrack",
+        "type": "text",
+        "label": "Label to pause audio",
+        "default": "Pause Audio Track"
+      },
+      {
+        "name": "sceneDescription",
+        "type": "text",
+        "label": "Title to scene dialog",
+        "default": "Scene Description"
+      },
+      {
+        "name": "resetCamera",
+        "type": "text",
+        "label": "Label for button to reset camera",
+        "default": "Reset Camera"
+      },
+      {
+        "name": "submitDialog",
+        "type": "text",
+        "label": "Label for the submit dialog button",
+        "default": "Submit Dialog"
+      },
+      {
+        "name": "closeDialog",
+        "type": "text",
+        "label": "Label for the close dialog button",
+        "default": "Close Dialog"
+      },
+      {
+        "name": "expandButtonAriaLabel",
+        "type": "text",
+        "label": "Aria label for the expand label button",
+        "default": "Expand the visual label"
+      },
+      {
+        "name": "backgroundLoading",
+        "type": "text",
+        "label": "Label for when background image is loading in 360 scene",
+        "default": "Loading background image..."
+      },
+      {
+        "name": "noContent",
+        "type": "text",
+        "label": "Label for when there is no content",
+        "default": "No content"
+      },
+      {
+        "name": "goToScene",
+        "type": "text",
+        "label": "Label for context menu button for go to scene",
+        "default": "Go to scene"
+      },
+      {
+        "name": "edit",
+        "type": "text",
+        "label": "Label for context menu button for edit",
+        "default": "Edit"
+      },
+      {
+        "name": "delete",
+        "type": "text",
+        "label": "Label for context menu button for delete",
+        "default": "Delete"
+      },
+      {
+        "name": "score",
+        "type": "text",
+        "label": "Translation for \"Score\"",
+        "importance": "low",
+        "default": "Score"
+      },
+      {
+        "name": "assignment",
+        "type": "text",
+        "label": "Translation for \"Assignment\"",
+        "importance": "low",
+        "default": "Assignment"
+      },
+      {
+        "name": "total",
+        "type": "text",
+        "label": "Translation for \"Total\"",
+        "importance": "low",
+        "default": "Total"
+      },
+      {
+        "name": "scoreSummary",
+        "type": "text",
+        "label": "Label for button to show score summary",
+        "importance": "low",
+        "default": "Show Score Summary"
+      },
+      {
+        "name": "scene",
+        "type": "text",
+        "label": "Translation for 'Scene'",
+        "importance": "low",
+        "default": "Scene"
+      },
+      {
+        "name": "untitled",
+        "type": "text",
+        "label": "Untitled",
+        "importance": "low",
+        "default": "Untitled"
+      },
+      {
+        "name": "goToStartScene",
+        "type": "text",
+        "label": "Go to start scene",
+        "importance": "low",
+        "default": "Go to start scene"
+      },
+      {
+        "name": "userIsAtStartScene",
+        "type": "text",
+        "label": "You are at the start scene",
+        "importance": "low",
+        "default": "You are at the start scene"
+      },
+      {
+        "name": "unlocked",
+        "type": "text",
+        "label": "Unlocked",
+        "importance": "low",
+        "default": "Unlocked"
+      },
+      {
+        "name": "locked",
+        "type": "text",
+        "label": "Locked",
+        "importance": "low",
+        "default": "Locked"
+      },
+      {
+        "name": "searchRoomForCode",
+        "type": "text",
+        "label": "Search the room until you find the code",
+        "importance": "low",
+        "default": "Search the room until you find the code"
+      },
+      {
+        "name": "wrongCode",
+        "type": "text",
+        "label": "The code was wrong, try again.",
+        "importance": "low",
+        "default": "The code was wrong, try again."
+      },
+      {
+        "name": "contentUnlocked",
+        "type": "text",
+        "label": "The content has been unlocked!",
+        "importance": "low",
+        "default": "The content has been unlocked!"
+      },
+      {
+        "name": "code",
+        "type": "text",
+        "label": "Code",
+        "importance": "low",
+        "default": "Code"
+      },
+      {
+        "name": "unlockedStateAction",
+        "type": "text",
+        "label": "Unlocked interaction action (Continue)",
+        "importance": "low",
+        "default": "Continue"
+      },
+      {
+        "name": "lockedStateAction",
+        "type": "text",
+        "label": "Locked interaction action (Unlock)",
+        "importance": "low",
+        "default": "Unlock"
+      },
+      {
+        "name": "hotspotDragHorizAlt",
+        "type": "text",
+        "label": "Drag horizontally to scale (for screen readers)",
+        "importance": "low",
+        "default": "Drag horizontally to scale"
+      },
+      {
+        "name": "hotspotDragVertiAlt",
+        "type": "text",
+        "label": "Drag vertically to scale (for screen readers)",
+        "importance": "low",
+        "default": "Drag vertically to scale"
+      },
+      {
+        "name": "hint",
+        "type": "text",
+        "label": "Hint",
+        "importance": "low",
+        "default": "Hint"
+      },
+      {
+        "name": "lockedContent",
+        "type": "text",
+        "label": "Locked content",
+        "importance": "low",
+        "default": "Locked content"
+      },
+      {
+        "name": "back",
+        "type": "text",
+        "label": "Back",
+        "importance": "low",
+        "default": "Back"
+      },
+      {
+        "name": "buttonFullscreenEnter",
+        "type": "text",
+        "label": "Text for screenreaders. Title for fullscreen button (enter)",
+        "importance": "low",
+        "default": "Enter fullscreen mode"
+      },
+      {
+        "name": "buttonFullscreenExit",
+        "type": "text",
+        "label": "Text for screenreaders. Title for fullscreen button (exit)",
+        "importance": "low",
+        "default": "Exit fullscreen mode"
+      },
+      {
+        "name": "mainToolbar",
+        "type": "text",
+        "label": "Main toolbar",
+        "importance": "low",
+        "default": "Main toolbar"
+      },
+      {
+        "name": "noValidScenesSet",
+        "type": "text",
+        "label": "No valid scenes set",
+        "importance": "low",
+        "default": "No valid scenes have been set."
+      },
+      {
+        "name": "buttonZoomIn",
+        "type": "text",
+        "label": "Text for screenreaders. Title for zoom in button",
+        "importance": "low",
+        "default": "Zoom in"
+      },
+      {
+        "name": "buttonZoomOut",
+        "type": "text",
+        "label": "Text for screenreaders. Title for zoom out button",
+        "importance": "low",
+        "default": "Zoom out"
+      },
+      {
+        "name": "zoomToolbar",
+        "type": "text",
+        "label": "Zoom toolbar",
+        "importance": "low",
+        "default": "Zoom toolbar"
+      },
+      {
+        "name": "zoomAria",
+        "type": "text",
+        "label": "Zoom aria text for screenreaders",
+        "importance": "low",
+        "default": ":num% zoomed in"
+      }
+    ]
+  }
+]

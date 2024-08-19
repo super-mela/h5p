@@ -1,0 +1,48 @@
+@import "@styles/main";
+
+.h5p-tabs-button {
+  background-color: var(--color-tab-background, $color-tab);
+  border: none;
+  color: var(--color-tab-text, $color-text);
+  cursor: pointer;
+  font-size: 1em;
+  flex-shrink: 1;
+  overflow: hidden;
+  padding: 0.75rem;
+  text-overflow: ellipsis;
+  transition: background-color 0.1s ease;
+  white-space: nowrap;
+  width: min(100%, 15em);
+
+  &[tabIndex="-1"]:focus, &:focus {
+    outline: 2px solid black;
+    outline-offset: -2px;
+  }
+
+  &.active {
+    background-color: var(--color-tab-background-active, $color-joubelui-button);
+    color: var(--color-tab-text-active, $color-background);
+
+    &:hover {
+      background-color: var(--color-tab-background-active-hover, $color-joubelui-button);
+      color: var(--color-tab-text-active-hover, $color-background);
+    }
+  }
+
+  &:first-child {
+    border-top-left-radius: 1em;
+  }
+
+  &:last-child {
+    border-top-right-radius: 1em;
+  }
+
+  &:not(:last-child) {
+    border-right: solid 1px var(--color-tab-background-hover, $color-content);
+  }
+
+  &:not(.active):hover {
+    background-color: var(--color-tab-background-hover, $color-tab-hover);
+    color: var(--color-tab-text-hover, $color-text);
+  }
+}

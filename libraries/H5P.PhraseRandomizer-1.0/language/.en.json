@@ -1,0 +1,235 @@
+{
+  "semantics": [
+    {
+      "label": "Headline",
+      "description": "Optional headline to show in the toolbar."
+    },
+    {
+      "label": "Introduction",
+      "description": "Optionally set some introduction telling the user what to do.",
+      "default": "<p style=\"text-align: center;\"></p>"
+    },
+    {
+      "label": "Segments",
+      "entity": "segment",
+      "widgets": [
+        {
+          "label": "Default"
+        },
+        {
+          "label": "Textual"
+        }
+      ],
+      "field": {
+        "label": "Segments",
+        "fields": [
+          {
+            "label": "Segment title"
+          },
+          {
+            "label": "Options",
+            "entity": "option",
+            "field": {
+              "label": "Text for option"
+            }
+          },
+          {
+            "label": "Background color"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Mode",
+      "options": [
+        {
+          "label": "Free"
+        },
+        {
+          "label": "Quiz"
+        }
+      ]
+    },
+    {
+      "label": "Solutions",
+      "fields": [
+        {
+          "label": "Solutions",
+          "entity": "solution",
+          "field": {
+            "label": "Solution"
+          }
+        },
+        {
+          "label": "Dummy"
+        }
+      ]
+    },
+    {
+      "label": "Audio settings",
+      "fields": [
+        {
+          "label": "Use inbuilt sound for click on next button or previous button"
+        },
+        {
+          "label": "Click on next button or previous button",
+          "description": "Will be played when the user clicks on the previous button or next button."
+        }
+      ]
+    },
+    {
+      "label": "Behavioural settings",
+      "fields": [
+        {
+          "label": "Lives",
+          "description": "Enter the number of lives a user starts with (every wrong answer deduces one down to 0) or leave empty to not limit the number of lives."
+        },
+        {
+          "label": "Enable \"Retry\" button"
+        },
+        {
+          "label": "Enable \"Show Solution\" button"
+        }
+      ]
+    },
+    {
+      "label": "User interface",
+      "fields": [
+        {
+          "label": "Check",
+          "default": "Check"
+        },
+        {
+          "label": "Submit",
+          "default": "Submit"
+        },
+        {
+          "label": "Show solution",
+          "default": "Show solution"
+        },
+        {
+          "label": "Retry",
+          "default": "Retry"
+        },
+        {
+          "label": "You ran out of lives",
+          "default": "You ran out of lives."
+        },
+        {
+          "label": "Solution",
+          "default": "These are the solutions."
+        },
+        {
+          "label": "This is not a solution",
+          "default": "This is not a solution."
+        },
+        {
+          "label": "No message",
+          "default": "..."
+        },
+        {
+          "label": "You found a solution!",
+          "default": "You found a solution!"
+        },
+        {
+          "label": "You found all the solutions!",
+          "default": "You found all the solutions!"
+        },
+        {
+          "label": "Found solutions",
+          "default": "Found solutions"
+        },
+        {
+          "label": "To be found",
+          "default": "To be found"
+        }
+      ]
+    },
+    {
+      "label": "Accessibility texts",
+      "fields": [
+        {
+          "label": "Randomize all segments",
+          "default": "Randomize all segments"
+        },
+        {
+          "label": "Assistive technology description for \"Check\" button",
+          "default": "Check the answers. The responses will be marked as correct or incorrect."
+        },
+        {
+          "label": "Assistive technology description for \"Show Solution\" button",
+          "default": "Show the solutions."
+        },
+        {
+          "label": "Assistive technology description for \"Retry\" button",
+          "default": "Retry the task. Reset all segments and start the task over again."
+        },
+        {
+          "label": "Assistive technology description for current label",
+          "description": "@text is a placeholder and will be replaced by the respective value.",
+          "default": "Current label: @text"
+        },
+        {
+          "label": "Assistive technology description for current labels",
+          "description": "@texts is a placeholder and will be replaced by the respective value.",
+          "default": "Current labels: @texts"
+        },
+        {
+          "label": "Assistive technology description for \"previous text\" button",
+          "default": "Previous text"
+        },
+        {
+          "label": "Assistive technology description for \"next text\" button",
+          "default": "Next text"
+        },
+        {
+          "label": "Assistive technology description for spin button",
+          "description": "@number is a placeholder and will be replaced by the respective value.",
+          "default": "Spin segment @number to get random text for it."
+        },
+        {
+          "label": "Assistive technology description for announcing solution",
+          "description": "@number and @combination are placeholders and will be replaced by the respective values.",
+          "default": "These are the solutions (@number in total): @combination."
+        },
+        {
+          "label": "Assistive technology description for announcing \"disabled\"",
+          "default": "disabled"
+        },
+        {
+          "label": "Assistive technology description for announcing \"Randomizer\"",
+          "default": "Randomizer"
+        },
+        {
+          "label": "Assistive technology description for toolbar",
+          "default": "Toolbar"
+        },
+        {
+          "label": "Assistive technology description for announcing the current segment",
+          "description": "@number and @total are placeholders and will be replaced by the respective values.",
+          "default": "Segment @number of @total"
+        },
+        {
+          "label": "Solution",
+          "default": "Solution"
+        },
+        {
+          "label": "Found",
+          "default": "Found"
+        },
+        {
+          "label": "Not found",
+          "default": "Not found"
+        },
+        {
+          "label": "Audio button (unmuted)",
+          "default": "Mute audio. Currently unmuted."
+        },
+        {
+          "label": "Audio button (muted)",
+          "default": "Unmute audio. Currently muted."
+        }
+      ]
+    }
+  ]
+}

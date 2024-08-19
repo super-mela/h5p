@@ -1,0 +1,485 @@
+{
+  "semantics": [
+    {
+      "label": "Επεξεργαστής Three Image",
+      "fields": [
+        {
+          "label": "Σκηνές",
+          "entity": "Σκηνή",
+          "field": {
+            "fields": [
+              {
+                "label": "Τύπος σκηνής",
+                "options": [
+                  {
+                    "label": "360 εικόνα"
+                  },
+                  {
+                    "label": "Panoramic image"
+                  },
+                  {
+                    "label": "Στατική εικόνα"
+                  }
+                ]
+              },
+              {
+                "label": "Εμφάνιση κουμπιού \"Πίσω\"",
+                "description": "Εμφάνιση κουμπιού για μετάβαση στην προηγούμενη σκηνή"
+              },
+              {
+                "label": "Enable \"Zoom\"",
+                "description": "Enable zooming in and out with zoom buttons, mouse wheel, touch gestures and keyboard shortcuts."
+              },
+              {
+                "label": "SceneId"
+              },
+              {
+                "label": "Τίτλος σκηνής",
+                "description": "Χρησιμοποιείται για να διαχωρίζει τις σκηνές"
+              },
+              {
+                "label": "Φόντο σκηνής"
+              },
+              {
+                "label": "Περιγραφή σκηνής",
+                "description": "Κείμενο που περιγράφει τη σκηνή"
+              },
+              {
+                "label": "Scene description (for screen readers)",
+                "description": "A text that can describe the scene for the end-user. It will not be visible but read by screen readers, so formatting will be ignored."
+              },
+              {
+                "label": "Display \"Scene Description\" initially",
+                "description": "Display the scene description when the scene starts for the first time"
+              },
+              {
+                "label": "Αρχική θέση κάμερας",
+                "description": "Θέση κάμερας (βήμα, κάμψη)"
+              },
+              {
+                "label": "Αλληλεπιδράσεις",
+                "field": {
+                  "fields": [
+                    {
+                      "label": "Label",
+                      "description": "If left blank no label will be displayed and we'll try to use the title field for screen readers"
+                    },
+                    {
+                      "label": "Label Settings",
+                      "fields": [
+                        {
+                          "label": "Label position",
+                          "description": "Choose where the label should appear",
+                          "options": [
+                            {
+                              "label": "Use behavioral setting"
+                            },
+                            {
+                              "label": "Right aligned"
+                            },
+                            {
+                              "label": "Left aligned"
+                            },
+                            {
+                              "label": "Top aligned"
+                            },
+                            {
+                              "label": "Bottom aligned"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Display Label",
+                          "description": "If hidden - labels will show only on mouse over",
+                          "options": [
+                            {
+                              "label": "Use behavioral setting"
+                            },
+                            {
+                              "label": "Show"
+                            },
+                            {
+                              "label": "Hide"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Password settings",
+                      "fields": [
+                        {
+                          "label": "Code for the interaction",
+                          "description": "If not empty, the user has to input the code in order to open this content. Separate multiple correct codes with /."
+                        },
+                        {
+                          "label": "A hint for the interaction code",
+                          "description": "An optional hint for the code, can be left empty if wanted"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Show as hotspot",
+                      "description": "Allows for adding interaction areas to the background image that can be custom size."
+                    },
+                    {
+                      "label": "Hotspot settings",
+                      "fields": [
+                        {
+                          "label": "Show hotspot when mouse is hovering",
+                          "description": "Will allow hotspot to be visible when mouse is hovering the area."
+                        },
+                        {
+                          "label": "Set the hotspot be tabbable",
+                          "description": "Will allow hotspot to be tabbable. Required to be checked to make the content accessible!"
+                        },
+                        {
+                          "default": "256,128",
+                          "label": "Values for storing the height and width for hotspot"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Show as open content in the scene",
+                      "description": "Allows the content to be shown in an open dialog box directly in the scene."
+                    },
+                    {},
+                    {
+                      "label": "Interaction position"
+                    },
+                    {
+                      "label": "Button style",
+                      "description": "Decide how the icon should look.",
+                      "options": [
+                        {
+                          "label": "Text icon"
+                        },
+                        {
+                          "label": "Info icon"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Στυλ κουμπιών",
+                "description": "Επιλέξτε πως θα φαίνονται τα κουμπιά που συνδέονται μ'αυτή τη σκηνή. Για στατικές σκηνές που δεν οδηγούν σε άλλες σκηνές προτείνεται το κουμπί \"Περισσότερες πληροφορίες\".",
+                "options": [
+                  {
+                    "label": "Νέα σκηνή (βέλος)"
+                  },
+                  {
+                    "label": "Περισσότερες πληροφορίες (συν)"
+                  }
+                ]
+              },
+              {
+                "label": "Audio type",
+                "description": "Decide what audio type this scene will use, either use an audio track or choose an existing audio playlist.",
+                "options": [
+                  {
+                    "label": "Audio Track"
+                  },
+                  {
+                    "label": "Playlist"
+                  }
+                ]
+              },
+              {
+                "label": "Απόσπασμα ήχου",
+                "description": "Προσθήκη αποσπάσματος ήχου γι'αυτή τη σκηνή."
+              },
+              {
+                "label": "Playlist",
+                "description": "Here you can pick an existing playlist as audio."
+              },
+              {
+                "label": "Restart audio when scene is reopened"
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "Playlists"
+        },
+        {
+          "label": "Playlists",
+          "field": {
+            "fields": [
+              {
+                "label": "Playlist Title",
+                "description": "Used to identify the playlist"
+              },
+              {
+                "label": "Audio Tracks",
+                "description": "Add audio tracks to the playlist."
+              },
+              {}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Playlists",
+      "description": "These options will let you add playlists for the scenes.",
+      "fields": [
+        {
+          "label": "Added playlists",
+          "description": "Make playlists that's available for all scenes by default."
+        }
+      ]
+    },
+    {
+      "label": "Ρυθμίσεις",
+      "description": "Ρυθμίσεις που ελέγχουν τη συμπεριφορά του αντικειμένου.",
+      "fields": [
+        {
+          "label": "Audio type",
+          "description": "Decide what audio type this scene will use, either use an audio track or choose an existing audio playlist.",
+          "options": [
+            {
+              "label": "Global Audio"
+            },
+            {
+              "label": "Playlist"
+            }
+          ]
+        },
+        {
+          "label": "Απόσπασμα ήχου",
+          "description": "Προσθήκη προεπιλεγμένου αποσπάσματος ήχου για όλες τις σκηνές."
+        },
+        {
+          "label": "Playlist",
+          "description": "Here you can pick an existing playlist as audio."
+        },
+        {
+          "label": "Display \"Scores\" button",
+          "description": "Display button for showing the scores from assignments."
+        },
+        {
+          "label": "Display \"Home\" button",
+          "description": "Display button for going to start scene."
+        },
+        {
+          "label": "Ποιότητα rendering σκηνών",
+          "description": "Επιλέξτε ποιότητα (πλάτος x ύψος) για το rendering των σκηνών. Επιχειρήστε να αυξήσετε την ποιότητα, αν σε κάποια σκηνή παρατηρείτε \"μπλοκς\" ή \"κύματα\". Σημειώνεται πως η υψηλότερη ποιότητα rendering οδηγεί σε μεγαλύτερο χρόνο φόρτωσης (load) της σκηνής.",
+          "options": [
+            {
+              "label": "Υψηλή ποιότητα (128x128)"
+            },
+            {
+              "label": "Μεσαία ποιότητα (64x64)"
+            },
+            {
+              "label": "Χαμηλή ποιότητα (16x16)"
+            }
+          ]
+        },
+        {
+          "label": "Label settings",
+          "fields": [
+            {
+              "label": "Label position",
+              "description": "The default label position. The position may be overriden per interaction",
+              "options": [
+                {
+                  "label": "Right aligned"
+                },
+                {
+                  "label": "Left aligned"
+                },
+                {
+                  "label": "Top aligned"
+                },
+                {
+                  "label": "Bottom aligned"
+                }
+              ]
+            },
+            {
+              "label": "Display Labels",
+              "description": "If unchecked - labels will show only on mouse over"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Localize",
+      "fields": [
+        {
+          "label": "Aria label for content type",
+          "default": "Virtual Tour"
+        },
+        {
+          "label": "Label for to play audio",
+          "default": "Play Audio Track"
+        },
+        {
+          "label": "Label to pause audio",
+          "default": "Pause Audio Track"
+        },
+        {
+          "label": "Title to scene dialog",
+          "default": "Scene Description"
+        },
+        {
+          "label": "Label for button to reset camera",
+          "default": "Reset Camera"
+        },
+        {
+          "label": "Label for the submit dialog button",
+          "default": "Submit Dialog"
+        },
+        {
+          "label": "Label for the close dialog button",
+          "default": "Close Dialog"
+        },
+        {
+          "label": "Aria label for the expand label button",
+          "default": "Expand the visual label"
+        },
+        {
+          "label": "Label for when background image is loading in 360 scene",
+          "default": "Loading background image..."
+        },
+        {
+          "label": "Label for when there is no content",
+          "default": "No content"
+        },
+        {
+          "label": "Label for context menu button for go to scene",
+          "default": "Go to scene"
+        },
+        {
+          "label": "Label for context menu button for edit",
+          "default": "Edit"
+        },
+        {
+          "label": "Label for context menu button for delete",
+          "default": "Delete"
+        },
+        {
+          "label": "Translation for \"Score\"",
+          "default": "Score"
+        },
+        {
+          "label": "Translation for \"Assignment\"",
+          "default": "Assignment"
+        },
+        {
+          "label": "Translation for \"Total\"",
+          "default": "Total"
+        },
+        {
+          "label": "Label for button to show score summary",
+          "default": "Show Score Summary"
+        },
+        {
+          "label": "Translation for 'Scene'",
+          "default": "Scene"
+        },
+        {
+          "label": "Untitled",
+          "default": "Untitled"
+        },
+        {
+          "label": "Go to start scene",
+          "default": "Go to start scene"
+        },
+        {
+          "label": "You are at the start scene",
+          "default": "You are at the start scene"
+        },
+        {
+          "label": "Unlocked",
+          "default": "Unlocked"
+        },
+        {
+          "label": "Locked",
+          "default": "Locked"
+        },
+        {
+          "label": "Search the room until you find the code",
+          "default": "Search the room until you find the code"
+        },
+        {
+          "label": "The code was wrong, try again.",
+          "default": "The code was wrong, try again."
+        },
+        {
+          "label": "The content has been unlocked!",
+          "default": "The content has been unlocked!"
+        },
+        {
+          "label": "Code",
+          "default": "Code"
+        },
+        {
+          "label": "Unlocked interaction action (Continue)",
+          "default": "Continue"
+        },
+        {
+          "label": "Locked interaction action (Unlock)",
+          "default": "Unlock"
+        },
+        {
+          "label": "Drag horizontally to scale (for screen readers)",
+          "default": "Drag horizontally to scale"
+        },
+        {
+          "label": "Drag vertically to scale (for screen readers)",
+          "default": "Drag vertically to scale"
+        },
+        {
+          "label": "Hint",
+          "default": "Hint"
+        },
+        {
+          "label": "Locked content",
+          "default": "Locked content"
+        },
+        {
+          "label": "Back",
+          "default": "Back"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (enter)",
+          "default": "Enter fullscreen mode"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (exit)",
+          "default": "Exit fullscreen mode"
+        },
+        {
+          "label": "Main toolbar",
+          "default": "Main toolbar"
+        },
+        {
+          "label": "No valid scenes set",
+          "default": "No valid scenes have been set."
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom in button",
+          "default": "Zoom in"
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom out button",
+          "default": "Zoom out"
+        },
+        {
+          "label": "Zoom toolbar",
+          "default": "Zoom toolbar"
+        },
+        {
+          "label": "Zoom aria text for screenreaders",
+          "default": ":num% zoomed in"
+        }
+      ]
+    }
+  ]
+}

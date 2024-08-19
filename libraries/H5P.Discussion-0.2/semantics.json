@@ -1,0 +1,335 @@
+[
+  {
+    "name": "header",
+    "type": "text",
+    "label": "Header",
+    "importance": "medium"
+  },
+  {
+    "name": "description",
+    "type": "text",
+    "widget": "html",
+    "lines": 3,
+    "label": "Task description",
+    "importance": "low",
+    "optional": true,
+    "enterMode": "p",
+    "tags": [
+      "strong",
+      "em",
+      "u",
+      "ol",
+      "ul"
+    ]
+  },
+  {
+    "name": "argumentsList",
+    "label": "Arguments",
+    "type": "group",
+    "importance": "high",
+    "expanded": true,
+    "fields": [
+        {
+          "name": "argumentsList",
+          "type": "list",
+          "label": "Arguments",
+          "importance": "high",
+          "entity": "argument",
+          "optional": true,
+          "min": 1,
+          "field": {
+            "name": "text",
+            "type": "text",
+            "label": "Argument"
+          }
+        }
+      ]
+  },
+  {
+    "name": "summaryHeader",
+    "type": "text",
+    "label": "Summary",
+    "default": "Summary",
+    "importance": "medium"
+  },
+  {
+    "name": "summaryInstruction",
+    "type": "text",
+    "widget": "html",
+    "lines": 3,
+    "label": "Summary instruction",
+    "importance": "low",
+    "optional": true,
+    "enterMode": "p",
+    "tags": [
+      "strong",
+      "em",
+      "u",
+      "ol",
+      "ul"
+    ]
+  },
+  {
+    "name": "resources",
+    "type": "group",
+    "label": "Resources",
+    "importance": "low",
+    "fields": [
+      {
+        "name": "resourcesList",
+        "type": "library",
+        "label": "Resources",
+        "importance": "medium",
+        "options": [
+          "H5P.ResourceList 1.0"
+        ],
+        "description": "Optional links to resources."
+      }
+    ]
+  },
+  {
+    "name": "behaviour",
+    "type": "group",
+    "label": "Behavioural settings",
+    "importance": "low",
+    "description": "These options will let you control the behaviour.",
+    "fields": [
+      {
+        "name": "enableRetry",
+        "type": "boolean",
+        "label": "Enable retry?",
+        "description": "Tick off this if you want the user to be able to retry",
+        "default": true
+      },
+      {
+        "name": "randomizeArguments",
+        "type": "boolean",
+        "label": "Randomize the arguments",
+        "description": "Will randomize the arguments",
+        "default": true
+      },
+      {
+        "name": "allowAddingOfArguments",
+        "type": "boolean",
+        "label": "Allow users to add their own arguments",
+        "description": "Lets the user add their own arguments",
+        "default": true
+      },
+      {
+        "name": "provideSummary",
+        "type": "boolean",
+        "label": "Show summary",
+        "description": "Do you want the user to provide a summary explaining the reasons for his/her answers",
+        "default": true
+      }
+    ]
+  },
+  {
+    "name": "l10n",
+    "type": "group",
+    "importance": "low",
+    "label": "Localize",
+    "common": true,
+    "fields": [
+      {
+        "name": "argumentsFor",
+        "type": "text",
+        "label": "Header for the 'For' column",
+        "default": "Arguments FOR"
+      },
+      {
+        "name": "argumentsAgainst",
+        "type": "text",
+        "label": "Header for the 'Against' column",
+        "default": "Arguments AGAINST"
+      },
+      {
+        "name": "typeYourReasonsForSuchAnswers",
+        "type": "text",
+        "label": "Placeholder for the text boxes",
+        "default": "Give a brief summary in your own words"
+      },
+      {
+        "name": "noArguments",
+        "type": "text",
+        "label": "Placeholder when no arguments are connected",
+        "default": "No arguments"
+      },
+      {
+        "name": "resources",
+        "type": "text",
+        "label": "Label for the \"Resources\"-button",
+        "default": "Resources"
+      },
+      {
+        "name": "restart",
+        "type": "text",
+        "label": "Label for the \"Restart\"-button",
+        "default": "Restart"
+      },
+      {
+        "name": "addArgument",
+        "type": "text",
+        "label": "Label for the \"Add argument\"-button",
+        "default": "Add argument"
+      },
+      {
+        "name": "yes",
+        "type": "text",
+        "label": "Label for the \"Yes\"-button",
+        "default": "Yes"
+      },
+      {
+        "name": "no",
+        "type": "text",
+        "label": "Label for the \"No\"-button",
+        "default": "No"
+      },
+      {
+        "name": "ifYouContinueAllYourChangesWillBeLost",
+        "type": "text",
+        "label": "Inform the user that data will be lost if he/she continues",
+        "default": "If you continue all your changes will be lost"
+      },
+      {
+        "name": "continue",
+        "type": "text",
+        "label": "Label for the \"Continue\"-button",
+        "default": "Continue"
+      },
+      {
+        "name": "moveTo",
+        "type": "text",
+        "label": "Short text in front of the options to where you can move the arguments",
+        "default": "Move to"
+      },
+      {
+        "name": "deleteArgument",
+        "type": "text",
+        "label": "Label used to show the delete action",
+        "default": "Delete argument"
+      },
+      {
+        "name": "editArgument",
+        "type": "text",
+        "label": "Label used to show the edit action",
+        "default": "Edit argument"
+      },
+      {
+        "name": "argument",
+        "type": "text",
+        "label": "Label for the argument",
+        "default": "Argument"
+      },
+      {
+        "name": "dropArgumentsHere",
+        "type": "text",
+        "label": "Text inside the arguments drop zone",
+        "default": "Drop arguments here"
+      }
+    ]
+  },
+  {
+    "label": "Resource report",
+    "importance": "low",
+    "name": "resourceReport",
+    "type": "group",
+    "common": true,
+    "fields": [
+      {
+        "name": "createDocument",
+        "type": "text",
+        "label": "Label for \"Create document\"-button",
+        "default": "Create document"
+      },
+      {
+        "name": "export",
+        "type": "text",
+        "label": "Label on \"Export\" button",
+        "default": "Export"
+      },
+      {
+        "name": "selectAll",
+        "type": "text",
+        "label": "Label on \"Select all\" button",
+        "default": "Select all"
+      },
+      {
+        "name": "resourceHeader",
+        "type": "text",
+        "label": "Header above the \"Resource\" table",
+        "default": "Resources"
+      },
+      {
+        "name": "resourceHeaderTitle",
+        "type": "text",
+        "label": "Title header in resource table",
+        "default": "Title"
+      },
+      {
+        "name": "resourceHeaderIntro",
+        "type": "text",
+        "label": "Intro header in resource table",
+        "default": "Intro"
+      },
+      {
+        "name": "resourceHeaderUrl",
+        "type": "text",
+        "label": "Url header in resource table",
+        "default": "Url"
+      },
+      {
+        "name": "labelNoResources",
+        "type": "text",
+        "label": "Label when no resources are found",
+        "default": "No resources"
+      },
+      {
+        "name": "labelNoSummaryComment",
+        "type": "text",
+        "label": "Label when no summary is provided",
+        "default": "No comment"
+      }
+    ]
+  },
+  {
+    "label": "Accessibility",
+    "importance": "low",
+    "name": "accessibility",
+    "type": "group",
+    "common": true,
+    "fields": [
+      {
+        "name": "close",
+        "type": "text",
+        "label": "Used instead of 'Close'-icon",
+        "default": "Close"
+      },
+      {
+        "name": "drag",
+        "type": "text",
+        "label": "Used instead of 'Drag'-icon",
+        "default": "Drag"
+      },
+      {
+        "name": "draggableItem",
+        "type": "text",
+        "label": "'Draggable item' label for screenreaders",
+        "description": "Available variables are :argument",
+        "default": "Draggable item: :argument"
+      },
+      {
+        "name": "actionMenuTitle",
+        "type": "text",
+        "label": "Title for the actions menu dialog",
+        "default": "Actions menu"
+      },
+      {
+        "name": "actionMenuDescription",
+        "type": "text",
+        "label": "Description for the actions menu dialog",
+        "default": "Select the action you want to perform on this argument"
+      }
+    ]
+  }
+]

@@ -1,0 +1,35 @@
+$navbar-height: var(--h5p-tm-navbar-height);
+
+/**
+ * {1} The max- sizes are based on the aspect ratio (100 / 60) of the grid.
+ *     (100 / 60) * 100vh = 166.67vh
+ *     (60 / 100) * 100vw = 60vw
+ */
+.gridWrapper {
+  background-blend-mode: soft-light;
+  background-color: var(--theme-color-1);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin: 0 auto;
+  max-height: calc(60vw - #{$navbar-height}); /* {1} */
+  max-width: calc(166.67vh - (#{$navbar-height} * 1.67));
+  padding-top: 60%;
+  position: relative;
+}
+
+.gridWrapperFullscreen {
+  height: calc(100vh - #{$navbar-height});
+  padding-top: 0;
+  width: 100vw;
+}
+
+.grid {
+  inset: 1rem;
+  position: absolute;
+}
+
+.itemWrapper {
+  border-radius: 0.25rem;
+  position: absolute;
+  z-index: var(--item-z-index);
+}

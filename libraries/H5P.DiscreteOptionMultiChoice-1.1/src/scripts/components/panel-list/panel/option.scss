@@ -1,0 +1,26 @@
+.h5p-discrete-option-multi-choice-option {
+  display: flex;
+  flex-direction: row;
+  gap: var(--gap-default);
+  justify-content: space-between;
+
+  .h5p-discrete-option-multi-choice-option-text {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    justify-content: center;
+  }
+
+  .h5p-discrete-option-multi-choice-option-actions {
+    display: flex;
+    flex-direction: row;
+    gap: var(--gap-default);
+    justify-content: flex-end;
+
+    .h5p-discrete-option-multi-choice-choices {
+      display: flex;
+      flex-direction: row;
+      gap: var(--gap-default);
+    }
+  }
+}

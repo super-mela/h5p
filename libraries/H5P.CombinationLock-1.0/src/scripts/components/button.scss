@@ -1,0 +1,37 @@
+@import "@styles/main";
+
+.h5p-combination-lock-button {
+  background: linear-gradient(#d0d3dc 0%, #fff 50%, #d0d3dc 100%);
+  border: none;
+  color: $color-text;
+  font-size: 1.25rem;
+  height: max($minimum-a11y-size, 1.5rem);
+  line-height: max($minimum-a11y-size, 1.5rem);
+  padding: 0;
+  width: 100%;
+
+  &:not(.disabled) {
+    cursor: pointer;
+
+    &:hover {
+      filter: brightness(0.95);
+    }
+
+    &:active {
+      filter: brightness(0.9);
+    }
+  }
+
+  &.disabled {
+    filter: brightness(0.8);
+    cursor: auto;
+  }
+
+  &.bottom {
+    border-radius: 0 0 0.2rem 0.2rem;
+  }
+
+  &.top {
+    border-radius: 0.2rem 0.2rem 0 0;
+  }
+}

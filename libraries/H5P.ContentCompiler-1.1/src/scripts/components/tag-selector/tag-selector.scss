@@ -1,0 +1,29 @@
+@import '@styles/main';
+
+.tag-selector {
+  background-color: $color-background;
+  box-shadow: 10px 10px 30px $color-shadow-light;
+  box-sizing: border-box;
+
+  &.display-none {
+    display: none;
+  }
+
+  .tag-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    list-style-type: none;
+    margin: 0;
+    padding: 0.5rem;
+  }
+}
+
+.h5p-content:not(.using-mouse) .tag-list:focus .tag {
+  &.focused {
+    outline: #000000 auto 1px;
+    outline: Highlight auto 1px ; // Firefox
+    outline: -webkit-focus-ring-color auto 1px;
+  }
+}

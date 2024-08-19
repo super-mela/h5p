@@ -1,0 +1,245 @@
+{
+  "semantics": [
+    {
+      "label": "Medios",
+      "fields": [
+        {
+          "label": "Tipo",
+          "description": "Medios opcionales para mostrar sobre la pregunta."
+        },
+        {
+          "label": "Desactivar zoom de imagen"
+        }
+      ]
+    },
+    {
+      "label": "Pregunta"
+    },
+    {
+      "label": "Opciones disponibles",
+      "entity": "opción",
+      "widgets": [
+        {
+          "label": "Por defecto"
+        },
+        {
+          "label": "Textual"
+        }
+      ],
+      "field": {
+        "label": "Opción",
+        "fields": [
+          {
+            "label": "Texto"
+          },
+          {
+            "label": "Correcta"
+          },
+          {
+            "label": "Retroalimentación",
+            "fields": [
+              {
+                "label": "Mensaje mostrado si respuesta es seleccionada",
+                "description": "El mensaje aparecerá debajo de la respuesta."
+              },
+              {
+                "label": "Mensaje mostrado si la respuesta no es seleccionada",
+                "description": "El mensaje aparecerá debajo de la respuesta."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Realimentación global",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Por defecto"
+            }
+          ],
+          "label": "Definir comentarios personalizados para cualquier rango de puntuación",
+          "description": "Haz clic en el botón de \"Añadir rango\" para añadir cuantos rangos necesite. Ejemplo: 0-20% Mal puntaje, 21-91% Puntaje promedio, 91-100% ¡Magnífico Puntaje!",
+          "entity": "rango",
+          "field": {
+            "fields": [
+              {
+                "label": "Rango de Puntuación"
+              },
+              {},
+              {
+                "label": "Realimentación para rango de puntuación definido",
+                "placeholder": "Escribe tu retroalimentación"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Configuración del comportamiento",
+      "fields": [
+        {
+          "label": "Modo",
+          "description": "Elija el modo en que se deben presentar las respuestas.",
+          "options": [
+            {
+              "label": "Opción discreta estándar"
+            },
+            {
+              "label": "Presentar todas las opciones"
+            },
+            {
+              "label": "Presenta todas las opciones, deja que el usuario manifieste su confianza"
+            }
+          ]
+        },
+        {
+          "label": "Habilitar botón \"Mostrar Solución\""
+        },
+        {
+          "label": "Habilitar botón \"Reintentar\""
+        },
+        {
+          "label": "Solo un elemento visible a la vez",
+          "description": "Habilitar para ocultar elementos que ya han sido respondidos."
+        },
+        {
+          "label": "Mostrar resultados",
+          "description": "Habilitar para mostrar los resultados una vez que el usuario haya verificado todas las opciones que se presentaron."
+        },
+        {
+          "label": "Da un punto para toda la tarea",
+          "description": "Habilitar para dar un total de un punto por múltiples respuestas correctas."
+        },
+        {
+          "label": "Ordenar respuestas aleatoriamente",
+          "description": "Habilitar para aleatorizar el orden de las respuestas en pantalla."
+        },
+        {
+          "label": "Niveles de confianza",
+          "description": "Elije qué niveles de confianza puede elegir el usuario para cada respuesta.",
+          "options": [
+            {
+              "label": "100 % y 0 %"
+            },
+            {
+              "label": "100 %, 50 % y 0 %"
+            },
+            {
+              "label": "100 %, 75 %, 50 %, 25 % y 0 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Interfaz de usuario",
+      "fields": [
+        {
+          "label": "Etiqueta del botón \"Verificar\"",
+          "default": "Comprobar"
+        },
+        {
+          "label": "Etiqueta botón Enviar",
+          "default": "Enviar"
+        },
+        {
+          "label": "Etiqueta del botón de solución",
+          "default": "Mostrar solución"
+        },
+        {
+          "label": "Etiqueta botón Reintentar",
+          "default": "Reintentar"
+        },
+        {
+          "label": "Confianza",
+          "description": "@percent es un marcador de posición y se reemplazará con el valor respectivo.",
+          "default": "Estoy @percent seguro."
+        },
+        {
+          "label": "Tus resultados",
+          "default": "Tus resultados"
+        }
+      ]
+    },
+    {
+      "label": "Textos de Accesibilidad",
+      "fields": [
+        {
+          "label": "Descripción para las tecnologías de asistencia del botón \"Comprobar\"",
+          "default": "Comprobar las respuestas. Las respuestas serán marcadas como correcta, incorrecta, o sin contestar."
+        },
+        {
+          "label": "Descripción para las tecnologías de asistencia del botón \"Mostrar solución\"",
+          "default": "Mostrar la solución. El trabajo será calificado con su solución correcta."
+        },
+        {
+          "label": "Descripción para las tecnologías de asistencia del botón \"Intentar de nuevo\"",
+          "default": "Reintentar el trabajo. Reiniciar todas las respuestas e iniciar el trabajo de nuevo."
+        },
+        {
+          "label": "Tu resultado",
+          "description": "@score será remplazado por el número de puntos. @total será remplazado por el número máximo posible de puntos.",
+          "default": "Has obtenido @score de un total de @total puntos"
+        },
+        {
+          "label": "Elije confianza y marca la respuesta",
+          "default": "Elije tu confianza y márcala como correcta o incorrecta"
+        },
+        {
+          "label": "Marcar como correcto o incorrecto",
+          "default": "Marcar como correcto o incorrecto"
+        },
+        {
+          "label": "Marcar respuesta como correcta/incorrecta",
+          "description": "@status es un marcador de posición y se reemplazará con el valor respectivo.",
+          "default": "Marcar respuesta como @status"
+        },
+        {
+          "label": "Correcta",
+          "default": "Correcta"
+        },
+        {
+          "label": "Incorrecta",
+          "default": "Incorrecta"
+        },
+        {
+          "label": "El elemento no se puede expandir",
+          "default": "Este elemento no se puede expandir actualmente."
+        },
+        {
+          "label": "Mostrando la siguiente opción de respuesta",
+          "description": "@status es un marcador de posición y se reemplazará con el valor respectivo.",
+          "default": "Mostrando la siguiente opción de respuesta: @option"
+        },
+        {
+          "label": "No hay más opciones de respuesta",
+          "default": "No hay más opciones de respuesta para marcar."
+        },
+        {
+          "label": "Marcaste esto como correcto/incorrecto",
+          "description": "@correctness es un marcador de posición y se reemplazará con el valor respectivo.",
+          "default": "Marcaste esto como @correctness"
+        },
+        {
+          "label": "Confianza",
+          "description": "@value es un marcador de posición y se reemplazará con el valor respectivo.",
+          "default": "Confianza: @value"
+        },
+        {
+          "label": "Tu respuesta fue correcta/incorrecta",
+          "description": "@correctness es un marcador de posición y se reemplazará con el valor respectivo.",
+          "default": "Tu respuesta fue @correctness"
+        },
+        {
+          "label": "La respuesta correcta era: correcta/incorrecta",
+          "description": "@correctness es un marcador de posición y se reemplazará con el valor respectivo.",
+          "default": "La respuesta correcta fue marcar esto como @correctness"
+        }
+      ]
+    }
+  ]
+}

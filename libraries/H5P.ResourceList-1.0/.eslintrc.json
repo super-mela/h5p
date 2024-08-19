@@ -1,0 +1,28 @@
+{
+  "globals": {
+    "H5P": "readonly",
+    "H5PIntegration": "readonly"
+  },
+  "env": {
+    "browser": true,
+    "node": true,
+    "es2020": true
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:jsdoc/recommended",
+    "eslint-config-ndla-h5p"
+  ],
+  "parserOptions": {
+    "sourceType": "module",
+    "ecmaVersion": 2020
+  },
+  "plugins": ["jsdoc"],
+  "settings": {
+    "jsdoc": {
+      "preferredTypes": {
+        "Function": "function"
+      }
+    }
+  }
+}

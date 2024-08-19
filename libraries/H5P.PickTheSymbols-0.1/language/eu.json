@@ -1,0 +1,318 @@
+{
+  "semantics": [
+    {
+      "label": "Lanaren deskribapena",
+      "description": "Deskribatu ezazu hemen zure lana."
+    },
+    {
+      "label": "Testua",
+      "description": "Idatzi ezazu aukeratu beharreko sinboloak dauzkan testua."
+    },
+    {
+      "label": "Sinboloak",
+      "description": "Idatzi itzazu ikasleak aukeratu beharko dituen sinboloak.",
+      "default": ".?!,:;'\""
+    },
+    {
+      "label": "Feedback Orokorra",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Lehenetsitakoa"
+            }
+          ],
+          "label": "Zehaztu ezazu edozein puntuazio-tarterako feedback pertsonalizatua",
+          "description": "Egin klik \"Gehitu tartea\" botoian behar dituzun tarte guztiak gehitzeko. Adibidez: 0-20% Puntuazio eskasa, 21-91% Batez besteko puntuazioa, 91-100% Puntuazio bikaina!",
+          "entity": "tartea",
+          "field": {
+            "fields": [
+              {
+                "label": "Puntuazio tartea"
+              },
+              {},
+              {
+                "label": "Zehaztutako tartearentzako feedbacka",
+                "placeholder": "Idatzi ezazu feedbacka"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Portaera ezarpenak",
+      "description": "Aukera hauek portaera kontrolatzea ahalbidetzen dizute.",
+      "fields": [
+        {
+          "label": "Gaitu \"Saiatu berriro\""
+        },
+        {
+          "label": "Gaitu \"Erantzuna\""
+        },
+        {
+          "label": "Baimendu etengabeko egiaztapena",
+          "description": "Utzi ikasleei beren erantzunak etengabe egiaztatzen, aurreko aukerak berrezarri gabe."
+        },
+        {
+          "label": "Hutsune guztiak erakutsi",
+          "description": "Erakutsi aldez aurretik ikur taldeen hutsuneak."
+        },
+        {
+          "label": "Hutsuneen atzeko planoaren kolorea"
+        },
+        {
+          "label": "Erabili hutsune finak",
+          "description": "Aktibatzen bada, hutsuneek ez dute ertzik izango eta finagoak izango dira testua naturalagoa ikus dadin."
+        }
+      ]
+    },
+    {
+      "label": "Erabiltzaile-interfazea",
+      "fields": [
+        {
+          "label": "\"Egiaztatu\" botoiarentzako testua",
+          "default": "Egiaztatu"
+        },
+        {
+          "label": "\"Jarraitu\" botoiaren testua",
+          "default": "Jarraitu"
+        },
+        {
+          "label": "\"Erakutsi emaitza\" botoiaren testua",
+          "default": "Erakutsi emaitza"
+        },
+        {
+          "label": "\"Berrabiarazi\" botoiaren testua",
+          "default": "Berrabiarazi"
+        },
+        {
+          "label": "Botoi hutsaren izenburuaren testua",
+          "default": "Aukeratu ezazu sinbolo bat"
+        },
+        {
+          "label": "Sinbolo hautatzailearen izenburuaren testua",
+          "default": "Aukeratu ezazu sinbolo bat"
+        },
+        {
+          "default": "Gehitu hutsunea",
+          "label": "\"Gehitu hutsunea\" botoiarentzako testua"
+        },
+        {
+          "label": "\"Kendu hutsunea\" botoiaren testua",
+          "default": "Kendu hutsunea"
+        },
+        {
+          "description": "@symbol gakoa aukeratzen den sinboloarekin ordezkatuko da.",
+          "default": "Bete hutsunea @symbol sinboloarekin",
+          "label": "\"Aukeratu sinboloa\" botoiarentzako laguntza"
+        },
+        {
+          "default": "Itxi leihoa",
+          "label": "\"Itxi leihoa\" botoiarentzako testua"
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "default": ":total puntutik :num puntu lortu duzu",
+          "label": "Puntuazio-barraren testu bidezko errepresentazioa irakurtzen duen bozgorailua erabiltzen dutenentzako"
+        },
+        {
+          "label": "Sarrera hutsa",
+          "default": "hutsik dagoen sarrera"
+        },
+        {
+          "label": "Hauetatik",
+          "default": "hauetatik"
+        },
+        {
+          "label": "Erantzun zuzenerako feedbacka",
+          "default": "zuzen erantzunda"
+        },
+        {
+          "label": "Erantzun okerrentzako feedbacka",
+          "default": "oker erantzunda"
+        },
+        {
+          "default": "erantzunik gabe",
+          "label": "Erantzun gabekoentzako feedbacka"
+        },
+        {
+          "label": "Erantzun zuzena",
+          "default": "Erantzun zuzena"
+        },
+        {
+          "label": "Hutsunea",
+          "default": "hutsunea"
+        },
+        {
+          "label": "Puntua",
+          "default": "puntua"
+        },
+        {
+          "label": "Harridura ikurra",
+          "default": "harridura ikurra"
+        },
+        {
+          "label": "Galdera ikurra",
+          "default": "galdera ikurra"
+        },
+        {
+          "label": "Koma",
+          "default": "koma"
+        },
+        {
+          "default": "kakotx sinplea",
+          "label": "Kakotx sinplea"
+        },
+        {
+          "label": "Kakotx bikoitza",
+          "default": "kakotx bikotza"
+        },
+        {
+          "label": "Bi puntu",
+          "default": "bi puntu"
+        },
+        {
+          "label": "Puntu eta koma",
+          "default": "puntu eta koma"
+        },
+        {
+          "label": "Gehi",
+          "default": "gehi"
+        },
+        {
+          "label": "Ken",
+          "default": "ken"
+        },
+        {
+          "label": "Izartxoa",
+          "default": "izartxoa"
+        },
+        {
+          "default": "zatikien barra",
+          "label": "Zatikien barra"
+        },
+        {
+          "label": "Alderantzizko barra",
+          "default": "alderantzizko barra"
+        },
+        {
+          "label": "Azentu-marka",
+          "default": "azentu-marka"
+        },
+        {
+          "label": "Hasierako harridura-ikurra",
+          "default": "hasierako harridura-ikurra"
+        },
+        {
+          "label": "Hasierako galdera-ikurra",
+          "default": "hasierako galdera-ikurra"
+        },
+        {
+          "label": "Libera-ikurra",
+          "default": "libera-ikurra"
+        },
+        {
+          "label": "Ezkerreko parentesia",
+          "default": "ezkerreko parentesia"
+        },
+        {
+          "label": "Eskuineko parentesia",
+          "default": "eskuineko parentesia"
+        },
+        {
+          "label": "Caret",
+          "default": "caret"
+        },
+        {
+          "label": "Beheko gidoia",
+          "default": "beheko gidoia"
+        },
+        {
+          "label": "Barra bertikala",
+          "default": "barra bertikala"
+        },
+        {
+          "label": "Ezkerreko kakotx sinplea",
+          "default": "ezkerreko kakotx sinplea"
+        },
+        {
+          "label": "Ezkerreko behe-kakotx sinplea",
+          "default": "ezkerreko behe-kakotx sinplea"
+        },
+        {
+          "label": "Eskuineko kakotx sinplea",
+          "default": "eskuineko kakotx sinplea"
+        },
+        {
+          "label": "Ezkerreko kakotx bikoitza",
+          "default": "ezkerreko kakotx bikoitza"
+        },
+        {
+          "label": "Ezkerreko behe-kakotx bikoitza",
+          "default": "ezkerreko behe-kakotx bikoitza"
+        },
+        {
+          "label": "Eskuineko kakotx bikoitza",
+          "default": "eskuineko kakotx bikoitza"
+        },
+        {
+          "label": "Ezkerreko puntadun parentesia",
+          "default": "ezkerreko puntadun parentesia"
+        },
+        {
+          "label": "Eskuineko puntadun parentesia",
+          "default": "eskuineko puntadun parentesia"
+        },
+        {
+          "label": "Ezkerreko puntadun parentesi bikoitza",
+          "default": "ezkerreko puntadun parentesi bikoitza"
+        },
+        {
+          "default": "eskuineko puntadun parentesi bikoitza",
+          "label": "Eskuineko puntadun parentesi bikoitza"
+        },
+        {
+          "label": "Ezkerreko giltza",
+          "default": "ezkerreko giltza"
+        },
+        {
+          "label": "Eskuineko giltza",
+          "default": "eskuineko giltza"
+        },
+        {
+          "label": "Ezkerreko kortxetea",
+          "default": "ezkerreko kortxetea"
+        },
+        {
+          "default": "eskuineko kortxetea",
+          "label": "Eskuineko kortxetea"
+        },
+        {
+          "label": "Atala",
+          "default": "atala"
+        },
+        {
+          "default": "honengatik zatitua",
+          "label": "Honengatik zatitua"
+        },
+        {
+          "default": "honengatik biderkatua",
+          "label": "Honengatik biderkatua"
+        },
+        {
+          "default": "hau baino txikiagoa",
+          "label": "Hau baino txikiagoa"
+        },
+        {
+          "default": "hau baino handiagoa",
+          "label": "Hau baino handiagoa"
+        }
+      ],
+      "label": "Irakurtzen duen bozgorailua"
+    }
+  ]
+}

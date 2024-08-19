@@ -1,0 +1,48 @@
+{
+  "semantics": [
+    {
+      "label": "Baliabideak",
+      "entity": "baliabidea",
+      "widgets": [
+        {
+          "label": "Lehenetsia"
+        }
+      ],
+      "field": {
+        "label": "Baliabideak",
+        "description": "Baliabideetarako aukerako estekak.",
+        "fields": [
+          {
+            "label": "Baliabidearen izenburua"
+          },
+          {
+            "label": "Sarrera"
+          },
+          {
+            "label": "URL"
+          },
+          {
+            "label": "Sarrerako irudia"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Kokatu",
+      "fields": [
+        {
+          "label": "\"Ezkutatu\"-ren itzulpena",
+          "default": "Ezkutatu"
+        },
+        {
+          "label": "\"Baliabideak\"-ren itzulpena",
+          "default": "Baliabideak"
+        },
+        {
+          "label": "\"Baliabideak\" botoirako irisgarritasuna",
+          "default": "Ikusi baliabide osagarriak informazio gehiago lortzeko"
+        }
+      ]
+    }
+  ]
+}

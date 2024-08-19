@@ -1,0 +1,52 @@
+import { Translations } from '../types/Translations';
+
+/**
+  * The default translations for Topic Map.
+  */
+export const defaultTranslations: Translations = {
+  closeDialog: 'Close dialog',
+  copyrightAudio: 'Audio',
+  copyrightPhoto: 'Photo',
+  copyrightVideo: 'Video',
+  dialogNoteSaving: 'Saving…',
+  dialogNoteSaved: 'Saved',
+  dialogNoteLimitExceeded: 'Character limit exceeded',
+  dialogNotePlaceholder: 'Write your notes here…',
+  dialogNoteMarkAsDone: 'Mark as done',
+  dialogResourcesRelevantLinks: 'Relevant links',
+  dialogResourcesCustomLinks: 'Your links',
+  dialogResourcesAdd: 'Add',
+  fullscreenButtonLabelEnter: 'Enter fullscreen mode',
+  fullscreenButtonLabelExit: 'Exit fullscreen mode',
+  navbarTabsListAriaLabel: 'Navigation bar',
+  navbarTopicMapSectionLabel: 'Topic map',
+  navbarNotesSectionLabel: 'My notes',
+  dialogResourcesLabel: 'Resources',
+  dialogTextLabel: 'Text',
+  dialogNoteLabel: 'Note',
+  dialogTabListAriaLabel: 'Tabs List',
+  navbarNotesSectionTitle: 'My notes',
+  navbarNotesSectionBody: 'This is an overview of your notes. They are saved locally in this browser. You can either print or copy the notes into a document.',
+  navbarNotesSectionPrintLabel: 'Print',
+  navbarNotesSectionCopyLabel: 'Copy',
+  navbarNotesSectionDeleteLabel: 'Delete all notes',
+  navbarNotesEmptyListLabel: 'No dialogue notes available in this topic map.',
+  navbarNotesMissingNoteLabel: '━ No notes have been added yet',
+  deleteNotesConfirmationWindowLabel: 'Are you sure you want to delete all your notes?',
+  deleteNotesConfirmLabel: 'Delete',
+  deleteNotesDenyLabel: 'Cancel',
+  progressBarDescriptiveText:
+      'Note progress: @markedNotes of @totalNotes notes marked as done',
+  navbarNotesSectionSubmitAllLabel: 'Submit all data',
+  submitDataConfirmationWindowLabel: 'Are you sure you want to submit all your data?',
+  submitDataConfirmLabel: 'Submit',
+  submitDataDenyLabel: 'Cancel',
+  directionalArrowDescriptiveText: 'Arrow from @startItem to @endItem.',
+  biDirectionalArrowDescriptiveText:
+      'Arrow between @startItem and @endItem.',
+  noteStatusDoneDescriptiveText: 'Note marked as done',
+  noteStatusStartedDescriptiveText: 'Note started',
+  noteStatusDefaultDescriptiveText: 'Note empty',
+  noteTextareaDescriptiveText: 'Textarea with @max character limit.',
+  noteCharacterCountDescriptiveText: '@count of @max characters.',
+};

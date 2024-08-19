@@ -1,0 +1,124 @@
+{
+  "semantics": [
+    {
+      "label": "Medija",
+      "fields": [
+        {
+          "label": "Tipas",
+          "description": "Pasirenkama medija, rodoma virš klausimo."
+        },
+        {
+          "label": "Išjungti paveikslėlio mastelio keitimą"
+        }
+      ]
+    },
+    {
+      "label": "Užduoties aprašymas",
+      "description": "Pasirinktinai pateikite aprašymą čia."
+    },
+    {
+      "label": "Režimas",
+      "description": "Parinkite žaidimo režimą. Skaičiai bus įrašyti automatiškai, žodžius reikia pasiūlyti.",
+      "options": [
+        {
+          "label": "Žaisti su skaičiais"
+        },
+        {
+          "label": "Žaisti su žodžiais"
+        }
+      ]
+    },
+    {
+      "label": "Žodžiai ar frazės",
+      "fields": [
+        {
+          "label": "Žodžiai ar frazės",
+          "description": "Kiekvienam žodžiui ir frazei naudokite vieną eilutę."
+        }
+      ]
+    },
+    {
+      "label": "Lentelės dydis"
+    },
+    {
+      "label": "Vaizdas",
+      "description": "Čia galite pritaikyti vizualinę išvaizdą.",
+      "fields": [
+        {
+          "label": "Paveiksliukas",
+          "description": "Joker paveikslėlis mygtukams."
+        },
+        {
+          "label": "Fono spalva",
+          "description": "Lentos fono spalva."
+        }
+      ]
+    },
+    {
+      "label": "Garsas",
+      "description": "Čia galite tinkinti garsą.",
+      "fields": [
+        {
+          "label": "Pasirinktas/nepasirinktas laukas",
+          "description": "Garso signalas įjungtas, kai laukas pasirinktas arba nepasirinktas."
+        },
+        {
+          "label": "Užbaigta eilutė arba stulpelis",
+          "description": "Garsas grojamas, kai naudotojas pasirenka visą eilutę arba stulpelį."
+        }
+      ]
+    },
+    {
+      "label": "Veikimo nustatymai",
+      "description": "Šios parinktys leis jums valdyti, kaip veikia užduotis.",
+      "fields": [
+        {
+          "label": "Įjungti „Kartoti“"
+        },
+        {
+          "label": "Maišyti kartojant",
+          "description": "Jei pažymėta, žodžiai / frazės / skaičiai bus maišomi bandant dar kartą."
+        },
+        {
+          "label": "Nustatykite joker",
+          "description": "Padės neapverčiamą joker lentelės centre, jei jo dydis yra nelyginis."
+        },
+        {
+          "label": "Aukščio ribojimo režimas",
+          "description": "Nuspręskite, ar norite apriboti lentelės aukštį, kad tilptų matoma sritis. Automatinis aptikimas gali būti netobulas, priklausomai nuo jūsų svetainės sąrankos, pvz. jei viršuje yra lipnios naršymo juostos. Geras suderintas vertes sunku nustatyti rankiniu būdu.",
+          "options": [
+            {
+              "label": "Nėra limito"
+            },
+            {
+              "label": "Automatinis"
+            },
+            {
+              "label": "Pasirenkamas"
+            }
+          ]
+        },
+        {
+          "label": "Aukščio riba",
+          "description": "Maksimalus lentos aukštis pikseliais."
+        }
+      ]
+    },
+    {
+      "label": "Tekstas mygtukui „Kartoti“.",
+      "default": "Kartoti"
+    },
+    {
+      "label": "Pagalbinės technologijos aprašymas mygtukui „Bandyti dar kartą“",
+      "default": "Bandyti atlikti užduotį dar kartą. Iš naujo nustatyti visus atsakymus ir pradėti užduotį iš naujo."
+    },
+    {
+      "label": "Pagalbinės technologijos aprašymas mygtukui „Nutildyti“",
+      "default": "Nutildyti garsą, šiuo metu įjungtas"
+    },
+    {
+      "label": "Pagalbinės technologijos aprašymas mygtukui „Įjungti garsą“",
+      "default": "Įjungti garsą, šiuo metu nutildytas"
+    }
+  ]
+}

@@ -1,0 +1,25 @@
+.h5p-escaperoom-editor {
+  .scene-container {
+    position: relative;
+    min-height: 20em;
+  }
+
+  .nav-button:active {
+    border: none;
+  }
+
+  .scene-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+
+    background: black;
+    opacity: 0.8;
+    z-index: 1;
+
+    border: 0;
+    cursor: pointer;
+  }
+}

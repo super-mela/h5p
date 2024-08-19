@@ -1,0 +1,127 @@
+@import '@styles/main';
+
+$button-pseudo-size: 1.15rem;
+$button-pseudo-offset: 0.575rem;
+
+.h5p-phrase-randomizer-toolbar-tool-bar {
+  align-items: center;
+  background-color: $color-background;
+  box-shadow: 10px 10px 30px $color-shadow-light;
+  column-gap: 1.25rem;
+  display: flex;
+  flex-direction: row;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+  font-size: 1.25rem;
+  justify-content: center;
+  overflow: hidden;
+  row-gap: 0.25rem;
+  padding: 0.5rem;
+  width: 100%;
+
+  .tool-bar-headline {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+
+  .tool-bar-non-headline {
+    align-items: center;
+    column-gap: 1.25rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    row-gap: 0.25rem;
+
+    .status-containers {
+      .status-container-attempts {
+        &::before {
+          content: "\f004";
+          font-family: "H5PFontAwesome4", sans-serif;
+        }
+      }
+
+      .status-container-found {
+        &::before {
+          content: "\f00c";
+          font-family: "H5PFontAwesome4", sans-serif;
+        }
+      }
+    }
+
+    .toolbar-buttons {
+      display: flex;
+      flex-direction: row;
+      flex-shrink: 1;
+      justify-content: flex-end;
+
+      .toolbar-button {
+        color: $color-joubelui-button-hover;
+        position: relative;
+
+        &.toolbar-button-audio {
+          &::before {
+            // color: $color-joubelui-button-hover;
+            content: "\f026";
+            font-family: "H5PFontAwesome4", sans-serif;
+            font-size: 1.15em;
+            height: 1.15em;
+            left: 50%;
+            margin-left: -0.575em;
+            margin-top: -0.575em;
+            position: absolute;
+            top: 50%;
+            width: 1.15em;
+          }
+
+          &.toolbar-button-disabled {
+            background-color: $color-background;
+            color: $color-disabled;
+          }
+
+          &.toolbar-button-active {
+            &:not(.toolbar-button-disabled) {
+              background-color: $color-primary-5;
+            }
+
+            &::before {
+              content: "\f028";
+            }
+          }
+
+          &:active {
+            &:not(.toolbar-button-disabled) {
+              background-color: $color-primary-25;
+            }
+          }
+        }
+
+        &.toolbar-button-randomize {
+          &.toolbar-button-disabled {
+            background-color: $color-background;
+            color: $color-disabled;
+          }
+
+          &::before {
+            content: "\f021";
+            font-family: "H5PFontAwesome4", sans-serif;
+            font-size: $button-pseudo-size;
+            height: $button-pseudo-size;
+            left: 50%;
+            margin-left: -$button-pseudo-offset;
+            margin-top: -$button-pseudo-offset;
+            position: absolute;
+            top: 50%;
+            width: $button-pseudo-size;
+          }
+        }
+      }
+    }
+  }
+
+  &.display-none {
+    display: none;
+  }
+}

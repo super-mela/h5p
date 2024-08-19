@@ -1,0 +1,196 @@
+{
+  "semantics": [
+    {
+      "label": "Encabezado"
+    },
+    {
+      "label": "Descripción de la tarea"
+    },
+    {
+      "label": "Argumentos",
+      "fields": [
+        {
+          "label": "Argumentos",
+          "entity": "argumento",
+          "field": {
+            "label": "Argumento"
+          }
+        }
+      ]
+    },
+    {
+      "label": "Resumen",
+      "default": "Resumen"
+    },
+    {
+      "label": "Instrucciones para el resumen"
+    },
+    {
+      "label": "Recursos",
+      "fields": [
+        {
+          "label": "Recursos",
+          "description": "Enlaces opcionales a recursos."
+        }
+      ]
+    },
+    {
+      "label": "Configuración del comportamiento",
+      "description": "Estas opciones te permitirán controlar el comportamiento.",
+      "fields": [
+        {
+          "label": "¿Habilitar Intentar de nuevo?",
+          "description": "Marca esto si quieres que el usuario pueda volver a intentarlo"
+        },
+        {
+          "label": "Ordenar los argumentos aleatoriamente",
+          "description": "Ordenará los argumentos aleatoriamente"
+        },
+        {
+          "label": "Permitir que los usuarios añadan sus propios argumentos",
+          "description": "Permite al usuario agregar sus propios argumentos"
+        },
+        {
+          "label": "Mostrar resumen",
+          "description": "¿Quieres que el usuario proporcione un resumen que explique las razones para su respuesta?"
+        }
+      ]
+    },
+    {
+      "label": "Adaptación local",
+      "fields": [
+        {
+          "label": "Encabezado para la columna 'A Favor'",
+          "default": "Argumentos A FAVOR"
+        },
+        {
+          "label": "Encabezado para la columna 'En contra'",
+          "default": "Argumentos EN CONTRA"
+        },
+        {
+          "label": "Texto por defecto para las cajas de texto",
+          "default": "Haz un breve resumen en tus propias palabras"
+        },
+        {
+          "label": "Texto por defecto cuando los argumentos no están conectados",
+          "default": "Sin argumentos"
+        },
+        {
+          "label": "Etiqueta para botón \"Recursos\"",
+          "default": "Recursos"
+        },
+        {
+          "label": "Etiqueta para el botón \"Reiniciar\"",
+          "default": "Reiniciar"
+        },
+        {
+          "label": "Etiqueta para el botón \"Añadir argumento\"",
+          "default": "Añadir argumento"
+        },
+        {
+          "label": "Etiqueta para el botón \"Sí\"",
+          "default": "Sí"
+        },
+        {
+          "label": "Etiqueta para el botón \"No\"",
+          "default": "No"
+        },
+        {
+          "default": "Si continúas, se perderán todos tus cambios",
+          "label": "Informar al usuario de que se perderán sus datos si continúa"
+        },
+        {
+          "label": "Etiqueta para el botón \"Continuar\"",
+          "default": "Continuar"
+        },
+        {
+          "label": "Texto breve frente de las opciones a las que se pueden mover los argumentos",
+          "default": "Mover a"
+        },
+        {
+          "label": "Etiqueta utilizada para mostrar la acción de eliminación",
+          "default": "Eliminar argumento"
+        },
+        {
+          "label": "Etiqueta usada para mostrar la acción de editar",
+          "default": "Editar argumento"
+        },
+        {
+          "label": "Etiqueta para el argumento",
+          "default": "Argumento"
+        },
+        {
+          "label": "Texto dentro de la zona de colocación de argumentos",
+          "default": "Dejar caer argumentos aquí"
+        }
+      ]
+    },
+    {
+      "fields": [
+        {
+          "label": "Etiqueta para el botón \"Crear documento\"",
+          "default": "Crear documento"
+        },
+        {
+          "label": "Etiqueta para el botón \"Exportar\"",
+          "default": "Exportar"
+        },
+        {
+          "label": "Etiqueta para el botón \"Seleccionar todo\"",
+          "default": "Seleccionar todo"
+        },
+        {
+          "label": "Encabezado sobre la tabla \"Recursos\"",
+          "default": "Recursos"
+        },
+        {
+          "label": "Encabezado de título en tabla de recursos",
+          "default": "Título"
+        },
+        {
+          "label": "Encabezado de Introducción en tabla de recursos",
+          "default": "Introducción"
+        },
+        {
+          "label": "Encabezado de URL en tabla de recursos",
+          "default": "URL"
+        },
+        {
+          "label": "Etiqueta cuando no se encuentran recursos",
+          "default": "No hay recursos"
+        },
+        {
+          "label": "Etiqueta cuando no se ha proporcionado ningún resumen",
+          "default": "Sin comentarios"
+        }
+      ],
+      "label": "Informe de recursos"
+    },
+    {
+      "label": "Accesibilidad",
+      "fields": [
+        {
+          "label": "Usado en lugar del icono 'Cerrar'",
+          "default": "Cerrar"
+        },
+        {
+          "label": "Usado en lugar del icono \"Arrastrar\"",
+          "default": "Arrastrar"
+        },
+        {
+          "label": "Etiqueta \"Elemento arrastrable\" para lectores de pantalla",
+          "description": "Las variables disponibles son :argument",
+          "default": "Elemento arrastrable: :argument"
+        },
+        {
+          "label": "Título para el diálogo de menú de acciones",
+          "default": "Menú de acciones"
+        },
+        {
+          "label": "Descripción para el diálogo del menú de acciones",
+          "default": "Selecciona la acción que quieres llevar a cabo con este argumento"
+        }
+      ]
+    }
+  ]
+}

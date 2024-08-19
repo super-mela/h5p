@@ -1,0 +1,118 @@
+{
+  "semantics": [
+    {
+      "label": "Image",
+      "description": "Image to be used."
+    },
+    {
+      "label": "Visual settings",
+      "description": "These options will let you control visual aspects.",
+      "fields": [
+        {
+          "label": "Image width",
+          "description": "Select the width of the space given that the image should cover. The image's height will be scaled accordingly and never exceed 100% width.",
+          "options": [
+            {
+              "label": "35 %"
+            },
+            {
+              "label": "50 %"
+            },
+            {
+              "label": "75 %"
+            },
+            {
+              "label": "100 %"
+            },
+            {
+              "label": "Image's natural width"
+            }
+          ]
+        },
+        {
+          "label": "Image alignment",
+          "description": "Select where the image should be positioned relative to the rest of the content.",
+          "options": [
+            {
+              "label": "left"
+            },
+            {
+              "label": "center"
+            },
+            {
+              "label": "right"
+            }
+          ]
+        },
+        {
+          "label": "Zoom lens width",
+          "description": "Set the width of the zoom lens as percentage of the image's width (e.g. 20%) or as a fixed value in pixels (e.g. 160px).",
+          "default": "20%"
+        },
+        {
+          "label": "Zoom lens height",
+          "description": "Set the height of the zoom lens as percentage of the image's height (e.g. 25%) or as a fixed value in pixels (e.g. 90px).",
+          "default": "25%"
+        },
+        {
+          "label": "Darken image on zoom",
+          "description": "If set, the image will darken to strengthen the focussing effect of zooming."
+        }
+      ]
+    },
+    {
+      "label": "Behavioural settings",
+      "description": "These options will let you control how the task behaves.",
+      "fields": [
+        {
+          "label": "Automatic zooming",
+          "description": "If checked, the image gets magnified automatically while hovering it. Otherwise, the user needs to toggle magnification on and off."
+        },
+        {
+          "label": "Hide magnification indicator",
+          "description": "The magnification indicator is used as the button for keyboard use. Hiding it will not prevent it from working, but users will have less navigational information."
+        }
+      ]
+    },
+    {
+      "label": "Screenreader",
+      "fields": [
+        {
+          "label": "Magnify",
+          "description": "Label for magnification button (only visible to screenreader).",
+          "default": "Magnify"
+        },
+        {
+          "label": "Magnification activated.",
+          "description": "Read when the magnification was activated.",
+          "default": "Magnification activated."
+        },
+        {
+          "label": "Magnification deactivated.",
+          "description": "Read when the magnification was deactivated.",
+          "default": "Magnification deactivated."
+        },
+        {
+          "label": "Instructions",
+          "description": "Instructions on how to use the keyboard. Read when the magnification is activated",
+          "default": "Use arrow keys to move magnification lens. Use plus key to zoom in. Use minus key to zoom out."
+        },
+        {
+          "label": "Zoomed to scale",
+          "description": "Read when the zoom scale is changed. @magnification is a placeholder that will be replaced by the respective value.",
+          "default": "Zoomed to scale of @magnification to 1."
+        },
+        {
+          "label": "Moved lens to",
+          "description": "Read when the magnification lens is moved. @positionHorizontal and @positionVertical are placeholders that will be replaced by the respective values.",
+          "default": "Moved lens to @positionHorizontal horizontally and to @positionVertical vertically."
+        },
+        {
+          "label": "Unknown",
+          "description": "Fallback text for when the position of the lens cannot be determined.",
+          "default": "unknown"
+        }
+      ]
+    }
+  ]
+}

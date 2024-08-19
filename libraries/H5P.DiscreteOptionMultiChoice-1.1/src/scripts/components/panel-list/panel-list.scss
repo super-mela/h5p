@@ -1,0 +1,13 @@
+.h5p-discrete-option-multi-choice-panel-list {
+  --button-size: 3em;
+  --background-size: 1.25em;
+  --color-panel-background: #ddd;
+  --color-feedback-background: #fbfbfb;
+  --gap-default: 0.5rem;
+
+  display: flex;
+  flex-direction: column;
+  gap: var(--gap-default);
+  margin: 0;
+  padding: 0;
+}

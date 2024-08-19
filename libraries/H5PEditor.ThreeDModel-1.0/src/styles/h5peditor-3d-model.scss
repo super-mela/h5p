@@ -1,0 +1,60 @@
+.h5peditor-3d-model-container {
+  .file {
+    .display-none {
+      display: none;
+    }
+  }
+
+  .threeDModel .h5peditor-3d-model-file-icon {
+    background: #000;
+    color: #fff;
+    cursor: pointer;
+    display: block;
+    font-size: 1.1em;
+    height: 4.5em;
+    line-height: 4em;
+    text-align: center;
+    width: 6em;
+  }
+
+   // Fixed values like px taken from H5P core styles for copyright button
+   // These will require changing when H5P core styles change
+  .h5peditor-3d-model-resize-button {
+    aspect-ratio: 1;
+    background: linear-gradient(to bottom, #fff 0, #f2f2f2 100%);
+    border: 1px solid #d0d0d1;
+    border-radius: .25em;
+    cursor: pointer;
+    float: left;
+    height: 32px;
+    margin-right: 0.5rem;
+
+    &:focus {
+      box-shadow: 0 0 16px 0 rgba(133, 188, 255, .84);
+    }
+
+    &:hover {
+      background: linear-gradient(to bottom, #fff 0, #d0d0d1 100%);
+      text-decoration: none;
+      border-color: #999;
+    }
+
+    &:not(.large)::before {
+      content: "\f00e";
+      font-family: "H5PFontAwesome4", sans-serif;
+    }
+
+    &.large::before {
+      content: "\f010";
+      font-family: "H5PFontAwesome4", sans-serif;
+    }
+
+    &.display-none {
+      display: none;
+    }
+  }
+
+  .field.file > .h5p-copyright-button {
+    clear: none;
+  }
+}

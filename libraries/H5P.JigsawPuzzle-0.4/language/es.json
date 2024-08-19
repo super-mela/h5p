@@ -1,0 +1,143 @@
+{
+  "semantics": [
+    {
+      "label": "Imagen del rompecabezas",
+      "description": "Imagen de donde se cortarán las piezas."
+    },
+    {
+      "label": "Piezas horizontales",
+      "description": "Configurar cuantas piezas debería tener horizontalmente el rompecabezas."
+    },
+    {
+      "label": "Piezas verticales",
+      "description": "Configurar cuantas piezas debería tener verticalmente el rompecabezas."
+    },
+    {
+      "label": "Ajustes de sonido",
+      "description": "Estas opciones le permitirán configurar opciones relacionadas con sonido.",
+      "fields": [
+        {
+          "label": "Comenzar rompecabezas",
+          "description": "Sonido a reproducir cuando se inicia el rompecabezas."
+        },
+        {
+          "label": "Levantar pieza del rompecabezas",
+          "description": "Sonido a reproducir cuando se levanta una pieza del rompecabezas."
+        },
+        {
+          "label": "Colocar (incorrectamente) una pieza del rompecabezas",
+          "description": "Sonido a reproducir cuando se coloca una pieza del rompecabezas (en un punto incorrecto)."
+        },
+        {
+          "label": "Colocar correctamente pieza del rompecabezas",
+          "description": "Sonido a reproducir cuando una pieza del rompecabezas se coloca en el punto correcto."
+        },
+        {
+          "label": "Completar rompecabezas",
+          "description": "Sonido a reproducir cuando se completa un rompecabezas."
+        }
+      ]
+    },
+    {
+      "label": "Configuración del comportamiento",
+      "description": "Estas opciones te permitirán controlar como se comporta la tarea.",
+      "fields": [
+        {
+          "label": "Mostrar fondo tenue",
+          "description": "Mostrar una versión tenue de la imagen de fondo para indicar donde necesita ir una pieza del rompecabezas."
+        },
+        {
+          "label": "Mostrar siluetas del rompecabezas",
+          "description": "Mostrar siluetas del rompecabezas para indicar donde necesita ir una pieza del rompecabezas."
+        },
+        {
+          "label": "Posición del espacio de clasificación",
+          "description": "Establece dónde debe colocarse el espacio de clasificación.",
+          "options": [
+            {
+              "label": "Puzzle next to sorting space"
+            },
+            {
+              "label": "Puzzle above sorting space"
+            }
+          ]
+        },
+        {
+          "label": "Espacio para ordenar",
+          "description": "Configurar cuanto espacio en porcentaje debería estar disponible junto al rompecabezas para ordenar las piezas."
+        },
+        {
+          "label": "Espacio de clasificación",
+          "description": "Set how much space in percent relative to the puzzle should be attached below to the jigsaw puzzle for sorting the tiles."
+        },
+        {
+          "label": "Usar el área completa",
+          "description": "Configurar si inicialmente las piezas deberían cubrir el área completa incluyendo el área donde necesitan colocarse."
+        },
+        {
+          "label": "Habilitar botón \"Completar\""
+        },
+        {
+          "label": "Habilitar botón \"Intentar de nuevo\""
+        },
+        {
+          "label": "Habilitar botón \"Solución\""
+        }
+      ]
+    },
+    {
+      "label": "Interfaz de usuario",
+      "fields": [
+        {
+          "label": "Texto para el botón \"Completar\"",
+          "default": "Completar"
+        },
+        {
+          "label": "Texto para el botón \"Intentar de nuevo\"",
+          "default": "Intentar de nuevo"
+        },
+        {
+          "label": "Texto para mensaje de \"No hay imagen\"",
+          "default": "No se ha proporcionado una imagen para este rompecabezas."
+        }
+      ]
+    },
+    {
+      "label": "Lector de pantalla",
+      "fields": [
+        {
+          "label": "Descripción para las tecnologías de asistencia del botón \"Completar\"",
+          "default": "Completar el rompecabezas. Todas las piezas se colocarán en su posición correcta."
+        },
+        {
+          "label": "Descripción para las tecnologías de asistencia del botón \"Intentar de nuevo\"",
+          "default": "Vuelve a intentar el rompecabezas. Todas las fichas del rompecabezas se barajarán en el lienzo."
+        },
+        {
+          "label": "Descripción para las tecnologías de asistencia del botón \"Pasar a pantalla completa\"",
+          "default": "Entrar al modo de pantalla completa"
+        },
+        {
+          "label": "Descripción para las tecnologías de asistencia del botón \"Salir de pantalla completa\"",
+          "default": "Salir del modo de pantalla completa"
+        },
+        {
+          "label": "Descripción para las tecnologías de asistencia del botón \"Silenciar\"",
+          "default": "Silenciar el audio"
+        },
+        {
+          "label": "Descripción para las tecnologías de asistencia del botón \"Activar audio\"",
+          "default": "Activar audio"
+        },
+        {
+          "label": "Descripción para las tecnologías de asistencia de \"Deshabilitado\"",
+          "default": "Deshabilitado"
+        },
+        {
+          "label": "Descripción para las tecnologías de asistencia de \"Cerrar\"",
+          "default": "Cerrar"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,485 @@
+{
+  "semantics": [
+    {
+      "label": "Editor 3D obrázků",
+      "fields": [
+        {
+          "label": "Scény",
+          "entity": "Scéna",
+          "field": {
+            "fields": [
+              {
+                "label": "Typ scény",
+                "options": [
+                  {
+                    "label": "360 obrázek"
+                  },
+                  {
+                    "label": "Panoramatický snímek"
+                  },
+                  {
+                    "label": "Statický obrázek"
+                  }
+                ]
+              },
+              {
+                "label": "Zobrazit tlačítko \"Zpět\"",
+                "description": "Zobrazit tlačítko pro navigaci zpět na předchozí scénu"
+              },
+              {
+                "label": "Enable \"Zoom\"",
+                "description": "Enable zooming in and out with zoom buttons, mouse wheel, touch gestures and keyboard shortcuts."
+              },
+              {
+                "label": "SceneId"
+              },
+              {
+                "label": "Název scény",
+                "description": "Slouží k identifikaci"
+              },
+              {
+                "label": "Pozadí scény"
+              },
+              {
+                "label": "Popis scény",
+                "description": "Text, který může popsat scénu pro koncového uživatele"
+              },
+              {
+                "label": "Popis scény (pro čtečky obrazovky)",
+                "description": "Text, který může popsat scénu pro koncového uživatele. Nebude viditelná, ale bude čtena čtečkami obrazovky, takže formátování bude ignorováno."
+              },
+              {
+                "label": "Nejprve zobrazte \"Popis scény\"",
+                "description": "Zobrazte popis scény při prvním spuštění scény"
+              },
+              {
+                "label": "Počáteční pozice kamery",
+                "description": "Pozice kamery v úhlu a sklonu"
+              },
+              {
+                "label": "Interakce",
+                "field": {
+                  "fields": [
+                    {
+                      "label": "Popisek",
+                      "description": "Pokud nevyplníte, nebude zobrazen žádný popisek a my se pokusíme použít pole nadpisu pro čtečky obrazovky"
+                    },
+                    {
+                      "label": "Nastavení popisku",
+                      "fields": [
+                        {
+                          "label": "Pozice popisku",
+                          "description": "Vybrat, kde se má popisek objevit",
+                          "options": [
+                            {
+                              "label": "Použít nastavení chování"
+                            },
+                            {
+                              "label": "Zarovnáno doprava"
+                            },
+                            {
+                              "label": "Zarovnáno doleva"
+                            },
+                            {
+                              "label": "Zarovnáno nahoru"
+                            },
+                            {
+                              "label": "Zarovnáno dolů"
+                            }
+                          ]
+                        },
+                        {
+                          "label": "Zobrazit popisek",
+                          "description": "Pokud jsou skryté - popisky se zobrazí pouze při najetí myší",
+                          "options": [
+                            {
+                              "label": "Použít nastavení chování"
+                            },
+                            {
+                              "label": "Zobrazit"
+                            },
+                            {
+                              "label": "Skrýt"
+                            }
+                          ]
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Password settings",
+                      "fields": [
+                        {
+                          "label": "Kód pro interakci",
+                          "description": "Pokud není prázdný, uživatel musí zadat kód, aby mohl tento obsah otevřít. Více správných kódů oddělte pomocí /."
+                        },
+                        {
+                          "label": "Nápověda pro kód interakce",
+                          "description": "Volitelná nápověda ke kódu, pokud chcete, může být ponechána prázdná"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Zobrazit jako aktivní body",
+                      "description": "Umožňuje přidat k obrázku na pozadí oblasti interakce, které mohou mít vlastní velikost."
+                    },
+                    {
+                      "label": "Hotspot settings",
+                      "fields": [
+                        {
+                          "label": "Zobrazit aktivní bod, když se myš pohybuje",
+                          "description": "Umožní, aby byl aktivní bod viditelný, když se myš pohybuje v oblasti."
+                        },
+                        {
+                          "label": "Nastavte aktivní bod tak, aby byl dostupný pomocí TAB",
+                          "description": "Umožní, aby byl aktivní bod dostupný pomocí TAB. Required to be checked to make the content accessible!"
+                        },
+                        {
+                          "default": "256,128",
+                          "label": "Hodnoty pro uložení výšky a šířky aktivního bodu"
+                        }
+                      ]
+                    },
+                    {
+                      "label": "Zobrazit jako otevřený obsah ve scéně",
+                      "description": "Umožňuje zobrazení obsahu v otevřeném dialogovém okně přímo ve scéně."
+                    },
+                    {},
+                    {
+                      "label": "Interaction position"
+                    },
+                    {
+                      "label": "Button style",
+                      "description": "Decide how the icon should look.",
+                      "options": [
+                        {
+                          "label": "Text icon"
+                        },
+                        {
+                          "label": "Info icon"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              },
+              {
+                "label": "Typ tlačítka",
+                "description": "Rozhodněte se, jak by měla vypadat tlačítka směřující k této scéně. Pro scény, které jsou statické a nevedou k novým scénám, doporučujeme tlačítko \"Více informací\" .",
+                "options": [
+                  {
+                    "label": "Nová scéna (šipka)"
+                  },
+                  {
+                    "label": "Více informací (plus)"
+                  }
+                ]
+              },
+              {
+                "label": "Typ zvuku",
+                "description": "Rozhodněte, jaký typ zvuku bude tato scéna používat, buď použijte zvukovou stopu, nebo vyberte existující seznam zvukových stop.",
+                "options": [
+                  {
+                    "label": "Zvuková stopa"
+                  },
+                  {
+                    "label": "Seznam skladeb"
+                  }
+                ]
+              },
+              {
+                "label": "Zvuková stopa",
+                "description": "Přidat zvukovou stopu, která je specifická pro tuto scénu."
+              },
+              {
+                "label": "Seznam skladeb",
+                "description": "Zde můžete vybrat existující seznam skladeb jako zvuk."
+              },
+              {
+                "label": "Po opětovném otevření scény restartujte zvuk"
+              }
+            ]
+          }
+        },
+        {},
+        {
+          "label": "Seznam skladeb"
+        },
+        {
+          "label": "Playlists",
+          "field": {
+            "fields": [
+              {
+                "label": "Playlist Title",
+                "description": "Used to identify the playlist"
+              },
+              {
+                "label": "Audio Tracks",
+                "description": "Add audio tracks to the playlist."
+              },
+              {}
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Seznam skladeb",
+      "description": "Tyto možnosti vám umožní přidat seznamy stop pro scény.",
+      "fields": [
+        {
+          "label": "Přidány seznamy skladeb",
+          "description": "Vytvořte seznamy stop, které jsou ve výchozím nastavení dostupné pro všechny scény."
+        }
+      ]
+    },
+    {
+      "label": "Nastavení chování",
+      "description": "Tyto možnosti vám umožní řídit, jak se budou scény chovat.",
+      "fields": [
+        {
+          "label": "Typ zvuku",
+          "description": "Rozhodněte, jaký typ zvuku bude tato scéna používat, buď použijte zvukovou stopu, nebo vyberte existující seznam zvukových stop.",
+          "options": [
+            {
+              "label": "Globální zvuk"
+            },
+            {
+              "label": "Seznam skladeb"
+            }
+          ]
+        },
+        {
+          "label": "Globální zvuk",
+          "description": "Přidejte zvukovou stopu, která je ve výchozím nastavení dostupná pro všechny scény."
+        },
+        {
+          "label": "Seznam skladeb",
+          "description": "Zde můžete vybrat existující seznam skladeb jako zvuk."
+        },
+        {
+          "label": "Zobrazit tlačítko \"Skóre\"",
+          "description": "Tlačítko pro zobrazení skóre z úkolů."
+        },
+        {
+          "label": "Zobrazit tlačítko \"Domů\"",
+          "description": "Tlačítko pro spuštění scény."
+        },
+        {
+          "label": "Kvalita vykreslování scén",
+          "description": "Vyberte velikost segmentů šířky a výšky použitých k vykreslení scény. To přímo ovlivňuje úroveň kvality scény, zkuste zvýšit kvalitu, pokud scéna vypadá tak, že jsou ve scénách vidět \"bloky \" nebo \"vlny \". Upozorňujeme, že načítání ve vyšší kvalitě trvá déle.",
+          "options": [
+            {
+              "label": "Vysoká kvalita (128x128)"
+            },
+            {
+              "label": "Střední kvalita (64x64)"
+            },
+            {
+              "label": "Nízká kvalita (16x16)"
+            }
+          ]
+        },
+        {
+          "label": "Nastavení popisku",
+          "fields": [
+            {
+              "label": "Pozice popisku",
+              "description": "Výchozí poloha popisku. Pozici lze přepsat interakcí",
+              "options": [
+                {
+                  "label": "Zarovnáno doprava"
+                },
+                {
+                  "label": "Zarovnáno doleva"
+                },
+                {
+                  "label": "Zarovnáno nahoru"
+                },
+                {
+                  "label": "Zarovnáno dolů"
+                }
+              ]
+            },
+            {
+              "label": "Zobrazit popisky",
+              "description": "Pokud není zaškrtnuto - popisky se zobrazí pouze při najetí myší"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Lokalizovat",
+      "fields": [
+        {
+          "label": "Aria label pro typ obsahu",
+          "default": "Virtuální prohlídka"
+        },
+        {
+          "label": "Popisek pro přehrávání zvuku",
+          "default": "Přehrát zvukovou stopu"
+        },
+        {
+          "label": "Popisek pro pozastavení zvuku",
+          "default": "Pozastavit zvukovou stopu"
+        },
+        {
+          "label": "Nadpis dialogu scény",
+          "default": "Popis scény"
+        },
+        {
+          "label": "Popisek pro tlačítko pro resetování kamery",
+          "default": "Resetovat kameru"
+        },
+        {
+          "label": "Popisek pro tlačítko pro odeslání dialogu",
+          "default": "Odeslat dialog"
+        },
+        {
+          "label": "Popisek pro dialogové tlačítko zavřít",
+          "default": "Zavřít dialog"
+        },
+        {
+          "label": "Aria label pro popisek tlačítka rozbalit",
+          "default": "Rozbalit vizuální popisky"
+        },
+        {
+          "label": "Popisek, když se obrázek na pozadí načítá ve scéně 360",
+          "default": "Načítání obrázku na pozadí ..."
+        },
+        {
+          "label": "Popisek pro případ, že není žádný obsah",
+          "default": "Bez obsahu"
+        },
+        {
+          "label": "Označení tlačítka kontextové nabídky pro přechod na scénu",
+          "default": "Přejít na scénu"
+        },
+        {
+          "label": "Popisek pro tlačítko kontextové nabídky pro úpravy",
+          "default": "Upravit"
+        },
+        {
+          "label": "Popisek pro tlačítko kontextové nabídky pro smazání",
+          "default": "Zrušit"
+        },
+        {
+          "label": "Překlad pro \"skóre\"",
+          "default": "Skóre"
+        },
+        {
+          "label": "Překlad pro \"Úkol\"",
+          "default": "Úkol"
+        },
+        {
+          "label": "Překlad pro \"Celkem\"",
+          "default": "Celkem"
+        },
+        {
+          "label": "Označení tlačítka pro zobrazení souhrnu skóre",
+          "default": "Zobrazit souhrn skóre"
+        },
+        {
+          "label": "Překlad pro \"Scéna\"",
+          "default": "Scéna"
+        },
+        {
+          "label": "Nepojmenované",
+          "default": "Nepojmenované"
+        },
+        {
+          "label": "Přejít na úvodní scénu",
+          "default": "Přejít na úvodní scénu"
+        },
+        {
+          "label": "Jste na úvodní scéně",
+          "default": "Jste na úvodní scéně"
+        },
+        {
+          "label": "Odemčeno",
+          "default": "Odemčeno"
+        },
+        {
+          "label": "Zamčeno",
+          "default": "Zamčeno"
+        },
+        {
+          "label": "Prohledejte místnost, dokud nenajdete kód",
+          "default": "Prohledejte místnost, dokud nenajdete kód"
+        },
+        {
+          "label": "Kód byl chybný, zkuste to znovu.",
+          "default": "Kód byl chybný, zkuste to znovu."
+        },
+        {
+          "label": "Obsah byl odemčen!",
+          "default": "Obsah byl odemčen!"
+        },
+        {
+          "label": "Kód",
+          "default": "Kód"
+        },
+        {
+          "label": "Akce odemčené interakce (Pokračovat)",
+          "default": "Pokračovat"
+        },
+        {
+          "label": "Akce uzamčené interakce (Odemknout)",
+          "default": "Odemknout"
+        },
+        {
+          "label": "Přetažením vodorovně změníte měřítko (pro čtečky obrazovky)",
+          "default": "Přetažením vodorovně upravte měřítko"
+        },
+        {
+          "label": "Přetažením svisle změníte měřítko (pro čtečky obrazovky)",
+          "default": "Přetažením svisle změníte měřítko"
+        },
+        {
+          "label": "Tip",
+          "default": "Tip"
+        },
+        {
+          "label": "Uzamčený obsah",
+          "default": "Uzamčený obsah"
+        },
+        {
+          "label": "Back",
+          "default": "Back"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (enter)",
+          "default": "Enter fullscreen mode"
+        },
+        {
+          "label": "Text for screenreaders. Title for fullscreen button (exit)",
+          "default": "Exit fullscreen mode"
+        },
+        {
+          "label": "Main toolbar",
+          "default": "Main toolbar"
+        },
+        {
+          "label": "No valid scenes set",
+          "default": "No valid scenes have been set."
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom in button",
+          "default": "Zoom in"
+        },
+        {
+          "label": "Text for screenreaders. Title for zoom out button",
+          "default": "Zoom out"
+        },
+        {
+          "label": "Zoom toolbar",
+          "default": "Zoom toolbar"
+        },
+        {
+          "label": "Zoom aria text for screenreaders",
+          "default": ":num% zoomed in"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,187 @@
+{
+  "semantics": [
+    {
+      "label": "Medio",
+      "fields": [
+        {
+          "label": "Medio"
+        },
+        {
+          "label": "Maniquí"
+        }
+      ]
+    },
+    {
+      "label": "Arquivos de transcrición",
+      "entity": "ficheiro de transcrición",
+      "widgets": [
+        {
+          "label": "Por defecto"
+        }
+      ],
+      "field": {
+        "label": "Datos do ficheiro de transcrición",
+        "fields": [
+          {
+            "label": "Transcrición (ficheiro WebVTT)"
+          },
+          {
+            "label": "Etiqueta",
+            "description": "Etiqueta coa que identificar a transcrición. Non relevante se só tes un ficheiro de transcrición."
+          },
+          {
+            "label": "Código de idioma",
+            "description": "A biblioteca de transcricións tentará determinar automaticamente o idioma do texto de transcrición como información para os lectores de pantalla. Se iso falla, podes configurar manualmente a \"etiqueta de idioma BCP 47\" - por exemplo, \"en\" para o inglés, \"nb\" para o noruegués bokmål, etc."
+          }
+        ]
+      }
+    },
+    {
+      "label": "Configuración do comportamento",
+      "fields": [
+        {
+          "label": "Número máximo de liñas",
+          "description": "Número máximo de liñas de transcrición que deben amosarse á vez. Se se omite ou ten valor 0, amosará a transcrición completa."
+        },
+        {
+          "label": "Mostrar a transcrición ao cargar",
+          "description": "Podes seleccionar se a transcrición debe mostrarse cando se carga o contido ou non."
+        }
+      ]
+    },
+    {
+      "label": "Capítulos",
+      "fields": [
+        {
+          "label": "Usar os marcadores de vídeo interactivo"
+        },
+        {
+          "label": "Marcas de capítulo",
+          "description": "Opcionalmente, podes engadir marcas de capítulo no formato común mp4chaps. A sintaxe é \"hh:mm:ss Título do capítulo\" ou \"hh:mm:ss.MMM Título do capítulo\""
+        }
+      ]
+    },
+    {
+      "label": "Interface de usuario",
+      "fields": [
+        {
+          "label": "Non se proporcionou ningún medio",
+          "default": "Non se asignou ningún medio á transcrición."
+        },
+        {
+          "label": "Non se proporcionou ningunha transcrición",
+          "default": "Non se proporcionou ningunha transcrición."
+        },
+        {
+          "label": "Problema co ficheiro WebVTT",
+          "default": "Parece que hai algo mal co ficheiro WebVTT. Consulte a consola de desenvolvemento do navegador para obter máis información."
+        },
+        {
+          "label": "Marcas de capítulo",
+          "default": "Marcas de capítulo"
+        },
+        {
+          "label": "Opción sen nome",
+          "default": "Opción sen nome"
+        }
+      ]
+    },
+    {
+      "label": "Lector de pantalla",
+      "fields": [
+        {
+          "label": "Transcrición visible",
+          "default": "Ocultar a transcrición. Visible actualmente."
+        },
+        {
+          "label": "Transcrición invisible",
+          "default": "Mostrar a transcrición. Non visible actualmente."
+        },
+        {
+          "label": "Desprazamento automático activo",
+          "default": "Desactiva o desprazamento automático. Actualmente activo."
+        },
+        {
+          "label": "Desprazamento automático inactivo",
+          "default": "Activa o desprazamento automático. Actualmente non activo."
+        },
+        {
+          "label": "Desactivado o desprazamento automático",
+          "default": "Opción de desprazamento automático desactivada."
+        },
+        {
+          "label": "Vista de transcrición interactiva",
+          "default": "Cambia á vista de texto sen formato"
+        },
+        {
+          "label": "Vista de texto sen formato",
+          "default": "Cambia á vista de transcrición interactiva."
+        },
+        {
+          "label": "Cambio de modo desactivado",
+          "default": "Cambio de modo desactivado."
+        },
+        {
+          "label": "Hora de inicio activa",
+          "default": "Ocultar a hora de inicio. Actualmente visible."
+        },
+        {
+          "label": "Hora de inicio inactiva",
+          "default": "Amosar a hora de inicio. Non amosada actualmente."
+        },
+        {
+          "label": "Hora de inicio desactivada",
+          "default": "A opción de hora de inicio está desactivada."
+        },
+        {
+          "label": "Saltos de liña activos",
+          "default": "Ocultar saltos de liña. Actualmente amosados."
+        },
+        {
+          "label": "Saltos de liña inactivos",
+          "default": "Amosar saltos de liña. Non amosados actualmente."
+        },
+        {
+          "label": "Saltos de liña desactivados",
+          "default": "Opción de salto de liña desactivada."
+        },
+        {
+          "label": "Abrir marcas de capítulo",
+          "default": "Abrir marcas de capítulo"
+        },
+        {
+          "label": "Pechar marcas de capítulo",
+          "default": "Pechar marcas de capítulo"
+        },
+        {
+          "label": "Marcas de capítulo desactivadas",
+          "default": "Marcas de capítulo desactivadas."
+        },
+        {
+          "label": "Transcrición interactiva",
+          "default": "Transcrición interactiva"
+        },
+        {
+          "label": "Introducir para resaltar",
+          "default": "Introduza unha consulta para resaltar o texto relevante."
+        },
+        {
+          "label": "Campo de selección desactivado",
+          "default": "Campo de selección desactivado."
+        },
+        {
+          "label": "Premer Enter para resaltar",
+          "default": "Introduce unha consulta para resaltar o texto relevante."
+        },
+        {
+          "label": "Caixa de busca desactivada",
+          "default": "Caixa de busca desactivada."
+        },
+        {
+          "label": "Pechar",
+          "default": "Pechar"
+        }
+      ]
+    }
+  ]
+}

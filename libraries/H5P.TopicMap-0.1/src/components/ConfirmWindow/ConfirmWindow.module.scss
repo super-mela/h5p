@@ -1,0 +1,95 @@
+@use "./../../abstracts/mixins" as *;
+
+.overlay {
+  @include modal-overlay;
+  z-index: var(--confirm-overlay-z-index);
+}
+
+.contentWrapper {
+  @include modal-wrapper;
+}
+
+.closeButton {
+  @include modal-close-button;
+}
+
+.dialogTitle {
+  margin: 0;
+  font-weight: bold;
+  color: black;
+  font-size: 1.25rem;
+  line-height: 1.2;
+}
+
+.confirmWindowContent {
+  @include modal-content;
+  height: auto;
+  width: 52vw;
+  max-height: 85vh;
+  max-width: 35rem;
+  z-index: var(--confirm-dialog-z-index);
+
+  @media (prefers-reduced-motion: no-preference) {
+    animation: show-dialog 150ms cubic-bezier(0.16, 1, 0.3, 1);
+  }
+}
+
+.confirmButton,
+.denyButton {
+  background-color: #fff;
+  border-radius: 0.25em;
+  border: 2px solid var(--theme-color-2);
+  box-sizing: border-box;
+  color: var(--theme-color-2);
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 600;
+  margin: 10px 0 0 0;
+  outline-offset: 2px;
+  padding: 0.5rem 1.25rem;
+  width: auto;
+
+  &:hover {
+    border-color: var(--theme-color-3);
+    color: var(--theme-color-3);
+  }
+}
+
+.confirmButton {
+  background-color: var(--theme-color-2);
+  color: #fff;
+
+  &:hover {
+    background-color: var(--theme-color-3);
+    border-color: var(--theme-color-3);
+    color: #fff;
+  }
+}
+
+.confirmationButtons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 1rem;
+  margin: 1rem 0 0;
+}
+
+@keyframes show-overlay {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes show-dialog {
+  from {
+    opacity: 0;
+    transform: translate(-50%, -48%) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translate(-50%, -50%) scale(1);
+  }
+}

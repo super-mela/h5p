@@ -1,0 +1,51 @@
+@import "@styles/main";
+
+.h5p-combination-lock-wheel {
+  background:
+    linear-gradient(
+      to bottom,
+      #767893 0%,
+      #b3b7c6 9%,
+      #d0d3dc 18%,
+      #fff 55%,
+      #d0d3dc 82%,
+      #b3b7c6 91%,
+      #767893 100%
+    );
+  box-shadow: 0 0 10px rgb(0 0 0 / 60%);
+  font-size: 2rem;
+  height: 6rem;
+  overflow: hidden;
+  text-align: center;
+  width: 100%;
+  display: grid;
+
+  .h5p-combination-lock-wheel-list {
+    grid-column: 1;
+    grid-row: 1;
+
+    &.transition {
+      transition: transform 0.25s;
+    }
+
+    .h5p-combination-lock-wheel-listitem {
+      height: 3.5rem;
+      line-height: 3.5rem;
+
+      &.cloaked {
+        visibility: hidden;
+      }
+    }
+  }
+
+  .h5p-combination-lock-wheel-spinbutton {
+    grid-column: 1;
+    grid-row: 1;
+    height: 6rem;
+    z-index: 1;
+
+    &:focus {
+      outline: none;
+    }
+  }
+}

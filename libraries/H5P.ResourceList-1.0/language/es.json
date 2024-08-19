@@ -1,0 +1,48 @@
+{
+  "semantics": [
+    {
+      "label": "Recursos",
+      "entity": "recurso",
+      "widgets": [
+        {
+          "label": "Predeterminado"
+        }
+      ],
+      "field": {
+        "label": "Recursos",
+        "description": "Enlaces opcionales a recursos.",
+        "fields": [
+          {
+            "label": "Título del recurso"
+          },
+          {
+            "label": "Introducción"
+          },
+          {
+            "label": "URL"
+          },
+          {
+            "label": "Imagen de introducción"
+          }
+        ]
+      }
+    },
+    {
+      "label": "Adaptación local",
+      "fields": [
+        {
+          "label": "Traducción para \"Ocultar\"",
+          "default": "Ocultar"
+        },
+        {
+          "label": "Traducción de \"Recursos\"",
+          "default": "Recursos"
+        },
+        {
+          "label": "Accesibilidad para el botón \"Recursos\"",
+          "default": "Ver recursos adicionales para obtener más información"
+        }
+      ]
+    }
+  ]
+}

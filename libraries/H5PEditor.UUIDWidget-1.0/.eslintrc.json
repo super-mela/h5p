@@ -1,0 +1,13 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "extends": "eslint-config-ndla-h5p",
+  "overrides": [],
+  "parserOptions": {
+    "ecmaVersion": 2021,
+    "sourceType": "module"
+  },
+  "parser": "@typescript-eslint/parser"
+}

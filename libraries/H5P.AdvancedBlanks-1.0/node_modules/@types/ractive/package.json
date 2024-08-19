@@ -1,0 +1,16 @@
+{
+    "name": "@types/ractive",
+    "version": "0.7.27",
+    "description": "TypeScript definitions for Ractive 0.7.1",
+    "license": "MIT",
+    "author": "Han Lin Yap <http://yap.nu>",
+    "main": "",
+    "repository": {
+        "type": "git",
+        "url": "https://www.github.com/DefinitelyTyped/DefinitelyTyped.git"
+    },
+    "scripts": {},
+    "dependencies": {},
+    "typings": "index.d.ts",
+    "typesPublisherContentHash": "ab2cc90c62346d37e64775fc8150e8688f59d92952074e0bf46af4f42398d1d6"
+}

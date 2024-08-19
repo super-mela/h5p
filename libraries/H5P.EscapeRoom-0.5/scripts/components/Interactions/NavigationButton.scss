@@ -1,0 +1,276 @@
+@import "../../styles/icons";
+@import "../../styles/colors";
+
+$labelPadding: 0.5em;
+$labelWidth: 9em;
+
+.nav-button-wrapper {
+  position: absolute;
+  display: inline-flex;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  &.active-element {
+    z-index: 2;
+  }
+}
+
+.nav-button {
+  position: relative;
+  width: $buttonSize;
+  height: $buttonSize;
+  padding: 0;
+  border-radius: 50%;
+  line-height: 1;
+  font-size: 0.92em;
+
+  background-color: $buttonBg;
+  border: none;
+  cursor: pointer;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1;
+  box-shadow: 0.2em 0.2em 0.3em rgba(0, 0, 0, 0.2);
+  transition: border 100ms linear;
+
+  &:hover {
+    background-color: $hoverBg;
+  }
+
+  &:active {
+    background-color: $activeBg;
+    border: 0.25em solid $activeBorder;
+  }
+}
+
+.nav-button-wrapper {
+  &:hover {
+    z-index: 3;
+  }
+
+  &.dragging,
+  &.focused {
+    z-index: 3;
+  }
+}
+
+.h5p-interaction-button:not(.nav-button-wrapper--gotoscene) {
+  .nav-button:not(.nav-button-hotspot) {
+    background-color: $interactionBg;
+
+    &:active {
+      background-color: $interactionActiveBg;
+      border-color: $interactionActiveBorder;
+    }
+  }
+}
+.nav-button-hotspot-wrapper {
+  position: relative;
+  z-index: -1;
+  &--is-static {
+    z-index: 3;
+  }
+  .nav-button-hotspot {
+    background-color: rgba(0, 0, 0, 0);
+    transition: background-color 0.2s ease-in-out;
+    border-radius: 0;
+    box-shadow: none;
+    &:before {
+      display: none;
+    }
+    &:active {
+      border: 0.125em solid $activeBorder;
+    }
+    /*Modifiers*/
+    &--show-hotspot-on-hover {
+      background-color: rgba(0, 0, 0, 0);
+
+      &:focus {
+        background-color: $hotspotAlteredState;
+        opacity: 1;
+      }
+      &:hover {
+        background-color: $hotspotAlteredState;
+      }
+    }
+
+    &--editor {
+      background-color: $hotspotEditor;
+
+      &::before {
+        display: inherit;
+        font-size: 1em;
+      }
+
+      &:hover,
+      &:focus,
+      &:active {
+        background-color: $hotspotAlteredState;
+      }
+    }
+  }
+
+  .drag {
+    width: 3.5em;
+    height: 3.5em;
+    padding: 0;
+    background-color: $dragBg;
+    border: 0;
+    position: absolute;
+    cursor: pointer;
+    z-index: 1;
+    border-radius: 2px;
+    &:before {
+      font-family: "360-image";
+      vertical-align: middle;
+      color: $dragIcon;
+      font-size: 2.25em;
+    }
+    &--horizontal {
+      right: 0;
+      transform: translateX(50%) translateY(-50%);
+      top: 50%;
+      &:before {
+        content: $arrow-horiz-scale;
+      }
+    }
+    &--vertical {
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(50%);
+      &:before {
+        content: $arrow-verti-scale;
+      }
+    }
+
+    .static-scene & {
+      width: 2em;
+      height: 2em;
+
+      &::before {
+        font-size: 1.25em;
+      }
+    }
+  }
+}
+
+.disabled .nav-button {
+  opacity: 0.5;
+}
+
+.bottom .nav-button {
+  top: auto;
+  left: 0.75em;
+  bottom: 0.5em;
+}
+
+.nav-button:before {
+  font-family: "360-image";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  color: white;
+  font-size: 1.25em;
+}
+
+.h5p-question-button .nav-button:before {
+  content: $question;
+}
+
+.h5p-info-button .nav-button:before {
+  content: $info;
+  font-size: 1.6em;
+}
+
+.h5p-go-to-scene-button .nav-button:before {
+  content: $goToScene;
+}
+.h5p-locked-button .nav-button:before {
+  content: $lock-icon;
+}
+.h5p-unlocked-button .nav-button:before {
+  content: $unlock-icon;
+}
+
+.h5p-audio-button .nav-button:before {
+  content: $audioOff;
+}
+.h5p-video-button .nav-button:before {
+  content: $video;
+}
+.h5p-image-button .nav-button:before {
+  content: $image;
+}
+.h5p-info-mark-button .nav-button:before {
+  content: $info-mark;
+}
+.h5p-audio-button.active .nav-button:before {
+  content: $audioOn;
+}
+
+.h5p-text-block-button .nav-button:before {
+  content: $text-block;
+}
+
+.h5p-go-back-button {
+  top: 1em;
+  left: 1em;
+  // It is nessecary to show the back button on
+  // top of labels so it can be clicked even when covered
+  z-index: 3;
+}
+
+.h5p-go-back-button .nav-button {
+  width: 2em;
+  height: 2em;
+  border-width: 0.2em;
+}
+
+.h5p-go-back-button .nav-button:before {
+  content: $goBack;
+  font-size: 1em;
+}
+
+.h5p-go-back-button .nav-button:active {
+  border-color: $activeBorder;
+}
+
+.h5p-scene-description-button .nav-button:before {
+  content: $sceneDescription;
+}
+
+$answerable-interactions: (
+  "nav-button-wrapper--summary",
+  "nav-button-wrapper--singlechoiceset",
+  "nav-button-wrapper--blanks",
+  "nav-button-wrapper--multichoice",
+);
+
+@each $interaction in $answerable-interactions {
+  .#{$interaction}:not(.nav-btn-hotspot) {
+    &::before {
+      $offset: 0.5rem;
+      border: 3px dashed $interactionBg;
+      border-radius: 50%;
+      bottom: -$offset;
+      content: "";
+      left: -$offset;
+      position: absolute;
+      right: -$offset;
+      top: -$offset;
+    }
+  }
+}
+
+.h5p-interaction-answered {
+  &::before {
+    border-style: solid !important;
+  }
+}

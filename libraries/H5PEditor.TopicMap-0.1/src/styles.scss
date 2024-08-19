@@ -1,0 +1,68 @@
+.h5p-editor-topic-map {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
+
+  *,
+  *::before,
+  *::after {
+    box-sizing: border-box;
+  }
+}
+
+.theme-1 {
+  --theme-color-1: #2f4050;
+  --theme-color-2: #40586f;
+  --theme-color-3: #567B95;
+  --theme-color-4: #BECCE0;
+  --theme-color-5: #DAE2EC;
+}
+
+.theme-2 {
+  --theme-color-1: #2f5050;
+  --theme-color-2: #3d6060;
+  --theme-color-3: #4E7E7E;
+  --theme-color-4: #AFD9D9;
+  --theme-color-5: #CBE7E7;
+}
+
+.theme-3 {
+  --theme-color-1: #7a1719;
+  --theme-color-2: #981b1e;
+  --theme-color-3: #D7282A;
+  --theme-color-4: #F9A9AC;
+  --theme-color-5: #FBDADA;
+}
+
+.theme-4 {
+  --theme-color-1: #131516;
+  --theme-color-2: #373d3f;
+  --theme-color-3: #6B777B;
+  --theme-color-4: #C0C4C8;
+  --theme-color-5: #DFE2E2;
+}
+
+/**
+ * {1} Radix UI adds `pointer-events: none` to the body element.
+ *     The H5P dialogs are also affected by this, so we add a
+ *     default forced `pointer-events: auto` to prevent the effect
+ *     whenever Radix UI dialogs open H5P dialogs.
+ */
+.h5p-confirmation-dialog-background,
+.cke_combopanel {
+  pointer-events: auto; /* {1} */
+}
+
+.h5peditor-form.h5peditor-form-manager > .tree,
+.h5peditor-form.h5peditor-form-manager > .common,
+.h5peditor-form.h5peditor-form-manager > .field {
+  max-width: none;
+}
+
+.h5p-metadata-button-wrapper {
+  box-sizing: content-box;
+
+  * {
+    box-sizing: inherit;
+  }
+}

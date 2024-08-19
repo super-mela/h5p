@@ -1,0 +1,21 @@
+.navbarWrapper {
+  position: relative;
+  width: 100%;
+}
+
+.fullscreenStyle {
+  background-color: var(--theme-color-1);
+}
+
+.iPhoneFullscreenStyle {
+  position: fixed;
+  width: 100vw;
+  left: 0;
+  top: 0;
+}
+
+.iPhoneFullscreenThemeStyle {
+  height: 100vh;
+  overflow: auto;
+  background-color: var(--theme-color-1);
+}

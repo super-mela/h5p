@@ -1,0 +1,245 @@
+{
+  "semantics": [
+    {
+      "label": "Medium",
+      "fields": [
+        {
+          "label": "Typ",
+          "description": "Medium, das wahlweise oberhalb der Aufgabe angezeigt wird."
+        },
+        {
+          "label": "Bild-Zoom deaktivieren"
+        }
+      ]
+    },
+    {
+      "label": "Frage"
+    },
+    {
+      "label": "Verfügbare Optionen",
+      "entity": "Option",
+      "widgets": [
+        {
+          "label": "Eingabemaske"
+        },
+        {
+          "label": "Als Text eingeben"
+        }
+      ],
+      "field": {
+        "label": "Option",
+        "fields": [
+          {
+            "label": "Text"
+          },
+          {
+            "label": "Richtig"
+          },
+          {
+            "label": "Rückmeldung",
+            "fields": [
+              {
+                "label": "Nachricht, wenn Antwort gewählt wurde",
+                "description": "Nachricht wird unter der Antwort angezeigt."
+              },
+              {
+                "label": "Nachricht, wenn Antwort nicht gewählt wurde",
+                "description": "Nachricht wird unter der Antwort angezeigt."
+              }
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "label": "Gesamtrückmeldung",
+      "fields": [
+        {
+          "widgets": [
+            {
+              "label": "Voreinstellung"
+            }
+          ],
+          "label": "Lege Rückmeldungen für einzelne Punktebereiche fest",
+          "description": "Klicke auf den \"Bereich hinzufügen\"-Button, um so viele Bereiche hinzuzufügen, wie du brauchst. Beispiel: 0-20% Schlechte Punktzahl, 21-91% Durchschnittliche Punktzahl, 91-100% Großartige Punktzahl!",
+          "entity": "Bereich",
+          "field": {
+            "fields": [
+              {
+                "label": "Punktebereich"
+              },
+              {},
+              {
+                "label": "Rückmeldung für jeweiligen Punktebereich",
+                "placeholder": "Trage die Rückmeldung ein"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Verhaltenseinstellungen",
+      "fields": [
+        {
+          "label": "Modus",
+          "description": "Wähle, in welchem Modus die Aufgabe dargestellt wird.",
+          "options": [
+            {
+              "label": "Standard-\"Discrete-Option\"-Format"
+            },
+            {
+              "label": "Zeige alle Optionen"
+            },
+            {
+              "label": "Zeige alle Optionen, lasse die Zuversicht angeben"
+            }
+          ]
+        },
+        {
+          "label": "\"Lösung zeigen\"-Button anzeigen"
+        },
+        {
+          "label": "\"Wiederholen\"-Button anzeigen"
+        },
+        {
+          "label": "Nur jeweils eine Antwortoption sichtbar",
+          "description": "Wähle diese Einstellung, um ausgewählte Antwortoptionen auszublenden."
+        },
+        {
+          "label": "Zeige Ergebnisse",
+          "description": "Wähle diese Einstellung, um die Ergebnisse anzuzeigen, sobald alle angezeigten Antwortoptionen ausgewählt wurden."
+        },
+        {
+          "label": "Einen Punkt für die ganze Aufgabe vergeben",
+          "description": "Wähle diese Einstellung, um bei mehreren korrekten Antworten insgesamt nur einen Punkt zu vergeben."
+        },
+        {
+          "label": "Zufällige Reihenfolge der Antworten",
+          "description": "Wähle diese Einstellung, um die Antworten in zufälliger Reihenfolge anzuzeigen."
+        },
+        {
+          "label": "Zuversichtlichkeitsstufen",
+          "description": "Wähle, aus welchen Zuversichtlichkeitsstufen für jede Antwortoption gewählt werden kann.",
+          "options": [
+            {
+              "label": "100 % und 0 %"
+            },
+            {
+              "label": "100 %, 50 % und 0 %"
+            },
+            {
+              "label": "100 %, 75 %, 50 %, 25 % und 0 %"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "label": "Bedienoberfläche",
+      "fields": [
+        {
+          "label": "Beschriftung des \"Überprüfen\"-Buttons",
+          "default": "Prüfen"
+        },
+        {
+          "label": "Beschriftung des \"Absenden\"-Buttons",
+          "default": "Absenden"
+        },
+        {
+          "label": "Beschriftung des \"Lösung anzeigen\"-Buttons",
+          "default": "Lösung anzeigen"
+        },
+        {
+          "label": "Beschriftung des \"Wiederholen\"-Buttons",
+          "default": "Wiederholen"
+        },
+        {
+          "label": "Zuversicht",
+          "description": "@percent ist ein Platzhalter und wird durch den jeweiligen Wert ersetzt.",
+          "default": "Ich bin @percent sicher."
+        },
+        {
+          "label": "Dein Ergebnis",
+          "default": "Dein Ergebnis"
+        }
+      ]
+    },
+    {
+      "label": "Vorlesewerkzeug",
+      "fields": [
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für den \"Überprüfen\"-Button",
+          "default": "Die Antworten überprüfen. Die Antwort wird als richtig oder falsch markiert."
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für den \"Lösung anzeigen\"-Button",
+          "default": "Zeige die Lösung. Die korrekte Lösung wird dann angezeigt."
+        },
+        {
+          "label": "Vorlesewerkzeug-Beschreibung für den \"Wiederholen\"-Button",
+          "default": "Wiederhole die Aufgabe. Setzt alle Eingaben zurück und fängt von vorne an."
+        },
+        {
+          "label": "Dein Ergebnis",
+          "description": "@score wird durch die erreichten Punkte ersetzt. @total wird durch die maximal mögliche Punktzahl ersetzt.",
+          "default": "Du hast @score von @total Punkten erreicht"
+        },
+        {
+          "label": "Wähle Zuversicht und wähle Antwort",
+          "default": "Wähle deine Zuversicht und markiere die Antwortoption als richtig oder falsch"
+        },
+        {
+          "label": "Markiere als richtig oder falsch",
+          "default": "Markiere die Antwortoption als richtig oder falsch"
+        },
+        {
+          "label": "Markiere Antwort als richtig/falsch",
+          "description": "@status ist ein Platzhalter und wird durch den jeweiligen Wert ersetzt.",
+          "default": "Markiere Antwortoption als @status"
+        },
+        {
+          "label": "Richtig",
+          "default": "richtig"
+        },
+        {
+          "label": "Falsch",
+          "default": "falsch"
+        },
+        {
+          "label": "Option kann nicht ausgeklappt werden",
+          "default": "Diese Option kann derzeit nicht ausgeklappt werden."
+        },
+        {
+          "label": "Zeige die nächste Antwortoption",
+          "description": "@option ist ein Platzhalter und wird durch den jeweiligen Wert ersetzt.",
+          "default": "Eine weitere Antwortoption wird angezeigt: @option"
+        },
+        {
+          "label": "Keine weiteren Antwortoptionen",
+          "default": "Es gibt keine weiteren Antwortoptionen zum Markieren."
+        },
+        {
+          "label": "Du hast dies als richtig/falsch markiert",
+          "description": "@correctness ist ein Platzhalter und wird durch den jeweiligen Wert ersetzt.",
+          "default": "Du hast dies als @correctness markiert"
+        },
+        {
+          "label": "Zuversicht",
+          "description": "@value ist ein Platzhalter und wird durch den jeweiligen Wert ersetzt.",
+          "default": "Zuversicht: @value"
+        },
+        {
+          "label": "Deine Antwort war richtig/falsch",
+          "description": "@correctness ist ein Platzhalter und wird durch den jeweiligen Wert ersetzt.",
+          "default": "Deine Antwort war @correctness"
+        },
+        {
+          "label": "Die richtige Antwort wäre gewesen: richtig/falsch",
+          "description": "@correctness ist ein Platzhalter und wird durch den jeweiligen Wert ersetzt.",
+          "default": "Die richtige Antwort wäre gewesen, diese Antwortoption als @correctness zu markieren"
+        }
+      ]
+    }
+  ]
+}

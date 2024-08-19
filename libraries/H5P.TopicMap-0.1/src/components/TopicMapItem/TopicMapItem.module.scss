@@ -1,0 +1,155 @@
+@use "./../../abstracts/mixins" as *;
+
+$half-note-btn-size: 1rem;
+$note-btn-padding: 0.75rem;
+
+.topicMapItemContainer {
+  width: 100%;
+  height: 100%;
+
+  .topicMapItem {
+    background-color: var(--theme-color-2);
+    border: none;
+    border-radius: 0.25rem;
+    box-shadow: 0 0 0 2px var(--theme-color-4), 0 1px 4px rgba(0, 0, 0, 0.3);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    outline-offset: 4px;
+    overflow: hidden;
+    height: 100%;
+    padding: 0;
+    position: relative;
+    width: 100%;
+
+    &:hover {
+      background-color: var(--theme-color-3);
+      box-shadow: 0 0 0 2px var(--theme-color-5), 0 1px 4px rgba(0, 0, 0, 0.3);
+    }
+
+    &.xSmallUp {
+      .icon {
+        margin: auto;
+        position: absolute;
+
+        &.withoutImage {
+          left: auto !important;
+          margin: 0 auto 0.5em;
+          position: relative;
+          top: auto !important;
+        }
+      }
+    }
+
+    &.large {
+      font-size: 1.125rem;
+
+      .inner {
+        padding: 1em 1.25em;
+
+        &.withNote:not(.noImage) {
+          padding: calc(1em + $note-btn-padding) 1.75em 1em;
+        }
+      }
+    }
+
+    &.medium {
+      font-size: 1rem;
+
+      .inner {
+        padding: 0.75em 1em;
+
+        &.withNote:not(.noImage) {
+          padding: calc(0.75em + $note-btn-padding) 1.5em 0.75em;
+        }
+      }
+    }
+
+    &.small,
+    &.xSmall {
+      font-size: 0.813rem;
+
+      .inner {
+        padding: 0.75em;
+
+        &.withNote:not(.noImage) {
+          padding: calc(0.75em + $note-btn-padding) 1.25em 0.75em;
+        }
+      }
+    }
+
+    &.xSmall,
+    &.xxSmall {
+      .description {
+        @include visually-hidden;
+      }
+    }
+
+    &.xxSmall {
+      font-size: 0.625rem;
+
+      .inner {
+        padding: 0.4em !important;
+
+        &.icon {
+          display: none !important;
+        }
+      }
+    }
+  }
+
+  .topicMapItemIconEdit {
+    background: none;
+    bottom: calc(-1 * $half-note-btn-size / 2);
+    border: none;
+    margin: 0;
+    padding: 0;
+    pointer-events: none;
+    position: absolute;
+    right: calc(-1 * $half-note-btn-size / 2);
+  }
+}
+
+.image {
+  width: 100%;
+  height: 25%;
+  object-fit: cover;
+  flex-grow: 2;
+}
+
+.inner {
+  background-color: inherit;
+  color: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+
+  &.noImage {
+    flex-grow: 1;
+  }
+}
+
+.label {
+  font-size: 1.125em;
+  font-weight: 500;
+  -moz-hyphens: auto;
+  -webkit-hyphens: auto;
+  hyphens: auto;
+  overflow-wrap: break-word;
+  text-align: center;
+}
+
+.description {
+  font-size: 0.813em;
+  margin-top: 0.5em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.visuallyHidden {
+  @include visually-hidden;
+}

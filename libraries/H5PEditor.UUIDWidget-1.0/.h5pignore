@@ -1,0 +1,12 @@
+node_modules
+src
+.github
+.gitignore
+.h5pignore
+package.json
+package-lock.json
+README.md
+webpack.config.js
+tsconfig.json
+LICENSE
+h5p-editor-uuid.ts
