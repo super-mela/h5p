@@ -1,0 +1,15 @@
+<svg width="40" height="40" viewBox="-5 -5 50 50" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" markerWidth="4" markerHeight="4" refX="3" refY="2" orient="auto">
+      <polygon points="0,0 4,2 0,4" fill="#FFFFFF" />
+    </marker>
+  </defs>
+  <!-- X-axis -->
+  <line x1="20" y1="20" x2="35" y2="20" stroke="#FFFFFF" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Y-axis -->
+  <line x1="20" y1="20" x2="20" y2="5" stroke="#FFFFFF" stroke-width="2" marker-end="url(#arrow)"/>
+
+  <!-- Z-axis -->
+  <line x1="20" y1="20" x2="8" y2="32" stroke="#FFFFFF" stroke-width="2" marker-end="url(#arrow)"/>
+</svg>
