@@ -27,6 +27,33 @@ H5P.DragNBarElement = (function ($, ContextMenu, EventDispatcher) {
     if (!this.options.disableContextMenu) {
       this.contextMenu = new ContextMenu(this.dnb.$dialogContainer, this, this.options.hasCoordinates, this.options.disableResize, this.options.disableCopy, this.options.directionLock);
     }
+    this.params = { action: { library: '' } };
+    this.ct = {};
+    this.ct.params = {};
+
+    // var library = new H5P.MyLibrary({
+    //   params: {
+    //     action: this.params.action,
+    //     elementsOverride: {}
+    //   }
+    // });
+
+    // // Ensure elementParams is defined
+    // var elementParams = elementParams || { action: { library: '' } };
+
+    // // if (library && library.library) {
+    //   // var libraryName = library.library;
+    //   // console.log("Library Name:", libraryName);
+    // // }
+    // // Check if the element is of type Continuous Text
+    // var machineName;
+    // if (this.params && this.params.action && this.params.action.library) {
+    //   var machineName = H5P.libraryFromString(this.params.action.library).machineName;
+    //   console.log('Library name:', machineName);
+    // } else {
+    //   console.log('Library name is not defined');
+    // }
+
     this.focused = false;
 
     if (this.options.createElement) {
@@ -36,6 +63,8 @@ H5P.DragNBarElement = (function ($, ContextMenu, EventDispatcher) {
     else {
       this.$element = this.options.element;
     }
+
+
 
     // Let dnb know element has been pressed
     if (this.$element) {
@@ -50,6 +79,39 @@ H5P.DragNBarElement = (function ($, ContextMenu, EventDispatcher) {
         self.focus();
       });
     }
+    this.$element.attr('contenteditable', true);
+    // Initialize CKEditor on click
+    this.$element.on('click', function () {
+      if (!CKEDITOR.instances[self.$element.attr('id')]) {
+        if (self.$element && self.$element.length) {
+          CKEDITOR.inline(self.$element.get(0));
+          console.log('self element', self.$element);
+          // Minimize the width and put the editor at the top
+          // self.$element.css({
+          //   'position': 'absolute',
+          //   'top': '10px',
+          //   'left': '10px'
+          // });
+        }
+      }
+
+      //   // // Check if H5P.ContinuousText.Editor is defined and is a function
+      //   // if (typeof H5P.ContinuousText.Editor === 'function') {
+      //   //   // Initialize cpEditor if not already initialized
+      //   //   if (typeof cpEditor === 'undefined') {
+      //   //     cpEditor = new H5P.ContinuousText(); // Placeholder for actual initialization
+      //   //   }
+
+      //   //   // Ensure cpEditor is defined and has the getCTs method
+      //   //   if (typeof cpEditor !== 'undefined' && typeof cpEditor.getCTs === 'function') {
+      //   //     H5P.ContinuousText.Engine.run(this);
+      //   //   } else {
+      //   //     console.error('cpEditor is not defined or does not have the getCTs method.');
+      //   //   }
+      //   // } else {
+      //   //   console.error('H5P.ContinuousText.Editor is not a constructor.');
+      //   // }
+    });
 
     /**
      * Store element paramets in the local storage.
@@ -74,7 +136,7 @@ H5P.DragNBarElement = (function ($, ContextMenu, EventDispatcher) {
    * @param {string} label
    */
   DragNBarElement.prototype.addButton = function (name, label) {
-    this.contextMenu.addToMenu({name:name, label:label});
+    this.contextMenu.addToMenu({ name: name, label: label });
   };
 
   /**
@@ -183,7 +245,7 @@ H5P.DragNBarElement = (function ($, ContextMenu, EventDispatcher) {
 
       if (!this.options.disableContextMenu) {
         // Hide transform panel
-        this.contextMenu.trigger('contextMenuTransform', {showTransformPanel: false});
+        this.contextMenu.trigger('contextMenuTransform', { showTransformPanel: false });
       }
     }
     this.hideContextMenu();
